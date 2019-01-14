@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0B21ECF18900A1A665 /* AppDelegate.swift */; };
+		A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0D21ECF18900A1A665 /* ViewController.swift */; };
+		A1145E1121ECF18900A1A665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E0F21ECF18900A1A665 /* Main.storyboard */; };
+		A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */; };
+		A1145E1621ECF18B00A1A665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1521ECF18B00A1A665 /* Assets.xcassets */; };
+		A1145E1921ECF18B00A1A665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1721ECF18B00A1A665 /* LaunchScreen.storyboard */; };
+		A1145E2421ECF18B00A1A665 /* DesafioBootcampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E2321ECF18B00A1A665 /* DesafioBootcampTests.swift */; };
+		A1145E2F21ECF18B00A1A665 /* DesafioBootcampUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E2E21ECF18B00A1A665 /* DesafioBootcampUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A1145E2021ECF18B00A1A665 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1145E0721ECF18900A1A665;
+			remoteInfo = DesafioBootcamp;
+		};
+		A1145E2B21ECF18B00A1A665 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1145E0721ECF18900A1A665;
+			remoteInfo = DesafioBootcamp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A1145E0821ECF18900A1A665 /* DesafioBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1145E0B21ECF18900A1A665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1145E0D21ECF18900A1A665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A1145E1021ECF18900A1A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A1145E1321ECF18900A1A665 /* DesafioBootcamp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesafioBootcamp.xcdatamodel; sourceTree = "<group>"; };
+		A1145E1521ECF18B00A1A665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A1145E1821ECF18B00A1A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1145E1A21ECF18B00A1A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1145E1F21ECF18B00A1A665 /* DesafioBootcampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioBootcampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1145E2321ECF18B00A1A665 /* DesafioBootcampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioBootcampTests.swift; sourceTree = "<group>"; };
+		A1145E2521ECF18B00A1A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1145E2A21ECF18B00A1A665 /* DesafioBootcampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioBootcampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1145E2E21ECF18B00A1A665 /* DesafioBootcampUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioBootcampUITests.swift; sourceTree = "<group>"; };
+		A1145E3021ECF18B00A1A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A1145E0521ECF18900A1A665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1145E1C21ECF18B00A1A665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1145E2721ECF18B00A1A665 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A1145DFF21ECF18900A1A665 = {
+			isa = PBXGroup;
+			children = (
+				A1145E0A21ECF18900A1A665 /* DesafioBootcamp */,
+				A1145E2221ECF18B00A1A665 /* DesafioBootcampTests */,
+				A1145E2D21ECF18B00A1A665 /* DesafioBootcampUITests */,
+				A1145E0921ECF18900A1A665 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A1145E0921ECF18900A1A665 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A1145E0821ECF18900A1A665 /* DesafioBootcamp.app */,
+				A1145E1F21ECF18B00A1A665 /* DesafioBootcampTests.xctest */,
+				A1145E2A21ECF18B00A1A665 /* DesafioBootcampUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A1145E0A21ECF18900A1A665 /* DesafioBootcamp */ = {
+			isa = PBXGroup;
+			children = (
+				A1145E0B21ECF18900A1A665 /* AppDelegate.swift */,
+				A1145E0D21ECF18900A1A665 /* ViewController.swift */,
+				A1145E0F21ECF18900A1A665 /* Main.storyboard */,
+				A1145E1521ECF18B00A1A665 /* Assets.xcassets */,
+				A1145E1721ECF18B00A1A665 /* LaunchScreen.storyboard */,
+				A1145E1A21ECF18B00A1A665 /* Info.plist */,
+				A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */,
+			);
+			path = DesafioBootcamp;
+			sourceTree = "<group>";
+		};
+		A1145E2221ECF18B00A1A665 /* DesafioBootcampTests */ = {
+			isa = PBXGroup;
+			children = (
+				A1145E2321ECF18B00A1A665 /* DesafioBootcampTests.swift */,
+				A1145E2521ECF18B00A1A665 /* Info.plist */,
+			);
+			path = DesafioBootcampTests;
+			sourceTree = "<group>";
+		};
+		A1145E2D21ECF18B00A1A665 /* DesafioBootcampUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A1145E2E21ECF18B00A1A665 /* DesafioBootcampUITests.swift */,
+				A1145E3021ECF18B00A1A665 /* Info.plist */,
+			);
+			path = DesafioBootcampUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A1145E0721ECF18900A1A665 /* DesafioBootcamp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1145E3321ECF18B00A1A665 /* Build configuration list for PBXNativeTarget "DesafioBootcamp" */;
+			buildPhases = (
+				A1145E0421ECF18900A1A665 /* Sources */,
+				A1145E0521ECF18900A1A665 /* Frameworks */,
+				A1145E0621ECF18900A1A665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesafioBootcamp;
+			productName = DesafioBootcamp;
+			productReference = A1145E0821ECF18900A1A665 /* DesafioBootcamp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A1145E1E21ECF18B00A1A665 /* DesafioBootcampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1145E3621ECF18B00A1A665 /* Build configuration list for PBXNativeTarget "DesafioBootcampTests" */;
+			buildPhases = (
+				A1145E1B21ECF18B00A1A665 /* Sources */,
+				A1145E1C21ECF18B00A1A665 /* Frameworks */,
+				A1145E1D21ECF18B00A1A665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1145E2121ECF18B00A1A665 /* PBXTargetDependency */,
+			);
+			name = DesafioBootcampTests;
+			productName = DesafioBootcampTests;
+			productReference = A1145E1F21ECF18B00A1A665 /* DesafioBootcampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A1145E2921ECF18B00A1A665 /* DesafioBootcampUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1145E3921ECF18B00A1A665 /* Build configuration list for PBXNativeTarget "DesafioBootcampUITests" */;
+			buildPhases = (
+				A1145E2621ECF18B00A1A665 /* Sources */,
+				A1145E2721ECF18B00A1A665 /* Frameworks */,
+				A1145E2821ECF18B00A1A665 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1145E2C21ECF18B00A1A665 /* PBXTargetDependency */,
+			);
+			name = DesafioBootcampUITests;
+			productName = DesafioBootcampUITests;
+			productReference = A1145E2A21ECF18B00A1A665 /* DesafioBootcampUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1145E0021ECF18900A1A665 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = concrete.solutions;
+				TargetAttributes = {
+					A1145E0721ECF18900A1A665 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					A1145E1E21ECF18B00A1A665 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A1145E0721ECF18900A1A665;
+					};
+					A1145E2921ECF18B00A1A665 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A1145E0721ECF18900A1A665;
+					};
+				};
+			};
+			buildConfigurationList = A1145E0321ECF18900A1A665 /* Build configuration list for PBXProject "DesafioBootcamp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A1145DFF21ECF18900A1A665;
+			productRefGroup = A1145E0921ECF18900A1A665 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A1145E0721ECF18900A1A665 /* DesafioBootcamp */,
+				A1145E1E21ECF18B00A1A665 /* DesafioBootcampTests */,
+				A1145E2921ECF18B00A1A665 /* DesafioBootcampUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1145E0621ECF18900A1A665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1145E1921ECF18B00A1A665 /* LaunchScreen.storyboard in Resources */,
+				A1145E1621ECF18B00A1A665 /* Assets.xcassets in Resources */,
+				A1145E1121ECF18900A1A665 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1145E1D21ECF18B00A1A665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1145E2821ECF18B00A1A665 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A1145E0421ECF18900A1A665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */,
+				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
+				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1145E1B21ECF18B00A1A665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1145E2421ECF18B00A1A665 /* DesafioBootcampTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1145E2621ECF18B00A1A665 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1145E2F21ECF18B00A1A665 /* DesafioBootcampUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A1145E2121ECF18B00A1A665 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1145E0721ECF18900A1A665 /* DesafioBootcamp */;
+			targetProxy = A1145E2021ECF18B00A1A665 /* PBXContainerItemProxy */;
+		};
+		A1145E2C21ECF18B00A1A665 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1145E0721ECF18900A1A665 /* DesafioBootcamp */;
+			targetProxy = A1145E2B21ECF18B00A1A665 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A1145E0F21ECF18900A1A665 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1145E1021ECF18900A1A665 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A1145E1721ECF18B00A1A665 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1145E1821ECF18B00A1A665 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A1145E3121ECF18B00A1A665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1145E3221ECF18B00A1A665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A1145E3421ECF18B00A1A665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = DesafioBootcamp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A1145E3521ECF18B00A1A665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = DesafioBootcamp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcamp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A1145E3721ECF18B00A1A665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = DesafioBootcampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
+			};
+			name = Debug;
+		};
+		A1145E3821ECF18B00A1A665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = DesafioBootcampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
+			};
+			name = Release;
+		};
+		A1145E3A21ECF18B00A1A665 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = DesafioBootcampUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcampUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioBootcamp;
+			};
+			name = Debug;
+		};
+		A1145E3B21ECF18B00A1A665 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = DesafioBootcampUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcampUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DesafioBootcamp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1145E0321ECF18900A1A665 /* Build configuration list for PBXProject "DesafioBootcamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1145E3121ECF18B00A1A665 /* Debug */,
+				A1145E3221ECF18B00A1A665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1145E3321ECF18B00A1A665 /* Build configuration list for PBXNativeTarget "DesafioBootcamp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1145E3421ECF18B00A1A665 /* Debug */,
+				A1145E3521ECF18B00A1A665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1145E3621ECF18B00A1A665 /* Build configuration list for PBXNativeTarget "DesafioBootcampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1145E3721ECF18B00A1A665 /* Debug */,
+				A1145E3821ECF18B00A1A665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1145E3921ECF18B00A1A665 /* Build configuration list for PBXNativeTarget "DesafioBootcampUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1145E3A21ECF18B00A1A665 /* Debug */,
+				A1145E3B21ECF18B00A1A665 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A1145E1321ECF18900A1A665 /* DesafioBootcamp.xcdatamodel */,
+			);
+			currentVersion = A1145E1321ECF18900A1A665 /* DesafioBootcamp.xcdatamodel */;
+			path = DesafioBootcamp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A1145E0021ECF18900A1A665 /* Project object */;
+}
