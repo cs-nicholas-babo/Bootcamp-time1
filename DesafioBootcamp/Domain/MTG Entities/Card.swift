@@ -11,6 +11,7 @@ import Foundation
 public struct Card {
     public let id: String
     public let name: String
+    public let setCode: String
     public let types: Set<CardType>
 }
 
@@ -29,12 +30,14 @@ extension Card: Codable {
         case id = "id"
         case name = "name"
         case types = "types"
+        case setCode = "set"
     }
     
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
         self.id = try container.decode(String.self, forKey: .id)
         self.name = try container.decode(String.self, forKey: .name)
+        self.setCode = try container.decode(String.self, forKey: .setCode)
         if let decodedSet = try container.decodeIfPresent([String].self, forKey: .types){
            self.types = Set(decodedSet.map({ CardType(name: $0) }))
         } else {
@@ -47,6 +50,7 @@ extension Card: Codable {
         
         try container.encode(self.id, forKey: .id)
         try container.encode(self.name, forKey: .name)
+        try container.encode(self.setCode, forKey: .setCode)
         let arrayTypes = self.types.map({ $0.name })
         try container.encode(arrayTypes, forKey: .types)
     }
