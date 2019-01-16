@@ -21,11 +21,12 @@ class PlatformLocalDatabaseTests: QuickSpec {
         config.inMemoryIdentifier = "com.DesafioBootcamp.Debug.Realm.FavoriteCardsRepository"
         let realm = try! Realm(configuration: config)
         
+        let repo = FavoriteCardsRepository(realm: realm)
+        beforeSuite {
+            repo.deleteAll()
+        }
+        
         describe("When using RealmCard") {
-            let repo = FavoriteCardsRepository(realm: realm)
-            beforeSuite {
-                repo.deleteAll()
-            }
             
             describe("a RealmCard instatiated from a Card", closure: {
                 it("should have the expected properties", closure: {
@@ -116,6 +117,43 @@ class PlatformLocalDatabaseTests: QuickSpec {
             
             
         }
+        
+        describe("When using the FavoriteCardsService") {
+            
+            beforeEach {
+                repo.deleteAll()
+            }
+            
+            describe("Favoriting a card", closure: {
+                it("should store it in the database", closure: {
+                    
+                    let card = RealmCardMock.card1.baseData()
+                    let service = FavoriteCardsService(repository: repo)
+                    service.favorite(card: card, status: true)
+                    
+                    expect(repo.get().count) == 1
+                    expect(repo.get().first?.id) == "uuid1"
+                    
+                })
+            })
+            
+            describe("Unfavoriting a card", closure: {
+                it("should remove the specified object from the database", closure: {
+                    
+                    let card = RealmCardMock.card1.baseData()
+                    let service = FavoriteCardsService(repository: repo)
+                    service.favorite(card: card, status: true)
+                    
+                    expect(repo.get().count) == 1
+                    expect(repo.get().first?.id) == "uuid1"
+                    
+                    service.favorite(card: card, status: false)
+                    
+                    expect(repo.get().count) == 0
+                })
+            })
+        }
+        
         
     }
 
