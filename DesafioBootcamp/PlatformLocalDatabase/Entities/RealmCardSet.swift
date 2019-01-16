@@ -8,6 +8,7 @@
 
 import Foundation
 import RealmSwift
+import Domain
 
 public final class RealmCardSet: RealmSwift.Object{
     
@@ -18,4 +19,25 @@ public final class RealmCardSet: RealmSwift.Object{
         return "code"
     }
     
+}
+
+extension RealmCardSet: DomainRepresentableType{
+    typealias MTG_Entity = Domain.CardSet
+    
+    func baseData() -> CardSet {
+        return CardSet(code: self.code, name: self.name)
+    }
+    
+}
+
+extension CardSet: RealmRepresentable{
+    typealias RealmType = RealmCardSet
+    
+    func realmData() -> RealmCardSet {
+        let realmObject = RealmCardSet()
+        realmObject.code = self.code
+        realmObject.name = name
+        
+        return realmObject
+    }
 }
