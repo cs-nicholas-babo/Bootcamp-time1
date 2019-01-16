@@ -9,6 +9,6 @@
 import Foundation
 import Domain
 
-protocol SetListPresenter {
+protocol CardSetListPresentationLogic {
     func present(response: CardSetList.Response)
 }

@@ -43,10 +43,11 @@
 		A1DF496621EF652600E1DCF6 /* Placeholders.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF495E21EF652600E1DCF6 /* Placeholders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACB449FC21EF8A9A00252958 /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB449FB21EF8A9A00252958 /* CardSet.swift */; };
 		ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */; };
-		ACB44A0521EF92C600252958 /* CardSetListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0421EF92C600252958 /* CardSetListInteractor.swift */; };
-		ACB44A0721EF939F00252958 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0621EF939F00252958 /* CardSetListPresenter.swift */; };
+		ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */; };
+		ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0621EF939F00252958 /* CardSetListPresentationLogic.swift */; };
 		ACB44A0B21EF958200252958 /* CardSetListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0A21EF958200252958 /* CardSetListModel.swift */; };
-		ACB44A0D21EF978200252958 /* CardSertListDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0C21EF978200252958 /* CardSertListDisplay.swift */; };
+		ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0C21EF978200252958 /* CardSetListDisplayLogic.swift */; };
+		ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A1021EFA40600252958 /* CardSetListInteractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,10 +137,11 @@
 		A1DF496121EF652600E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACB449FB21EF8A9A00252958 /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
 		ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGCardGateway.swift; sourceTree = "<group>"; };
-		ACB44A0421EF92C600252958 /* CardSetListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListInteractor.swift; sourceTree = "<group>"; };
-		ACB44A0621EF939F00252958 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
+		ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListBusinessLogic.swift; sourceTree = "<group>"; };
+		ACB44A0621EF939F00252958 /* CardSetListPresentationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresentationLogic.swift; sourceTree = "<group>"; };
 		ACB44A0A21EF958200252958 /* CardSetListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListModel.swift; sourceTree = "<group>"; };
-		ACB44A0C21EF978200252958 /* CardSertListDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSertListDisplay.swift; sourceTree = "<group>"; };
+		ACB44A0C21EF978200252958 /* CardSetListDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListDisplayLogic.swift; sourceTree = "<group>"; };
+		ACB44A1021EFA40600252958 /* CardSetListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListInteractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -373,7 +375,8 @@
 		ACB44A0021EF91AC00252958 /* Intercator */ = {
 			isa = PBXGroup;
 			children = (
-				ACB44A0421EF92C600252958 /* CardSetListInteractor.swift */,
+				ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */,
+				ACB44A1021EFA40600252958 /* CardSetListInteractor.swift */,
 			);
 			path = Intercator;
 			sourceTree = "<group>";
@@ -381,7 +384,7 @@
 		ACB44A0121EF91B300252958 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				ACB44A0621EF939F00252958 /* CardSetListPresenter.swift */,
+				ACB44A0621EF939F00252958 /* CardSetListPresentationLogic.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -389,7 +392,7 @@
 		ACB44A0221EF924F00252958 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				ACB44A0C21EF978200252958 /* CardSertListDisplay.swift */,
+				ACB44A0C21EF978200252958 /* CardSetListDisplayLogic.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -661,9 +664,10 @@
 				A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */,
 				A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */,
 				A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */,
-				ACB44A0721EF939F00252958 /* CardSetListPresenter.swift in Sources */,
-				ACB44A0521EF92C600252958 /* CardSetListInteractor.swift in Sources */,
-				ACB44A0D21EF978200252958 /* CardSertListDisplay.swift in Sources */,
+				ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */,
+				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
+				ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */,
+				ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
