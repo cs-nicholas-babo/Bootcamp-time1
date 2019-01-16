@@ -1,5 +1,5 @@
 //
-//  FavoritesUseCase.swift
+//  FavoriteCardsUseCase.swift
 //  Domain
 //
 //  Created by g.guimaraes on 15/01/19.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol FavoritesUseCase {
+public protocol FavoriteCardsUseCase {
     func favorite(card: Card, status: Bool)
 }

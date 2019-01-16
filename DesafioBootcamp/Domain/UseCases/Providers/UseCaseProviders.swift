@@ -20,6 +20,6 @@ public protocol CardsUseCaseProvider {
     func useCase() -> CardsUseCase
 }
 
-public protocol FavoritesUseCaseProvider {
-    func useCase() -> FavoritesUseCase
+public protocol FavoriteCardsUseCaseProvider {
+    func useCase() -> FavoriteCardsUseCase
 }
