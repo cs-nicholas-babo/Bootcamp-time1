@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FB8658D21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8658C21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.swift */; };
+		2FB8659521EFB81C001FB4FE /* RealmCardMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD9F21EFAA4A0060A691 /* RealmCardMock.swift */; };
+		2FB8659621EFB820001FB4FE /* RealmCardSetMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFDA221EFAB8E0060A691 /* RealmCardSetMock.swift */; };
 		2FB954CF21EF8C3900B09AFF /* DomainRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954CD21EF8C3900B09AFF /* DomainRepresentable.swift */; };
 		2FB954D021EF8C3900B09AFF /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */; };
 		2FB954D221EF8C6900B09AFF /* RealmCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954D121EF8C6900B09AFF /* RealmCard.swift */; };
@@ -41,11 +44,6 @@
 		A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */; };
 		A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */; };
 		A19CFD7821EF9A960060A691 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7721EF9A960060A691 /* CacheManager.swift */; };
-		A19CFD9521EFAA2E0060A691 /* Mockups.h in Headers */ = {isa = PBXBuildFile; fileRef = A19CFD9321EFAA2E0060A691 /* Mockups.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A19CFD9821EFAA2E0060A691 /* Mockups.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19CFD9121EFAA2E0060A691 /* Mockups.framework */; };
-		A19CFD9921EFAA2E0060A691 /* Mockups.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A19CFD9121EFAA2E0060A691 /* Mockups.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A19CFDA021EFAA4A0060A691 /* RealmCardMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD9F21EFAA4A0060A691 /* RealmCardMock.swift */; };
-		A19CFDA321EFAB8E0060A691 /* RealmCardSetMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFDA221EFAB8E0060A691 /* RealmCardSetMock.swift */; };
 		A1DF492B21EE769E00E1DCF6 /* MTGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492A21EE769E00E1DCF6 /* MTGService.swift */; };
 		A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */; };
 		A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493021EF540900E1DCF6 /* CardsScreen.swift */; };
@@ -59,19 +57,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2FB8658F21EFB6FB001FB4FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1145E0721ECF18900A1A665;
+			remoteInfo = DesafioBootcamp;
+		};
 		2FEBC25221ED057800B10DED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2FEBC24C21ED057800B10DED;
 			remoteInfo = Domain;
-		};
-		A19CFD9621EFAA2E0060A691 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A19CFD9021EFAA2E0060A691;
-			remoteInfo = Mockups;
 		};
 		A1DF494121EF64FA00E1DCF6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -101,7 +99,6 @@
 				A1DF494421EF64FA00E1DCF6 /* PlatformAPI.framework in Embed Frameworks */,
 				2FEBC25521ED057800B10DED /* Domain.framework in Embed Frameworks */,
 				A1DF495521EF651900E1DCF6 /* PlatformLocalDatabase.framework in Embed Frameworks */,
-				A19CFD9921EFAA2E0060A691 /* Mockups.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -109,6 +106,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2FB8658A21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformLocalDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FB8658C21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformLocalDatabaseTests.swift; sourceTree = "<group>"; };
+		2FB8658E21EFB6FB001FB4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FB954CD21EF8C3900B09AFF /* DomainRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainRepresentable.swift; sourceTree = "<group>"; };
 		2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
 		2FB954D121EF8C6900B09AFF /* RealmCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCard.swift; sourceTree = "<group>"; };
@@ -145,9 +145,6 @@
 		A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSet.swift; sourceTree = "<group>"; };
 		A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardType.swift; sourceTree = "<group>"; };
 		A19CFD7721EF9A960060A691 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
-		A19CFD9121EFAA2E0060A691 /* Mockups.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mockups.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A19CFD9321EFAA2E0060A691 /* Mockups.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mockups.h; sourceTree = "<group>"; };
-		A19CFD9421EFAA2E0060A691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A19CFD9F21EFAA4A0060A691 /* RealmCardMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardMock.swift; sourceTree = "<group>"; };
 		A19CFDA221EFAB8E0060A691 /* RealmCardSetMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSetMock.swift; sourceTree = "<group>"; };
 		A1DF492A21EE769E00E1DCF6 /* MTGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGService.swift; sourceTree = "<group>"; };
@@ -163,6 +160,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2FB8658721EFB6FB001FB4FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FEBC24A21ED057800B10DED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,14 +181,6 @@
 				A1DF494321EF64FA00E1DCF6 /* PlatformAPI.framework in Frameworks */,
 				2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */,
 				A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */,
-				A19CFD9821EFAA2E0060A691 /* Mockups.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A19CFD8E21EFAA2E0060A691 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +203,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2FB8658B21EFB6FB001FB4FE /* PlatformLocalDatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				2FB8659421EFB808001FB4FE /* Samples */,
+				2FB8658C21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.swift */,
+				2FB8658E21EFB6FB001FB4FE /* Info.plist */,
+			);
+			path = PlatformLocalDatabaseTests;
+			sourceTree = "<group>";
+		};
+		2FB8659421EFB808001FB4FE /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				A19CFD9F21EFAA4A0060A691 /* RealmCardMock.swift */,
+				A19CFDA221EFAB8E0060A691 /* RealmCardSetMock.swift */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
 		2FB954CB21EF8C0400B09AFF /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -312,7 +327,7 @@
 				2FEBC24E21ED057800B10DED /* Domain */,
 				A1DF493D21EF64FA00E1DCF6 /* PlatformAPI */,
 				A1DF494E21EF651900E1DCF6 /* PlatformLocalDatabase */,
-				A19CFD9221EFAA2E0060A691 /* Mockups */,
+				2FB8658B21EFB6FB001FB4FE /* PlatformLocalDatabaseTests */,
 				A1145E0921ECF18900A1A665 /* Products */,
 				A13C654121EF6FA700689169 /* Frameworks */,
 			);
@@ -325,7 +340,7 @@
 				2FEBC24D21ED057800B10DED /* Domain.framework */,
 				A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */,
 				A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */,
-				A19CFD9121EFAA2E0060A691 /* Mockups.framework */,
+				2FB8658A21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -349,33 +364,6 @@
 				A13C654221EF6FA800689169 /* RealmSwift.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A19CFD9221EFAA2E0060A691 /* Mockups */ = {
-			isa = PBXGroup;
-			children = (
-				A19CFD9D21EFAA340060A691 /* Samples */,
-				A19CFD9321EFAA2E0060A691 /* Mockups.h */,
-				A19CFD9421EFAA2E0060A691 /* Info.plist */,
-			);
-			path = Mockups;
-			sourceTree = "<group>";
-		};
-		A19CFD9D21EFAA340060A691 /* Samples */ = {
-			isa = PBXGroup;
-			children = (
-				A19CFD9E21EFAA3B0060A691 /* Local Database */,
-			);
-			path = Samples;
-			sourceTree = "<group>";
-		};
-		A19CFD9E21EFAA3B0060A691 /* Local Database */ = {
-			isa = PBXGroup;
-			children = (
-				A19CFD9F21EFAA4A0060A691 /* RealmCardMock.swift */,
-				A19CFDA221EFAB8E0060A691 /* RealmCardSetMock.swift */,
-			);
-			path = "Local Database";
 			sourceTree = "<group>";
 		};
 		A1DF492921EE768F00E1DCF6 /* Network */ = {
@@ -451,14 +439,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A19CFD8C21EFAA2E0060A691 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A19CFD9521EFAA2E0060A691 /* Mockups.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A1DF493721EF64FA00E1DCF6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -478,6 +458,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2FB8658921EFB6FB001FB4FE /* PlatformLocalDatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FB8659321EFB6FB001FB4FE /* Build configuration list for PBXNativeTarget "PlatformLocalDatabaseTests" */;
+			buildPhases = (
+				2FB8658621EFB6FB001FB4FE /* Sources */,
+				2FB8658721EFB6FB001FB4FE /* Frameworks */,
+				2FB8658821EFB6FB001FB4FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2FB8659021EFB6FB001FB4FE /* PBXTargetDependency */,
+			);
+			name = PlatformLocalDatabaseTests;
+			productName = PlatformLocalDatabaseTests;
+			productReference = 2FB8658A21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		2FEBC24C21ED057800B10DED /* Domain */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FEBC25621ED057800B10DED /* Build configuration list for PBXNativeTarget "Domain" */;
@@ -511,30 +509,11 @@
 				2FEBC25321ED057800B10DED /* PBXTargetDependency */,
 				A1DF494221EF64FA00E1DCF6 /* PBXTargetDependency */,
 				A1DF495321EF651900E1DCF6 /* PBXTargetDependency */,
-				A19CFD9721EFAA2E0060A691 /* PBXTargetDependency */,
 			);
 			name = DesafioBootcamp;
 			productName = DesafioBootcamp;
 			productReference = A1145E0821ECF18900A1A665 /* DesafioBootcamp.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A19CFD9021EFAA2E0060A691 /* Mockups */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A19CFD9A21EFAA2E0060A691 /* Build configuration list for PBXNativeTarget "Mockups" */;
-			buildPhases = (
-				A19CFD8C21EFAA2E0060A691 /* Headers */,
-				A19CFD8D21EFAA2E0060A691 /* Sources */,
-				A19CFD8E21EFAA2E0060A691 /* Frameworks */,
-				A19CFD8F21EFAA2E0060A691 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Mockups;
-			productName = Mockups;
-			productReference = A19CFD9121EFAA2E0060A691 /* Mockups.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 		A1DF493B21EF64FA00E1DCF6 /* PlatformAPI */ = {
 			isa = PBXNativeTarget;
@@ -582,16 +561,16 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = concrete.solutions;
 				TargetAttributes = {
+					2FB8658921EFB6FB001FB4FE = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A1145E0721ECF18900A1A665;
+					};
 					2FEBC24C21ED057800B10DED = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
 					A1145E0721ECF18900A1A665 = {
 						CreatedOnToolsVersion = 10.1;
-					};
-					A19CFD9021EFAA2E0060A691 = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
 					};
 					A1DF493B21EF64FA00E1DCF6 = {
 						CreatedOnToolsVersion = 10.1;
@@ -619,12 +598,19 @@
 				2FEBC24C21ED057800B10DED /* Domain */,
 				A1DF493B21EF64FA00E1DCF6 /* PlatformAPI */,
 				A1DF494C21EF651900E1DCF6 /* PlatformLocalDatabase */,
-				A19CFD9021EFAA2E0060A691 /* Mockups */,
+				2FB8658921EFB6FB001FB4FE /* PlatformLocalDatabaseTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2FB8658821EFB6FB001FB4FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FEBC24B21ED057800B10DED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -639,13 +625,6 @@
 				A1145E1921ECF18B00A1A665 /* LaunchScreen.storyboard in Resources */,
 				A1145E1621ECF18B00A1A665 /* Assets.xcassets in Resources */,
 				A1145E1121ECF18900A1A665 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A19CFD8F21EFAA2E0060A691 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -666,6 +645,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2FB8658621EFB6FB001FB4FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FB8658D21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.swift in Sources */,
+				2FB8659521EFB81C001FB4FE /* RealmCardMock.swift in Sources */,
+				2FB8659621EFB820001FB4FE /* RealmCardSetMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2FEBC24921ED057800B10DED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -693,15 +682,6 @@
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A19CFD8D21EFAA2E0060A691 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A19CFDA321EFAB8E0060A691 /* RealmCardSetMock.swift in Sources */,
-				A19CFDA021EFAA4A0060A691 /* RealmCardMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -734,15 +714,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2FB8659021EFB6FB001FB4FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1145E0721ECF18900A1A665 /* DesafioBootcamp */;
+			targetProxy = 2FB8658F21EFB6FB001FB4FE /* PBXContainerItemProxy */;
+		};
 		2FEBC25321ED057800B10DED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2FEBC24C21ED057800B10DED /* Domain */;
 			targetProxy = 2FEBC25221ED057800B10DED /* PBXContainerItemProxy */;
-		};
-		A19CFD9721EFAA2E0060A691 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A19CFD9021EFAA2E0060A691 /* Mockups */;
-			targetProxy = A19CFD9621EFAA2E0060A691 /* PBXContainerItemProxy */;
 		};
 		A1DF494221EF64FA00E1DCF6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -776,6 +756,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2FB8659121EFB6FB001FB4FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = PlatformLocalDatabaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bootcampT1.PlatformLocalDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
+			};
+			name = Debug;
+		};
+		2FB8659221EFB6FB001FB4FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 83C3V38WSB;
+				INFOPLIST_FILE = PlatformLocalDatabaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bootcampT1.PlatformLocalDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
+			};
+			name = Release;
+		};
 		2FEBC25721ED057800B10DED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -989,65 +1009,6 @@
 			};
 			name = Release;
 		};
-		A19CFD9B21EFAA2E0060A691 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Mockups/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = concrete.time1.Mockups;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A19CFD9C21EFAA2E0060A691 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Mockups/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = concrete.time1.Mockups;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A1DF494621EF64FA00E1DCF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1174,6 +1135,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2FB8659321EFB6FB001FB4FE /* Build configuration list for PBXNativeTarget "PlatformLocalDatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2FB8659121EFB6FB001FB4FE /* Debug */,
+				2FB8659221EFB6FB001FB4FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2FEBC25621ED057800B10DED /* Build configuration list for PBXNativeTarget "Domain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1197,15 +1167,6 @@
 			buildConfigurations = (
 				A1145E3421ECF18B00A1A665 /* Debug */,
 				A1145E3521ECF18B00A1A665 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A19CFD9A21EFAA2E0060A691 /* Build configuration list for PBXNativeTarget "Mockups" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A19CFD9B21EFAA2E0060A691 /* Debug */,
-				A19CFD9C21EFAA2E0060A691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
