@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Domain
 import PlatformLocalDatabase
 
 struct RealmCardSetMock{

@@ -39,7 +39,6 @@
 		A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */; };
 		A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */; };
 		A19CFD7821EF9A960060A691 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7721EF9A960060A691 /* CacheManager.swift */; };
-		A19CFD8021EFA9430060A691 /* PlatformLocalDatabaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7F21EFA9430060A691 /* PlatformLocalDatabaseTests.swift */; };
 		A19CFD9521EFAA2E0060A691 /* Mockups.h in Headers */ = {isa = PBXBuildFile; fileRef = A19CFD9321EFAA2E0060A691 /* Mockups.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A19CFD9821EFAA2E0060A691 /* Mockups.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A19CFD9121EFAA2E0060A691 /* Mockups.framework */; };
 		A19CFD9921EFAA2E0060A691 /* Mockups.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A19CFD9121EFAA2E0060A691 /* Mockups.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -64,13 +63,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 2FEBC24C21ED057800B10DED;
 			remoteInfo = Domain;
-		};
-		A19CFD8221EFA9440060A691 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1145E0721ECF18900A1A665;
-			remoteInfo = DesafioBootcamp;
 		};
 		A19CFD9621EFAA2E0060A691 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -149,9 +141,6 @@
 		A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSet.swift; sourceTree = "<group>"; };
 		A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardType.swift; sourceTree = "<group>"; };
 		A19CFD7721EF9A960060A691 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
-		A19CFD7D21EFA9430060A691 /* PlatformLocalDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformLocalDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A19CFD7F21EFA9430060A691 /* PlatformLocalDatabaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformLocalDatabaseTests.swift; sourceTree = "<group>"; };
-		A19CFD8121EFA9440060A691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A19CFD9121EFAA2E0060A691 /* Mockups.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Mockups.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19CFD9321EFAA2E0060A691 /* Mockups.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mockups.h; sourceTree = "<group>"; };
 		A19CFD9421EFAA2E0060A691 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -185,13 +174,6 @@
 				2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */,
 				A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */,
 				A19CFD9821EFAA2E0060A691 /* Mockups.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A19CFD7A21EFA9430060A691 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +308,6 @@
 				2FEBC24E21ED057800B10DED /* Domain */,
 				A1DF493D21EF64FA00E1DCF6 /* PlatformAPI */,
 				A1DF494E21EF651900E1DCF6 /* PlatformLocalDatabase */,
-				A19CFD7E21EFA9430060A691 /* PlatformLocalDatabaseTests */,
 				A19CFD9221EFAA2E0060A691 /* Mockups */,
 				A1145E0921ECF18900A1A665 /* Products */,
 				A13C654121EF6FA700689169 /* Frameworks */,
@@ -340,7 +321,6 @@
 				2FEBC24D21ED057800B10DED /* Domain.framework */,
 				A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */,
 				A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */,
-				A19CFD7D21EFA9430060A691 /* PlatformLocalDatabaseTests.xctest */,
 				A19CFD9121EFAA2E0060A691 /* Mockups.framework */,
 			);
 			name = Products;
@@ -365,15 +345,6 @@
 				A13C654221EF6FA800689169 /* RealmSwift.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A19CFD7E21EFA9430060A691 /* PlatformLocalDatabaseTests */ = {
-			isa = PBXGroup;
-			children = (
-				A19CFD7F21EFA9430060A691 /* PlatformLocalDatabaseTests.swift */,
-				A19CFD8121EFA9440060A691 /* Info.plist */,
-			);
-			path = PlatformLocalDatabaseTests;
 			sourceTree = "<group>";
 		};
 		A19CFD9221EFAA2E0060A691 /* Mockups */ = {
@@ -543,24 +514,6 @@
 			productReference = A1145E0821ECF18900A1A665 /* DesafioBootcamp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A19CFD7C21EFA9430060A691 /* PlatformLocalDatabaseTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A19CFD8621EFA9440060A691 /* Build configuration list for PBXNativeTarget "PlatformLocalDatabaseTests" */;
-			buildPhases = (
-				A19CFD7921EFA9430060A691 /* Sources */,
-				A19CFD7A21EFA9430060A691 /* Frameworks */,
-				A19CFD7B21EFA9430060A691 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A19CFD8321EFA9440060A691 /* PBXTargetDependency */,
-			);
-			name = PlatformLocalDatabaseTests;
-			productName = PlatformLocalDatabaseTests;
-			productReference = A19CFD7D21EFA9430060A691 /* PlatformLocalDatabaseTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		A19CFD9021EFAA2E0060A691 /* Mockups */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A19CFD9A21EFAA2E0060A691 /* Build configuration list for PBXNativeTarget "Mockups" */;
@@ -632,10 +585,6 @@
 					A1145E0721ECF18900A1A665 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					A19CFD7C21EFA9430060A691 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = A1145E0721ECF18900A1A665;
-					};
 					A19CFD9021EFAA2E0060A691 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -666,7 +615,6 @@
 				2FEBC24C21ED057800B10DED /* Domain */,
 				A1DF493B21EF64FA00E1DCF6 /* PlatformAPI */,
 				A1DF494C21EF651900E1DCF6 /* PlatformLocalDatabase */,
-				A19CFD7C21EFA9430060A691 /* PlatformLocalDatabaseTests */,
 				A19CFD9021EFAA2E0060A691 /* Mockups */,
 			);
 		};
@@ -687,13 +635,6 @@
 				A1145E1921ECF18B00A1A665 /* LaunchScreen.storyboard in Resources */,
 				A1145E1621ECF18B00A1A665 /* Assets.xcassets in Resources */,
 				A1145E1121ECF18900A1A665 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A19CFD7B21EFA9430060A691 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,14 +692,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A19CFD7921EFA9430060A691 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A19CFD8021EFA9430060A691 /* PlatformLocalDatabaseTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A19CFD8D21EFAA2E0060A691 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -801,11 +734,6 @@
 			isa = PBXTargetDependency;
 			target = 2FEBC24C21ED057800B10DED /* Domain */;
 			targetProxy = 2FEBC25221ED057800B10DED /* PBXContainerItemProxy */;
-		};
-		A19CFD8321EFA9440060A691 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1145E0721ECF18900A1A665 /* DesafioBootcamp */;
-			targetProxy = A19CFD8221EFA9440060A691 /* PBXContainerItemProxy */;
 		};
 		A19CFD9721EFAA2E0060A691 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1057,46 +985,6 @@
 			};
 			name = Release;
 		};
-		A19CFD8421EFA9440060A691 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
-				INFOPLIST_FILE = PlatformLocalDatabaseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = concrete.time1.PlatformLocalDatabaseTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
-			};
-			name = Debug;
-		};
-		A19CFD8521EFA9440060A691 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
-				INFOPLIST_FILE = PlatformLocalDatabaseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = concrete.time1.PlatformLocalDatabaseTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
-			};
-			name = Release;
-		};
 		A19CFD9B21EFAA2E0060A691 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1305,15 +1193,6 @@
 			buildConfigurations = (
 				A1145E3421ECF18B00A1A665 /* Debug */,
 				A1145E3521ECF18B00A1A665 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A19CFD8621EFA9440060A691 /* Build configuration list for PBXNativeTarget "PlatformLocalDatabaseTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A19CFD8421EFA9440060A691 /* Debug */,
-				A19CFD8521EFA9440060A691 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
