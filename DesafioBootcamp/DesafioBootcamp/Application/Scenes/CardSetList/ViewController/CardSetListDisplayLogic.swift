@@ -10,5 +10,6 @@ import Foundation
 
 protocol CardSetListDisplayLogic {
     func display(viewModel: CardSetList.ViewModel)
+    func readyToDisplayCards()
     func displayError()
 }

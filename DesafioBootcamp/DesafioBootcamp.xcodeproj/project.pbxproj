@@ -19,6 +19,7 @@
 		2FEBC26A21EE04E700B10DED /* CardsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26921EE04E700B10DED /* CardsUseCase.swift */; };
 		2FEBC26C21EE055B00B10DED /* FavoritesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26B21EE055B00B10DED /* FavoritesUseCase.swift */; };
 		2FEBC26E21EE05B600B10DED /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */; };
+		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
 		A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0B21ECF18900A1A665 /* AppDelegate.swift */; };
 		A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0D21ECF18900A1A665 /* ViewController.swift */; };
 		A1145E1121ECF18900A1A665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E0F21ECF18900A1A665 /* Main.storyboard */; };
@@ -111,6 +112,7 @@
 		2FEBC26921EE04E700B10DED /* CardsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26B21EE055B00B10DED /* FavoritesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
+		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
 		A1145E0821ECF18900A1A665 /* DesafioBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1145E0B21ECF18900A1A665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1145E0D21ECF18900A1A665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -385,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB44A0621EF939F00252958 /* CardSetListPresentationLogic.swift */,
+				5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -668,6 +671,7 @@
 				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
 				ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */,
 				ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */,
+				5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,

@@ -20,6 +20,16 @@ enum CardSetList {
     }
     
     struct ViewModel {
-        let typeSortedCards: [TypedCards]
+        var typeSortedCards: TypedCards
+        
+        init(cardSet: CardSet) {
+            typeSortedCards = [:]
+            let types = cardSet.cards.flatMap {$0.types}
+            let sortedTypes = Set<CardType>(types).sorted { $0.name < $1.name }
+            sortedTypes.forEach { (cardType) in
+                let cards = cardSet.cards.filter { $0.types.contains(cardType) }
+                typeSortedCards.updateValue(cards, forKey: cardType)
+            }
+        }
     }
 }
