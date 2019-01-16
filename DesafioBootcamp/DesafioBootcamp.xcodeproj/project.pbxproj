@@ -39,6 +39,7 @@
 		A19CFD7121EF85620060A691 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7021EF85620060A691 /* RealmObjects.swift */; };
 		A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */; };
 		A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */; };
+		A19CFD7821EF9A960060A691 /* CacheRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7721EF9A960060A691 /* CacheRepository.swift */; };
 		A1DF492B21EE769E00E1DCF6 /* MTGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492A21EE769E00E1DCF6 /* MTGService.swift */; };
 		A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */; };
 		A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493021EF540900E1DCF6 /* CardsScreen.swift */; };
@@ -135,6 +136,7 @@
 		A19CFD7021EF85620060A691 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 		A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSet.swift; sourceTree = "<group>"; };
 		A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardType.swift; sourceTree = "<group>"; };
+		A19CFD7721EF9A960060A691 /* CacheRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheRepository.swift; sourceTree = "<group>"; };
 		A1DF492A21EE769E00E1DCF6 /* MTGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGService.swift; sourceTree = "<group>"; };
 		A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		A1DF493021EF540900E1DCF6 /* CardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsScreen.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 			children = (
 				2FB954D621EF961800B09AFF /* RepositoryAbstract.swift */,
 				2FB954D821EF964700B09AFF /* FavoriteCardsRepository.swift */,
+				A19CFD7721EF9A960060A691 /* CacheRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -671,6 +674,7 @@
 				A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */,
 				A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */,
 				2FB954D721EF961800B09AFF /* RepositoryAbstract.swift in Sources */,
+				A19CFD7821EF9A960060A691 /* CacheRepository.swift in Sources */,
 				2FB954D021EF8C3900B09AFF /* RealmRepresentable.swift in Sources */,
 				2FB954D221EF8C6900B09AFF /* RealmCard.swift in Sources */,
 				2FB954D921EF964700B09AFF /* FavoriteCardsRepository.swift in Sources */,
