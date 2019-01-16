@@ -12,8 +12,8 @@ import Domain
 
 public final class RealmCardSet: RealmSwift.Object{
     
-    @objc dynamic var code: String = ""
-    @objc dynamic var name: String = ""
+    @objc public dynamic var code: String = ""
+    @objc public dynamic var name: String = ""
     
     override public static func primaryKey() -> String {
         return "code"
