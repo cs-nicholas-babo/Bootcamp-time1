@@ -25,6 +25,10 @@
 		A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */; };
 		A1145E1621ECF18B00A1A665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1521ECF18B00A1A665 /* Assets.xcassets */; };
 		A1145E1921ECF18B00A1A665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1721ECF18B00A1A665 /* LaunchScreen.storyboard */; };
+		A13C654621EF6FA800689169 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; };
+		A13C654721EF6FA800689169 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
+		A13C654821EF6FA800689169 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
+		A13C654921EF6FA800689169 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
 		A1DF492B21EE769E00E1DCF6 /* MTGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492A21EE769E00E1DCF6 /* MTGService.swift */; };
 		A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */; };
 		A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493021EF540900E1DCF6 /* CardsScreen.swift */; };
@@ -109,6 +113,10 @@
 		A1145E1521ECF18B00A1A665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1145E1821ECF18B00A1A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1145E1A21ECF18B00A1A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A13C654221EF6FA800689169 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Frameworks/RealmSwift.framework; sourceTree = "<group>"; };
+		A13C654321EF6FA800689169 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Frameworks/Quick.framework; sourceTree = "<group>"; };
+		A13C654421EF6FA800689169 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Frameworks/Nimble.framework; sourceTree = "<group>"; };
+		A13C654521EF6FA800689169 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Frameworks/Realm.framework; sourceTree = "<group>"; };
 		A1DF492A21EE769E00E1DCF6 /* MTGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGService.swift; sourceTree = "<group>"; };
 		A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		A1DF493021EF540900E1DCF6 /* CardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsScreen.swift; sourceTree = "<group>"; };
@@ -161,6 +169,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13C654621EF6FA800689169 /* RealmSwift.framework in Frameworks */,
+				A13C654721EF6FA800689169 /* Quick.framework in Frameworks */,
+				A13C654821EF6FA800689169 /* Nimble.framework in Frameworks */,
+				A13C654921EF6FA800689169 /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,6 +246,7 @@
 				A1DF494E21EF651900E1DCF6 /* PlatformLocalDatabase */,
 				A1DF495F21EF652600E1DCF6 /* Placeholders */,
 				A1145E0921ECF18900A1A665 /* Products */,
+				A13C654121EF6FA700689169 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -257,6 +270,17 @@
 				A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */,
 			);
 			path = DesafioBootcamp;
+			sourceTree = "<group>";
+		};
+		A13C654121EF6FA700689169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A13C654421EF6FA800689169 /* Nimble.framework */,
+				A13C654321EF6FA800689169 /* Quick.framework */,
+				A13C654521EF6FA800689169 /* Realm.framework */,
+				A13C654221EF6FA800689169 /* RealmSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A1DF492921EE768F00E1DCF6 /* Network */ = {
@@ -982,6 +1006,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Placeholders/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1010,6 +1038,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = Placeholders/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
