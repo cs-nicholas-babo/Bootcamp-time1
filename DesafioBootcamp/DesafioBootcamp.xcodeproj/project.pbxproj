@@ -11,7 +11,7 @@
 		2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBC24D21ED057800B10DED /* Domain.framework */; };
 		2FEBC25521ED057800B10DED /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBC24D21ED057800B10DED /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FEBC25D21ED05AD00B10DED /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC25C21ED05AD00B10DED /* Card.swift */; };
-		2FEBC25F21ED05C300B10DED /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC25E21ED05C300B10DED /* CardSet.swift */; };
+		2FEBC25F21ED05C300B10DED /* MetaCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC25E21ED05C300B10DED /* MetaCardSet.swift */; };
 		2FEBC26121ED063B00B10DED /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26021ED063B00B10DED /* CardType.swift */; };
 		2FEBC26421ED186E00B10DED /* ArgumentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26321ED186E00B10DED /* ArgumentFile.swift */; };
 		2FEBC26621EE02D800B10DED /* ApplicationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26521EE02D800B10DED /* ApplicationUseCase.swift */; };
@@ -29,7 +29,6 @@
 		A13C654721EF6FA800689169 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
 		A13C654821EF6FA800689169 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
 		A13C654921EF6FA800689169 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
-		A1DF492B21EE769E00E1DCF6 /* MTGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492A21EE769E00E1DCF6 /* MTGService.swift */; };
 		A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */; };
 		A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493021EF540900E1DCF6 /* CardsScreen.swift */; };
 		A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */; };
@@ -42,6 +41,8 @@
 		A1DF496221EF652600E1DCF6 /* Placeholders.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF496021EF652600E1DCF6 /* Placeholders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1DF496521EF652600E1DCF6 /* Placeholders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF495E21EF652600E1DCF6 /* Placeholders.framework */; };
 		A1DF496621EF652600E1DCF6 /* Placeholders.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF495E21EF652600E1DCF6 /* Placeholders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACB449FC21EF8A9A00252958 /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB449FB21EF8A9A00252958 /* CardSet.swift */; };
+		ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +98,7 @@
 		2FEBC24F21ED057800B10DED /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		2FEBC25021ED057800B10DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FEBC25C21ED05AD00B10DED /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		2FEBC25E21ED05C300B10DED /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
+		2FEBC25E21ED05C300B10DED /* MetaCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaCardSet.swift; sourceTree = "<group>"; };
 		2FEBC26021ED063B00B10DED /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
 		2FEBC26321ED186E00B10DED /* ArgumentFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentFile.swift; sourceTree = "<group>"; };
 		2FEBC26521EE02D800B10DED /* ApplicationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUseCase.swift; sourceTree = "<group>"; };
@@ -117,7 +118,6 @@
 		A13C654321EF6FA800689169 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Frameworks/Quick.framework; sourceTree = "<group>"; };
 		A13C654421EF6FA800689169 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Frameworks/Nimble.framework; sourceTree = "<group>"; };
 		A13C654521EF6FA800689169 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Frameworks/Realm.framework; sourceTree = "<group>"; };
-		A1DF492A21EE769E00E1DCF6 /* MTGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGService.swift; sourceTree = "<group>"; };
 		A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 		A1DF493021EF540900E1DCF6 /* CardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsScreen.swift; sourceTree = "<group>"; };
 		A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCode Protocol.swift"; sourceTree = "<group>"; };
@@ -130,6 +130,8 @@
 		A1DF495E21EF652600E1DCF6 /* Placeholders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Placeholders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF496021EF652600E1DCF6 /* Placeholders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Placeholders.h; sourceTree = "<group>"; };
 		A1DF496121EF652600E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACB449FB21EF8A9A00252958 /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
+		ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGCardGateway.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,7 +188,7 @@
 				A1DF493221EF542400E1DCF6 /* Util */,
 				A1DF492F21EF53D100E1DCF6 /* Screens */,
 				A1DF492C21EF532B00E1DCF6 /* Controllers */,
-				A1DF492921EE768F00E1DCF6 /* Network */,
+				A1DF492921EE768F00E1DCF6 /* Gateways */,
 				A1145E0D21ECF18900A1A665 /* ViewController.swift */,
 				A1145E0F21ECF18900A1A665 /* Main.storyboard */,
 				A1145E1521ECF18B00A1A665 /* Assets.xcassets */,
@@ -211,8 +213,9 @@
 			children = (
 				2FEBC26721EE042800B10DED /* Result.swift */,
 				2FEBC25C21ED05AD00B10DED /* Card.swift */,
-				2FEBC25E21ED05C300B10DED /* CardSet.swift */,
+				2FEBC25E21ED05C300B10DED /* MetaCardSet.swift */,
 				2FEBC26021ED063B00B10DED /* CardType.swift */,
+				ACB449FB21EF8A9A00252958 /* CardSet.swift */,
 			);
 			path = "MTG Entities";
 			sourceTree = "<group>";
@@ -283,12 +286,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A1DF492921EE768F00E1DCF6 /* Network */ = {
+		A1DF492921EE768F00E1DCF6 /* Gateways */ = {
 			isa = PBXGroup;
 			children = (
-				A1DF492A21EE769E00E1DCF6 /* MTGService.swift */,
+				ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */,
 			);
-			path = Network;
+			path = Gateways;
 			sourceTree = "<group>";
 		};
 		A1DF492C21EF532B00E1DCF6 /* Controllers */ = {
@@ -582,8 +585,9 @@
 				2FEBC26821EE042800B10DED /* Result.swift in Sources */,
 				2FEBC26621EE02D800B10DED /* ApplicationUseCase.swift in Sources */,
 				2FEBC26421ED186E00B10DED /* ArgumentFile.swift in Sources */,
-				2FEBC25F21ED05C300B10DED /* CardSet.swift in Sources */,
+				2FEBC25F21ED05C300B10DED /* MetaCardSet.swift in Sources */,
 				2FEBC25D21ED05AD00B10DED /* Card.swift in Sources */,
+				ACB449FC21EF8A9A00252958 /* CardSet.swift in Sources */,
 				2FEBC26C21EE055B00B10DED /* FavoritesUseCase.swift in Sources */,
 				2FEBC26121ED063B00B10DED /* CardType.swift in Sources */,
 				2FEBC26A21EE04E700B10DED /* CardsUseCase.swift in Sources */,
@@ -594,13 +598,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DF492B21EE769E00E1DCF6 /* MTGService.swift in Sources */,
 				A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */,
 				A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */,
 				A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
+				ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

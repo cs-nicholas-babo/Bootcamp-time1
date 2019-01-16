@@ -9,6 +9,6 @@
 import Foundation
 
 public protocol CardsUseCase {
-    func fetchCards(from set: CardSet, handler: @escaping (Result<[Card]>) -> ())
+    func fetchCards(from set: MetaCardSet, handler: @escaping (Result<[Card]>) -> ())
     func fetchCards(filter name: String, handler: @escaping (Result<[Card]>) -> ())
 }

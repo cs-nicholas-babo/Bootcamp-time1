@@ -13,5 +13,5 @@ public protocol ApplicationStartupUseCase {
 }
 
 public protocol ApplicationRunningUseCase {
-    func fetchSets(handler: @escaping (Result<[CardSet]>) -> ())
+    func fetchSets(handler: @escaping (Result<[MetaCardSet]>) -> ())
 }

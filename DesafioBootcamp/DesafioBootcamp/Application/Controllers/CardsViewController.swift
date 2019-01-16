@@ -19,7 +19,7 @@ enum PresentationState{
 
 final class CardsViewController: UIViewController {
     
-    init(service: MTGService) {
+    init(service: MTGCardGateway) {
         self.service = service
         super.init(nibName: nil, bundle: nil)
     }
@@ -28,7 +28,7 @@ final class CardsViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    var service:MTGService
+    var service: MTGCardGateway
     var screen:CardsScreen = CardsScreen()
     
     var presentationState:PresentationState = .initial{
@@ -51,7 +51,6 @@ final class CardsViewController: UIViewController {
 extension CardsViewController{
     
     func fetchSets(){
-        self.service.fetchSets()
         self.handleFetch(sets: [])
     }
     
@@ -59,7 +58,7 @@ extension CardsViewController{
 
 extension CardsViewController{
     
-    func handleFetch(sets: [CardSet]){
+    func handleFetch(sets: [MetaCardSet]){
         
     }
     
