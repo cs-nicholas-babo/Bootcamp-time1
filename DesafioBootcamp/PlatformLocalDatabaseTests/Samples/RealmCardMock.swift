@@ -19,8 +19,24 @@ struct RealmCardMock{
     static var card1: RealmCard{
         let card = RealmCard()
         card.id = "uuid1"
-        card.name = "Elfo bem loco"
-        card.setCode = ""
+        card.name = "name1"
+        card.setCode = "code1"
+        return card
+    }
+    
+    static var card2: RealmCard{
+        let card = RealmCard()
+        card.id = "uuid2"
+        card.name = "name2"
+        card.setCode = "code2"
+        return card
+    }
+    
+    static var card3: RealmCard{
+        let card = RealmCard()
+        card.id = "uuid3"
+        card.name = "name3"
+        card.setCode = "code3"
         return card
     }
     

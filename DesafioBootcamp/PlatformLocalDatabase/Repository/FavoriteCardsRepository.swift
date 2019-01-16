@@ -39,5 +39,12 @@ public final class FavoriteCardsRepository: RealmRepository {
             }
         }
     }
+    
+    func deleteAll(){
+        let all = realm.objects(RealmCard.self)
+        try! realm.write {
+            realm.delete(all)
+        }
+    }
 
 }
