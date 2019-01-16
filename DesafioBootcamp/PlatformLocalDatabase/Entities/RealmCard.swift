@@ -7,13 +7,13 @@
 //
 
 import Foundation
-import Domain
 import RealmSwift
+import Domain
 
 public final class RealmCard: RealmSwift.Object {
-    @objc dynamic var id: String = ""
-    @objc dynamic var name: String = ""
-    @objc dynamic var setCode: String = ""
+    @objc public dynamic var id: String = ""
+    @objc public dynamic var name: String = ""
+    @objc public dynamic var setCode: String = ""
     let types: List<RealmCardType> = List<RealmCardType>()
     
     override public static func primaryKey() -> String {
