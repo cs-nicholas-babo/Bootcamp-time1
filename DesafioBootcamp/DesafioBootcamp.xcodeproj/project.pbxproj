@@ -25,6 +25,10 @@
 		A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */; };
 		A1145E1621ECF18B00A1A665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1521ECF18B00A1A665 /* Assets.xcassets */; };
 		A1145E1921ECF18B00A1A665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1721ECF18B00A1A665 /* LaunchScreen.storyboard */; };
+		A1DF492B21EE769E00E1DCF6 /* MTGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492A21EE769E00E1DCF6 /* MTGService.swift */; };
+		A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */; };
+		A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493021EF540900E1DCF6 /* CardsScreen.swift */; };
+		A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,10 @@
 		A1145E1521ECF18B00A1A665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1145E1821ECF18B00A1A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1145E1A21ECF18B00A1A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1DF492A21EE769E00E1DCF6 /* MTGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGService.swift; sourceTree = "<group>"; };
+		A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		A1DF493021EF540900E1DCF6 /* CardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsScreen.swift; sourceTree = "<group>"; };
+		A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCode Protocol.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +104,11 @@
 		2FEBC24721ED051200B10DED /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				A1145E0B21ECF18900A1A665 /* AppDelegate.swift */,
+				A1DF493521EF547C00E1DCF6 /* AppDelegate */,
+				A1DF493221EF542400E1DCF6 /* Util */,
+				A1DF492F21EF53D100E1DCF6 /* Screens */,
+				A1DF492C21EF532B00E1DCF6 /* Controllers */,
+				A1DF492921EE768F00E1DCF6 /* Network */,
 				A1145E0D21ECF18900A1A665 /* ViewController.swift */,
 				A1145E0F21ECF18900A1A665 /* Main.storyboard */,
 				A1145E1521ECF18B00A1A665 /* Assets.xcassets */,
@@ -173,6 +185,46 @@
 				A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */,
 			);
 			path = DesafioBootcamp;
+			sourceTree = "<group>";
+		};
+		A1DF492921EE768F00E1DCF6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A1DF492A21EE769E00E1DCF6 /* MTGService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A1DF492C21EF532B00E1DCF6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A1DF492F21EF53D100E1DCF6 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A1DF493021EF540900E1DCF6 /* CardsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A1DF493221EF542400E1DCF6 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A1DF493521EF547C00E1DCF6 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A1145E0B21ECF18900A1A665 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,9 +357,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1DF492B21EE769E00E1DCF6 /* MTGService.swift in Sources */,
+				A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */,
 				A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */,
+				A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
+				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
