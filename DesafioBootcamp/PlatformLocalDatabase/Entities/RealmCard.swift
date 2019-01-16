@@ -13,7 +13,7 @@ public final class RealmCard: RealmSwift.Object {
     @objc dynamic var id: String = ""
     @objc dynamic var name: String = ""
     @objc dynamic var setCode: String = ""
-//    @objc dynamic var types: List<RealmCardType> = List<RealmCardType>()
+    let types: List<RealmCardType> = List<RealmCardType>()
     
     override public static func primaryKey() -> String {
         return "id"
