@@ -12,6 +12,8 @@
 		2FB954D221EF8C6900B09AFF /* RealmCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954D121EF8C6900B09AFF /* RealmCard.swift */; };
 		2FB954D321EF8CB700B09AFF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
 		2FB954D421EF8CB700B09AFF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; };
+		2FB954D721EF961800B09AFF /* RepositoryAbstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954D621EF961800B09AFF /* RepositoryAbstract.swift */; };
+		2FB954D921EF964700B09AFF /* FavoriteCardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954D821EF964700B09AFF /* FavoriteCardsRepository.swift */; };
 		2FEBC25121ED057800B10DED /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEBC24F21ED057800B10DED /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBC24D21ED057800B10DED /* Domain.framework */; };
 		2FEBC25521ED057800B10DED /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBC24D21ED057800B10DED /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -104,6 +106,8 @@
 		2FB954CD21EF8C3900B09AFF /* DomainRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainRepresentable.swift; sourceTree = "<group>"; };
 		2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
 		2FB954D121EF8C6900B09AFF /* RealmCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCard.swift; sourceTree = "<group>"; };
+		2FB954D621EF961800B09AFF /* RepositoryAbstract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryAbstract.swift; sourceTree = "<group>"; };
+		2FB954D821EF964700B09AFF /* FavoriteCardsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsRepository.swift; sourceTree = "<group>"; };
 		2FEBC24D21ED057800B10DED /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEBC24F21ED057800B10DED /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		2FEBC25021ED057800B10DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -198,6 +202,7 @@
 		2FB954CB21EF8C0400B09AFF /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				2FB954D521EF948500B09AFF /* Repository */,
 				2FB954CC21EF8C1000B09AFF /* Convertion */,
 				2FB954D121EF8C6900B09AFF /* RealmCard.swift */,
 				A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */,
@@ -213,6 +218,15 @@
 				2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */,
 			);
 			path = Convertion;
+			sourceTree = "<group>";
+		};
+		2FB954D521EF948500B09AFF /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				2FB954D621EF961800B09AFF /* RepositoryAbstract.swift */,
+				2FB954D821EF964700B09AFF /* FavoriteCardsRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		2FEBC24721ED051200B10DED /* Application */ = {
@@ -656,8 +670,10 @@
 			files = (
 				A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */,
 				A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */,
+				2FB954D721EF961800B09AFF /* RepositoryAbstract.swift in Sources */,
 				2FB954D021EF8C3900B09AFF /* RealmRepresentable.swift in Sources */,
 				2FB954D221EF8C6900B09AFF /* RealmCard.swift in Sources */,
+				2FB954D921EF964700B09AFF /* FavoriteCardsRepository.swift in Sources */,
 				2FB954CF21EF8C3900B09AFF /* DomainRepresentable.swift in Sources */,
 				A19CFD7121EF85620060A691 /* RealmObjects.swift in Sources */,
 			);
