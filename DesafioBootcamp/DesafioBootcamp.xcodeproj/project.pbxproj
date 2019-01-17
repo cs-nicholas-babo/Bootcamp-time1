@@ -19,6 +19,11 @@
 		2FEBC26A21EE04E700B10DED /* CardsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26921EE04E700B10DED /* CardsUseCase.swift */; };
 		2FEBC26C21EE055B00B10DED /* FavoritesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26B21EE055B00B10DED /* FavoritesUseCase.swift */; };
 		2FEBC26E21EE05B600B10DED /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */; };
+		5D18BE4321F0FDA100E178F9 /* CardSetListPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18BE4221F0FDA100E178F9 /* CardSetListPresenterSpec.swift */; };
+		5D18BE4721F0FE4000E178F9 /* CardSetListDisplayLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18BE4621F0FE4000E178F9 /* CardSetListDisplayLogicMock.swift */; };
+		5D18BE4A21F100D100E178F9 /* CardSetListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18BE4921F100D100E178F9 /* CardSetListViewModelSpec.swift */; };
+		5D18BE4E21F10ABA00E178F9 /* CardSetListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18BE4D21F10ABA00E178F9 /* CardSetListViewControllerSpec.swift */; };
+		5D18BE5021F10B6300E178F9 /* CardSetListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D18BE4F21F10B6300E178F9 /* CardSetListInteractorMock.swift */; };
 		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
 		5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */; };
 		5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */; };
@@ -26,13 +31,10 @@
 		5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0621F0ABDE00A862F4 /* CardSetListErrorState.swift */; };
 		5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0821F0AC2900A862F4 /* CardSetListBaseState.swift */; };
 		A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0B21ECF18900A1A665 /* AppDelegate.swift */; };
-		A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0D21ECF18900A1A665 /* ViewController.swift */; };
 		A1145E1121ECF18900A1A665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E0F21ECF18900A1A665 /* Main.storyboard */; };
 		A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */; };
 		A1145E1621ECF18B00A1A665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1521ECF18B00A1A665 /* Assets.xcassets */; };
 		A1145E1921ECF18B00A1A665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1721ECF18B00A1A665 /* LaunchScreen.storyboard */; };
-		A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */; };
-		A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493021EF540900E1DCF6 /* CardsScreen.swift */; };
 		A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */; };
 		A1DF494021EF64FA00E1DCF6 /* PlatformAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1DF494321EF64FA00E1DCF6 /* PlatformAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */; };
@@ -130,6 +132,11 @@
 		2FEBC26921EE04E700B10DED /* CardsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26B21EE055B00B10DED /* FavoritesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
+		5D18BE4221F0FDA100E178F9 /* CardSetListPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenterSpec.swift; sourceTree = "<group>"; };
+		5D18BE4621F0FE4000E178F9 /* CardSetListDisplayLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListDisplayLogicMock.swift; sourceTree = "<group>"; };
+		5D18BE4921F100D100E178F9 /* CardSetListViewModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewModelSpec.swift; sourceTree = "<group>"; };
+		5D18BE4D21F10ABA00E178F9 /* CardSetListViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewControllerSpec.swift; sourceTree = "<group>"; };
+		5D18BE4F21F10B6300E178F9 /* CardSetListInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListInteractorMock.swift; sourceTree = "<group>"; };
 		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
 		5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewController.swift; sourceTree = "<group>"; };
 		5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListLoadingState.swift; sourceTree = "<group>"; };
@@ -138,7 +145,6 @@
 		5DA18F0821F0AC2900A862F4 /* CardSetListBaseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListBaseState.swift; sourceTree = "<group>"; };
 		A1145E0821ECF18900A1A665 /* DesafioBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1145E0B21ECF18900A1A665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1145E0D21ECF18900A1A665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1145E1021ECF18900A1A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1145E1321ECF18900A1A665 /* DesafioBootcamp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesafioBootcamp.xcdatamodel; sourceTree = "<group>"; };
 		A1145E1521ECF18B00A1A665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -148,8 +154,6 @@
 		A13C654321EF6FA800689169 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Frameworks/Quick.framework; sourceTree = "<group>"; };
 		A13C654421EF6FA800689169 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Frameworks/Nimble.framework; sourceTree = "<group>"; };
 		A13C654521EF6FA800689169 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Frameworks/Realm.framework; sourceTree = "<group>"; };
-		A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
-		A1DF493021EF540900E1DCF6 /* CardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsScreen.swift; sourceTree = "<group>"; };
 		A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCode Protocol.swift"; sourceTree = "<group>"; };
 		A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformAPI.h; sourceTree = "<group>"; };
@@ -229,10 +233,7 @@
 				ACB449FF21EF919E00252958 /* Scenes */,
 				A1DF493521EF547C00E1DCF6 /* AppDelegate */,
 				A1DF493221EF542400E1DCF6 /* Util */,
-				A1DF492F21EF53D100E1DCF6 /* Screens */,
-				A1DF492C21EF532B00E1DCF6 /* Controllers */,
 				A1DF492921EE768F00E1DCF6 /* Gateways */,
-				A1145E0D21ECF18900A1A665 /* ViewController.swift */,
 				A1145E0F21ECF18900A1A665 /* Main.storyboard */,
 				A1145E1521ECF18B00A1A665 /* Assets.xcassets */,
 				A1145E1721ECF18B00A1A665 /* LaunchScreen.storyboard */,
@@ -281,6 +282,48 @@
 				2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		5D18BE4121F0FD9000E178F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5D18BE4521F0FE2400E178F9 /* Mocks */,
+				5D18BE4221F0FDA100E178F9 /* CardSetListPresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5D18BE4521F0FE2400E178F9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D18BE4621F0FE4000E178F9 /* CardSetListDisplayLogicMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D18BE4821F100B600E178F9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5D18BE4921F100D100E178F9 /* CardSetListViewModelSpec.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5D18BE4B21F10AA100E178F9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D18BE4C21F10AA800E178F9 /* Mocks */,
+				5D18BE4D21F10ABA00E178F9 /* CardSetListViewControllerSpec.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5D18BE4C21F10AA800E178F9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D18BE4F21F10B6300E178F9 /* CardSetListInteractorMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		5DA18EFF21F0AAC400A862F4 /* States */ = {
@@ -346,22 +389,6 @@
 				ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */,
 			);
 			path = Gateways;
-			sourceTree = "<group>";
-		};
-		A1DF492C21EF532B00E1DCF6 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		A1DF492F21EF53D100E1DCF6 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				A1DF493021EF540900E1DCF6 /* CardsScreen.swift */,
-			);
-			path = Screens;
 			sourceTree = "<group>";
 		};
 		A1DF493221EF542400E1DCF6 /* Util */ = {
@@ -500,6 +527,9 @@
 		ACDDCBBF21F0E83F00DE0C17 /* CardSetList */ = {
 			isa = PBXGroup;
 			children = (
+				5D18BE4B21F10AA100E178F9 /* ViewController */,
+				5D18BE4821F100B600E178F9 /* ViewModel */,
+				5D18BE4121F0FD9000E178F9 /* Presenter */,
 				ACDDCBC021F0E83F00DE0C17 /* Interactor */,
 			);
 			path = CardSetList;
@@ -790,9 +820,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */,
-				A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */,
-				A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */,
 				ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */,
 				ACA4FF9021F0B50000E7BC96 /* Factory.swift in Sources */,
 				5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */,
@@ -831,11 +858,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D18BE4321F0FDA100E178F9 /* CardSetListPresenterSpec.swift in Sources */,
 				ACDDCBD221F0EA5300DE0C17 /* CardSetListInteractorSpec.swift in Sources */,
+				5D18BE4A21F100D100E178F9 /* CardSetListViewModelSpec.swift in Sources */,
+				5D18BE5021F10B6300E178F9 /* CardSetListInteractorMock.swift in Sources */,
 				ACDDCBC821F0E83F00DE0C17 /* MTGCardGatewayMock.swift in Sources */,
 				ACDDCBC921F0E83F00DE0C17 /* CardSetListPresentationLogicMock.swift in Sources */,
+				5D18BE4E21F10ABA00E178F9 /* CardSetListViewControllerSpec.swift in Sources */,
 				ACDDCBCC21F0E83F00DE0C17 /* MockValues.swift in Sources */,
 				ACDDCBCB21F0E83F00DE0C17 /* ResultErrorMock.swift in Sources */,
+				5D18BE4721F0FE4000E178F9 /* CardSetListDisplayLogicMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

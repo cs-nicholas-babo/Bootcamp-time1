@@ -11,7 +11,7 @@ import GameplayKit
 
 final class CardSetListViewController: UIViewController {
     
-    private lazy var stateMachine: GKStateMachine = {
+    lazy var stateMachine: GKStateMachine = {
         let showCardsState = CardSetListShowCardsState(viewController: self)
         let loadingState = CardSetListLoadingState(viewController: self)
         let errorState = CardSetListErrorState(viewController: self)
@@ -23,16 +23,13 @@ final class CardSetListViewController: UIViewController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
+        _ = stateMachine.enter(CardSetListLoadingState.self)
     }
     
     required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        _ = stateMachine.enter(CardSetListLoadingState.self)
-    }
 }
 
 extension CardSetListViewController: CardSetListDisplayLogic {
