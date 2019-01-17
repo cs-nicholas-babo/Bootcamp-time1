@@ -22,6 +22,10 @@
 		2FB865B121F0D1F7001FB4FE /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A921F0D1CB001FB4FE /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FB865B221F0D1F7001FB4FE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865AA21F0D1CB001FB4FE /* Result.framework */; };
 		2FB865B321F0D1F7001FB4FE /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865AA21F0D1CB001FB4FE /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FB865B921F0DA3B001FB4FE /* NetworkDomainError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB865B521F0DA3B001FB4FE /* NetworkDomainError.swift */; };
+		2FB865BA21F0DA3B001FB4FE /* JSONDecoder+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB865B621F0DA3B001FB4FE /* JSONDecoder+Models.swift */; };
+		2FB865BB21F0DA3B001FB4FE /* String+NetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB865B721F0DA3B001FB4FE /* String+NetworkData.swift */; };
+		2FB865BC21F0DA3B001FB4FE /* DefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB865B821F0DA3B001FB4FE /* DefaultManager.swift */; };
 		2FB954CF21EF8C3900B09AFF /* DomainRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954CD21EF8C3900B09AFF /* DomainRepresentable.swift */; };
 		2FB954D021EF8C3900B09AFF /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */; };
 		2FB954D221EF8C6900B09AFF /* RealmCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954D121EF8C6900B09AFF /* RealmCard.swift */; };
@@ -137,6 +141,10 @@
 		2FB865A821F0D1CB001FB4FE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Frameworks/Alamofire.framework; sourceTree = "<group>"; };
 		2FB865A921F0D1CB001FB4FE /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Frameworks/Moya.framework; sourceTree = "<group>"; };
 		2FB865AA21F0D1CB001FB4FE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Frameworks/Result.framework; sourceTree = "<group>"; };
+		2FB865B521F0DA3B001FB4FE /* NetworkDomainError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDomainError.swift; sourceTree = "<group>"; };
+		2FB865B621F0DA3B001FB4FE /* JSONDecoder+Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Models.swift"; sourceTree = "<group>"; };
+		2FB865B721F0DA3B001FB4FE /* String+NetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+NetworkData.swift"; sourceTree = "<group>"; };
+		2FB865B821F0DA3B001FB4FE /* DefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultManager.swift; sourceTree = "<group>"; };
 		2FB954CD21EF8C3900B09AFF /* DomainRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainRepresentable.swift; sourceTree = "<group>"; };
 		2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
 		2FB954D121EF8C6900B09AFF /* RealmCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCard.swift; sourceTree = "<group>"; };
@@ -276,6 +284,31 @@
 				2FB8659D21F09E84001FB4FE /* CacheManagerSpec.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		2FB865B421F0DA2E001FB4FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2FB865B821F0DA3B001FB4FE /* DefaultManager.swift */,
+				2FB865B621F0DA3B001FB4FE /* JSONDecoder+Models.swift */,
+				2FB865B521F0DA3B001FB4FE /* NetworkDomainError.swift */,
+				2FB865B721F0DA3B001FB4FE /* String+NetworkData.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2FB865BE21F0DA58001FB4FE /* UseCase Assignment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UseCase Assignment";
+			sourceTree = "<group>";
+		};
+		2FB865BF21F0DAF3001FB4FE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		2FB954CB21EF8C0400B09AFF /* Entities */ = {
@@ -469,6 +502,9 @@
 		A1DF493D21EF64FA00E1DCF6 /* PlatformAPI */ = {
 			isa = PBXGroup;
 			children = (
+				2FB865BF21F0DAF3001FB4FE /* Models */,
+				2FB865BE21F0DA58001FB4FE /* UseCase Assignment */,
+				2FB865B421F0DA2E001FB4FE /* Extensions */,
 				A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */,
 				A1DF493F21EF64FA00E1DCF6 /* Info.plist */,
 				A1FC824C21F0D77200B7911F /* DeleteThis.swift */,
@@ -755,6 +791,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1FC824D21F0D77200B7911F /* DeleteThis.swift in Sources */,
+				2FB865BB21F0DA3B001FB4FE /* String+NetworkData.swift in Sources */,
+				2FB865BA21F0DA3B001FB4FE /* JSONDecoder+Models.swift in Sources */,
+				2FB865B921F0DA3B001FB4FE /* NetworkDomainError.swift in Sources */,
+				2FB865BC21F0DA3B001FB4FE /* DefaultManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
