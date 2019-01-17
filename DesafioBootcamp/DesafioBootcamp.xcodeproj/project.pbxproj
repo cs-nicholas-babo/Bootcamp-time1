@@ -13,6 +13,15 @@
 		2FB8659921F09B15001FB4FE /* RealmCardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8659821F09B15001FB4FE /* RealmCardSpec.swift */; };
 		2FB8659B21F09CA6001FB4FE /* RealmCardSetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8659A21F09CA6001FB4FE /* RealmCardSetSpec.swift */; };
 		2FB8659E21F09E84001FB4FE /* CacheManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8659D21F09E84001FB4FE /* CacheManagerSpec.swift */; };
+		2FB865AB21F0D1CB001FB4FE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A821F0D1CB001FB4FE /* Alamofire.framework */; };
+		2FB865AC21F0D1CB001FB4FE /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A921F0D1CB001FB4FE /* Moya.framework */; };
+		2FB865AD21F0D1CB001FB4FE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865AA21F0D1CB001FB4FE /* Result.framework */; };
+		2FB865AE21F0D1F7001FB4FE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A821F0D1CB001FB4FE /* Alamofire.framework */; };
+		2FB865AF21F0D1F7001FB4FE /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A821F0D1CB001FB4FE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FB865B021F0D1F7001FB4FE /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A921F0D1CB001FB4FE /* Moya.framework */; };
+		2FB865B121F0D1F7001FB4FE /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A921F0D1CB001FB4FE /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2FB865B221F0D1F7001FB4FE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865AA21F0D1CB001FB4FE /* Result.framework */; };
+		2FB865B321F0D1F7001FB4FE /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865AA21F0D1CB001FB4FE /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FB954CF21EF8C3900B09AFF /* DomainRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954CD21EF8C3900B09AFF /* DomainRepresentable.swift */; };
 		2FB954D021EF8C3900B09AFF /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */; };
 		2FB954D221EF8C6900B09AFF /* RealmCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954D121EF8C6900B09AFF /* RealmCard.swift */; };
@@ -108,6 +117,9 @@
 				A1DF494421EF64FA00E1DCF6 /* PlatformAPI.framework in Embed Frameworks */,
 				2FEBC25521ED057800B10DED /* Domain.framework in Embed Frameworks */,
 				A1DF495521EF651900E1DCF6 /* PlatformLocalDatabase.framework in Embed Frameworks */,
+				2FB865B321F0D1F7001FB4FE /* Result.framework in Embed Frameworks */,
+				2FB865B121F0D1F7001FB4FE /* Moya.framework in Embed Frameworks */,
+				2FB865AF21F0D1F7001FB4FE /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,6 +133,9 @@
 		2FB8659821F09B15001FB4FE /* RealmCardSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSpec.swift; sourceTree = "<group>"; };
 		2FB8659A21F09CA6001FB4FE /* RealmCardSetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSetSpec.swift; sourceTree = "<group>"; };
 		2FB8659D21F09E84001FB4FE /* CacheManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManagerSpec.swift; sourceTree = "<group>"; };
+		2FB865A821F0D1CB001FB4FE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Frameworks/Alamofire.framework; sourceTree = "<group>"; };
+		2FB865A921F0D1CB001FB4FE /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Frameworks/Moya.framework; sourceTree = "<group>"; };
+		2FB865AA21F0D1CB001FB4FE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Frameworks/Result.framework; sourceTree = "<group>"; };
 		2FB954CD21EF8C3900B09AFF /* DomainRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainRepresentable.swift; sourceTree = "<group>"; };
 		2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
 		2FB954D121EF8C6900B09AFF /* RealmCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCard.swift; sourceTree = "<group>"; };
@@ -192,9 +207,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB865B021F0D1F7001FB4FE /* Moya.framework in Frameworks */,
 				A1DF494321EF64FA00E1DCF6 /* PlatformAPI.framework in Frameworks */,
+				2FB865AC21F0D1CB001FB4FE /* Moya.framework in Frameworks */,
+				2FB865B221F0D1F7001FB4FE /* Result.framework in Frameworks */,
 				2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */,
+				2FB865AD21F0D1CB001FB4FE /* Result.framework in Frameworks */,
+				2FB865AE21F0D1F7001FB4FE /* Alamofire.framework in Frameworks */,
 				A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */,
+				2FB865AB21F0D1CB001FB4FE /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +413,9 @@
 		A13C654121EF6FA700689169 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2FB865A821F0D1CB001FB4FE /* Alamofire.framework */,
+				2FB865A921F0D1CB001FB4FE /* Moya.framework */,
+				2FB865AA21F0D1CB001FB4FE /* Result.framework */,
 				A13C654421EF6FA800689169 /* Nimble.framework */,
 				A13C654321EF6FA800689169 /* Quick.framework */,
 				A13C654521EF6FA800689169 /* Realm.framework */,
@@ -1022,6 +1046,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83C3V38WSB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = DesafioBootcamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1041,6 +1069,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 83C3V38WSB;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = DesafioBootcamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
