@@ -47,7 +47,7 @@ public final class FavoriteCardsRepository: RealmRepository {
         }
     }
     
-    func fetchFavoriteCardSets(query: String?) -> [CardSet]{
+    func fetchFavoriteCardSets(query: String? = nil) -> [CardSet]{
         var allCards = self.get()
         
         if let query = query{

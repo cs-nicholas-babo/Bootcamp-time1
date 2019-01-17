@@ -121,8 +121,8 @@ class FavoriteCardsRepositorySpec: QuickSpec {
                 })
             })
             
-            describe("Fetching the favorited cards and their sets", {
-                it("should return the correct fevorited sets", closure: {
+            describe("Fetching the favorited cards and their sets with no query", {
+                it("should return all fevorited sets", closure: {
                     
                     let card1 = RealmCardMock.card1
                     let card2 = RealmCardMock.card2
@@ -153,6 +153,45 @@ class FavoriteCardsRepositorySpec: QuickSpec {
                     let favoritedSets = repo.fetchFavoriteCardSets()
                     
                     expect(favoritedSets.count) == 2
+                })
+            })
+            
+            describe("Fetching the favorited cards and their sets with a query", {
+                it("should return only the sets with cards that contains the query in its name", closure: {
+                    let card1 = RealmCardMock.card1
+                    let card2 = RealmCardMock.card2
+                    let card3 = RealmCardMock.card3
+                    
+                    card1.setCode = "code1"
+                    card2.setCode = "code1"
+                    card3.setCode = "code2"
+                    
+                    let set1 = RealmCardSetMock.set1
+                    let set2 = RealmCardSetMock.set1
+                    
+                    set1.code = "code1"
+                    set2.code = "code2"
+                    
+                    let service = FavoriteCardsService(repository: repo)
+                    service.favorite(card: card1.baseData(), status: true)
+                    service.favorite(card: card2.baseData(), status: true)
+                    service.favorite(card: card3.baseData(), status: true)
+                    
+                    let cacheRepo = CardSetCacheRepository(realm: realm)
+                    cacheRepo.upsert(object: set1.baseData())
+                    cacheRepo.upsert(object: set2.baseData())
+                    
+                    expect(cacheRepo.get().count) == 2
+                    expect(repo.get().count) == 3
+                    
+                    let favoritedSets = repo.fetchFavoriteCardSets(query: "name")
+                    expect(favoritedSets.count) == 2
+                    expect(favoritedSets.first?.cards.count) == 2
+                    expect(favoritedSets[1].cards.count) == 1
+                    
+                    let favoritedSetsWithQuery = repo.fetchFavoriteCardSets(query: "name1")
+                    expect(favoritedSetsWithQuery.count) == 1
+                    expect(favoritedSetsWithQuery.first?.cards.first?.name) == "name1"
                 })
             })
             
