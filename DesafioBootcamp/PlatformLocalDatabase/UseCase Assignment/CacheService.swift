@@ -6,8 +6,8 @@
 //  Copyright © 2019 concrete.solutions. All rights reserved.
 //
 
-import Foundation
 import Domain
+import Foundation
 
 final public class CacheService: Domain.ApplicationRunningUseCase {
     let cacheManager: CacheManager

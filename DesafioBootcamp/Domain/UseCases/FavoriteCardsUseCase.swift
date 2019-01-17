@@ -9,5 +9,7 @@
 import Foundation
 
 public protocol FavoriteCardsUseCase {
+    func fetchFavoriteCards(query: String, handler: @escaping (Result<[CardSet]>) -> ())
+    func fetchFavoriteCards(handler: @escaping (Result<[CardSet]>) -> ())
     func favorite(card: Card, status: Bool)
 }

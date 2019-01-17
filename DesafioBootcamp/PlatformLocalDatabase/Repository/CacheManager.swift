@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 import Domain
 
-public final class CacheManager{
+public final class CacheManager {
     
     let cardSetRepository: CardSetCacheRepository
     
@@ -20,7 +20,7 @@ public final class CacheManager{
     
 }
 
-final class CardSetCacheRepository: RealmRepository{
+final class CardSetCacheRepository: RealmRepository {
     typealias T = MetaCardSet
     
     let realm: Realm

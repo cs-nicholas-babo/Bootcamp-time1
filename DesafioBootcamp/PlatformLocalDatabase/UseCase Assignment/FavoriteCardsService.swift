@@ -11,9 +11,19 @@ import Domain
 
 public final class FavoriteCardsService: Domain.FavoriteCardsUseCase {
     private let repository: FavoriteCardsRepository
+    private let manager: CacheManager
     
-    public init(repository: FavoriteCardsRepository){
+    public init(repository: FavoriteCardsRepository, manager: CacheManager){
         self.repository = repository
+        self.manager = manager
+    }
+    
+    public func fetchFavoriteCards(query: String, handler: @escaping (Result<[CardSet]>) -> ()) {
+        handler( Result.success(repository.fetchFavoriteCardSets(query: query, from: manager.cardSetRepository.get())) )
+    }
+    
+    public func fetchFavoriteCards(handler: @escaping (Result<[CardSet]>) -> ()) {
+        handler( Result.success(repository.fetchFavoriteCardSets(query: nil, from: manager.cardSetRepository.get())) )
     }
     
     public func favorite(card: Card, status: Bool) {
