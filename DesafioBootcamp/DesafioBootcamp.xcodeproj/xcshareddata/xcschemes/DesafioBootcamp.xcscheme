@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2FB8658921EFB6FB001FB4FE"
+               BuildableName = "PlatformLocalDatabaseTests.xctest"
+               BlueprintName = "PlatformLocalDatabaseTests"
+               ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

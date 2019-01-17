@@ -13,6 +13,13 @@ public struct Card {
     public let name: String
     public let setCode: String
     public let types: Set<CardType>
+    
+    public init (id: String, name: String, setCode: String, types: Set<CardType>){
+        self.id = id
+        self.name = name
+        self.setCode = setCode
+        self.types = types
+    }
 }
 
 extension Card: Hashable {

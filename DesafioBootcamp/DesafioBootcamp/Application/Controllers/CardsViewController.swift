@@ -59,7 +59,7 @@ extension CardsViewController{
 
 extension CardsViewController{
     
-    func handleFetch(sets: [CardSet]){
+    func handleFetch(sets: [MetaCardSet]){
         
     }
     
