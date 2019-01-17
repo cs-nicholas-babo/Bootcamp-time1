@@ -22,6 +22,12 @@ enum CardSetList {
     struct ViewModel {
         var typeSortedCards: TypedCards
         
+        /**
+         Initialize instance with CardSet passed.
+         
+         - parameters:
+            - cardSet: Set with cards to be displayed.
+         */
         init(cardSet: CardSet) {
             typeSortedCards = [:]
             let types = cardSet.cards.flatMap {$0.types}

@@ -10,7 +10,7 @@ import Foundation
 import Domain
 
 final class CardSetListPresenter {
-    private let viewController: CardSetListDisplayLogic
+    private weak var viewController: CardSetListDisplayLogic!
     
     init(viewController: CardSetListDisplayLogic) {
         self.viewController = viewController

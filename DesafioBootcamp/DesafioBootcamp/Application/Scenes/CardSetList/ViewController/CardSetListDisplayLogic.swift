@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol CardSetListDisplayLogic {
+protocol CardSetListDisplayLogic: class {
     func display(viewModel: CardSetList.ViewModel)
     func readyToDisplayCards()
     func displayError()

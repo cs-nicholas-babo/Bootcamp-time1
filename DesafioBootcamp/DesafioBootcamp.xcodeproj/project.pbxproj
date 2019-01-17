@@ -20,6 +20,11 @@
 		2FEBC26C21EE055B00B10DED /* FavoritesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26B21EE055B00B10DED /* FavoritesUseCase.swift */; };
 		2FEBC26E21EE05B600B10DED /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */; };
 		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
+		5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */; };
+		5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */; };
+		5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */; };
+		5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0621F0ABDE00A862F4 /* CardSetListErrorState.swift */; };
+		5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0821F0AC2900A862F4 /* CardSetListBaseState.swift */; };
 		A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0B21ECF18900A1A665 /* AppDelegate.swift */; };
 		A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0D21ECF18900A1A665 /* ViewController.swift */; };
 		A1145E1121ECF18900A1A665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E0F21ECF18900A1A665 /* Main.storyboard */; };
@@ -113,6 +118,11 @@
 		2FEBC26B21EE055B00B10DED /* FavoritesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
 		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
+		5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewController.swift; sourceTree = "<group>"; };
+		5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListLoadingState.swift; sourceTree = "<group>"; };
+		5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListShowCardsState.swift; sourceTree = "<group>"; };
+		5DA18F0621F0ABDE00A862F4 /* CardSetListErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListErrorState.swift; sourceTree = "<group>"; };
+		5DA18F0821F0AC2900A862F4 /* CardSetListBaseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListBaseState.swift; sourceTree = "<group>"; };
 		A1145E0821ECF18900A1A665 /* DesafioBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1145E0B21ECF18900A1A665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1145E0D21ECF18900A1A665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -251,6 +261,17 @@
 				2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		5DA18EFF21F0AAC400A862F4 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */,
+				5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */,
+				5DA18F0621F0ABDE00A862F4 /* CardSetListErrorState.swift */,
+				5DA18F0821F0AC2900A862F4 /* CardSetListBaseState.swift */,
+			);
+			path = States;
 			sourceTree = "<group>";
 		};
 		A1145DFF21ECF18900A1A665 = {
@@ -395,7 +416,9 @@
 		ACB44A0221EF924F00252958 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5DA18EFF21F0AAC400A862F4 /* States */,
 				ACB44A0C21EF978200252958 /* CardSetListDisplayLogic.swift */,
+				5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -668,13 +691,18 @@
 				A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */,
 				A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */,
 				ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */,
+				5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */,
 				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
 				ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */,
 				ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */,
 				5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
+				5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */,
+				5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */,
+				5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
+				5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */,
 				ACB44A0B21EF958200252958 /* CardSetListModel.swift in Sources */,
 				ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */,
 			);
