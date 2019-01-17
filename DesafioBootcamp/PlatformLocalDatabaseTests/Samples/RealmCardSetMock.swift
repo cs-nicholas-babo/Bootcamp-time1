@@ -22,4 +22,20 @@ struct RealmCardSetMock{
         set.code = "code1"
         return set
     }
+    
+    static var set2: RealmCardSet{
+        let set = RealmCardSet()
+        set.name = "name2"
+        set.code = "code2"
+        return set
+    }
+    
+    static var set3: RealmCardSet{
+        let set = RealmCardSet()
+        set.name = "name3"
+        set.code = "code3"
+        return set
+    }
+    
+    
 }

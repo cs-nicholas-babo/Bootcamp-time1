@@ -15,4 +15,5 @@ protocol RealmRepository {
 	func get() -> [T]
 	func upsert(object: T)
 	func delete(object: T)
+    func deleteAll()
 }
