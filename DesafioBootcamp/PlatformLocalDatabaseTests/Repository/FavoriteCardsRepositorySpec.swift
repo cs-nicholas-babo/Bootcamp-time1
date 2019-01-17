@@ -14,7 +14,7 @@ import RealmSwift
 @testable import PlatformLocalDatabase
 @testable import Domain
 
-class PlatformLocalDatabaseTests: QuickSpec {
+class FavoriteCardsRepositorySpec: QuickSpec {
 
     override func spec() {
         var config = Realm.Configuration.defaultConfiguration
@@ -22,36 +22,13 @@ class PlatformLocalDatabaseTests: QuickSpec {
         let realm = try! Realm(configuration: config)
         
         let repo = FavoriteCardsRepository(realm: realm)
-        beforeSuite {
+        beforeEach {
             repo.deleteAll()
         }
         
-        describe("When using RealmCard") {
-            
-            describe("a RealmCard instatiated from a Card", closure: {
-                it("should have the expected properties", closure: {
-                    let card = Card(id: "uuid", name: "name", setCode: "code", types: Set<CardType>())
-                    let realmCard = card.realmData()
-                    
-                    expect(realmCard.id) == "uuid"
-                    expect(realmCard.name) == "name"
-                    expect(realmCard.setCode) == "code"
-                })
-            })
-            
-            describe("a Card instatianted from a RealmCard", closure: {
-                it("should have the expected properties", closure: {
-                    let realmCard = RealmCardMock.card1
-                    let card = realmCard.baseData()
-                    
-                    expect(card.id) == "uuid1"
-                    expect(card.name) == "name1"
-                    expect(card.setCode) == "code1"
-                })
-            })
-            
+        describe("When using a clear FavoriteCardsRepository") {
             describe("a query for all objects", closure: {
-                it("shoudl return all stored objects", closure: {
+                it("should return all stored objects", closure: {
                     let card1 = RealmCardMock.card1
                     let card2 = RealmCardMock.card2
                     let card3 = RealmCardMock.card3
@@ -115,15 +92,6 @@ class PlatformLocalDatabaseTests: QuickSpec {
                 })
             })
             
-            
-        }
-        
-        describe("When using the FavoriteCardsService") {
-            
-            beforeEach {
-                repo.deleteAll()
-            }
-            
             describe("Favoriting a card", closure: {
                 it("should store it in the database", closure: {
                     
@@ -152,31 +120,7 @@ class PlatformLocalDatabaseTests: QuickSpec {
                     expect(repo.get().count) == 0
                 })
             })
-        }
-        
-        
-        describe("When using RealmCardSet") {
-            describe("a RealmSet instatiated from a CardSet", closure: {
-                it("should have the expected properties", closure: {
-                    
-                    let cardSet = CardSet(code: "code1", name: "name1")
-                    let realmSet = cardSet.realmData()
-                    
-                    expect(realmSet.code) == cardSet.code
-                    expect(realmSet.name) == cardSet.name
-                })
-            })
             
-            describe("a CardSet instatianted from a RealmSet", closure: {
-                it("should have the expected properties", closure: {
-                    
-                    let realmSet = RealmCardSetMock.set1
-                    let cardSet = realmSet.baseData()
-                    
-                    expect(cardSet.name) == realmSet.name
-                    expect(cardSet.code) == realmSet.code
-                })
-            })
         }
         
     }
