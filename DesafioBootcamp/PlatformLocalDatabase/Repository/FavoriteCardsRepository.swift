@@ -46,5 +46,28 @@ public final class FavoriteCardsRepository: RealmRepository {
             realm.delete(all)
         }
     }
+    
+    func fetchFavoriteCardSets() -> [CardSet]{
+        let allCards = self.get()
+        
+        let cacheRepo = CardSetCacheRepository(realm: self.realm)
+        let allSets = cacheRepo.get()
+        
+        var finalSets:[CardSet] = []
+        
+        allSets.forEach { (metaSet) in
+            var setCards:[Card] = []
+            allCards.forEach({ (card) in
+                if card.setCode == metaSet.code{
+                    setCards.append(card)
+                }
+            })
+            if setCards.count > 0{
+                let cardSet = CardSet(set: metaSet, cards: setCards)
+                finalSets.append(cardSet)
+            }
+        }
+        return finalSets
+    }
 
 }

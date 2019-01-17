@@ -16,7 +16,7 @@ final public class CacheService: Domain.ApplicationRunningUseCase {
         self.cacheManager = cacheManager
     }
     
-    public func fetchSets(handler: @escaping (Result<[CardSet]>) -> ()) {
+    public func fetchSets(handler: @escaping (Result<[MetaCardSet]>) -> ()) {
         handler(Result.success(cacheManager.cardSetRepository.get()))
     }
 

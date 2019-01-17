@@ -21,7 +21,7 @@ public final class CacheManager{
 }
 
 final class CardSetCacheRepository: RealmRepository{
-    typealias T = CardSet
+    typealias T = MetaCardSet
     
     let realm: Realm
     
@@ -29,11 +29,11 @@ final class CardSetCacheRepository: RealmRepository{
         self.realm = realm
     }
     
-    func get() -> [CardSet] {
+    func get() -> [MetaCardSet] {
         return realm.objects(RealmCardSet.self).map({ $0.baseData()})
     }
     
-    func upsert(object: CardSet) {
+    func upsert(object: MetaCardSet) {
         let realmObject = object.realmData()
         
         try! realm.write {
@@ -41,7 +41,7 @@ final class CardSetCacheRepository: RealmRepository{
         }
     }
     
-    func delete(object: CardSet) {
+    func delete(object: MetaCardSet) {
         let realmObject = realm.object(ofType: RealmCardSet.self, forPrimaryKey: object.code)
         
         if let realmObject = realmObject{

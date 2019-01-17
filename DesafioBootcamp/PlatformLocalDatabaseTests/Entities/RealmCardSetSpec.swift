@@ -20,7 +20,7 @@ class RealmCardSetSpec: QuickSpec {
         describe("When using RealmCardSet") {
             describe("a RealmSet instatiated from a CardSet", closure: {
                 it("should have the expected properties", closure: {
-                    let cardSet = CardSet(code: "code1", name: "name1")
+                    let cardSet = MetaCardSet(code: "code1", name: "name1")
                     let realmSet = cardSet.realmData()
                     
                     expect(realmSet.code) == cardSet.code

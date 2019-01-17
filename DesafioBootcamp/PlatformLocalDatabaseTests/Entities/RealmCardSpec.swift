@@ -15,6 +15,7 @@ import RealmSwift
 @testable import Domain
 
 class RealmCardSpec: QuickSpec {
+    
     override func spec() {
         describe("When using RealmCard") {
             describe("a RealmCard instatiated from a Card", closure: {

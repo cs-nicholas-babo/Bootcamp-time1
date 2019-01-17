@@ -22,15 +22,15 @@ public final class RealmCardSet: RealmSwift.Object{
 }
 
 extension RealmCardSet: DomainRepresentableType{
-    typealias MTG_Entity = Domain.CardSet
+    typealias MTG_Entity = Domain.MetaCardSet
     
-    func baseData() -> CardSet {
-        return CardSet(code: self.code, name: self.name)
+    func baseData() -> MetaCardSet {
+        return MetaCardSet(code: self.code, name: self.name)
     }
     
 }
 
-extension CardSet: RealmRepresentable{
+extension MetaCardSet: RealmRepresentable{
     typealias RealmType = RealmCardSet
     
     func realmData() -> RealmCardSet {

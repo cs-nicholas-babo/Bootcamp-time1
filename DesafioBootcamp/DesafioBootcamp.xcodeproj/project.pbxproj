@@ -26,7 +26,7 @@
 		2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBC24D21ED057800B10DED /* Domain.framework */; };
 		2FEBC25521ED057800B10DED /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBC24D21ED057800B10DED /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FEBC25D21ED05AD00B10DED /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC25C21ED05AD00B10DED /* Card.swift */; };
-		2FEBC25F21ED05C300B10DED /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC25E21ED05C300B10DED /* CardSet.swift */; };
+		2FEBC25F21ED05C300B10DED /* MetaCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC25E21ED05C300B10DED /* MetaCardSet.swift */; };
 		2FEBC26121ED063B00B10DED /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26021ED063B00B10DED /* CardType.swift */; };
 		2FEBC26421ED186E00B10DED /* ArgumentFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26321ED186E00B10DED /* ArgumentFile.swift */; };
 		2FEBC26621EE02D800B10DED /* ApplicationUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26521EE02D800B10DED /* ApplicationUseCase.swift */; };
@@ -46,7 +46,6 @@
 		A13645AE21EFB9A2007D81EB /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A13645B521EFBAEA007D81EB /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
 		A13645B621EFBAEA007D81EB /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
-		A19CFD7121EF85620060A691 /* RealmObjects.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7021EF85620060A691 /* RealmObjects.swift */; };
 		A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */; };
 		A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */; };
 		A19CFD7821EF9A960060A691 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7721EF9A960060A691 /* CacheManager.swift */; };
@@ -60,6 +59,7 @@
 		A1DF495121EF651900E1DCF6 /* PlatformLocalDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; };
 		A1DF495521EF651900E1DCF6 /* PlatformLocalDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1EDFF2721F0A9B500CFE3F2 /* Alias CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDFF2621F0A9B500CFE3F2 /* Alias CardSet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -131,7 +131,7 @@
 		2FEBC24F21ED057800B10DED /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		2FEBC25021ED057800B10DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FEBC25C21ED05AD00B10DED /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		2FEBC25E21ED05C300B10DED /* CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
+		2FEBC25E21ED05C300B10DED /* MetaCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaCardSet.swift; sourceTree = "<group>"; };
 		2FEBC26021ED063B00B10DED /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
 		2FEBC26321ED186E00B10DED /* ArgumentFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArgumentFile.swift; sourceTree = "<group>"; };
 		2FEBC26521EE02D800B10DED /* ApplicationUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationUseCase.swift; sourceTree = "<group>"; };
@@ -151,7 +151,6 @@
 		A13C654321EF6FA800689169 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Frameworks/Quick.framework; sourceTree = "<group>"; };
 		A13C654421EF6FA800689169 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Frameworks/Nimble.framework; sourceTree = "<group>"; };
 		A13C654521EF6FA800689169 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Frameworks/Realm.framework; sourceTree = "<group>"; };
-		A19CFD7021EF85620060A691 /* RealmObjects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmObjects.swift; sourceTree = "<group>"; };
 		A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSet.swift; sourceTree = "<group>"; };
 		A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardType.swift; sourceTree = "<group>"; };
 		A19CFD7721EF9A960060A691 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
@@ -167,6 +166,7 @@
 		A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformLocalDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformLocalDatabase.h; sourceTree = "<group>"; };
 		A1DF495021EF651900E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1EDFF2621F0A9B500CFE3F2 /* Alias CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alias CardSet.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,8 +324,9 @@
 			children = (
 				2FEBC26721EE042800B10DED /* Result.swift */,
 				2FEBC25C21ED05AD00B10DED /* Card.swift */,
-				2FEBC25E21ED05C300B10DED /* CardSet.swift */,
+				2FEBC25E21ED05C300B10DED /* MetaCardSet.swift */,
 				2FEBC26021ED063B00B10DED /* CardType.swift */,
+				A1EDFF2621F0A9B500CFE3F2 /* Alias CardSet.swift */,
 			);
 			path = "MTG Entities";
 			sourceTree = "<group>";
@@ -453,7 +454,6 @@
 				2FB954CB21EF8C0400B09AFF /* Entities */,
 				A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */,
 				A1DF495021EF651900E1DCF6 /* Info.plist */,
-				A19CFD7021EF85620060A691 /* RealmObjects.swift */,
 			);
 			path = PlatformLocalDatabase;
 			sourceTree = "<group>";
@@ -695,10 +695,11 @@
 				2FEBC26821EE042800B10DED /* Result.swift in Sources */,
 				2FEBC26621EE02D800B10DED /* ApplicationUseCase.swift in Sources */,
 				2FEBC26421ED186E00B10DED /* ArgumentFile.swift in Sources */,
-				2FEBC25F21ED05C300B10DED /* CardSet.swift in Sources */,
+				2FEBC25F21ED05C300B10DED /* MetaCardSet.swift in Sources */,
 				2FEBC25D21ED05AD00B10DED /* Card.swift in Sources */,
 				2FEBC26C21EE055B00B10DED /* FavoriteCardsUseCase.swift in Sources */,
 				2FEBC26121ED063B00B10DED /* CardType.swift in Sources */,
+				A1EDFF2721F0A9B500CFE3F2 /* Alias CardSet.swift in Sources */,
 				2FEBC26A21EE04E700B10DED /* CardsUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -739,7 +740,6 @@
 				2FB954D921EF964700B09AFF /* FavoriteCardsRepository.swift in Sources */,
 				2FB954CF21EF8C3900B09AFF /* DomainRepresentable.swift in Sources */,
 				2FB954E021EF9F2000B09AFF /* CacheService.swift in Sources */,
-				A19CFD7121EF85620060A691 /* RealmObjects.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

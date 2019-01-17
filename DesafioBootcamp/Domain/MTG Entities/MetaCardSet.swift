@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct CardSet {
+public struct MetaCardSet {
     public let code: String
     public let name: String
     
@@ -18,8 +18,8 @@ public struct CardSet {
     }
 }
 
-extension CardSet: Hashable {
-    public static func == (lhs: CardSet, rhs: CardSet) -> Bool {
+extension MetaCardSet: Hashable {
+    public static func == (lhs: MetaCardSet, rhs: MetaCardSet) -> Bool {
         return (lhs.code == rhs.code)
     }
     
@@ -28,7 +28,7 @@ extension CardSet: Hashable {
     }
 }
 
-extension CardSet: Codable {
+extension MetaCardSet: Codable {
     enum CodingKeys: String, CodingKey {
         case code = "code"
         case name = "name"
