@@ -47,8 +47,12 @@ public final class FavoriteCardsRepository: RealmRepository {
         }
     }
     
-    func fetchFavoriteCardSets() -> [CardSet]{
-        let allCards = self.get()
+    func fetchFavoriteCardSets(query: String?) -> [CardSet]{
+        var allCards = self.get()
+        
+        if let query = query{
+            allCards = allCards.filter {$0.name.contains(query)}
+        }
         
         let cacheRepo = CardSetCacheRepository(realm: self.realm)
         let allSets = cacheRepo.get()
