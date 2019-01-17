@@ -166,6 +166,44 @@ class FavoriteCardsRepositorySpec: QuickSpec {
                 
             })
             
+            describe("Fetching the favorited cards and their sets with a query", {
+                it("should return only the sets with cards that contains the query in its name", closure: {
+                    let card1 = RealmCardMock.card1
+                    let card2 = RealmCardMock.card2
+                    let card3 = RealmCardMock.card3
+                    
+                    card1.setCode = "code1"
+                    card2.setCode = "code1"
+                    card3.setCode = "code2"
+                    
+                    let set1 = RealmCardSetMock.set1
+                    let set2 = RealmCardSetMock.set1
+                    
+                    set1.code = "code1"
+                    set2.code = "code2"
+                    
+                    let service = FavoriteCardsService(repository: repo, manager: manager)
+                    service.favorite(card: card1.baseData(), status: true)
+                    service.favorite(card: card2.baseData(), status: true)
+                    service.favorite(card: card3.baseData(), status: true)
+                    
+                    manager.cardSetRepository.upsert(object: set1.baseData())
+                    manager.cardSetRepository.upsert(object: set2.baseData())
+                    
+                    expect(manager.cardSetRepository.get().count) == 2
+                    expect(repo.get().count) == 3
+                    
+                    let favoritedSets = repo.fetchFavoriteCardSets(query: "name", from: manager.cardSetRepository.get())
+                    expect(favoritedSets.count) == 2
+                    expect(favoritedSets.first?.cards.count) == 2
+                    expect(favoritedSets[1].cards.count) == 1
+                    
+                    let favoritedSetsWithQuery = repo.fetchFavoriteCardSets(query: "name1", from: manager.cardSetRepository.get())
+                    expect(favoritedSetsWithQuery.count) == 1
+                    expect(favoritedSetsWithQuery.first?.cards.first?.name) == "name1"
+                })
+            })
+            
         }
         
     }
