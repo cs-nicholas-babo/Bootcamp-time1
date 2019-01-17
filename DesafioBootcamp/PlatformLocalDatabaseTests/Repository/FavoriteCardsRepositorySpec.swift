@@ -182,24 +182,23 @@ class FavoriteCardsRepositorySpec: QuickSpec {
                     set1.code = "code1"
                     set2.code = "code2"
                     
-                    let service = FavoriteCardsService(repository: repo)
+                    let service = FavoriteCardsService(repository: repo, manager: manager)
                     service.favorite(card: card1.baseData(), status: true)
                     service.favorite(card: card2.baseData(), status: true)
                     service.favorite(card: card3.baseData(), status: true)
                     
-                    let cacheRepo = CardSetCacheRepository(realm: realm)
-                    cacheRepo.upsert(object: set1.baseData())
-                    cacheRepo.upsert(object: set2.baseData())
+                    manager.cardSetRepository.upsert(object: set1.baseData())
+                    manager.cardSetRepository.upsert(object: set2.baseData())
                     
-                    expect(cacheRepo.get().count) == 2
+                    expect(manager.cardSetRepository.get().count) == 2
                     expect(repo.get().count) == 3
                     
-                    let favoritedSets = repo.fetchFavoriteCardSets(query: "name")
+                    let favoritedSets = repo.fetchFavoriteCardSets(query: "name", from: manager.cardSetRepository.get())
                     expect(favoritedSets.count) == 2
                     expect(favoritedSets.first?.cards.count) == 2
                     expect(favoritedSets[1].cards.count) == 1
                     
-                    let favoritedSetsWithQuery = repo.fetchFavoriteCardSets(query: "name1")
+                    let favoritedSetsWithQuery = repo.fetchFavoriteCardSets(query: "name1", from: manager.cardSetRepository.get())
                     expect(favoritedSetsWithQuery.count) == 1
                     expect(favoritedSetsWithQuery.first?.cards.first?.name) == "name1"
                 })
