@@ -21,9 +21,16 @@ class FavoriteCardsRepositorySpec: QuickSpec {
         config.inMemoryIdentifier = "com.DesafioBootcamp.Debug.Realm.FavoriteCardsRepository"
         let realm = try! Realm(configuration: config)
         
+        var cacheConfig = Realm.Configuration.defaultConfiguration
+        cacheConfig.inMemoryIdentifier = "com.DesafioBootcamp.Debug.Realm.CacheManager"
+        let cacheRealm = try! Realm(configuration: cacheConfig)
+        
         let repo = FavoriteCardsRepository(realm: realm)
+        let manager = CacheManager(realm: cacheRealm)
+        
         beforeEach {
             repo.deleteAll()
+            manager.cardSetRepository.deleteAll()
         }
         
         describe("When using a clear FavoriteCardsRepository") {
@@ -92,68 +99,71 @@ class FavoriteCardsRepositorySpec: QuickSpec {
                 })
             })
             
-            describe("Favoriting a card", closure: {
-                it("should store it in the database", closure: {
-                    
-                    let card = RealmCardMock.card1.baseData()
-                    let service = FavoriteCardsService(repository: repo)
-                    service.favorite(card: card, status: true)
-                    
-                    expect(repo.get().count) == 1
-                    expect(repo.get().first?.id) == "uuid1"
-                    
+            describe("and the CacheManager", {
+                
+                describe("Favoriting a card", closure: {
+                    it("should store it in the database", closure: {
+                        
+                        let card = RealmCardMock.card1.baseData()
+                        let service = FavoriteCardsService(repository: repo, manager: manager)
+                        service.favorite(card: card, status: true)
+                        
+                        expect(repo.get().count) == 1
+                        expect(repo.get().first?.id) == "uuid1"
+                        
+                    })
                 })
-            })
-            
-            describe("Unfavoriting a card", closure: {
-                it("should remove the specified object from the database", closure: {
-                    
-                    let card = RealmCardMock.card1.baseData()
-                    let service = FavoriteCardsService(repository: repo)
-                    service.favorite(card: card, status: true)
-                    
-                    expect(repo.get().count) == 1
-                    expect(repo.get().first?.id) == "uuid1"
-                    
-                    service.favorite(card: card, status: false)
-                    
-                    expect(repo.get().count) == 0
+                
+                describe("Unfavoriting a card", closure: {
+                    it("should remove the specified object from the database", closure: {
+                        
+                        let card = RealmCardMock.card1.baseData()
+                        let service = FavoriteCardsService(repository: repo, manager: manager)
+                        service.favorite(card: card, status: true)
+                        
+                        expect(repo.get().count) == 1
+                        expect(repo.get().first?.id) == "uuid1"
+                        
+                        service.favorite(card: card, status: false)
+                        
+                        expect(repo.get().count) == 0
+                    })
                 })
-            })
-            
-            describe("Fetching the favorited cards and their sets", {
-                it("should return the correct fevorited sets", closure: {
-                    
-                    let card1 = RealmCardMock.card1
-                    let card2 = RealmCardMock.card2
-                    let card3 = RealmCardMock.card3
-                    
-                    card1.setCode = "code1"
-                    card2.setCode = "code1"
-                    card3.setCode = "code2"
-                    
-                    let set1 = RealmCardSetMock.set1
-                    let set2 = RealmCardSetMock.set1
-                    
-                    set1.code = "code1"
-                    set2.code = "code2"
-                    
-                    let service = FavoriteCardsService(repository: repo)
-                    service.favorite(card: card1.baseData(), status: true)
-                    service.favorite(card: card2.baseData(), status: true)
-                    service.favorite(card: card3.baseData(), status: true)
-                    
-                    let cacheRepo = CardSetCacheRepository(realm: realm)
-                    cacheRepo.upsert(object: set1.baseData())
-                    cacheRepo.upsert(object: set2.baseData())
-                    
-                    expect(cacheRepo.get().count) == 2
-                    expect(repo.get().count) == 3
-                    
-                    let favoritedSets = repo.fetchFavoriteCardSets()
-                    
-                    expect(favoritedSets.count) == 2
+                
+                describe("Fetching the favorited cards and their sets", {
+                    it("should return the correct fevorited sets", closure: {
+                        
+                        let card1 = RealmCardMock.card1
+                        let card2 = RealmCardMock.card2
+                        let card3 = RealmCardMock.card3
+                        
+                        card1.setCode = "code1"
+                        card2.setCode = "code1"
+                        card3.setCode = "code2"
+                        
+                        let set1 = RealmCardSetMock.set1
+                        let set2 = RealmCardSetMock.set1
+                        
+                        set1.code = "code1"
+                        set2.code = "code2"
+                        
+                        let service = FavoriteCardsService(repository: repo, manager: manager)
+                        service.favorite(card: card1.baseData(), status: true)
+                        service.favorite(card: card2.baseData(), status: true)
+                        service.favorite(card: card3.baseData(), status: true)
+                        
+                        manager.cardSetRepository.upsert(object: set1.baseData())
+                        manager.cardSetRepository.upsert(object: set2.baseData())
+                        
+                        expect(manager.cardSetRepository.get().count) == 2
+                        expect(repo.get().count) == 3
+                        
+                        let favoritedSets = repo.fetchFavoriteCardSets(query: nil, from: manager.cardSetRepository.get())
+                        
+                        expect(favoritedSets.count) == 2
+                    })
                 })
+                
             })
             
         }

@@ -12,11 +12,14 @@ import RealmSwift
 
 public final class FavoriteCardsServiceProvider: Domain.FavoriteCardsUseCaseProvider {
     
+    let realm = try! Realm()
+    
     public init() { }
     
     public func useCase() -> FavoriteCardsUseCase {
-        let repository = FavoriteCardsRepository(realm: try! Realm())
-        return FavoriteCardsService(repository: repository)
+        let repository = FavoriteCardsRepository(realm: realm)
+        let manager = CacheManager(realm: realm)
+        return FavoriteCardsService(repository: repository, manager: manager)
     }
 
 }
