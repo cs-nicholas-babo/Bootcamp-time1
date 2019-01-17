@@ -70,6 +70,7 @@
 		A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; };
 		A1DF495521EF651900E1DCF6 /* PlatformLocalDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1EDFF2721F0A9B500CFE3F2 /* Alias CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDFF2621F0A9B500CFE3F2 /* Alias CardSet.swift */; };
+		A1FC824D21F0D77200B7911F /* DeleteThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC824C21F0D77200B7911F /* DeleteThis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -184,6 +185,7 @@
 		A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformLocalDatabase.h; sourceTree = "<group>"; };
 		A1DF495021EF651900E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1EDFF2621F0A9B500CFE3F2 /* Alias CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alias CardSet.swift"; sourceTree = "<group>"; };
+		A1FC824C21F0D77200B7911F /* DeleteThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteThis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,6 +471,7 @@
 			children = (
 				A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */,
 				A1DF493F21EF64FA00E1DCF6 /* Info.plist */,
+				A1FC824C21F0D77200B7911F /* DeleteThis.swift */,
 			);
 			path = PlatformAPI;
 			sourceTree = "<group>";
@@ -631,6 +634,7 @@
 					};
 					A1DF493B21EF64FA00E1DCF6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 					A1DF494C21EF651900E1DCF6 = {
 						CreatedOnToolsVersion = 10.1;
@@ -750,6 +754,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1FC824D21F0D77200B7911F /* DeleteThis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1088,6 +1093,7 @@
 		A1DF494621EF64FA00E1DCF6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1106,6 +1112,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = concrete.time1.PlatformAPI;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1116,6 +1123,7 @@
 		A1DF494721EF64FA00E1DCF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
