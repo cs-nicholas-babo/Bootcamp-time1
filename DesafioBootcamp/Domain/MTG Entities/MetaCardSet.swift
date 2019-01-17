@@ -11,10 +11,12 @@ import Foundation
 public struct MetaCardSet {
     public let code: String
     public let name: String
+    public let releaseDate: Date
     
-    public init(code: String, name:String){
+    public init(code: String, name: String, releaseDate: Date){
         self.code = code
         self.name = name
+        self.releaseDate = releaseDate
     }
 }
 
@@ -32,6 +34,7 @@ extension MetaCardSet: Codable {
     enum CodingKeys: String, CodingKey {
         case code = "code"
         case name = "name"
+        case releaseDate = "releaseDate"
     }
     
     public init(from decoder: Decoder) throws {
@@ -39,6 +42,11 @@ extension MetaCardSet: Codable {
         
         self.code = try container.decode(String.self, forKey: .code)
         self.name = try container.decode(String.self, forKey: .name)
+        if let decodedDate = try? container.decode(Date.self, forKey: .releaseDate){
+            self.releaseDate = decodedDate
+        } else {
+            self.releaseDate = DateParser.parseDateWithFormat(date: try container.decode(String.self, forKey: .releaseDate), separator: "-") ?? Date()
+        }
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -46,5 +54,6 @@ extension MetaCardSet: Codable {
         
         try container.encode(self.code, forKey: .code)
         try container.encode(self.name, forKey: .name)
+        try container.encode(self.releaseDate, forKey: .releaseDate)
     }
 }

@@ -26,6 +26,10 @@
 		2FB865BA21F0DA3B001FB4FE /* JSONDecoder+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB865B621F0DA3B001FB4FE /* JSONDecoder+Models.swift */; };
 		2FB865BB21F0DA3B001FB4FE /* String+NetworkData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB865B721F0DA3B001FB4FE /* String+NetworkData.swift */; };
 		2FB865BC21F0DA3B001FB4FE /* DefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB865B821F0DA3B001FB4FE /* DefaultManager.swift */; };
+		2FB865C221F0DF22001FB4FE /* DateParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB865C121F0DF22001FB4FE /* DateParser.swift */; };
+		2FB865C321F0E1DA001FB4FE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A821F0D1CB001FB4FE /* Alamofire.framework */; };
+		2FB865C421F0E1DA001FB4FE /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A921F0D1CB001FB4FE /* Moya.framework */; };
+		2FB865C521F0E1DA001FB4FE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865AA21F0D1CB001FB4FE /* Result.framework */; };
 		2FB954CF21EF8C3900B09AFF /* DomainRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954CD21EF8C3900B09AFF /* DomainRepresentable.swift */; };
 		2FB954D021EF8C3900B09AFF /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */; };
 		2FB954D221EF8C6900B09AFF /* RealmCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954D121EF8C6900B09AFF /* RealmCard.swift */; };
@@ -74,7 +78,6 @@
 		A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; };
 		A1DF495521EF651900E1DCF6 /* PlatformLocalDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1EDFF2721F0A9B500CFE3F2 /* Alias CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDFF2621F0A9B500CFE3F2 /* Alias CardSet.swift */; };
-		A1FC824D21F0D77200B7911F /* DeleteThis.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FC824C21F0D77200B7911F /* DeleteThis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -145,6 +148,7 @@
 		2FB865B621F0DA3B001FB4FE /* JSONDecoder+Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+Models.swift"; sourceTree = "<group>"; };
 		2FB865B721F0DA3B001FB4FE /* String+NetworkData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+NetworkData.swift"; sourceTree = "<group>"; };
 		2FB865B821F0DA3B001FB4FE /* DefaultManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultManager.swift; sourceTree = "<group>"; };
+		2FB865C121F0DF22001FB4FE /* DateParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateParser.swift; sourceTree = "<group>"; };
 		2FB954CD21EF8C3900B09AFF /* DomainRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DomainRepresentable.swift; sourceTree = "<group>"; };
 		2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmRepresentable.swift; sourceTree = "<group>"; };
 		2FB954D121EF8C6900B09AFF /* RealmCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCard.swift; sourceTree = "<group>"; };
@@ -193,7 +197,6 @@
 		A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformLocalDatabase.h; sourceTree = "<group>"; };
 		A1DF495021EF651900E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1EDFF2621F0A9B500CFE3F2 /* Alias CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alias CardSet.swift"; sourceTree = "<group>"; };
-		A1FC824C21F0D77200B7911F /* DeleteThis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteThis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +236,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB865C321F0E1DA001FB4FE /* Alamofire.framework in Frameworks */,
+				2FB865C421F0E1DA001FB4FE /* Moya.framework in Frameworks */,
+				2FB865C521F0E1DA001FB4FE /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +315,14 @@
 			children = (
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2FB865C021F0DF18001FB4FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2FB865C121F0DF22001FB4FE /* DateParser.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2FB954CB21EF8C0400B09AFF /* Entities */ = {
@@ -393,6 +407,7 @@
 		2FEBC25B21ED058D00B10DED /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				2FB865C021F0DF18001FB4FE /* Extensions */,
 				2FEBC26221ED13D000B10DED /* Providers */,
 				2FEBC26321ED186E00B10DED /* ArgumentFile.swift */,
 				2FEBC26521EE02D800B10DED /* ApplicationUseCase.swift */,
@@ -507,7 +522,6 @@
 				2FB865B421F0DA2E001FB4FE /* Extensions */,
 				A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */,
 				A1DF493F21EF64FA00E1DCF6 /* Info.plist */,
-				A1FC824C21F0D77200B7911F /* DeleteThis.swift */,
 			);
 			path = PlatformAPI;
 			sourceTree = "<group>";
@@ -768,6 +782,7 @@
 				2FEBC26C21EE055B00B10DED /* FavoriteCardsUseCase.swift in Sources */,
 				2FEBC26121ED063B00B10DED /* CardType.swift in Sources */,
 				A1EDFF2721F0A9B500CFE3F2 /* Alias CardSet.swift in Sources */,
+				2FB865C221F0DF22001FB4FE /* DateParser.swift in Sources */,
 				2FEBC26A21EE04E700B10DED /* CardsUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -790,7 +805,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1FC824D21F0D77200B7911F /* DeleteThis.swift in Sources */,
 				2FB865BB21F0DA3B001FB4FE /* String+NetworkData.swift in Sources */,
 				2FB865BA21F0DA3B001FB4FE /* JSONDecoder+Models.swift in Sources */,
 				2FB865B921F0DA3B001FB4FE /* NetworkDomainError.swift in Sources */,
@@ -1142,6 +1156,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = PlatformAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1172,6 +1190,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = PlatformAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
