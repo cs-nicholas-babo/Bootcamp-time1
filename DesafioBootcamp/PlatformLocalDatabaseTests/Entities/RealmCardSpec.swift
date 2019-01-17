@@ -20,7 +20,7 @@ class RealmCardSpec: QuickSpec {
         describe("When using RealmCard") {
             describe("a RealmCard instatiated from a Card", closure: {
                 it("should have the expected properties", closure: {
-                    let card = Card(id: "uuid", name: "name", setCode: "code", types: Set<CardType>())
+                    let card = Card(id: "uuid", name: "name", setCode: "code", types: Set<CardType>(), imageURL: "")
                     let realmCard = card.realmData()
                     
                     expect(realmCard.id) == "uuid"
