@@ -39,7 +39,6 @@
 		A1DF495121EF651900E1DCF6 /* PlatformLocalDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; };
 		A1DF495521EF651900E1DCF6 /* PlatformLocalDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1DF496221EF652600E1DCF6 /* Placeholders.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF496021EF652600E1DCF6 /* Placeholders.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1DF496521EF652600E1DCF6 /* Placeholders.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF495E21EF652600E1DCF6 /* Placeholders.framework */; };
 		A1DF496621EF652600E1DCF6 /* Placeholders.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF495E21EF652600E1DCF6 /* Placeholders.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -128,8 +127,6 @@
 		A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformLocalDatabase.h; sourceTree = "<group>"; };
 		A1DF495021EF651900E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1DF495E21EF652600E1DCF6 /* Placeholders.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Placeholders.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1DF496021EF652600E1DCF6 /* Placeholders.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Placeholders.h; sourceTree = "<group>"; };
-		A1DF496121EF652600E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,7 +241,6 @@
 				2FEBC24E21ED057800B10DED /* Domain */,
 				A1DF493D21EF64FA00E1DCF6 /* PlatformAPI */,
 				A1DF494E21EF651900E1DCF6 /* PlatformLocalDatabase */,
-				A1DF495F21EF652600E1DCF6 /* Placeholders */,
 				A1145E0921ECF18900A1A665 /* Products */,
 				A13C654121EF6FA700689169 /* Frameworks */,
 			);
@@ -341,15 +337,6 @@
 			path = PlatformLocalDatabase;
 			sourceTree = "<group>";
 		};
-		A1DF495F21EF652600E1DCF6 /* Placeholders */ = {
-			isa = PBXGroup;
-			children = (
-				A1DF496021EF652600E1DCF6 /* Placeholders.h */,
-				A1DF496121EF652600E1DCF6 /* Info.plist */,
-			);
-			path = Placeholders;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -381,7 +368,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DF496221EF652600E1DCF6 /* Placeholders.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
