@@ -50,4 +50,11 @@ final class CardSetCacheRepository: RealmRepository{
             }
         }
     }
+    
+    func deleteAll(){
+        let all = realm.objects(RealmCardSet.self)
+        try! realm.write {
+            realm.delete(all)
+        }
+    }
 }
