@@ -8,11 +8,11 @@
 
 import Foundation
 import Alamofire
-
+//
 extension Alamofire.SessionManager {
-	public static var standardManager: Alamofire.SessionManager {
-		let configuration = URLSessionConfiguration.default
-		configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
-		return Alamofire.SessionManager(configuration: configuration)
-	}
+    public static var standardManager: Alamofire.SessionManager {
+        let configuration = URLSessionConfiguration.default
+        configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
+        return Alamofire.SessionManager(configuration: configuration)
+    }
 }
