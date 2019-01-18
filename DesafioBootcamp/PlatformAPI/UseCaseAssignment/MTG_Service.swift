@@ -63,6 +63,46 @@ public final class MTG_Service: Domain.CardsUseCase{
         }
     }
     
+    private func requestCards(query:String, handler: @escaping (Domain.Result<[Card]>) -> ()){
+        provider.request(.getSearchedCards(query: query)) { (result) in
+            switch result{
+            case .success(let response):
+                do {
+                    let values = try response.map([Card].self, atKeyPath: "cards", using: self.decoder, failsOnEmptyData: false)
+                    handler(Domain.Result.success(values))
+                } catch {
+                    handler(Domain.Result
+                        .failure(NetworkDomainError(errorCode: NetworkErrorCode.decodingError, error: error).value() )
+                    )
+                }
+            case .failure(let error):
+                handler(Domain.Result
+                    .failure(NetworkDomainError(errorCode: NetworkErrorCode.responseError, error: error).value() )
+                )
+            }
+        }
+    }
+    
+    private func requestSets(handler: @escaping (Domain.Result<[MetaCardSet]>) -> ()){
+        provider.request(.getMetaSets) { (result) in
+            switch result{
+            case let .success(response):
+                do {
+                    let values = try response.map([MetaCardSet].self, atKeyPath: "sets", using: self.decoder, failsOnEmptyData: false)
+                    handler(Domain.Result.success(values))
+                } catch {
+                    handler(Domain.Result
+                        .failure(NetworkDomainError(errorCode: NetworkErrorCode.decodingError, error: error).value() )
+                    )
+                }
+            case let .failure(error):
+                handler(Domain.Result
+                    .failure(NetworkDomainError(errorCode: NetworkErrorCode.responseError, error: error).value() )
+                )
+            }
+        }
+    }
+    
     public func fetchCards(from set: MetaCardSet, handler: @escaping (Domain.Result<[Card]>) -> ()) {
         performFetchCards(from: set, page: 1) { (result) in
             switch result {
@@ -77,7 +117,25 @@ public final class MTG_Service: Domain.CardsUseCase{
     }
     
     public func fetchCards(filter name: String, handler: @escaping (Domain.Result<[Card]>) -> ()) {
-        handler(Domain.Result.success([Card]()))
+        self.requestCards(query: name) { (result) in
+            switch result{
+            case .success(let cards):
+                handler(Domain.Result.success(cards))
+            case .failure(let error):
+                handler(Domain.Result.failure(error))
+            }
+        }
+    }
+    
+    public func fetchSets(handler: @escaping (Domain.Result<[MetaCardSet]>) -> ()){
+        self.requestSets { (result) in
+            switch result{
+            case .success(let values):
+                handler(Domain.Result.success(values))
+            case .failure(let error):
+                handler(Domain.Result.failure(error))
+            }
+        }
     }
     
     
