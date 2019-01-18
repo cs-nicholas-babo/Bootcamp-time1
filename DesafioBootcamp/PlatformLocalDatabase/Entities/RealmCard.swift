@@ -11,11 +11,12 @@ import RealmSwift
 import Domain
 
 public final class RealmCard: RealmSwift.Object {
+    
     @objc public dynamic var id: String = ""
     @objc public dynamic var name: String = ""
     @objc public dynamic var setCode: String = ""
     let types: List<RealmCardType> = List<RealmCardType>()
-    @objc public dynamic var imageURL: String = ""
+    @objc public dynamic var imageURL: String?
     
     override public static func primaryKey() -> String {
         return "id"

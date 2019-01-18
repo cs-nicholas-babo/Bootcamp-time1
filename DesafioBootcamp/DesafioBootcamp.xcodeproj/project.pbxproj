@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F8E05E021F21C0900688BC1 /* empty_cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8E05DE21F21C0900688BC1 /* empty_cards.json */; };
+		2F8E05E121F21C0900688BC1 /* empty_sets.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8E05DF21F21C0900688BC1 /* empty_sets.json */; };
+		2F8E05E321F21D3B00688BC1 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E05E221F21D3B00688BC1 /* LocalData.swift */; };
 		2FB8658D21EFB6FB001FB4FE /* FavoriteCardsRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8658C21EFB6FB001FB4FE /* FavoriteCardsRepositorySpec.swift */; };
 		2FB8659521EFB81C001FB4FE /* RealmCardMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD9F21EFAA4A0060A691 /* RealmCardMock.swift */; };
 		2FB8659621EFB820001FB4FE /* RealmCardSetMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFDA221EFAB8E0060A691 /* RealmCardSetMock.swift */; };
@@ -61,13 +64,13 @@
 		A12280D121F10E97009FFE9E /* FavoriteCardsServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12280D021F10E97009FFE9E /* FavoriteCardsServiceSpec.swift */; };
 		A12280D821F110C2009FFE9E /* cards_stub_10E_1.json in Resources */ = {isa = PBXBuildFile; fileRef = A12280D321F110C1009FFE9E /* cards_stub_10E_1.json */; };
 		A12280D921F110C2009FFE9E /* cards_stub_10E_2.json in Resources */ = {isa = PBXBuildFile; fileRef = A12280D421F110C1009FFE9E /* cards_stub_10E_2.json */; };
-		A12280DA21F110C2009FFE9E /* sets_stub.json in Resources */ = {isa = PBXBuildFile; fileRef = A12280D521F110C2009FFE9E /* sets_stub.json */; };
+		A12280DA21F110C2009FFE9E /* sets_stub_1.json in Resources */ = {isa = PBXBuildFile; fileRef = A12280D521F110C2009FFE9E /* sets_stub_1.json */; };
 		A12280DB21F110C2009FFE9E /* cards_stub_2ED_1.json in Resources */ = {isa = PBXBuildFile; fileRef = A12280D621F110C2009FFE9E /* cards_stub_2ED_1.json */; };
 		A12280DC21F110C2009FFE9E /* cards_stub_2ED_2.json in Resources */ = {isa = PBXBuildFile; fileRef = A12280D721F110C2009FFE9E /* cards_stub_2ED_2.json */; };
 		A12280DE21F118AF009FFE9E /* CacheServiceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12280DD21F118AF009FFE9E /* CacheServiceSpec.swift */; };
 		A130C2B221F1FDB500A1B78A /* MTG_ModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A130C2B121F1FDB500A1B78A /* MTG_ModelSpec.swift */; };
-		A130C2B421F2042200A1B78A /* cards_stub_query_Ancestor's Chosen.json in Resources */ = {isa = PBXBuildFile; fileRef = A130C2B321F2042200A1B78A /* cards_stub_query_Ancestor's Chosen.json */; };
-		A130C2B621F2054D00A1B78A /* cards_stub_query_Elf.json in Resources */ = {isa = PBXBuildFile; fileRef = A130C2B521F2054D00A1B78A /* cards_stub_query_Elf.json */; };
+		A130C2B421F2042200A1B78A /* cards_stub_query_Ancestor's Chosen_1.json in Resources */ = {isa = PBXBuildFile; fileRef = A130C2B321F2042200A1B78A /* cards_stub_query_Ancestor's Chosen_1.json */; };
+		A130C2B621F2054D00A1B78A /* cards_stub_query_Elf_1.json in Resources */ = {isa = PBXBuildFile; fileRef = A130C2B521F2054D00A1B78A /* cards_stub_query_Elf_1.json */; };
 		A13645AD21EFB9A2007D81EB /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A13645AE21EFB9A2007D81EB /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A13645B521EFBAEA007D81EB /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
@@ -155,6 +158,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F8E05DE21F21C0900688BC1 /* empty_cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_cards.json; sourceTree = "<group>"; };
+		2F8E05DF21F21C0900688BC1 /* empty_sets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_sets.json; sourceTree = "<group>"; };
+		2F8E05E221F21D3B00688BC1 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
 		2FB8658A21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformLocalDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB8658C21EFB6FB001FB4FE /* FavoriteCardsRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsRepositorySpec.swift; sourceTree = "<group>"; };
 		2FB8658E21EFB6FB001FB4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -205,13 +211,13 @@
 		A12280D021F10E97009FFE9E /* FavoriteCardsServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsServiceSpec.swift; sourceTree = "<group>"; };
 		A12280D321F110C1009FFE9E /* cards_stub_10E_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards_stub_10E_1.json; sourceTree = "<group>"; };
 		A12280D421F110C1009FFE9E /* cards_stub_10E_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards_stub_10E_2.json; sourceTree = "<group>"; };
-		A12280D521F110C2009FFE9E /* sets_stub.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sets_stub.json; sourceTree = "<group>"; };
+		A12280D521F110C2009FFE9E /* sets_stub_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sets_stub_1.json; sourceTree = "<group>"; };
 		A12280D621F110C2009FFE9E /* cards_stub_2ED_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards_stub_2ED_1.json; sourceTree = "<group>"; };
 		A12280D721F110C2009FFE9E /* cards_stub_2ED_2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards_stub_2ED_2.json; sourceTree = "<group>"; };
 		A12280DD21F118AF009FFE9E /* CacheServiceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceSpec.swift; sourceTree = "<group>"; };
 		A130C2B121F1FDB500A1B78A /* MTG_ModelSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTG_ModelSpec.swift; sourceTree = "<group>"; };
-		A130C2B321F2042200A1B78A /* cards_stub_query_Ancestor's Chosen.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cards_stub_query_Ancestor's Chosen.json"; sourceTree = "<group>"; };
-		A130C2B521F2054D00A1B78A /* cards_stub_query_Elf.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards_stub_query_Elf.json; sourceTree = "<group>"; };
+		A130C2B321F2042200A1B78A /* cards_stub_query_Ancestor's Chosen_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cards_stub_query_Ancestor's Chosen_1.json"; sourceTree = "<group>"; };
+		A130C2B521F2054D00A1B78A /* cards_stub_query_Elf_1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cards_stub_query_Elf_1.json; sourceTree = "<group>"; };
 		A13C654221EF6FA800689169 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Frameworks/RealmSwift.framework; sourceTree = "<group>"; };
 		A13C654321EF6FA800689169 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Frameworks/Quick.framework; sourceTree = "<group>"; };
 		A13C654421EF6FA800689169 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Frameworks/Nimble.framework; sourceTree = "<group>"; };
@@ -296,6 +302,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F8E05E421F2214D00688BC1 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F8E05DF21F21C0900688BC1 /* empty_sets.json */,
+				2F8E05DE21F21C0900688BC1 /* empty_cards.json */,
+				A130C2B521F2054D00A1B78A /* cards_stub_query_Elf_1.json */,
+				A130C2B321F2042200A1B78A /* cards_stub_query_Ancestor's Chosen_1.json */,
+				A12280D621F110C2009FFE9E /* cards_stub_2ED_1.json */,
+				A12280D721F110C2009FFE9E /* cards_stub_2ED_2.json */,
+				A12280D321F110C1009FFE9E /* cards_stub_10E_1.json */,
+				A12280D421F110C1009FFE9E /* cards_stub_10E_2.json */,
+				A12280D521F110C2009FFE9E /* sets_stub_1.json */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		2FB8658B21EFB6FB001FB4FE /* PlatformLocalDatabaseTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -522,13 +544,8 @@
 		A12280D221F110AF009FFE9E /* Stub Data */ = {
 			isa = PBXGroup;
 			children = (
-				A130C2B521F2054D00A1B78A /* cards_stub_query_Elf.json */,
-				A130C2B321F2042200A1B78A /* cards_stub_query_Ancestor's Chosen.json */,
-				A12280D621F110C2009FFE9E /* cards_stub_2ED_1.json */,
-				A12280D721F110C2009FFE9E /* cards_stub_2ED_2.json */,
-				A12280D321F110C1009FFE9E /* cards_stub_10E_1.json */,
-				A12280D421F110C1009FFE9E /* cards_stub_10E_2.json */,
-				A12280D521F110C2009FFE9E /* sets_stub.json */,
+				2F8E05E221F21D3B00688BC1 /* LocalData.swift */,
+				2F8E05E421F2214D00688BC1 /* Files */,
 			);
 			path = "Stub Data";
 			sourceTree = "<group>";
@@ -855,10 +872,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A12280DA21F110C2009FFE9E /* sets_stub.json in Resources */,
-				A130C2B621F2054D00A1B78A /* cards_stub_query_Elf.json in Resources */,
+				A12280DA21F110C2009FFE9E /* sets_stub_1.json in Resources */,
+				A130C2B621F2054D00A1B78A /* cards_stub_query_Elf_1.json in Resources */,
 				A12280DB21F110C2009FFE9E /* cards_stub_2ED_1.json in Resources */,
-				A130C2B421F2042200A1B78A /* cards_stub_query_Ancestor's Chosen.json in Resources */,
+				2F8E05E121F21C0900688BC1 /* empty_sets.json in Resources */,
+				2F8E05E021F21C0900688BC1 /* empty_cards.json in Resources */,
+				A130C2B421F2042200A1B78A /* cards_stub_query_Ancestor's Chosen_1.json in Resources */,
 				A12280DC21F110C2009FFE9E /* cards_stub_2ED_2.json in Resources */,
 				A12280D821F110C2009FFE9E /* cards_stub_10E_1.json in Resources */,
 				A12280D921F110C2009FFE9E /* cards_stub_10E_2.json in Resources */,
@@ -879,6 +898,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB8658D21EFB6FB001FB4FE /* FavoriteCardsRepositorySpec.swift in Sources */,
 				A12280CE21F10AD3009FFE9E /* RealmCardTypeSpec.swift in Sources */,
 				A12280DE21F118AF009FFE9E /* CacheServiceSpec.swift in Sources */,
 				2FB8658D21EFB6FB001FB4FE /* FavoriteCardsRepositorySpec.swift in Sources */,
@@ -942,6 +962,7 @@
 				A1F9E5B321F0DB9100A84182 /* MTG_Model.swift in Sources */,
 				A12280BC21F0F1E0009FFE9E /* MTG_Service.swift in Sources */,
 				2FB865BC21F0DA3B001FB4FE /* DefaultManager.swift in Sources */,
+				2F8E05E321F21D3B00688BC1 /* LocalData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
