@@ -11,7 +11,7 @@ import Domain
 import Moya
 import Alamofire
 
-public final class MTG_Service: Domain.CardsUseCase{
+public final class MTG_Service {
     private let provider: MoyaProvider<MTG_Model>
     private let decoder: JSONDecoder
     
@@ -40,8 +40,30 @@ public final class MTG_Service: Domain.CardsUseCase{
                 handler(Domain.Result.failure(error))
             }
         }
-        
     }
+    
+    private func performFetchCards(query:String, page: Int, handler: @escaping (Domain.Result<[Card]>) -> ()){
+        requestCards(query: query, page: page) { (result) in
+            switch result {
+            case .success(let cards):
+                if (cards.count == 0){
+                    handler( Domain.Result.success(cards) )
+                } else {
+                    self.performFetchCards(query: query, page: page+1, handler: { (nextResult) in
+                        switch nextResult {
+                        case .success(let moreCards):
+                            handler(Domain.Result.success(cards+moreCards))
+                        case .failure(let error):
+                            handler(Domain.Result.failure(error))
+                        }
+                    })
+                }
+            case .failure(let error):
+                handler(Domain.Result.failure(error))
+            }
+        }
+    }
+    
     
     private func requestCards(from set:MetaCardSet, page: Int, handler: @escaping (Domain.Result<[Card]>) -> ()){
         provider.request(.getCards(set: set.code, page: page)) { (result) in
@@ -63,8 +85,8 @@ public final class MTG_Service: Domain.CardsUseCase{
         }
     }
     
-    private func requestCards(query:String, handler: @escaping (Domain.Result<[Card]>) -> ()){
-        provider.request(.getSearchedCards(query: query)) { (result) in
+    private func requestCards(query:String, page: Int, handler: @escaping (Domain.Result<[Card]>) -> ()){
+        provider.request(.getSearchedCards(query: query, page: page)) { (result) in
             switch result{
             case .success(let response):
                 do {
@@ -84,7 +106,7 @@ public final class MTG_Service: Domain.CardsUseCase{
     }
     
     private func requestSets(handler: @escaping (Domain.Result<[MetaCardSet]>) -> ()){
-        provider.request(.getMetaSets) { (result) in
+        provider.request(.getMetaSets(page: 1)) { (result) in  /* UNSAFE BUT COOL */
             switch result{
             case let .success(response):
                 do {
@@ -103,6 +125,10 @@ public final class MTG_Service: Domain.CardsUseCase{
         }
     }
     
+    
+}
+
+extension MTG_Service: Domain.CardsUseCase {
     public func fetchCards(from set: MetaCardSet, handler: @escaping (Domain.Result<[Card]>) -> ()) {
         performFetchCards(from: set, page: 1) { (result) in
             switch result {
@@ -117,8 +143,8 @@ public final class MTG_Service: Domain.CardsUseCase{
     }
     
     public func fetchCards(filter name: String, handler: @escaping (Domain.Result<[Card]>) -> ()) {
-        self.requestCards(query: name) { (result) in
-            switch result{
+        self.performFetchCards(query: name, page: 1) { (result) in
+            switch result {
             case .success(let cards):
                 handler(Domain.Result.success(cards))
             case .failure(let error):
@@ -127,9 +153,12 @@ public final class MTG_Service: Domain.CardsUseCase{
         }
     }
     
+}
+
+extension MTG_Service: Domain.ApplicationRunningUseCase {
     public func fetchSets(handler: @escaping (Domain.Result<[MetaCardSet]>) -> ()){
         self.requestSets { (result) in
-            switch result{
+            switch result {
             case .success(let values):
                 handler(Domain.Result.success(values))
             case .failure(let error):
@@ -137,6 +166,5 @@ public final class MTG_Service: Domain.CardsUseCase{
             }
         }
     }
-    
     
 }
