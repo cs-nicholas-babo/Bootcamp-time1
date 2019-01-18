@@ -10,6 +10,7 @@ import Foundation
 import Domain
 import Moya
 import Alamofire
+import PlatformLocalDatabase
 
 public final class MTG_Service {
     private let provider: MoyaProvider<MTG_Model>
@@ -161,10 +162,25 @@ extension MTG_Service: Domain.ApplicationRunningUseCase {
             switch result {
             case .success(let values):
                 handler(Domain.Result.success(values))
-            case .failure(let error):
-                handler(Domain.Result.failure(error))
+            case .failure(_):
+                let cacheService = CacheServiceProvider().useCase()
+                cacheService.fetchSets(handler: { (cacheResult) in
+                    switch cacheResult {
+                    case .success(let cache):
+                        handler(Domain.Result.success(cache))
+                    case .failure(let error):
+                        handler(Domain.Result.failure(error))
+                    }
+                })
             }
         }
     }
-    
+}
+
+extension MTG_Service: Domain.ApplicationStartupUseCase {
+    public func startupSets(handler: @escaping () -> ()) {
+        self.fetchSets { (result) in
+            handler()
+        }
+    }
 }
