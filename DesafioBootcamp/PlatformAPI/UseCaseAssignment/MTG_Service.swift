@@ -157,6 +157,10 @@ extension MTG_Service: Domain.CardsUseCase {
 }
 
 extension MTG_Service: Domain.ApplicationRunningUseCase {
+    public func upsert(set: MetaCardSet) {
+        //
+    }
+    
     public func fetchSets(handler: @escaping (Domain.Result<[MetaCardSet]>) -> ()){
         self.requestSets { (result) in
             switch result {

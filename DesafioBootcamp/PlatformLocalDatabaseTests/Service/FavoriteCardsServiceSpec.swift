@@ -27,7 +27,7 @@ final public class FavoriteCardsServiceSpec: QuickSpec{
         let cacheRealm = try! Realm(configuration: cacheConfig)
         
         let repo = FavoriteCardsRepository(realm: realm)
-        let cacheRepo = CardSetCacheRepository(realm: realm)
+//        let cacheRepo = CardSetCacheRepository(realm: realm)
         let manager = CacheManager(realm: cacheRealm)
         
         beforeEach {
