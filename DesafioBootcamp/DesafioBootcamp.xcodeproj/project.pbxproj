@@ -7,26 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2FB8658D21EFB6FB001FB4FE /* FavoriteCardsRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8658C21EFB6FB001FB4FE /* FavoriteCardsRepositorySpec.swift */; };
-		2FB8659521EFB81C001FB4FE /* RealmCardMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD9F21EFAA4A0060A691 /* RealmCardMock.swift */; };
-		2FB8659621EFB820001FB4FE /* RealmCardSetMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFDA221EFAB8E0060A691 /* RealmCardSetMock.swift */; };
-		2FB8659921F09B15001FB4FE /* RealmCardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8659821F09B15001FB4FE /* RealmCardSpec.swift */; };
-		2FB8659B21F09CA6001FB4FE /* RealmCardSetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8659A21F09CA6001FB4FE /* RealmCardSetSpec.swift */; };
-		2FB8659E21F09E84001FB4FE /* CacheManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8659D21F09E84001FB4FE /* CacheManagerSpec.swift */; };
-		2FB865AB21F0D1CB001FB4FE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A821F0D1CB001FB4FE /* Alamofire.framework */; };
 		2FB865AC21F0D1CB001FB4FE /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A921F0D1CB001FB4FE /* Moya.framework */; };
-		2FB865AD21F0D1CB001FB4FE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865AA21F0D1CB001FB4FE /* Result.framework */; };
 		2FB865AE21F0D1F7001FB4FE /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A821F0D1CB001FB4FE /* Alamofire.framework */; };
 		2FB865AF21F0D1F7001FB4FE /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A821F0D1CB001FB4FE /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2FB865B021F0D1F7001FB4FE /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A921F0D1CB001FB4FE /* Moya.framework */; };
 		2FB865B121F0D1F7001FB4FE /* Moya.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865A921F0D1CB001FB4FE /* Moya.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FB865B221F0D1F7001FB4FE /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865AA21F0D1CB001FB4FE /* Result.framework */; };
 		2FB865B321F0D1F7001FB4FE /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FB865AA21F0D1CB001FB4FE /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2FB954CF21EF8C3900B09AFF /* DomainRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954CD21EF8C3900B09AFF /* DomainRepresentable.swift */; };
 		2FB954D021EF8C3900B09AFF /* RealmRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954CE21EF8C3900B09AFF /* RealmRepresentable.swift */; };
 		2FB954D221EF8C6900B09AFF /* RealmCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954D121EF8C6900B09AFF /* RealmCard.swift */; };
-		2FB954D321EF8CB700B09AFF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
-		2FB954D421EF8CB700B09AFF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; };
 		2FB954D721EF961800B09AFF /* RepositoryAbstract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954D621EF961800B09AFF /* RepositoryAbstract.swift */; };
 		2FB954D921EF964700B09AFF /* FavoriteCardsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954D821EF964700B09AFF /* FavoriteCardsRepository.swift */; };
 		2FB954DC21EF9D1B00B09AFF /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954DB21EF9D1B00B09AFF /* UseCaseProviders.swift */; };
@@ -44,24 +33,24 @@
 		2FEBC26A21EE04E700B10DED /* CardsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26921EE04E700B10DED /* CardsUseCase.swift */; };
 		2FEBC26C21EE055B00B10DED /* FavoriteCardsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26B21EE055B00B10DED /* FavoriteCardsUseCase.swift */; };
 		2FEBC26E21EE05B600B10DED /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */; };
+		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
+		5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */; };
+		5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */; };
+		5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */; };
+		5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0621F0ABDE00A862F4 /* CardSetListErrorState.swift */; };
+		5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0821F0AC2900A862F4 /* CardSetListBaseState.swift */; };
 		A10C946421EFB5FE0061632A /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A10C946521EFB5FE0061632A /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0B21ECF18900A1A665 /* AppDelegate.swift */; };
-		A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0D21ECF18900A1A665 /* ViewController.swift */; };
 		A1145E1121ECF18900A1A665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E0F21ECF18900A1A665 /* Main.storyboard */; };
 		A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */; };
 		A1145E1621ECF18B00A1A665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1521ECF18B00A1A665 /* Assets.xcassets */; };
 		A1145E1921ECF18B00A1A665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1721ECF18B00A1A665 /* LaunchScreen.storyboard */; };
 		A13645AD21EFB9A2007D81EB /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A13645AE21EFB9A2007D81EB /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A13645B521EFBAEA007D81EB /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
-		A13645B621EFBAEA007D81EB /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
 		A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */; };
 		A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */; };
 		A19CFD7821EF9A960060A691 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7721EF9A960060A691 /* CacheManager.swift */; };
-		A1DF492B21EE769E00E1DCF6 /* MTGService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492A21EE769E00E1DCF6 /* MTGService.swift */; };
-		A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */; };
-		A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493021EF540900E1DCF6 /* CardsScreen.swift */; };
 		A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */; };
 		A1DF494021EF64FA00E1DCF6 /* PlatformAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1DF494321EF64FA00E1DCF6 /* PlatformAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */; };
@@ -69,17 +58,45 @@
 		A1DF495121EF651900E1DCF6 /* PlatformLocalDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; };
 		A1DF495521EF651900E1DCF6 /* PlatformLocalDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		A1EDFF2721F0A9B500CFE3F2 /* Alias CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EDFF2621F0A9B500CFE3F2 /* Alias CardSet.swift */; };
+		ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */; };
+		ACA4FF9021F0B50000E7BC96 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4FF8F21F0B50000E7BC96 /* Factory.swift */; };
+		ACA4FF9321F0BB4000E7BC96 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
+		ACA4FF9421F0BB4000E7BC96 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; };
+		ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */; };
+		ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */; };
+		ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0621EF939F00252958 /* CardSetListPresentationLogic.swift */; };
+		ACB44A0B21EF958200252958 /* CardSetListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0A21EF958200252958 /* CardSetListModel.swift */; };
+		ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0C21EF978200252958 /* CardSetListDisplayLogic.swift */; };
+		ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A1021EFA40600252958 /* CardSetListInteractor.swift */; };
+		ACDDCBD321F0EC9600DE0C17 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
+		ACDDCBD521F0EC9600DE0C17 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
+		ACE788D121F23F1100718E4E /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE788D021F23F1100718E4E /* CardSet.swift */; };
+		ACE788D221F23F4100718E4E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
+		ACE788D321F23F4100718E4E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; };
+		ACE788F621F2408400718E4E /* DesafioBootcampTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE788F521F2408400718E4E /* DesafioBootcampTests.swift */; };
+		ACE7891221F2408F00718E4E /* CardSetListViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7890121F2408F00718E4E /* CardSetListViewModelSpec.swift */; };
+		ACE7891321F2408F00718E4E /* CardSetListDisplayLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7890421F2408F00718E4E /* CardSetListDisplayLogicMock.swift */; };
+		ACE7891421F2408F00718E4E /* CardSetListPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7890521F2408F00718E4E /* CardSetListPresenterSpec.swift */; };
+		ACE7891521F2408F00718E4E /* CardSetListInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7890821F2408F00718E4E /* CardSetListInteractorMock.swift */; };
+		ACE7891621F2408F00718E4E /* CardSetListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7890921F2408F00718E4E /* CardSetListViewControllerSpec.swift */; };
+		ACE7891721F2408F00718E4E /* MTGCardGatewayMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7890C21F2408F00718E4E /* MTGCardGatewayMock.swift */; };
+		ACE7891821F2408F00718E4E /* CardSetListPresentationLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7890D21F2408F00718E4E /* CardSetListPresentationLogicMock.swift */; };
+		ACE7891921F2408F00718E4E /* CardSetListInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7890E21F2408F00718E4E /* CardSetListInteractorSpec.swift */; };
+		ACE7891A21F2408F00718E4E /* ResultErrorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7891021F2408F00718E4E /* ResultErrorMock.swift */; };
+		ACE7891B21F2408F00718E4E /* MockValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7891121F2408F00718E4E /* MockValues.swift */; };
+		ACE7893521F2411B00718E4E /* CacheManagerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7892D21F2411B00718E4E /* CacheManagerSpec.swift */; };
+		ACE7893621F2411B00718E4E /* FavoriteCardsRepositorySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7892E21F2411B00718E4E /* FavoriteCardsRepositorySpec.swift */; };
+		ACE7893721F2411B00718E4E /* RealmCardSetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7893021F2411B00718E4E /* RealmCardSetSpec.swift */; };
+		ACE7893821F2411B00718E4E /* RealmCardSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7893121F2411B00718E4E /* RealmCardSpec.swift */; };
+		ACE7893921F2411B00718E4E /* RealmCardMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7893321F2411B00718E4E /* RealmCardMock.swift */; };
+		ACE7893A21F2411B00718E4E /* RealmCardSetMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7893421F2411B00718E4E /* RealmCardSetMock.swift */; };
+		ACE7893B21F2414400718E4E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
+		ACE7893C21F2414400718E4E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
+		ACE7893D21F2414800718E4E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
+		ACE7893E21F2414800718E4E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2FB8658F21EFB6FB001FB4FE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A1145E0721ECF18900A1A665;
-			remoteInfo = DesafioBootcamp;
-		};
 		2FEBC25221ED057800B10DED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
@@ -100,6 +117,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = A1DF494C21EF651900E1DCF6;
 			remoteInfo = PlatformLocalDatabase;
+		};
+		ACE788F821F2408400718E4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1145E0721ECF18900A1A665;
+			remoteInfo = DesafioBootcamp;
+		};
+		ACE7892721F2410F00718E4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1145E0721ECF18900A1A665;
+			remoteInfo = DesafioBootcamp;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -127,12 +158,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2FB8658A21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformLocalDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2FB8658C21EFB6FB001FB4FE /* FavoriteCardsRepositorySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsRepositorySpec.swift; sourceTree = "<group>"; };
-		2FB8658E21EFB6FB001FB4FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2FB8659821F09B15001FB4FE /* RealmCardSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSpec.swift; sourceTree = "<group>"; };
-		2FB8659A21F09CA6001FB4FE /* RealmCardSetSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSetSpec.swift; sourceTree = "<group>"; };
-		2FB8659D21F09E84001FB4FE /* CacheManagerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManagerSpec.swift; sourceTree = "<group>"; };
 		2FB865A821F0D1CB001FB4FE /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Frameworks/Alamofire.framework; sourceTree = "<group>"; };
 		2FB865A921F0D1CB001FB4FE /* Moya.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Moya.framework; path = Frameworks/Moya.framework; sourceTree = "<group>"; };
 		2FB865AA21F0D1CB001FB4FE /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Frameworks/Result.framework; sourceTree = "<group>"; };
@@ -156,9 +181,14 @@
 		2FEBC26921EE04E700B10DED /* CardsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26B21EE055B00B10DED /* FavoriteCardsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
+		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
+		5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewController.swift; sourceTree = "<group>"; };
+		5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListLoadingState.swift; sourceTree = "<group>"; };
+		5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListShowCardsState.swift; sourceTree = "<group>"; };
+		5DA18F0621F0ABDE00A862F4 /* CardSetListErrorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListErrorState.swift; sourceTree = "<group>"; };
+		5DA18F0821F0AC2900A862F4 /* CardSetListBaseState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListBaseState.swift; sourceTree = "<group>"; };
 		A1145E0821ECF18900A1A665 /* DesafioBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1145E0B21ECF18900A1A665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A1145E0D21ECF18900A1A665 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1145E1021ECF18900A1A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1145E1321ECF18900A1A665 /* DesafioBootcamp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesafioBootcamp.xcdatamodel; sourceTree = "<group>"; };
 		A1145E1521ECF18B00A1A665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -171,11 +201,6 @@
 		A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSet.swift; sourceTree = "<group>"; };
 		A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardType.swift; sourceTree = "<group>"; };
 		A19CFD7721EF9A960060A691 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
-		A19CFD9F21EFAA4A0060A691 /* RealmCardMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardMock.swift; sourceTree = "<group>"; };
-		A19CFDA221EFAB8E0060A691 /* RealmCardSetMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSetMock.swift; sourceTree = "<group>"; };
-		A1DF492A21EE769E00E1DCF6 /* MTGService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGService.swift; sourceTree = "<group>"; };
-		A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
-		A1DF493021EF540900E1DCF6 /* CardsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsScreen.swift; sourceTree = "<group>"; };
 		A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCode Protocol.swift"; sourceTree = "<group>"; };
 		A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformAPI.h; sourceTree = "<group>"; };
@@ -183,19 +208,39 @@
 		A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformLocalDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformLocalDatabase.h; sourceTree = "<group>"; };
 		A1DF495021EF651900E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1EDFF2621F0A9B500CFE3F2 /* Alias CardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alias CardSet.swift"; sourceTree = "<group>"; };
+		ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListFactory.swift; sourceTree = "<group>"; };
+		ACA4FF8F21F0B50000E7BC96 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGCardGateway.swift; sourceTree = "<group>"; };
+		ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListBusinessLogic.swift; sourceTree = "<group>"; };
+		ACB44A0621EF939F00252958 /* CardSetListPresentationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresentationLogic.swift; sourceTree = "<group>"; };
+		ACB44A0A21EF958200252958 /* CardSetListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListModel.swift; sourceTree = "<group>"; };
+		ACB44A0C21EF978200252958 /* CardSetListDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListDisplayLogic.swift; sourceTree = "<group>"; };
+		ACB44A1021EFA40600252958 /* CardSetListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListInteractor.swift; sourceTree = "<group>"; };
+		ACE788D021F23F1100718E4E /* CardSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
+		ACE788F321F2408400718E4E /* DesafioBootcampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioBootcampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE788F521F2408400718E4E /* DesafioBootcampTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesafioBootcampTests.swift; sourceTree = "<group>"; };
+		ACE788F721F2408400718E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE7890121F2408F00718E4E /* CardSetListViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListViewModelSpec.swift; sourceTree = "<group>"; };
+		ACE7890421F2408F00718E4E /* CardSetListDisplayLogicMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListDisplayLogicMock.swift; sourceTree = "<group>"; };
+		ACE7890521F2408F00718E4E /* CardSetListPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListPresenterSpec.swift; sourceTree = "<group>"; };
+		ACE7890821F2408F00718E4E /* CardSetListInteractorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListInteractorMock.swift; sourceTree = "<group>"; };
+		ACE7890921F2408F00718E4E /* CardSetListViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListViewControllerSpec.swift; sourceTree = "<group>"; };
+		ACE7890C21F2408F00718E4E /* MTGCardGatewayMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGCardGatewayMock.swift; sourceTree = "<group>"; };
+		ACE7890D21F2408F00718E4E /* CardSetListPresentationLogicMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListPresentationLogicMock.swift; sourceTree = "<group>"; };
+		ACE7890E21F2408F00718E4E /* CardSetListInteractorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListInteractorSpec.swift; sourceTree = "<group>"; };
+		ACE7891021F2408F00718E4E /* ResultErrorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultErrorMock.swift; sourceTree = "<group>"; };
+		ACE7891121F2408F00718E4E /* MockValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockValues.swift; sourceTree = "<group>"; };
+		ACE7892221F2410E00718E4E /* PlatformLocalDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformLocalDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACE7892621F2410F00718E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACE7892D21F2411B00718E4E /* CacheManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManagerSpec.swift; sourceTree = "<group>"; };
+		ACE7892E21F2411B00718E4E /* FavoriteCardsRepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCardsRepositorySpec.swift; sourceTree = "<group>"; };
+		ACE7893021F2411B00718E4E /* RealmCardSetSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCardSetSpec.swift; sourceTree = "<group>"; };
+		ACE7893121F2411B00718E4E /* RealmCardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCardSpec.swift; sourceTree = "<group>"; };
+		ACE7893321F2411B00718E4E /* RealmCardMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCardMock.swift; sourceTree = "<group>"; };
+		ACE7893421F2411B00718E4E /* RealmCardSetMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCardSetMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2FB8658721EFB6FB001FB4FE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A13645B521EFBAEA007D81EB /* Nimble.framework in Frameworks */,
-				A13645B621EFBAEA007D81EB /* Quick.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2FEBC24A21ED057800B10DED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,15 +252,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB865B021F0D1F7001FB4FE /* Moya.framework in Frameworks */,
 				A1DF494321EF64FA00E1DCF6 /* PlatformAPI.framework in Frameworks */,
 				2FB865AC21F0D1CB001FB4FE /* Moya.framework in Frameworks */,
 				2FB865B221F0D1F7001FB4FE /* Result.framework in Frameworks */,
 				2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */,
-				2FB865AD21F0D1CB001FB4FE /* Result.framework in Frameworks */,
 				2FB865AE21F0D1F7001FB4FE /* Alamofire.framework in Frameworks */,
 				A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */,
-				2FB865AB21F0D1CB001FB4FE /* Alamofire.framework in Frameworks */,
+				ACA4FF9321F0BB4000E7BC96 /* Realm.framework in Frameworks */,
+				ACDDCBD321F0EC9600DE0C17 /* Nimble.framework in Frameworks */,
+				ACA4FF9421F0BB4000E7BC96 /* RealmSwift.framework in Frameworks */,
+				A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */,
+				ACDDCBD521F0EC9600DE0C17 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,52 +277,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB954D321EF8CB700B09AFF /* Realm.framework in Frameworks */,
-				2FB954D421EF8CB700B09AFF /* RealmSwift.framework in Frameworks */,
+				ACE788D221F23F4100718E4E /* Realm.framework in Frameworks */,
+				ACE788D321F23F4100718E4E /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE788F021F2408400718E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE7893B21F2414400718E4E /* Nimble.framework in Frameworks */,
+				ACE7893C21F2414400718E4E /* Quick.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE7891F21F2410E00718E4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE7893D21F2414800718E4E /* Nimble.framework in Frameworks */,
+				ACE7893E21F2414800718E4E /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FB8658B21EFB6FB001FB4FE /* PlatformLocalDatabaseTests */ = {
-			isa = PBXGroup;
-			children = (
-				2FB8659C21F09E24001FB4FE /* Repository */,
-				2FB8659721F09ABA001FB4FE /* Entities */,
-				2FB8659421EFB808001FB4FE /* Samples */,
-				2FB8658E21EFB6FB001FB4FE /* Info.plist */,
-			);
-			path = PlatformLocalDatabaseTests;
-			sourceTree = "<group>";
-		};
-		2FB8659421EFB808001FB4FE /* Samples */ = {
-			isa = PBXGroup;
-			children = (
-				A19CFD9F21EFAA4A0060A691 /* RealmCardMock.swift */,
-				A19CFDA221EFAB8E0060A691 /* RealmCardSetMock.swift */,
-			);
-			path = Samples;
-			sourceTree = "<group>";
-		};
-		2FB8659721F09ABA001FB4FE /* Entities */ = {
-			isa = PBXGroup;
-			children = (
-				2FB8659821F09B15001FB4FE /* RealmCardSpec.swift */,
-				2FB8659A21F09CA6001FB4FE /* RealmCardSetSpec.swift */,
-			);
-			path = Entities;
-			sourceTree = "<group>";
-		};
-		2FB8659C21F09E24001FB4FE /* Repository */ = {
-			isa = PBXGroup;
-			children = (
-				2FB8658C21EFB6FB001FB4FE /* FavoriteCardsRepositorySpec.swift */,
-				2FB8659D21F09E84001FB4FE /* CacheManagerSpec.swift */,
-			);
-			path = Repository;
-			sourceTree = "<group>";
-		};
 		2FB954CB21EF8C0400B09AFF /* Entities */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,12 +346,10 @@
 		2FEBC24721ED051200B10DED /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				ACB449FF21EF919E00252958 /* Scenes */,
 				A1DF493521EF547C00E1DCF6 /* AppDelegate */,
 				A1DF493221EF542400E1DCF6 /* Util */,
-				A1DF492F21EF53D100E1DCF6 /* Screens */,
-				A1DF492C21EF532B00E1DCF6 /* Controllers */,
-				A1DF492921EE768F00E1DCF6 /* Network */,
-				A1145E0D21ECF18900A1A665 /* ViewController.swift */,
+				A1DF492921EE768F00E1DCF6 /* Gateways */,
 				A1145E0F21ECF18900A1A665 /* Main.storyboard */,
 				A1145E1521ECF18B00A1A665 /* Assets.xcassets */,
 				A1145E1721ECF18B00A1A665 /* LaunchScreen.storyboard */,
@@ -350,7 +375,7 @@
 				2FEBC25C21ED05AD00B10DED /* Card.swift */,
 				2FEBC25E21ED05C300B10DED /* MetaCardSet.swift */,
 				2FEBC26021ED063B00B10DED /* CardType.swift */,
-				A1EDFF2621F0A9B500CFE3F2 /* Alias CardSet.swift */,
+				ACE788D021F23F1100718E4E /* CardSet.swift */,
 			);
 			path = "MTG Entities";
 			sourceTree = "<group>";
@@ -375,6 +400,17 @@
 			path = Providers;
 			sourceTree = "<group>";
 		};
+		5DA18EFF21F0AAC400A862F4 /* States */ = {
+			isa = PBXGroup;
+			children = (
+				5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */,
+				5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */,
+				5DA18F0621F0ABDE00A862F4 /* CardSetListErrorState.swift */,
+				5DA18F0821F0AC2900A862F4 /* CardSetListBaseState.swift */,
+			);
+			path = States;
+			sourceTree = "<group>";
+		};
 		A1145DFF21ECF18900A1A665 = {
 			isa = PBXGroup;
 			children = (
@@ -382,7 +418,8 @@
 				2FEBC24E21ED057800B10DED /* Domain */,
 				A1DF493D21EF64FA00E1DCF6 /* PlatformAPI */,
 				A1DF494E21EF651900E1DCF6 /* PlatformLocalDatabase */,
-				2FB8658B21EFB6FB001FB4FE /* PlatformLocalDatabaseTests */,
+				ACE788F421F2408400718E4E /* DesafioBootcampTests */,
+				ACE7892321F2410E00718E4E /* PlatformLocalDatabaseTests */,
 				A1145E0921ECF18900A1A665 /* Products */,
 				A13C654121EF6FA700689169 /* Frameworks */,
 			);
@@ -395,7 +432,8 @@
 				2FEBC24D21ED057800B10DED /* Domain.framework */,
 				A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */,
 				A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */,
-				2FB8658A21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.xctest */,
+				ACE788F321F2408400718E4E /* DesafioBootcampTests.xctest */,
+				ACE7892221F2410E00718E4E /* PlatformLocalDatabaseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -424,28 +462,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A1DF492921EE768F00E1DCF6 /* Network */ = {
+		A1DF492921EE768F00E1DCF6 /* Gateways */ = {
 			isa = PBXGroup;
 			children = (
-				A1DF492A21EE769E00E1DCF6 /* MTGService.swift */,
+				ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */,
 			);
-			path = Network;
-			sourceTree = "<group>";
-		};
-		A1DF492C21EF532B00E1DCF6 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				A1DF492D21EF535F00E1DCF6 /* CardsViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		A1DF492F21EF53D100E1DCF6 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				A1DF493021EF540900E1DCF6 /* CardsScreen.swift */,
-			);
-			path = Screens;
+			path = Gateways;
 			sourceTree = "<group>";
 		};
 		A1DF493221EF542400E1DCF6 /* Util */ = {
@@ -485,6 +507,224 @@
 			path = PlatformLocalDatabase;
 			sourceTree = "<group>";
 		};
+		ACA4FF8B21F0B4BE00E7BC96 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		ACA4FF8E21F0B4EA00E7BC96 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4FF8F21F0B50000E7BC96 /* Factory.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		ACB449FF21EF919E00252958 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4FF8E21F0B4EA00E7BC96 /* Commons */,
+				ACB44A0821EF940D00252958 /* CardSetList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ACB44A0021EF91AC00252958 /* Intercator */ = {
+			isa = PBXGroup;
+			children = (
+				ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */,
+				ACB44A1021EFA40600252958 /* CardSetListInteractor.swift */,
+			);
+			path = Intercator;
+			sourceTree = "<group>";
+		};
+		ACB44A0121EF91B300252958 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ACB44A0621EF939F00252958 /* CardSetListPresentationLogic.swift */,
+				5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ACB44A0221EF924F00252958 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5DA18EFF21F0AAC400A862F4 /* States */,
+				ACB44A0C21EF978200252958 /* CardSetListDisplayLogic.swift */,
+				5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ACB44A0821EF940D00252958 /* CardSetList */ = {
+			isa = PBXGroup;
+			children = (
+				ACA4FF8B21F0B4BE00E7BC96 /* Factories */,
+				ACB44A0921EF956100252958 /* Models */,
+				ACB44A0021EF91AC00252958 /* Intercator */,
+				ACB44A0121EF91B300252958 /* Presenter */,
+				ACB44A0221EF924F00252958 /* ViewController */,
+			);
+			path = CardSetList;
+			sourceTree = "<group>";
+		};
+		ACB44A0921EF956100252958 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ACB44A0A21EF958200252958 /* CardSetListModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ACE788F421F2408400718E4E /* DesafioBootcampTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACE788FD21F2408F00718E4E /* Application */,
+				ACE788F521F2408400718E4E /* DesafioBootcampTests.swift */,
+				ACE788F721F2408400718E4E /* Info.plist */,
+			);
+			path = DesafioBootcampTests;
+			sourceTree = "<group>";
+		};
+		ACE788FD21F2408F00718E4E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				ACE788FE21F2408F00718E4E /* Scenes */,
+				ACE7890F21F2408F00718E4E /* Commons */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		ACE788FE21F2408F00718E4E /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				ACE788FF21F2408F00718E4E /* CardSetList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		ACE788FF21F2408F00718E4E /* CardSetList */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7890021F2408F00718E4E /* ViewModel */,
+				ACE7890221F2408F00718E4E /* Presenter */,
+				ACE7890621F2408F00718E4E /* ViewController */,
+				ACE7890A21F2408F00718E4E /* Interactor */,
+			);
+			path = CardSetList;
+			sourceTree = "<group>";
+		};
+		ACE7890021F2408F00718E4E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7890121F2408F00718E4E /* CardSetListViewModelSpec.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		ACE7890221F2408F00718E4E /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7890321F2408F00718E4E /* Mocks */,
+				ACE7890521F2408F00718E4E /* CardSetListPresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		ACE7890321F2408F00718E4E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7890421F2408F00718E4E /* CardSetListDisplayLogicMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		ACE7890621F2408F00718E4E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7890721F2408F00718E4E /* Mocks */,
+				ACE7890921F2408F00718E4E /* CardSetListViewControllerSpec.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		ACE7890721F2408F00718E4E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7890821F2408F00718E4E /* CardSetListInteractorMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		ACE7890A21F2408F00718E4E /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7890B21F2408F00718E4E /* Mocks */,
+				ACE7890E21F2408F00718E4E /* CardSetListInteractorSpec.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		ACE7890B21F2408F00718E4E /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7890C21F2408F00718E4E /* MTGCardGatewayMock.swift */,
+				ACE7890D21F2408F00718E4E /* CardSetListPresentationLogicMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		ACE7890F21F2408F00718E4E /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7891021F2408F00718E4E /* ResultErrorMock.swift */,
+				ACE7891121F2408F00718E4E /* MockValues.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		ACE7892321F2410E00718E4E /* PlatformLocalDatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7892F21F2411B00718E4E /* Entities */,
+				ACE7892C21F2411B00718E4E /* Repository */,
+				ACE7893221F2411B00718E4E /* Samples */,
+				ACE7892621F2410F00718E4E /* Info.plist */,
+			);
+			path = PlatformLocalDatabaseTests;
+			sourceTree = "<group>";
+		};
+		ACE7892C21F2411B00718E4E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7892D21F2411B00718E4E /* CacheManagerSpec.swift */,
+				ACE7892E21F2411B00718E4E /* FavoriteCardsRepositorySpec.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		ACE7892F21F2411B00718E4E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7893021F2411B00718E4E /* RealmCardSetSpec.swift */,
+				ACE7893121F2411B00718E4E /* RealmCardSpec.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		ACE7893221F2411B00718E4E /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7893321F2411B00718E4E /* RealmCardMock.swift */,
+				ACE7893421F2411B00718E4E /* RealmCardSetMock.swift */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -515,24 +755,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2FB8658921EFB6FB001FB4FE /* PlatformLocalDatabaseTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2FB8659321EFB6FB001FB4FE /* Build configuration list for PBXNativeTarget "PlatformLocalDatabaseTests" */;
-			buildPhases = (
-				2FB8658621EFB6FB001FB4FE /* Sources */,
-				2FB8658721EFB6FB001FB4FE /* Frameworks */,
-				2FB8658821EFB6FB001FB4FE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2FB8659021EFB6FB001FB4FE /* PBXTargetDependency */,
-			);
-			name = PlatformLocalDatabaseTests;
-			productName = PlatformLocalDatabaseTests;
-			productReference = 2FB8658A21EFB6FB001FB4FE /* PlatformLocalDatabaseTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		2FEBC24C21ED057800B10DED /* Domain */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FEBC25621ED057800B10DED /* Build configuration list for PBXNativeTarget "Domain" */;
@@ -608,6 +830,42 @@
 			productReference = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		ACE788F221F2408400718E4E /* DesafioBootcampTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE788FA21F2408400718E4E /* Build configuration list for PBXNativeTarget "DesafioBootcampTests" */;
+			buildPhases = (
+				ACE788EF21F2408400718E4E /* Sources */,
+				ACE788F021F2408400718E4E /* Frameworks */,
+				ACE788F121F2408400718E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACE788F921F2408400718E4E /* PBXTargetDependency */,
+			);
+			name = DesafioBootcampTests;
+			productName = DesafioBootcampTests;
+			productReference = ACE788F321F2408400718E4E /* DesafioBootcampTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ACE7892121F2410E00718E4E /* PlatformLocalDatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACE7892921F2410F00718E4E /* Build configuration list for PBXNativeTarget "PlatformLocalDatabaseTests" */;
+			buildPhases = (
+				ACE7891E21F2410E00718E4E /* Sources */,
+				ACE7891F21F2410E00718E4E /* Frameworks */,
+				ACE7892021F2410E00718E4E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACE7892821F2410F00718E4E /* PBXTargetDependency */,
+			);
+			name = PlatformLocalDatabaseTests;
+			productName = PlatformLocalDatabaseTests;
+			productReference = ACE7892221F2410E00718E4E /* PlatformLocalDatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -618,10 +876,6 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = concrete.solutions;
 				TargetAttributes = {
-					2FB8658921EFB6FB001FB4FE = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = A1145E0721ECF18900A1A665;
-					};
 					2FEBC24C21ED057800B10DED = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
@@ -635,6 +889,14 @@
 					A1DF494C21EF651900E1DCF6 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+					};
+					ACE788F221F2408400718E4E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A1145E0721ECF18900A1A665;
+					};
+					ACE7892121F2410E00718E4E = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = A1145E0721ECF18900A1A665;
 					};
 				};
 			};
@@ -655,19 +917,13 @@
 				2FEBC24C21ED057800B10DED /* Domain */,
 				A1DF493B21EF64FA00E1DCF6 /* PlatformAPI */,
 				A1DF494C21EF651900E1DCF6 /* PlatformLocalDatabase */,
-				2FB8658921EFB6FB001FB4FE /* PlatformLocalDatabaseTests */,
+				ACE788F221F2408400718E4E /* DesafioBootcampTests */,
+				ACE7892121F2410E00718E4E /* PlatformLocalDatabaseTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2FB8658821EFB6FB001FB4FE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2FEBC24B21ED057800B10DED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -699,22 +955,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		2FB8658621EFB6FB001FB4FE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		ACE788F121F2408400718E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB8658D21EFB6FB001FB4FE /* FavoriteCardsRepositorySpec.swift in Sources */,
-				2FB8659E21F09E84001FB4FE /* CacheManagerSpec.swift in Sources */,
-				2FB8659921F09B15001FB4FE /* RealmCardSpec.swift in Sources */,
-				2FB8659521EFB81C001FB4FE /* RealmCardMock.swift in Sources */,
-				2FB8659621EFB820001FB4FE /* RealmCardSetMock.swift in Sources */,
-				2FB8659B21F09CA6001FB4FE /* RealmCardSetSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACE7892021F2410E00718E4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		2FEBC24921ED057800B10DED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -726,8 +983,8 @@
 				2FEBC25F21ED05C300B10DED /* MetaCardSet.swift in Sources */,
 				2FEBC25D21ED05AD00B10DED /* Card.swift in Sources */,
 				2FEBC26C21EE055B00B10DED /* FavoriteCardsUseCase.swift in Sources */,
+				ACE788D121F23F1100718E4E /* CardSet.swift in Sources */,
 				2FEBC26121ED063B00B10DED /* CardType.swift in Sources */,
-				A1EDFF2721F0A9B500CFE3F2 /* Alias CardSet.swift in Sources */,
 				2FEBC26A21EE04E700B10DED /* CardsUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -736,13 +993,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1DF492B21EE769E00E1DCF6 /* MTGService.swift in Sources */,
-				A1DF493121EF540900E1DCF6 /* CardsScreen.swift in Sources */,
-				A1145E0E21ECF18900A1A665 /* ViewController.swift in Sources */,
-				A1DF492E21EF535F00E1DCF6 /* CardsViewController.swift in Sources */,
+				ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */,
+				ACA4FF9021F0B50000E7BC96 /* Factory.swift in Sources */,
+				5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */,
+				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
+				ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */,
+				ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */,
+				ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */,
+				5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
+				5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */,
+				5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */,
+				5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
+				5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */,
+				ACB44A0B21EF958200252958 /* CardSetListModel.swift in Sources */,
+				ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,14 +1038,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ACE788EF21F2408400718E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE7891221F2408F00718E4E /* CardSetListViewModelSpec.swift in Sources */,
+				ACE7891721F2408F00718E4E /* MTGCardGatewayMock.swift in Sources */,
+				ACE7891321F2408F00718E4E /* CardSetListDisplayLogicMock.swift in Sources */,
+				ACE7891621F2408F00718E4E /* CardSetListViewControllerSpec.swift in Sources */,
+				ACE7891421F2408F00718E4E /* CardSetListPresenterSpec.swift in Sources */,
+				ACE7891A21F2408F00718E4E /* ResultErrorMock.swift in Sources */,
+				ACE7891521F2408F00718E4E /* CardSetListInteractorMock.swift in Sources */,
+				ACE788F621F2408400718E4E /* DesafioBootcampTests.swift in Sources */,
+				ACE7891821F2408F00718E4E /* CardSetListPresentationLogicMock.swift in Sources */,
+				ACE7891B21F2408F00718E4E /* MockValues.swift in Sources */,
+				ACE7891921F2408F00718E4E /* CardSetListInteractorSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACE7891E21F2410E00718E4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACE7893621F2411B00718E4E /* FavoriteCardsRepositorySpec.swift in Sources */,
+				ACE7893821F2411B00718E4E /* RealmCardSpec.swift in Sources */,
+				ACE7893521F2411B00718E4E /* CacheManagerSpec.swift in Sources */,
+				ACE7893721F2411B00718E4E /* RealmCardSetSpec.swift in Sources */,
+				ACE7893A21F2411B00718E4E /* RealmCardSetMock.swift in Sources */,
+				ACE7893921F2411B00718E4E /* RealmCardMock.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2FB8659021EFB6FB001FB4FE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A1145E0721ECF18900A1A665 /* DesafioBootcamp */;
-			targetProxy = 2FB8658F21EFB6FB001FB4FE /* PBXContainerItemProxy */;
-		};
 		2FEBC25321ED057800B10DED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2FEBC24C21ED057800B10DED /* Domain */;
@@ -793,6 +1086,16 @@
 			isa = PBXTargetDependency;
 			target = A1DF494C21EF651900E1DCF6 /* PlatformLocalDatabase */;
 			targetProxy = A1DF495221EF651900E1DCF6 /* PBXContainerItemProxy */;
+		};
+		ACE788F921F2408400718E4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1145E0721ECF18900A1A665 /* DesafioBootcamp */;
+			targetProxy = ACE788F821F2408400718E4E /* PBXContainerItemProxy */;
+		};
+		ACE7892821F2410F00718E4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1145E0721ECF18900A1A665 /* DesafioBootcamp */;
+			targetProxy = ACE7892721F2410F00718E4E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -816,54 +1119,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2FB8659121EFB6FB001FB4FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
-				INFOPLIST_FILE = PlatformLocalDatabaseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = bootcampT1.PlatformLocalDatabaseTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
-			};
-			name = Debug;
-		};
-		2FB8659221EFB6FB001FB4FE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Frameworks",
-				);
-				INFOPLIST_FILE = PlatformLocalDatabaseTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = bootcampT1.PlatformLocalDatabaseTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
-			};
-			name = Release;
-		};
 		2FEBC25721ED057800B10DED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1167,7 +1422,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = concrete.time1.PlatformLocalDatabase;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1178,48 +1432,124 @@
 		A1DF495821EF651900E1DCF6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 83C3V38WSB;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
 				);
-				INFOPLIST_FILE = PlatformLocalDatabase/Info.plist;
+				INFOPLIST_FILE = DesafioBootcampTests/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = concrete.time1.PlatformLocalDatabase;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
+			};
+			name = Release;
+		};
+		ACE788FB21F2408400718E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = DesafioBootcampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
+			};
+			name = Debug;
+		};
+		ACE788FC21F2408400718E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = DesafioBootcampTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcampTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
+			};
+			name = Release;
+		};
+		ACE7892A21F2410F00718E4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = PlatformLocalDatabaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.PlatformLocalDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
+			};
+			name = Debug;
+		};
+		ACE7892B21F2410F00718E4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = PlatformLocalDatabaseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.PlatformLocalDatabaseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FB8659321EFB6FB001FB4FE /* Build configuration list for PBXNativeTarget "PlatformLocalDatabaseTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2FB8659121EFB6FB001FB4FE /* Debug */,
-				2FB8659221EFB6FB001FB4FE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2FEBC25621ED057800B10DED /* Build configuration list for PBXNativeTarget "Domain" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1261,6 +1591,24 @@
 			buildConfigurations = (
 				A1DF495721EF651900E1DCF6 /* Debug */,
 				A1DF495821EF651900E1DCF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE788FA21F2408400718E4E /* Build configuration list for PBXNativeTarget "DesafioBootcampTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE788FB21F2408400718E4E /* Debug */,
+				ACE788FC21F2408400718E4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACE7892921F2410F00718E4E /* Build configuration list for PBXNativeTarget "PlatformLocalDatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACE7892A21F2410F00718E4E /* Debug */,
+				ACE7892B21F2410F00718E4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

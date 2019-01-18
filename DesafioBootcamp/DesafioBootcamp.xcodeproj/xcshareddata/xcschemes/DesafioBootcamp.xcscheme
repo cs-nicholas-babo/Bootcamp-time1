@@ -26,18 +26,39 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      codeCoverageEnabled = "YES"
+      onlyGenerateCoverageForSpecifiedTargets = "YES"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <CodeCoverageTargets>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A1145E0721ECF18900A1A665"
+            BuildableName = "DesafioBootcamp.app"
+            BlueprintName = "DesafioBootcamp"
+            ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
+         </BuildableReference>
+      </CodeCoverageTargets>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2FB8658921EFB6FB001FB4FE"
-               BuildableName = "PlatformLocalDatabaseTests.xctest"
-               BlueprintName = "PlatformLocalDatabaseTests"
+               BlueprintIdentifier = "AC78B35621F0E8170029C977"
+               BuildableName = "DesafioBootcampTests.xctest"
+               BlueprintName = "DesafioBootcampTests"
                ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+             skipped = "NO">
+             <BuildableReference
+                 BuildableIdentifier = "primary"
+                 BlueprintIdentifier = "2FB8658921EFB6FB001FB4FE"
+                 BuildableName = "PlatformLocalDatabaseTests.xctest"
+                 BlueprintName = "PlatformLocalDatabaseTests"
+                 ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
+                 </BuildableReference>
+             </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
