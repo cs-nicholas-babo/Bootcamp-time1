@@ -12,19 +12,20 @@ import Moya
 import Alamofire
 
 public enum MTG_Model{
-    case getCards(set:String, page:Int)
-    case getMetaSets
+    case getCards(set: String, page: Int)
+    case getSearch(name: String, page: Int)
+    case getMetaSets(page: Int)
 }
 
 extension MTG_Model: Moya.TargetType{
     public var baseURL: URL { return URL(string: "https://api.magicthegathering.io/v1")! }
     
     public var path: String {
-        switch self{
-        case .getMetaSets:
-            return "/sets"
-        case .getCards(_, _):
+        switch self {
+        case .getCards(_, _), .getSearch(_, _):
             return "/cards"
+        case .getMetaSets(_):
+            return "/sets"
         }
     }
     

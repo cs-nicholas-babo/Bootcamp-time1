@@ -13,9 +13,9 @@ public struct Card {
     public let name: String
     public let setCode: String
     public let types: Set<CardType>
-    public let imageURL: String
+    public let imageURL: String?
     
-    public init (id: String, name: String, setCode: String, types: Set<CardType>, imageURL: String){
+    public init (id: String, name: String, setCode: String, types: Set<CardType>, imageURL: String? = nil){
         self.id = id
         self.name = name
         self.setCode = setCode
@@ -53,7 +53,7 @@ extension Card: Codable {
         } else {
             self.types = Set<CardType>()
         }
-        self.imageURL = try container.decode(String.self, forKey: .imageURL)
+        self.imageURL = try container.decodeIfPresent(String.self, forKey: .imageURL)
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -64,6 +64,6 @@ extension Card: Codable {
         try container.encode(self.setCode, forKey: .setCode)
         let arrayTypes = self.types.map({ $0.name })
         try container.encode(arrayTypes, forKey: .types)
-        try container.encode(self.imageURL, forKey: .imageURL)
+        try container.encodeIfPresent(self.imageURL, forKey: .imageURL)
     }
 }

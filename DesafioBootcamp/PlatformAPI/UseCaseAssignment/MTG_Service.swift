@@ -20,7 +20,26 @@ public final class MTG_Service: Domain.CardsUseCase{
         self.decoder = decoder
     }
     
-    private func performFetchCards(){
+    private func performFetchCards(from set:MetaCardSet, page: Int, handler: @escaping (Domain.Result<[Card]>) -> ()){
+        requestCards(from: set, page: page) { (result) in
+            switch result {
+            case .success(let cards):
+                if (cards.count == 0){
+                    handler( Domain.Result.success(cards) )
+                } else {
+                    self.performFetchCards(from: set, page: page+1, handler: { (nextResult) in
+                        switch nextResult {
+                        case .success(let moreCards):
+                            handler(Domain.Result.success(cards+moreCards))
+                        case .failure(let error):
+                            handler(Domain.Result.failure(error))
+                        }
+                    })
+                }
+            case .failure(let error):
+                handler(Domain.Result.failure(error))
+            }
+        }
         
     }
     
@@ -45,13 +64,15 @@ public final class MTG_Service: Domain.CardsUseCase{
     }
     
     public func fetchCards(from set: MetaCardSet, handler: @escaping (Domain.Result<[Card]>) -> ()) {
-        self.requestCards(from: set, page: 1) { (res: Domain.Result<[Card]>) in
-            switch res {
-            case .success(let me):
-                handler(Domain.Result.success(me))
-            case .failure(let no):
-                handler(Domain.Result.failure(no))
+        performFetchCards(from: set, page: 1) { (result) in
+            switch result {
+            case .success(let cards):
+                print(cards.count)
+            case .failure(let error):
+                print(error.errorCode)
             }
+            handler(result)
+            
         }
     }
     
