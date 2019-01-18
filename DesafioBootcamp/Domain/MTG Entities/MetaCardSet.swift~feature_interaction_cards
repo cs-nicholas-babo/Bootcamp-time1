@@ -1,8 +1,8 @@
 //
-//  CardSet.swift
+//  Set.swift
 //  Domain
 //
-//  Created by miguel.horta.nery on 16/01/19.
+//  Created by g.guimaraes on 14/01/19.
 //  Copyright © 2019 concrete.solutions. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ public struct MetaCardSet {
     public let code: String
     public let name: String
     
-    public init(code: String, name:String){
+    public init(code: String, name: String) {
         self.code = code
         self.name = name
     }
