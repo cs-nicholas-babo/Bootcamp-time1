@@ -9,7 +9,7 @@
 import Foundation
 import Domain
 
-enum NetworkErrorCode: String {
+public enum NetworkErrorCode: String {
 	case decodingError = "NEC0001"
 	case responseError = "NEC0002"
 	case spamProtectionError = "NEC0003"

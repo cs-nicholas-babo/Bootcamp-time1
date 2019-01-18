@@ -69,6 +69,54 @@ class PlatformAPITests: QuickSpec {
                             })
                         })
                     })
+                    it("should return the correct results", closure: {
+                        waitUntil(action: { done in
+                            mockupService.fetchCards(filter: "Elf", handler: { (result) in
+                                switch result{
+                                case .success(let cards):
+                                    cards.forEach({ (card) in
+                                        expect(card.name.lowercased()).to(contain("Elf".lowercased()))
+                                    })
+                                    done()
+                                case .failure(_):
+                                    fail()
+                                    done()
+                                }
+                            })
+                        })
+                    })
+                })
+                
+                describe("using a not-valid query", {
+                    it("should not be successful", closure: {
+                        waitUntil(action: { done in
+                            mockupService.fetchCards(filter: "asbvcadsfjklh", handler: { (result) in
+                                switch result{
+                                case .success(_):
+                                    fail()
+                                    done()
+                                case .failure(let error):
+                                    expect(error).toNot(beNil())
+                                    done()
+                                }
+                            })
+                        })
+                    })
+                    
+                    it("should return a _ error", closure: {
+                        waitUntil(action: { done in
+                            service.fetchCards(filter: "asbvcadsfjklh", handler: { (result) in
+                                switch result{
+                                case .success(_):
+                                    fail()
+                                    done()
+                                case .failure(let error):
+                                    expect(error.errorCode).to(equal(NetworkErrorCode.decodingError.rawValue))
+                                    done()
+                                }
+                            })
+                        })
+                    })
                 })
             })
         }
@@ -119,6 +167,7 @@ class PlatformAPITests: QuickSpec {
                     })
                 })
             })
+            
         }
     }
     
