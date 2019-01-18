@@ -13,6 +13,7 @@ import Alamofire
 
 public enum MTG_Model{
     case getCards(set:String, page:Int)
+    case getSearchedCards(query: String)
     case getMetaSets
 }
 
@@ -25,6 +26,8 @@ extension MTG_Model: Moya.TargetType{
             return "/sets"
         case .getCards(_, _):
             return "/cards"
+        case .getSearchedCards(let query):
+            return "/cards?name=\(query)"
         }
     }
     
@@ -43,6 +46,10 @@ extension MTG_Model: Moya.TargetType{
             return data ?? "{}".utf8Encoded
         case .getCards(let set, let page):
             let fileURL = Bundle(for: APIBundle.self).url(forResource: "cards_stub_\(set)_\(page)", withExtension: "json") ?? URL(fileURLWithPath: "")
+            let data = try? Data(contentsOf: fileURL)
+            return data ?? "{}".utf8Encoded
+        case .getSearchedCards(let query):
+            let fileURL = Bundle(for: APIBundle.self).url(forResource: "cards_stub_query_\(query)", withExtension: "json") ?? URL(fileURLWithPath: "")
             let data = try? Data(contentsOf: fileURL)
             return data ?? "{}".utf8Encoded
         }

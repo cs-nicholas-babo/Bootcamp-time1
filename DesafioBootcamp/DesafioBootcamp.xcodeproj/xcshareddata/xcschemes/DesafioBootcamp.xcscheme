@@ -37,6 +37,13 @@
             BlueprintName = "PlatformLocalDatabase"
             ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
          </BuildableReference>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A1DF493B21EF64FA00E1DCF6"
+            BuildableName = "PlatformAPI.framework"
+            BlueprintName = "PlatformAPI"
+            ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
+         </BuildableReference>
       </CodeCoverageTargets>
       <Testables>
          <TestableReference

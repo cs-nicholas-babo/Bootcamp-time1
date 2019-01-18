@@ -39,7 +39,7 @@ extension Card: RealmRepresentable {
         realmObject.name = self.name
         realmObject.setCode = self.setCode
         self.types.forEach({ realmObject.types.append($0.realmData()) })
-        realmObject.imageURL = self.imageURL
+        realmObject.imageURL = self.imageURL ?? ""
         
         return realmObject
     }

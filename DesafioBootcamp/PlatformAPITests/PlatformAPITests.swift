@@ -12,10 +12,16 @@ import PlatformAPI
 import Quick
 import Nimble
 
+import Moya
+import Alamofire
+
 class PlatformAPITests: QuickSpec {
     
     override func spec() {
         let service = MTG_Service()
+        let provider = MoyaProvider<MTG_Model>.init(stubClosure: MoyaProvider<MTG_Model>.immediatelyStub)
+        let mockupService = MTG_Service(provider: provider, decoder: JSONDecoder.standardDecoder)
+
         
         describe("Whe using API Services") {
             describe("When fetching cards", {
@@ -47,9 +53,73 @@ class PlatformAPITests: QuickSpec {
                         }
                     })
                 })
+                
+                describe("using a query", {
+                    it("should return the cards containing the query in its name", closure: {
+                        waitUntil(action: { done in
+                            mockupService.fetchCards(filter: "Elf", handler: { (result) in
+                                switch result{
+                                case .success(let cards):
+                                    expect(cards.count).to(equal(78))
+                                    done()
+                                case .failure(_):
+                                    fail()
+                                    done()
+                                }
+                            })
+                        })
+                    })
+                })
             })
         }
-        
+        describe("When using a Mockup API service") {
+            describe("a fetch for card sets", {
+                it("should return a valid response of Sets", closure: {
+                    waitUntil(action: { done in
+                        mockupService.fetchSets(handler: { (result) in
+                            switch result{
+                            case .success(let metaSets):
+                                expect(metaSets).toNot(beNil())
+                                done()
+                            case .failure(_):
+                                fail()
+                                done()
+                            }
+                        })
+                    })
+                })
+                
+                it("should return the expected amount of sets", closure: {
+                    waitUntil(action: { done in
+                        mockupService.fetchSets(handler: { (result) in
+                            switch result{
+                            case .success(let metaSets):
+                                expect(metaSets.count).to(equal(431))
+                                done()
+                            case .failure(_):
+                                fail()
+                                done()
+                            }
+                        })
+                    })
+                })
+                
+                it("should return the expected sets", closure: {
+                    waitUntil(action: { done in
+                        mockupService.fetchSets(handler: { (result) in
+                            switch result{
+                            case .success(let metaSets):
+                                expect(metaSets.first?.code).to(equal("10E"))
+                                done()
+                            case .failure(_):
+                                fail()
+                                done()
+                            }
+                        })
+                    })
+                })
+            })
+        }
     }
     
 }
