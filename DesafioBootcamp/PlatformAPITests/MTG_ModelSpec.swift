@@ -23,10 +23,10 @@ final class MTG_ModelSpec: QuickSpec{
         describe("When using a MTG_Service") {
             describe("with a mockup MTG_Model", {
                 describe("the MetaSets model", {
-                    let metaSetsMockup = MTG_Model.getMetaSets
+                    let metaSetsMockup = MTG_Model.getMetaSets(page: 1)
 
                     it("should have the correct mockup data", closure: {
-                        let fileURL = Bundle(for: APIBundle.self).url(forResource: "sets_stub", withExtension: "json") ?? URL(fileURLWithPath: "")
+                        let fileURL = Bundle(for: MTG_Service.self).url(forResource: "sets_stub_1", withExtension: "json") ?? URL(fileURLWithPath: "")
                         let data = try? Data(contentsOf: fileURL)
                         expect(metaSetsMockup.sampleData).to(equal(data))
                     })
@@ -34,7 +34,7 @@ final class MTG_ModelSpec: QuickSpec{
                 describe("the Cards model", {
                     let cardsMockup = MTG_Model.getCards(set: "10E", page: 1)
                     it("should have the correct mockup data", closure: {
-                        let fileURL = Bundle(for: APIBundle.self).url(forResource: "cards_stub_10E_1", withExtension: "json") ?? URL(fileURLWithPath: "")
+                        let fileURL = Bundle(for: MTG_Service.self).url(forResource: "cards_stub_10E_1", withExtension: "json") ?? URL(fileURLWithPath: "")
                         let data = try? Data(contentsOf: fileURL)
                         expect(cardsMockup.sampleData).to(equal(data))
                     })
@@ -45,3 +45,4 @@ final class MTG_ModelSpec: QuickSpec{
     }
     
 }
+

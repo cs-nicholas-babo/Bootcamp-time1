@@ -92,26 +92,11 @@ class PlatformAPITests: QuickSpec {
                         waitUntil(action: { done in
                             mockupService.fetchCards(filter: "asbvcadsfjklh", handler: { (result) in
                                 switch result{
-                                case .success(_):
-                                    fail()
+                                case .success(let cards):
+                                    expect(cards.count).to(equal(0))
                                     done()
                                 case .failure(let error):
                                     expect(error).toNot(beNil())
-                                    done()
-                                }
-                            })
-                        })
-                    })
-                    
-                    it("should return a _ error", closure: {
-                        waitUntil(action: { done in
-                            service.fetchCards(filter: "asbvcadsfjklh", handler: { (result) in
-                                switch result{
-                                case .success(_):
-                                    fail()
-                                    done()
-                                case .failure(let error):
-                                    expect(error.errorCode).to(equal(NetworkErrorCode.decodingError.rawValue))
                                     done()
                                 }
                             })
@@ -166,6 +151,7 @@ class PlatformAPITests: QuickSpec {
                         })
                     })
                 })
+
             })
             
         }

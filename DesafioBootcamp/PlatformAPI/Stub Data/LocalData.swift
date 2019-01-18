@@ -19,7 +19,7 @@ struct LocalData {
     }
     
     static func localDataWith(_ urlPath: String) -> Data? {
-        let url = Bundle(for: MTG_Service.self).url(forResource: "empty_cards", withExtension: "json") ?? URL(fileURLWithPath: "")
+        let url = Bundle(for: MTG_Service.self).url(forResource: urlPath, withExtension: "json") ?? URL(fileURLWithPath: "")
         return try? Data(contentsOf: url)
     }
 }
