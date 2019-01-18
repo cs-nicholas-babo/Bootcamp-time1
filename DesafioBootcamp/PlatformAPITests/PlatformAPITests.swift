@@ -52,6 +52,23 @@ class PlatformAPITests: QuickSpec {
                             })
                         }
                     })
+                    
+                    it("invalid parameters should return an empty json file", closure: {
+                        let set = MetaCardSet(code: "ABC", name: "WrongSetName", releaseDate: Date())
+                        waitUntil(action: { done in
+                            mockupService.fetchCards(from: set, handler: { (result) in
+                                switch result{
+                                case .success(let result):
+                                    expect(result.count).to(equal(0))
+                                    done()
+                                case .failure(_):
+                                    fail()
+                                    done()
+                                }
+                            })
+                        })
+                        
+                    })
                 })
                 
                 describe("using a query", {
