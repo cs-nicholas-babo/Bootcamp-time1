@@ -4,12 +4,6 @@
 
 ![Gif](assets/Logo-animado-1.gif)
 
-## Bem vindo
-
----
-
-Agradeço por poder participar do Recruiting Day da Concrete. Foi uma honra conhecer várias pessoas talentosas nas suas várias áreas de atuação e conhecimento.
-
 ## Desafio
 
 ---
@@ -18,64 +12,45 @@ Utilizando a [API](https://docs.magicthegathering.io/) do [Magic The Gathering](
 
 Este projeto foi executado utilizando arquitetura Clean, dividindo as responsabilidades de Domínio, Plataforma e Aplicação, modularizados em frameworks. Nossa camada de aplicação foi desenvolvido utilizando VIP (ViewInteractorPresenter).
 
-** EM DESENVOLVIMENTO A PARTIR DESSE PONTO ** 
-
-O projeto foi desenvolvido utilizando o Swift 4.2 no iOS 12.1. As APIs utilizadas foram:
-
-- Kingfisher (gerenciamente de image-set com auto-cache)
-- Quick & Nimble (testes)
-- KIF (testes funcionais)
-
-# Features incluídas ..
+# Features 
 
 ---
 
-### Precisava ter:
+- Tela de Splash;
+- Layout em abas, contendo na primeira aba a tela de grid de cartas  e na segunda aba a tela de lista de cards favoritados no app; ambas abas devem ser vistas de maneira idêntica: set > subset cardtype > card;
+- A grid de cartas aloca outros sets de acordo com uma regra de scroll.
+- Tratamento de erros e apresentação dos fluxos de exceção: Busca vazia, Error generico, loading;
+- Ao clicar em um card, deve navegar para a tela de Detalhe da carta;
+- Tela de Detalhe do card deve conter ação para favoritar/defavoritar o card, e deve ser possível navegar pelo subset da mesma.
+- Cards favoritos devem ser persistidos localmente;
+- Testes unitários no domínio e nas plataformas.
+- Testes funcionais na aplicação.
 
-- [x] Tela de Splash;
-- [x] Layout em abas, contendo na primeira aba a tela de grid de filmes e na segunda aba a tela de lista de filmes favoritados no app;
-- [x] Tela de grid de filmes trazendo a lista de filmes populares da [API](https://developers.themoviedb.org/3/movies/get-popular-movies).
-- [x] Tratamento de erros e apresentação dos fluxos de exceção: Busca vazia, Error generico, loading;
-- [x] Ao clicar em um filme do grid deve navegar para a tela de detalhe do filme;
-- [x] Tela de Detalhe do filme deve conter ação para favoritar o filme;
-- [x] Tela de Detalhe do filme deve conter gênero do filme por extenso (ex: Action, Horror, etc); Use esse [request](https://developers.themoviedb.org/3/genres/get-movie-list) da API para trazer a lista.
-- [x] Tela de lista de favoritos persistido no app entre sessões;
-- [x] Tela de favoritos deve permitir desfavoritar um filme.
-
-### Ganhava mais pontos se tiver:
-
-- [x] Tela de grid com busca local;
-- [x] Scroll Infinito para fazer paginação da API de filmes populares;
-- [x] Célula do Grid de filmes com informação se o filme foi favoritado no app ou não;
-- [x] Tela de filtro com seleção de data de lançamento e gênero. A tela de filtro só é acessível a partir da tela de favoritos;
-- [x] Ao Aplicar o filtro, retornar a tela de favoritos e fazer um filtro local usando as informações selecionadas referentes a data de lançamento e gênero;
-- [x] Testes unitários no projeto;
-- [ ] Testes funcionais.
-- [x] Pipeline Automatizado. (Com testing, code-coderage, project cleaning e git push cycle)
-
-### Detalhes:
-
-- [x] Proteção de Request Spam.
-- Optei por não utilizar o fastlane para CI por não ter confiança nos processos de autenticação.
-
-# Exemplos e sugestões
+## App Preview
 
 ---
 
-### Fluxo com Slash e grid de filmes
+### Placeholder para 
 
-![Image of Yaktocat](assets/flow/app-example-01.png)
+![Image of Yaktocat]()
 
-### Fluxo com Splash, Tela de Detalhes e tela de lista da favoritos
+## Construído com
 
-![Image of Yaktocat](assets/flow/app-example-02.png)
+* [Realm](https://github.com/Quick) - Banco de Dados 
+* [Quick/Nimble](https://github.com/Quick) - Testes unitários
+* [Nimble Snapshots](https://github.com/Moya/Moya) - Extensão do Nimble para trabalhar com Snapshots
+* [Kingfisher](https://github.com/onevcat/Kingfisher/) - Gerenciamento de image-set com cache-ing automático
+* [Moya](https://github.com/Moya/Moya) - Camada de conexão abstrata baseada no Alamofire
+* [Snapkit](https://github.com/Moya/Moya) - Syntaxsugar para Constraints
 
-### Fluxo Opcional de filtro
 
-![Image of Yaktocat](assets/flow/app-example-03.png)
+## Autores
 
-## **Submissão**
+* **Guilherme Guimarães** - [cs-g-guimaraes](https://github.com/cs-g-guimaraes)
+* **Miguel Nery** - [cs-miguel-nery](https://github.com/cs-miguel-nery)
+* **Nicholas Babo** - [cs-nicholas-babo](https://github.com/cs-nicholas-babo)
+* **Ricardo Souza Rachaus** - [cs-ricardo-rachaus](https://github.com/cs-ricardo-rachaus)
 
----
+## License
 
-Sobre detalhes de instalação do aplicativo basta entrar na pasta do projeto, PhilmaXXX e seguir os passos do Readme.md. Agradeço pela atenção e tenha um bom dia.
+Este projeto é licenciado dentro da licença MIT - Para ver detalhes vá ao arquivo [LICENSE.md](https://github.com/angular/angular.js/blob/master/LICENSE).
