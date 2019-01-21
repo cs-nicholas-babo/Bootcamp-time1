@@ -36,8 +36,8 @@
             BuildableName = "DesafioBootcamp.app"
             BlueprintName = "DesafioBootcamp"
             ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
-        </BuildableReference>
-        <BuildableReference
+         </BuildableReference>
+         <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A1DF494C21EF651900E1DCF6"
             BuildableName = "PlatformLocalDatabase.framework"
@@ -57,29 +57,39 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC78B35621F0E8170029C977"
+               BlueprintIdentifier = "ACE788F221F2408400718E4E"
                BuildableName = "DesafioBootcampTests.xctest"
                BlueprintName = "DesafioBootcampTests"
                ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
-             skipped = "NO">
-             <BuildableReference
-                 BuildableIdentifier = "primary"
-                 BlueprintIdentifier = "2FB8658921EFB6FB001FB4FE"
-                 BuildableName = "PlatformLocalDatabaseTests.xctest"
-                 BlueprintName = "PlatformLocalDatabaseTests"
-                 ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
-                 </BuildableReference>
-             </TestableReference>
-        <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2FB8658921EFB6FB001FB4FE"
+               BuildableName = "PlatformLocalDatabaseTests.xctest"
+               BlueprintName = "PlatformLocalDatabaseTests"
+               ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A12280C021F0F5B7009FFE9E"
                BuildableName = "PlatformAPITests.xctest"
                BlueprintName = "PlatformAPITests"
+               ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A131BBA121F663EE000869E1"
+               BuildableName = "LocalDatabaseTests.xctest"
+               BlueprintName = "LocalDatabaseTests"
                ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
             </BuildableReference>
          </TestableReference>
