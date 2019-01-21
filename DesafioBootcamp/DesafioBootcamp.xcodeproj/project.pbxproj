@@ -94,6 +94,13 @@
 		ACE7893C21F2414400718E4E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
 		ACE7893D21F2414800718E4E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
 		ACE7893E21F2414800718E4E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
+		ACE7894121F2638000718E4E /* CardSetListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7894021F2638000718E4E /* CardSetListCollectionViewCell.swift */; };
+		ACE7894521F2667800718E4E /* CardSetListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7894421F2667800718E4E /* CardSetListTableViewCell.swift */; };
+		ACE7894721F2669C00718E4E /* CardSetListTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7894621F2669C00718E4E /* CardSetListTableView.swift */; };
+		ACE7895121F2688C00718E4E /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACE7894E21F2687A00718E4E /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACE7895321F26ABE00718E4E /* CardSetListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7895221F26ABE00718E4E /* CardSetListCollectionView.swift */; };
+		ACE7895521F26CB600718E4E /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACE7895421F26CB600718E4E /* Kingfisher.framework */; };
+		ACE7895721F26CD900718E4E /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACE7895421F26CB600718E4E /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +158,8 @@
 				2FB865B321F0D1F7001FB4FE /* Result.framework in Embed Frameworks */,
 				2FB865B121F0D1F7001FB4FE /* Moya.framework in Embed Frameworks */,
 				2FB865AF21F0D1F7001FB4FE /* Alamofire.framework in Embed Frameworks */,
+				ACE7895721F26CD900718E4E /* Kingfisher.framework in Embed Frameworks */,
+				ACE7895121F2688C00718E4E /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -238,6 +247,12 @@
 		ACE7893121F2411B00718E4E /* RealmCardSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCardSpec.swift; sourceTree = "<group>"; };
 		ACE7893321F2411B00718E4E /* RealmCardMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCardMock.swift; sourceTree = "<group>"; };
 		ACE7893421F2411B00718E4E /* RealmCardSetMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCardSetMock.swift; sourceTree = "<group>"; };
+		ACE7894021F2638000718E4E /* CardSetListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionViewCell.swift; sourceTree = "<group>"; };
+		ACE7894421F2667800718E4E /* CardSetListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListTableViewCell.swift; sourceTree = "<group>"; };
+		ACE7894621F2669C00718E4E /* CardSetListTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListTableView.swift; sourceTree = "<group>"; };
+		ACE7894E21F2687A00718E4E /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		ACE7895221F26ABE00718E4E /* CardSetListCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionView.swift; sourceTree = "<group>"; };
+		ACE7895421F26CB600718E4E /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,7 +277,9 @@
 				ACDDCBD321F0EC9600DE0C17 /* Nimble.framework in Frameworks */,
 				ACA4FF9421F0BB4000E7BC96 /* RealmSwift.framework in Frameworks */,
 				A1DF495421EF651900E1DCF6 /* PlatformLocalDatabase.framework in Frameworks */,
+				ACE7895521F26CB600718E4E /* Kingfisher.framework in Frameworks */,
 				ACDDCBD521F0EC9600DE0C17 /* Quick.framework in Frameworks */,
+				ACE7895521F26CB600718E4E /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,6 +468,8 @@
 		A13C654121EF6FA700689169 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ACE7895421F26CB600718E4E /* Kingfisher.framework */,
+				ACE7894E21F2687A00718E4E /* SnapKit.framework */,
 				2FB865A821F0D1CB001FB4FE /* Alamofire.framework */,
 				2FB865A921F0D1CB001FB4FE /* Moya.framework */,
 				2FB865AA21F0D1CB001FB4FE /* Result.framework */,
@@ -563,6 +582,7 @@
 		ACB44A0821EF940D00252958 /* CardSetList */ = {
 			isa = PBXGroup;
 			children = (
+				ACE7893F21F24ACA00718E4E /* Views */,
 				ACA4FF8B21F0B4BE00E7BC96 /* Factories */,
 				ACB44A0921EF956100252958 /* Models */,
 				ACB44A0021EF91AC00252958 /* Intercator */,
@@ -723,6 +743,33 @@
 				ACE7893421F2411B00718E4E /* RealmCardSetMock.swift */,
 			);
 			path = Samples;
+			sourceTree = "<group>";
+		};
+		ACE7893F21F24ACA00718E4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7894321F2665600718E4E /* Table */,
+				ACE7894221F2664D00718E4E /* Collection */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACE7894221F2664D00718E4E /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7895221F26ABE00718E4E /* CardSetListCollectionView.swift */,
+				ACE7894021F2638000718E4E /* CardSetListCollectionViewCell.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		ACE7894321F2665600718E4E /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				ACE7894421F2667800718E4E /* CardSetListTableViewCell.swift */,
+				ACE7894621F2669C00718E4E /* CardSetListTableView.swift */,
+			);
+			path = Table;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1003,9 +1050,13 @@
 				5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
 				5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */,
+				ACE7895321F26ABE00718E4E /* CardSetListCollectionView.swift in Sources */,
+				ACE7894721F2669C00718E4E /* CardSetListTableView.swift in Sources */,
 				5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */,
+				ACE7894121F2638000718E4E /* CardSetListCollectionViewCell.swift in Sources */,
 				5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
+				ACE7894521F2667800718E4E /* CardSetListTableViewCell.swift in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
 				5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */,
 				ACB44A0B21EF958200252958 /* CardSetListModel.swift in Sources */,
@@ -1304,6 +1355,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DesafioBootcamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1327,6 +1379,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DesafioBootcamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
