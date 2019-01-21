@@ -20,11 +20,11 @@ Este projeto foi executado utilizando arquitetura Clean, dividindo as responsabi
 
 ** EM DESENVOLVIMENTO A PARTIR DESSE PONTO ** 
 
-O projeto foi desenvolvido utilizando o Swift 4 no iOS 12. As APIs utilizadas foram:
+O projeto foi desenvolvido utilizando o Swift 4.2 no iOS 12.1. As APIs utilizadas foram:
 
 - Kingfisher (gerenciamente de image-set com auto-cache)
-- Eureka (criação de formulário, utilizado na tela de filtros)
 - Quick & Nimble (testes)
+- KIF (testes funcionais)
 
 # Features incluídas ..
 
