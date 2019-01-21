@@ -30,9 +30,7 @@ O projeto foi desenvolvido utilizando o Swift 4.2 no iOS 12.1. As APIs utilizada
 
 ---
 
-### Precisava ter:
-
-- [x] Tela de Splash;
+- Tela de Splash;
 - [x] Layout em abas, contendo na primeira aba a tela de grid de filmes e na segunda aba a tela de lista de filmes favoritados no app;
 - [x] Tela de grid de filmes trazendo a lista de filmes populares da [API](https://developers.themoviedb.org/3/movies/get-popular-movies).
 - [x] Tratamento de erros e apresentação dos fluxos de exceção: Busca vazia, Error generico, loading;
