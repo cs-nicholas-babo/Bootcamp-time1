@@ -4,12 +4,6 @@
 
 ![Gif](assets/Logo-animado-1.gif)
 
-## Bem vindo
-
----
-
-Agradeço por poder participar do Recruiting Day da Concrete. Foi uma honra conhecer várias pessoas talentosas nas suas várias áreas de atuação e conhecimento.
-
 ## Desafio
 
 ---
