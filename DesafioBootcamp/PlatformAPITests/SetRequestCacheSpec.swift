@@ -29,10 +29,7 @@ final class SetRequestCacheSpec: QuickSpec{
         let errorProvider = MoyaProvider<MTG_Model>(requestClosure: requestClosure)
         let errorService = MTG_Service(provider: errorProvider, decoder: JSONDecoder.standardDecoder, databaseProvider: testProvider)
         
-        var config = Realm.Configuration.defaultConfiguration
-        config.inMemoryIdentifier = "com.DesafioBootcamp.Debug.Realm.CacheManager"
-        let realm = try! Realm(configuration: config)
-        
+        let realm = RealmConfig.test
         let cacheService = CacheManager(realm: realm)
         
         beforeSuite {

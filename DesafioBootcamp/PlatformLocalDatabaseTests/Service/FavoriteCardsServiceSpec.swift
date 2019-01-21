@@ -18,17 +18,9 @@ import RealmSwift
 final public class FavoriteCardsServiceSpec: QuickSpec{
     
     public override func spec() {
-        var config = Realm.Configuration.defaultConfiguration
-        config.inMemoryIdentifier = "com.DesafioBootcamp.Debug.Realm.FavoriteCardsRepository"
-        let realm = try! Realm(configuration: config)
-        
-        var cacheConfig = Realm.Configuration.defaultConfiguration
-        cacheConfig.inMemoryIdentifier = "com.DesafioBootcamp.Debug.Realm.CacheManager"
-        let cacheRealm = try! Realm(configuration: cacheConfig)
-        
+        let realm = RealmConfig.test
         let repo = FavoriteCardsRepository(realm: realm)
-//        let cacheRepo = CardSetCacheRepository(realm: realm)
-        let manager = CacheManager(realm: cacheRealm)
+        let manager = CacheManager(realm: realm)
         
         beforeEach {
             repo.deleteAll()

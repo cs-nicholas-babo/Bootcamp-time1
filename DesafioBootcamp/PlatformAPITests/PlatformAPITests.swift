@@ -21,7 +21,6 @@ class PlatformAPITests: QuickSpec {
         let service = MTG_Service()
         let provider = MoyaProvider<MTG_Model>.init(stubClosure: MoyaProvider<MTG_Model>.immediatelyStub)
         let mockupService = MTG_Service(provider: provider, decoder: JSONDecoder.standardDecoder)
-
         
         describe("Whe using API Services") {
             describe("When fetching cards", {

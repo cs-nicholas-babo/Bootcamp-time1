@@ -17,10 +17,7 @@ import RealmSwift
 class CacheManagerSpec: QuickSpec {
     
     override func spec() {
-        var config = Realm.Configuration.defaultConfiguration
-        config.inMemoryIdentifier = "com.DesafioBootcamp.Debug.Realm.CacheManager"
-        let realm = try! Realm(configuration: config)
-        
+        let realm = RealmConfig.test
         let manager = CacheManager(realm: realm)
         
         describe("When using a CacheManager") {

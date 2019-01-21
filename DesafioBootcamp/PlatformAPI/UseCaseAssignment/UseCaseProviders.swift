@@ -10,7 +10,7 @@ import Foundation
 import Domain
 import PlatformLocalDatabase
 
-public protocol MTG_ServiceProvider : class {
+public protocol MTG_ServiceProvider{
     func applicationStartupUseCase() -> Domain.ApplicationStartupUseCase
     func applicationRunningUseCase() -> Domain.ApplicationRunningUseCase
     func cardsUseCase() -> Domain.CardsUseCase
