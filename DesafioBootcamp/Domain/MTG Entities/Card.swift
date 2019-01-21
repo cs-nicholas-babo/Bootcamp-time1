@@ -13,12 +13,14 @@ public struct Card {
     public let name: String
     public let setCode: String
     public let types: Set<CardType>
+    public let imageURL: String?
     
-    public init (id: String, name: String, setCode: String, types: Set<CardType>){
+    public init (id: String, name: String, setCode: String, types: Set<CardType>, imageURL: String? = nil){
         self.id = id
         self.name = name
         self.setCode = setCode
         self.types = types
+        self.imageURL = imageURL
     }
 }
 
@@ -38,6 +40,7 @@ extension Card: Codable {
         case name = "name"
         case types = "types"
         case setCode = "set"
+        case imageURL = "imageURL"
     }
     
     public init(from decoder: Decoder) throws {
@@ -46,10 +49,16 @@ extension Card: Codable {
         self.name = try container.decode(String.self, forKey: .name)
         self.setCode = try container.decode(String.self, forKey: .setCode)
         if let decodedSet = try container.decodeIfPresent([String].self, forKey: .types){
-           self.types = Set(decodedSet.map({ CardType(name: $0) }))
+            self.types = Set(decodedSet.map({ CardType(name: $0) }))
         } else {
             self.types = Set<CardType>()
         }
+        self.imageURL = try container.decodeIfPresent(String.self, forKey: .imageURL)
+        //        if container.contains(.imageURL){
+        //            self.imageURL = try container.decodeIfPresent(String.self, forKey: .imageURL)
+        //        } else {
+        //            self.imageURL = nil
+        //        }
     }
     
     public func encode(to encoder: Encoder) throws {
@@ -60,5 +69,6 @@ extension Card: Codable {
         try container.encode(self.setCode, forKey: .setCode)
         let arrayTypes = self.types.map({ $0.name })
         try container.encode(arrayTypes, forKey: .types)
+        try container.encodeIfPresent(self.imageURL, forKey: .imageURL)
     }
 }
