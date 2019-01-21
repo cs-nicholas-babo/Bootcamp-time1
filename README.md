@@ -43,8 +43,8 @@ Este projeto foi executado utilizando arquitetura Clean, dividindo as responsabi
 ## Autores
 
 * **Guilherme Guimarães** - [cs-g-guimaraes](https://github.com/cs-g-guimaraes)
-* **Nicholas Babo** - [cs-nicholas-babo](https://github.com/cs-nicholas-babo)
 * **Miguel Nery** - [cs-miguel-nery](https://github.com/cs-miguel-nery)
+* **Nicholas Babo** - [cs-nicholas-babo](https://github.com/cs-nicholas-babo)
 * **Richardo Souza Rachaus** - [cs-ricardo-rachaus](https://github.com/cs-ricardo-rachaus)
 
 ## License
