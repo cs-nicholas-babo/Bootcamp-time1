@@ -14,11 +14,13 @@ import PlatformLocalDatabase
 
 public final class MTG_Service {
     private let provider: MoyaProvider<MTG_Model>
+    private let databaseUseCase: ApplicationRunningUseCase
     private let decoder: JSONDecoder
     
-    public init(provider:MoyaProvider<MTG_Model> = .init(manager: Alamofire.SessionManager.standardManager), decoder:JSONDecoder = JSONDecoder.standardDecoder) {
+    public init(provider:MoyaProvider<MTG_Model> = .init(manager: Alamofire.SessionManager.standardManager), decoder:JSONDecoder = JSONDecoder.standardDecoder, databaseProvider: ApplicationRunningUseCaseProvider = CacheServiceProvider.init()) {
         self.provider = provider
         self.decoder = decoder
+        self.databaseUseCase = databaseProvider.useCase()
     }
     
     private func performFetchCards(from set:MetaCardSet, page: Int, handler: @escaping (Domain.Result<[Card]>) -> ()){
@@ -126,6 +128,9 @@ public final class MTG_Service {
         }
     }
     
+    func upsert(set: MetaCardSet) {
+    }
+    
     
 }
 
@@ -157,17 +162,13 @@ extension MTG_Service: Domain.CardsUseCase {
 }
 
 extension MTG_Service: Domain.ApplicationRunningUseCase {
-    public func upsert(set: MetaCardSet) {
-        //
-    }
-    
     public func fetchSets(handler: @escaping (Domain.Result<[MetaCardSet]>) -> ()){
         self.requestSets { (result) in
             switch result {
             case .success(let values):
                 handler(Domain.Result.success(values))
             case .failure(_):
-                let cacheService = CacheServiceProvider().useCase()
+                let cacheService = self.databaseUseCase
                 cacheService.fetchSets(handler: { (cacheResult) in
                     switch cacheResult {
                     case .success(let cache):

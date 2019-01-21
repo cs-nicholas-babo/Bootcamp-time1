@@ -24,12 +24,20 @@ final class SetRequestCacheSpec: QuickSpec{
         let requestClosure = { (endpoint: Endpoint, done: MoyaProvider.RequestResultClosure) in
             done(.failure(MoyaError.underlying(NSError(domain: "forcedError", code: 999, userInfo: nil), nil)))
         }
+        
+        let testProvider = TestCacheServiceProvider()
         let errorProvider = MoyaProvider<MTG_Model>(requestClosure: requestClosure)
-        let errorService = MTG_Service(provider: errorProvider, decoder: JSONDecoder.standardDecoder)
+        let errorService = MTG_Service(provider: errorProvider, decoder: JSONDecoder.standardDecoder, databaseProvider: testProvider)
         
         var config = Realm.Configuration.defaultConfiguration
         config.inMemoryIdentifier = "com.DesafioBootcamp.Debug.Realm.CacheManager"
-//        let realm = try! Realm(configuration: config)
+        let realm = try! Realm(configuration: config)
+        
+        let cacheService = CacheManager(realm: realm)
+        
+        beforeSuite {
+            cacheService.cardSetRepository.deleteAll()
+        }
         
         describe("When fetching sets") {
             describe("if the API is not Available", {
@@ -37,9 +45,8 @@ final class SetRequestCacheSpec: QuickSpec{
                     let set1 = MetaCardSet(code: "code1", name: "name1", releaseDate: Date())
                     let set2 = MetaCardSet(code: "code2", name: "name2", releaseDate: Date())
                     
-                    let cacheService = CacheServiceProvider().useCase()
-                    cacheService.upsert(set: set1)
-                    cacheService.upsert(set: set2)
+                    cacheService.cardSetRepository.upsert(object: set1)
+                    cacheService.cardSetRepository.upsert(object: set2)
                     
                     waitUntil(action: { done in
                         errorService.fetchSets(handler: { (result) in

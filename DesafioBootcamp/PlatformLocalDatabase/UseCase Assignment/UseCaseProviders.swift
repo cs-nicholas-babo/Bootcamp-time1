@@ -36,3 +36,19 @@ public final class CacheServiceProvider: Domain.ApplicationRunningUseCaseProvide
     
     
 }
+
+public final class TestCacheServiceProvider: Domain.ApplicationRunningUseCaseProvider{
+    
+    public init() { }
+    
+    public func useCase() -> ApplicationRunningUseCase {
+        var config = Realm.Configuration.defaultConfiguration
+        config.inMemoryIdentifier = "com.DesafioBootcamp.Debug.Realm.CacheManager"
+        let realm = try! Realm(configuration: config)
+        
+        let manager = CacheManager(realm: realm)
+        
+        return CacheService(cacheManager: manager)
+    }
+    
+}
