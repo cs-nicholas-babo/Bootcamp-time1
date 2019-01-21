@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CardSetListFactory: Factory {
+protocol CardSetListFactory {
     static func makeMTGCardGateway() -> MTGCardGateway
 }
 

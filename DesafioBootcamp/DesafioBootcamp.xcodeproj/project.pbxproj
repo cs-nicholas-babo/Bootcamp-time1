@@ -34,6 +34,8 @@
 		2FEBC26C21EE055B00B10DED /* FavoriteCardsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26B21EE055B00B10DED /* FavoriteCardsUseCase.swift */; };
 		2FEBC26E21EE05B600B10DED /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */; };
 		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
+		5D4629B421F6018400A21814 /* CardSetListCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4629B321F6018400A21814 /* CardSetListCollectionViewDataSource.swift */; };
+		5D4629B621F6162F00A21814 /* CardSetListCollectionViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4629B521F6162F00A21814 /* CardSetListCollectionViewFactory.swift */; };
 		5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */; };
 		5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */; };
 		5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */; };
@@ -62,7 +64,6 @@
 		AC692AF121F616EA009734FE /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */; };
 		AC692AF221F616F5009734FE /* FBSnapshotTestCase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */; };
-		ACA4FF9021F0B50000E7BC96 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4FF8F21F0B50000E7BC96 /* Factory.swift */; };
 		ACA4FF9321F0BB4000E7BC96 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
 		ACA4FF9421F0BB4000E7BC96 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; };
 		ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */; };
@@ -196,6 +197,8 @@
 		2FEBC26B21EE055B00B10DED /* FavoriteCardsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
 		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
+		5D4629B321F6018400A21814 /* CardSetListCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		5D4629B521F6162F00A21814 /* CardSetListCollectionViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionViewFactory.swift; sourceTree = "<group>"; };
 		5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewController.swift; sourceTree = "<group>"; };
 		5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListLoadingState.swift; sourceTree = "<group>"; };
 		5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListShowCardsState.swift; sourceTree = "<group>"; };
@@ -225,7 +228,6 @@
 		AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
 		AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListFactory.swift; sourceTree = "<group>"; };
-		ACA4FF8F21F0B50000E7BC96 /* Factory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGCardGateway.swift; sourceTree = "<group>"; };
 		ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListBusinessLogic.swift; sourceTree = "<group>"; };
 		ACB44A0621EF939F00252958 /* CardSetListPresentationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresentationLogic.swift; sourceTree = "<group>"; };
@@ -539,6 +541,7 @@
 			isa = PBXGroup;
 			children = (
 				ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */,
+				5D4629B521F6162F00A21814 /* CardSetListCollectionViewFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -546,7 +549,6 @@
 		ACA4FF8E21F0B4EA00E7BC96 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				ACA4FF8F21F0B50000E7BC96 /* Factory.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -768,6 +770,7 @@
 			children = (
 				ACE7895221F26ABE00718E4E /* CardSetListCollectionView.swift */,
 				ACE7894021F2638000718E4E /* CardSetListCollectionViewCell.swift */,
+				5D4629B321F6018400A21814 /* CardSetListCollectionViewDataSource.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -1050,7 +1053,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */,
-				ACA4FF9021F0B50000E7BC96 /* Factory.swift in Sources */,
 				5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */,
 				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
 				ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */,
@@ -1065,8 +1067,10 @@
 				ACE7894121F2638000718E4E /* CardSetListCollectionViewCell.swift in Sources */,
 				5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
+				5D4629B621F6162F00A21814 /* CardSetListCollectionViewFactory.swift in Sources */,
 				ACE7894521F2667800718E4E /* CardSetListTableViewCell.swift in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
+				5D4629B421F6018400A21814 /* CardSetListCollectionViewDataSource.swift in Sources */,
 				5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */,
 				ACB44A0B21EF958200252958 /* CardSetListModel.swift in Sources */,
 				ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */,

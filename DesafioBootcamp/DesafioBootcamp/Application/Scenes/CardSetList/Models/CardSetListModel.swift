@@ -38,4 +38,6 @@ enum CardSetList {
             }
         }
     }
+    
+    static let collectionViewCellIdentifier = "CollectionViewCellIdentifier"
 }
