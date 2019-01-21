@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2FEBC24C21ED057800B10DED"
-               BuildableName = "Domain.framework"
-               BlueprintName = "Domain"
+               BlueprintIdentifier = "A1DF493B21EF64FA00E1DCF6"
+               BuildableName = "PlatformAPI.framework"
+               BlueprintName = "PlatformAPI"
                ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2FEBC24C21ED057800B10DED"
-            BuildableName = "Domain.framework"
-            BlueprintName = "Domain"
+            BlueprintIdentifier = "A1DF493B21EF64FA00E1DCF6"
+            BuildableName = "PlatformAPI.framework"
+            BlueprintName = "PlatformAPI"
             ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -63,9 +63,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2FEBC24C21ED057800B10DED"
-            BuildableName = "Domain.framework"
-            BlueprintName = "Domain"
+            BlueprintIdentifier = "A1DF493B21EF64FA00E1DCF6"
+            BuildableName = "PlatformAPI.framework"
+            BlueprintName = "PlatformAPI"
             ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

@@ -12,7 +12,7 @@ import Domain
 @testable import DesafioBootcamp
 
 struct MockValues {
-    static let metaCardSetMock = MetaCardSet(code: "setCode", name: "setName")
+    static let metaCardSetMock = MetaCardSet(code: "setCode", name: "setName", releaseDate: Date())
     
     static let metaCardSetsMock = [metaCardSetMock, metaCardSetMock, metaCardSetMock, metaCardSetMock, metaCardSetMock]
     

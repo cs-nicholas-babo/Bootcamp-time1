@@ -12,7 +12,7 @@ import RealmSwift
 
 public final class FavoriteCardsServiceProvider: Domain.FavoriteCardsUseCaseProvider {
     
-    let realm = try! Realm()
+    let realm = RealmConfig.production
     
     public init() { }
     
@@ -29,10 +29,24 @@ public final class CacheServiceProvider: Domain.ApplicationRunningUseCaseProvide
     public init() { }
     
     public func useCase() -> ApplicationRunningUseCase {
-        let manager = CacheManager(realm: try! Realm())
+        let manager = CacheManager(realm: RealmConfig.production)
         
         return CacheService(cacheManager: manager)
     }
     
+    
+}
+
+public final class TestCacheServiceProvider: Domain.ApplicationRunningUseCaseProvider{
+    
+    public init() { }
+    
+    public func useCase() -> ApplicationRunningUseCase {
+        let realm = RealmConfig.test
+        
+        let manager = CacheManager(realm: realm)
+        
+        return CacheService(cacheManager: manager)
+    }
     
 }
