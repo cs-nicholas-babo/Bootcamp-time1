@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F4A8A8621F5F027007012FB /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A8A8521F5F027007012FB /* UseCaseProviders.swift */; };
 		2F8E05E021F21C0900688BC1 /* empty_cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8E05DE21F21C0900688BC1 /* empty_cards.json */; };
 		2F8E05E121F21C0900688BC1 /* empty_sets.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8E05DF21F21C0900688BC1 /* empty_sets.json */; };
 		2F8E05E321F21D3B00688BC1 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E05E221F21D3B00688BC1 /* LocalData.swift */; };
@@ -161,6 +162,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F4A8A8521F5F027007012FB /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
 		2F8E05DE21F21C0900688BC1 /* empty_cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_cards.json; sourceTree = "<group>"; };
 		2F8E05DF21F21C0900688BC1 /* empty_sets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_sets.json; sourceTree = "<group>"; };
 		2F8E05E221F21D3B00688BC1 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
@@ -308,6 +310,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F4A8A8721F5F037007012FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A12280BB21F0F1E0009FFE9E /* MTG_Service.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		2F8E05E421F2214D00688BC1 /* Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -523,7 +533,7 @@
 		A12280BA21F0F16E009FFE9E /* UseCaseAssignment */ = {
 			isa = PBXGroup;
 			children = (
-				A12280BB21F0F1E0009FFE9E /* MTG_Service.swift */,
+				2F4A8A8521F5F027007012FB /* UseCaseProviders.swift */,
 			);
 			path = UseCaseAssignment;
 			sourceTree = "<group>";
@@ -624,6 +634,7 @@
 		A1DF493D21EF64FA00E1DCF6 /* PlatformAPI */ = {
 			isa = PBXGroup;
 			children = (
+				2F4A8A8721F5F037007012FB /* Services */,
 				A12280D221F110AF009FFE9E /* Stub Data */,
 				A12280BA21F0F16E009FFE9E /* UseCaseAssignment */,
 				A1F9E5B121F0DB7900A84182 /* Models */,
@@ -976,6 +987,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F4A8A8621F5F027007012FB /* UseCaseProviders.swift in Sources */,
 				2FB865BB21F0DA3B001FB4FE /* String+NetworkData.swift in Sources */,
 				2FB865BA21F0DA3B001FB4FE /* JSONDecoder+Models.swift in Sources */,
 				2FB865B921F0DA3B001FB4FE /* NetworkDomainError.swift in Sources */,
