@@ -36,9 +36,13 @@ Este projeto foi executado utilizando arquitetura Clean, dividindo as responsabi
 
 ## Construído com
 
-* [Quick/Nimble](https://github.com/Quick) - Unit Testing
+* [Realm](https://github.com/Quick) - Banco de Dados 
+* [Quick/Nimble](https://github.com/Quick) - Testes unitários
+* [Nimble Snapshots](https://github.com/Moya/Moya) - Extensão do Nimble para trabalhar com Snapshots
 * [Kingfisher](https://github.com/onevcat/Kingfisher/) - Gerenciamento de image-set com cache-ing automático
 * [Moya](https://github.com/Moya/Moya) - Camada de conexão abstrata baseada no Alamofire
+* [Snapkit](https://github.com/Moya/Moya) - Syntaxsugar para Constraints
+
 
 ## Autores
 
