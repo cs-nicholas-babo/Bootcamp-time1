@@ -9,7 +9,7 @@
 import Foundation
 
 public protocol ApplicationStartupUseCase {
-    func startupSets(handler: @escaping () -> ())
+    func startup(handler: @escaping () -> ())
 }
 
 public protocol ApplicationRunningUseCase {

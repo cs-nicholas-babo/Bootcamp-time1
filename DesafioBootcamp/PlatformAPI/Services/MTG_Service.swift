@@ -183,7 +183,7 @@ extension MTG_Service: Domain.ApplicationRunningUseCase {
 }
 
 extension MTG_Service: Domain.ApplicationStartupUseCase {
-    public func startupSets(handler: @escaping () -> ()) {
+    public func startup(handler: @escaping () -> ()) {
         self.fetchSets { (result) in
             handler()
         }
