@@ -43,22 +43,32 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AC78B35621F0E8170029C977"
+               BlueprintIdentifier = "ACE788F221F2408400718E4E"
                BuildableName = "DesafioBootcampTests.xctest"
                BlueprintName = "DesafioBootcampTests"
                ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
-             skipped = "NO">
-             <BuildableReference
-                 BuildableIdentifier = "primary"
-                 BlueprintIdentifier = "2FB8658921EFB6FB001FB4FE"
-                 BuildableName = "PlatformLocalDatabaseTests.xctest"
-                 BlueprintName = "PlatformLocalDatabaseTests"
-                 ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
-                 </BuildableReference>
-             </TestableReference>
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "ACE7892121F2410E00718E4E"
+               BuildableName = "PlatformLocalDatabaseTests.xctest"
+               BlueprintName = "PlatformLocalDatabaseTests"
+               ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "AC692AF621F6187E009734FE"
+               BuildableName = "DesafioBootcampUITests.xctest"
+               BlueprintName = "DesafioBootcampUITests"
+               ReferencedContainer = "container:DesafioBootcamp.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

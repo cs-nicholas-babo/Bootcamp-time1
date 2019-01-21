@@ -63,6 +63,10 @@
 		AC692AEE21F60665009734FE /* Nimble_Snapshots.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC692AF121F616EA009734FE /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */; };
 		AC692AF221F616F5009734FE /* FBSnapshotTestCase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC692B0621F618F5009734FE /* CardSetListCollectionViewCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692B0521F618F5009734FE /* CardSetListCollectionViewCellSpec.swift */; };
+		AC692B0721F6192C009734FE /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; };
+		AC692B0821F6192C009734FE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
+		AC692B0921F6192C009734FE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
 		ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */; };
 		ACA4FF9321F0BB4000E7BC96 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
 		ACA4FF9421F0BB4000E7BC96 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; };
@@ -128,6 +132,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A1DF494C21EF651900E1DCF6;
 			remoteInfo = PlatformLocalDatabase;
+		};
+		AC692AFC21F6187E009734FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1145E0021ECF18900A1A665 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1145E0721ECF18900A1A665;
+			remoteInfo = DesafioBootcamp;
 		};
 		ACE788F821F2408400718E4E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -227,6 +238,9 @@
 		A1DF495021EF651900E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
 		AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
+		AC692AF721F6187E009734FE /* DesafioBootcampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioBootcampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC692AFB21F6187E009734FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC692B0521F618F5009734FE /* CardSetListCollectionViewCellSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionViewCellSpec.swift; sourceTree = "<group>"; };
 		ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListFactory.swift; sourceTree = "<group>"; };
 		ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGCardGateway.swift; sourceTree = "<group>"; };
 		ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListBusinessLogic.swift; sourceTree = "<group>"; };
@@ -305,6 +319,16 @@
 			files = (
 				ACE788D221F23F4100718E4E /* Realm.framework in Frameworks */,
 				ACE788D321F23F4100718E4E /* RealmSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC692AF421F6187E009734FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC692B0721F6192C009734FE /* Nimble_Snapshots.framework in Frameworks */,
+				AC692B0821F6192C009734FE /* Nimble.framework in Frameworks */,
+				AC692B0921F6192C009734FE /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +470,7 @@
 				A1DF494E21EF651900E1DCF6 /* PlatformLocalDatabase */,
 				ACE788F421F2408400718E4E /* DesafioBootcampTests */,
 				ACE7892321F2410E00718E4E /* PlatformLocalDatabaseTests */,
+				AC692AF821F6187E009734FE /* DesafioBootcampUITests */,
 				A1145E0921ECF18900A1A665 /* Products */,
 				A13C654121EF6FA700689169 /* Frameworks */,
 			);
@@ -460,6 +485,7 @@
 				A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */,
 				ACE788F321F2408400718E4E /* DesafioBootcampTests.xctest */,
 				ACE7892221F2410E00718E4E /* PlatformLocalDatabaseTests.xctest */,
+				AC692AF721F6187E009734FE /* DesafioBootcampUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -537,6 +563,47 @@
 			path = PlatformLocalDatabase;
 			sourceTree = "<group>";
 		};
+		AC692AF821F6187E009734FE /* DesafioBootcampUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC692B0121F618A3009734FE /* Scenes */,
+				AC692AFB21F6187E009734FE /* Info.plist */,
+			);
+			path = DesafioBootcampUITests;
+			sourceTree = "<group>";
+		};
+		AC692B0121F618A3009734FE /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				AC692B0221F618BB009734FE /* CardSetList */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		AC692B0221F618BB009734FE /* CardSetList */ = {
+			isa = PBXGroup;
+			children = (
+				AC692B0321F618C8009734FE /* Views */,
+			);
+			path = CardSetList;
+			sourceTree = "<group>";
+		};
+		AC692B0321F618C8009734FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC692B0421F618CC009734FE /* Collection */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC692B0421F618CC009734FE /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				AC692B0521F618F5009734FE /* CardSetListCollectionViewCellSpec.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
 		ACA4FF8B21F0B4BE00E7BC96 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
@@ -546,17 +613,9 @@
 			path = Factories;
 			sourceTree = "<group>";
 		};
-		ACA4FF8E21F0B4EA00E7BC96 /* Commons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Commons;
-			sourceTree = "<group>";
-		};
 		ACB449FF21EF919E00252958 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				ACA4FF8E21F0B4EA00E7BC96 /* Commons */,
 				ACB44A0821EF940D00252958 /* CardSetList */,
 			);
 			path = Scenes;
@@ -889,6 +948,24 @@
 			productReference = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		AC692AF621F6187E009734FE /* DesafioBootcampUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC692B0021F6187E009734FE /* Build configuration list for PBXNativeTarget "DesafioBootcampUITests" */;
+			buildPhases = (
+				AC692AF321F6187E009734FE /* Sources */,
+				AC692AF421F6187E009734FE /* Frameworks */,
+				AC692AF521F6187E009734FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC692AFD21F6187E009734FE /* PBXTargetDependency */,
+			);
+			name = DesafioBootcampUITests;
+			productName = DesafioBootcampUITests;
+			productReference = AC692AF721F6187E009734FE /* DesafioBootcampUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		ACE788F221F2408400718E4E /* DesafioBootcampTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACE788FA21F2408400718E4E /* Build configuration list for PBXNativeTarget "DesafioBootcampTests" */;
@@ -949,6 +1026,11 @@
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
+					AC692AF621F6187E009734FE = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						TestTargetID = A1145E0721ECF18900A1A665;
+					};
 					ACE788F221F2408400718E4E = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = A1145E0721ECF18900A1A665;
@@ -978,6 +1060,7 @@
 				A1DF494C21EF651900E1DCF6 /* PlatformLocalDatabase */,
 				ACE788F221F2408400718E4E /* DesafioBootcampTests */,
 				ACE7892121F2410E00718E4E /* PlatformLocalDatabaseTests */,
+				AC692AF621F6187E009734FE /* DesafioBootcampUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1008,6 +1091,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A1DF494B21EF651900E1DCF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC692AF521F6187E009734FE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1102,6 +1192,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AC692AF321F6187E009734FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC692B0621F618F5009734FE /* CardSetListCollectionViewCellSpec.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACE788EF21F2408400718E4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1150,6 +1248,11 @@
 			isa = PBXTargetDependency;
 			target = A1DF494C21EF651900E1DCF6 /* PlatformLocalDatabase */;
 			targetProxy = A1DF495221EF651900E1DCF6 /* PBXContainerItemProxy */;
+		};
+		AC692AFD21F6187E009734FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1145E0721ECF18900A1A665 /* DesafioBootcamp */;
+			targetProxy = AC692AFC21F6187E009734FE /* PBXContainerItemProxy */;
 		};
 		ACE788F921F2408400718E4E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1521,6 +1624,57 @@
 			};
 			name = Release;
 		};
+		AC692AFE21F6187E009734FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = DesafioBootcampUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcampUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
+			};
+			name = Debug;
+		};
+		AC692AFF21F6187E009734FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = DesafioBootcampUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Concrete.Desafio.Time1.DesafioBootcampUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DesafioBootcamp.app/DesafioBootcamp";
+			};
+			name = Release;
+		};
 		ACE788FB21F2408400718E4E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1659,6 +1813,15 @@
 			buildConfigurations = (
 				A1DF495721EF651900E1DCF6 /* Debug */,
 				A1DF495821EF651900E1DCF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC692B0021F6187E009734FE /* Build configuration list for PBXNativeTarget "DesafioBootcampUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC692AFE21F6187E009734FE /* Debug */,
+				AC692AFF21F6187E009734FE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
