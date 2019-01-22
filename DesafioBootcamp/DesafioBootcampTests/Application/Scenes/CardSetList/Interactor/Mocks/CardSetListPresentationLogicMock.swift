@@ -25,8 +25,6 @@ final class CardSetListPresentationLogicMock: CardSetListPresentationLogic {
             self.isReadyToPresent = true
         case .error:
             self.didPresentError = true
-        default:
-            break
         }
     }
 }

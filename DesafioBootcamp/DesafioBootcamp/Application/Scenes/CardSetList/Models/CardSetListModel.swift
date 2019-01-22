@@ -47,3 +47,10 @@ enum CardSetList {
     static let collectionViewCellIdentifier = "CollectionViewCellIdentifier"
     static let tableViewCellIdentifier = "TableViewCellIdentifier"
 }
+
+
+extension CardSetList.ViewModel: Equatable {
+    static func == (lhs: CardSetList.ViewModel, rhs: CardSetList.ViewModel) -> Bool {
+        return lhs.setName == rhs.setName
+    }
+}

@@ -42,6 +42,10 @@ class CardSetListViewControllerSpec: QuickSpec {
                         expect(sut.stateMachine.currentState).to(beAKindOf(CardSetListShowCardsState.self))
                     }
                     
+                    it("should feed data source") {
+                        expect(sut.wrapperView.datasource.sets).to(contain(MockValues.viewModelMock))
+                    }
+                    
                 }
                 
                 context("and get ready to display cards") {

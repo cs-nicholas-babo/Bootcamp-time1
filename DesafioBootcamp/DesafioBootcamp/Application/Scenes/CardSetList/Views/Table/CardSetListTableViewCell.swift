@@ -27,8 +27,4 @@ extension CardSetListTableViewCell: ViewCode{
             make.edges.equalToSuperview()
         }
     }
-    
-    func setupAdditionalConfiguration() {
-    }
-    
 }

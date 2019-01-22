@@ -38,8 +38,4 @@ extension CardSetListCollectionWrapperView: ViewCode {
             make.edges.equalToSuperview()
         }
     }
-    
-    func setupAdditionalConfiguration() {
-        
-    }
 }
