@@ -54,11 +54,6 @@ extension Card: Codable {
             self.types = Set<CardType>()
         }
         self.imageURL = try container.decodeIfPresent(String.self, forKey: .imageURL)
-//        if container.contains(.imageURL){
-//            self.imageURL = try container.decodeIfPresent(String.self, forKey: .imageURL)
-//        } else {
-//            self.imageURL = nil
-//        }
     }
     
     public func encode(to encoder: Encoder) throws {

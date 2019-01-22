@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2F4A8A8621F5F027007012FB /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A8A8521F5F027007012FB /* UseCaseProviders.swift */; };
+		2F554E5921F7795400545C8C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F554E5821F7795300545C8C /* Kingfisher.framework */; };
+		2F554E5A21F779A500545C8C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F554E5821F7795300545C8C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F554E5C21F77B7600545C8C /* Card+ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F554E5B21F77B7600545C8C /* Card+ImageURL.swift */; };
+		2F5BE96E21F743920049A144 /* ModalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE96D21F743910049A144 /* ModalDetail.swift */; };
+		2F5BE97021F746320049A144 /* ModalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE96F21F746320049A144 /* ModalDetailViewController.swift */; };
+		2F5BE97421F7493E0049A144 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5BE97321F7493D0049A144 /* SnapKit.framework */; };
+		2F5BE97621F74CDC0049A144 /* MagicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE97521F74CDC0049A144 /* MagicCard.swift */; };
+		2F5BE97721F751130049A144 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5BE97321F7493D0049A144 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F5BE97921F768760049A144 /* ModalDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE97821F768760049A144 /* ModalDetailInteractor.swift */; };
+		2F5BE97B21F76A490049A144 /* ModalDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE97A21F76A490049A144 /* ModalDetailPresenter.swift */; };
+		2F5BE97D21F770990049A144 /* ModelDetailDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE97C21F770990049A144 /* ModelDetailDisplayLogic.swift */; };
+		2F5BE98021F773790049A144 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE97F21F773790049A144 /* ImageDownloader.swift */; };
 		2F8E05E021F21C0900688BC1 /* empty_cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8E05DE21F21C0900688BC1 /* empty_cards.json */; };
 		2F8E05E121F21C0900688BC1 /* empty_sets.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8E05DF21F21C0900688BC1 /* empty_sets.json */; };
 		2F8E05E321F21D3B00688BC1 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E05E221F21D3B00688BC1 /* LocalData.swift */; };
@@ -174,6 +186,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2F554E5A21F779A500545C8C /* Kingfisher.framework in Embed Frameworks */,
+				2F5BE97721F751130049A144 /* SnapKit.framework in Embed Frameworks */,
 				A13645AD21EFB9A2007D81EB /* Nimble.framework in Embed Frameworks */,
 				A16AFE3621F0E3D20055A9BA /* Alamofire.framework in Embed Frameworks */,
 				A13645AE21EFB9A2007D81EB /* Quick.framework in Embed Frameworks */,
@@ -192,6 +206,16 @@
 
 /* Begin PBXFileReference section */
 		2F4A8A8521F5F027007012FB /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
+		2F554E5821F7795300545C8C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Frameworks/Kingfisher.framework; sourceTree = "<group>"; };
+		2F554E5B21F77B7600545C8C /* Card+ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+ImageURL.swift"; sourceTree = "<group>"; };
+		2F5BE96D21F743910049A144 /* ModalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetail.swift; sourceTree = "<group>"; };
+		2F5BE96F21F746320049A144 /* ModalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailViewController.swift; sourceTree = "<group>"; };
+		2F5BE97321F7493D0049A144 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Frameworks/SnapKit.framework; sourceTree = "<group>"; };
+		2F5BE97521F74CDC0049A144 /* MagicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCard.swift; sourceTree = "<group>"; };
+		2F5BE97821F768760049A144 /* ModalDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailInteractor.swift; sourceTree = "<group>"; };
+		2F5BE97A21F76A490049A144 /* ModalDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailPresenter.swift; sourceTree = "<group>"; };
+		2F5BE97C21F770990049A144 /* ModelDetailDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailDisplayLogic.swift; sourceTree = "<group>"; };
+		2F5BE97F21F773790049A144 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		2F8E05DE21F21C0900688BC1 /* empty_cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_cards.json; sourceTree = "<group>"; };
 		2F8E05DF21F21C0900688BC1 /* empty_sets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_sets.json; sourceTree = "<group>"; };
 		2F8E05E221F21D3B00688BC1 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
@@ -315,8 +339,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1DF494321EF64FA00E1DCF6 /* PlatformAPI.framework in Frameworks */,
+				2F554E5921F7795400545C8C /* Kingfisher.framework in Frameworks */,
 				2FB865B221F0D1F7001FB4FE /* Result.framework in Frameworks */,
 				2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */,
+				2F5BE97421F7493E0049A144 /* SnapKit.framework in Frameworks */,
 				2FB865AE21F0D1F7001FB4FE /* Alamofire.framework in Frameworks */,
 				ACA4FF9321F0BB4000E7BC96 /* Realm.framework in Frameworks */,
 			);
@@ -377,6 +403,59 @@
 				A12280BB21F0F1E0009FFE9E /* MTG_Service.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2F5BE96821F740DD0049A144 /* ModalDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE96C21F743780049A144 /* Models */,
+				2F5BE96B21F743170049A144 /* ViewController */,
+				2F5BE96A21F742F00049A144 /* Presenter */,
+				2F5BE96921F742D10049A144 /* Interactor */,
+			);
+			path = ModalDetail;
+			sourceTree = "<group>";
+		};
+		2F5BE96921F742D10049A144 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE97821F768760049A144 /* ModalDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2F5BE96A21F742F00049A144 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE97A21F76A490049A144 /* ModalDetailPresenter.swift */,
+				2F5BE97C21F770990049A144 /* ModelDetailDisplayLogic.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2F5BE96B21F743170049A144 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE96F21F746320049A144 /* ModalDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2F5BE96C21F743780049A144 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE96D21F743910049A144 /* ModalDetail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F5BE97E21F773630049A144 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE97F21F773790049A144 /* ImageDownloader.swift */,
+				2F554E5B21F77B7600545C8C /* Card+ImageURL.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2F8E05E421F2214D00688BC1 /* Files */ = {
@@ -457,6 +536,7 @@
 		2FEBC24721ED051200B10DED /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2F5BE97E21F773630049A144 /* Extensions */,
 				ACB449FF21EF919E00252958 /* Scenes */,
 				A1DF493521EF547C00E1DCF6 /* AppDelegate */,
 				A1DF493221EF542400E1DCF6 /* Util */,
@@ -632,6 +712,8 @@
 		A13C654121EF6FA700689169 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F554E5821F7795300545C8C /* Kingfisher.framework */,
+				2F5BE97321F7493D0049A144 /* SnapKit.framework */,
 				2FB865A821F0D1CB001FB4FE /* Alamofire.framework */,
 				2FB865A921F0D1CB001FB4FE /* Moya.framework */,
 				2FB865AA21F0D1CB001FB4FE /* Result.framework */,
@@ -656,6 +738,7 @@
 			children = (
 				5D4C717021F73F4900DEA298 /* ScreenProportions.swift */,
 				A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */,
+				2F5BE97521F74CDC0049A144 /* MagicCard.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -722,6 +805,7 @@
 		ACB449FF21EF919E00252958 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2F5BE96821F740DD0049A144 /* ModalDetail */,
 				ACA4FF8E21F0B4EA00E7BC96 /* Commons */,
 				ACB44A0821EF940D00252958 /* CardSetList */,
 			);
@@ -1212,6 +1296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */,
+				2F5BE97021F746320049A144 /* ModalDetailViewController.swift in Sources */,
 				ACA4FF9021F0B50000E7BC96 /* Factory.swift in Sources */,
 				5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */,
 				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
@@ -1219,15 +1304,22 @@
 				ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */,
 				ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */,
 				5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */,
+				2F554E5C21F77B7600545C8C /* Card+ImageURL.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
 				5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */,
+				2F5BE98021F773790049A144 /* ImageDownloader.swift in Sources */,
 				5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */,
+				2F5BE96E21F743920049A144 /* ModalDetail.swift in Sources */,
 				5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */,
 				A131BB9D21F6618E000869E1 /* CardSetListModel.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
+				2F5BE97D21F770990049A144 /* ModelDetailDisplayLogic.swift in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
+				2F5BE97921F768760049A144 /* ModalDetailInteractor.swift in Sources */,
 				5D4C717121F73F4900DEA298 /* ScreenProportions.swift in Sources */,
 				5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */,
+				2F5BE97B21F76A490049A144 /* ModalDetailPresenter.swift in Sources */,
+				2F5BE97621F74CDC0049A144 /* MagicCard.swift in Sources */,
 				ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1550,6 +1642,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DesafioBootcamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1573,6 +1666,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DesafioBootcamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

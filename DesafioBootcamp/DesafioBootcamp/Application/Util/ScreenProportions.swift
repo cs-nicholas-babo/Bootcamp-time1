@@ -9,23 +9,24 @@
 import UIKit
 
 extension UIScreen {
-    
     static let iPhone6Width: CGFloat = 375
     static let iPhone6Height: CGFloat = 667
     
-    static var widthProportion: CGFloat { return main.bounds.width/iPhone6Width }
+    static let iPhoneSEWidth: CGFloat = 320
+    static let iPhoneSEHeight: CGFloat = 568
     
-    static var heightProportion: CGFloat { return main.bounds.height/iPhone6Height }
+    static let statusBarHeight: CGFloat = 22
+    
+    static var widthProportion: CGFloat { return main.bounds.width/iPhoneSEWidth }
+    static var heightProportion: CGFloat { return main.bounds.height/iPhoneSEHeight }
 }
 
 extension CGFloat {
-    
     var proportionalToWidth: CGFloat {
         return self * UIScreen.widthProportion
     }
     
     var proportionalToHeight: CGFloat {
-        
         return self * UIScreen.heightProportion
     }
 }
