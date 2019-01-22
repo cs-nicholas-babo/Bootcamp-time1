@@ -15,15 +15,16 @@ final class CardSetListPresenter {
     init(viewController: CardSetListDisplayLogic) {
         self.viewController = viewController
     }
-    
 }
 
 extension CardSetListPresenter: CardSetListPresentationLogic {
     func present(response: CardSetList.Response) {
         switch response {
         case .success(let cardSet):
-            let viewModel = CardSetList.ViewModel(cardSet: cardSet)
-            viewController.display(viewModel: viewModel)
+            for set in cardSet {
+                let viewModel = CardSetList.ViewModel(cardSet: set)
+                viewController.display(viewModel: viewModel)
+            }
         case .readyToPresentSets:
             viewController.readyToDisplayCards()
         case .error:

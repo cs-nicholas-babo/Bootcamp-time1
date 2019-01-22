@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         
-        let cardSetListVC = CardSetListFactoryImplementation.make()
+        let cardSetListVC = FeedCardSetListFactory.make()
         
         window.rootViewController = cardSetListVC
         

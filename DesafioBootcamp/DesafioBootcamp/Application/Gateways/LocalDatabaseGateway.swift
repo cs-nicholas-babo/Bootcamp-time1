@@ -37,11 +37,11 @@ final class LocalDatabaseGateway: MTGCardGateway{
         }
     }
     
-    func fetchSet(of: MetaCardSet, _ completion: @escaping (Result<CardSet>) -> Void) {
+    func fetchSets(_ completion: @escaping (Result<[CardSet]>) -> Void) {
         service.fetchFavoriteCards { result in
             switch result{
             case .success(let cardSets):
-                break
+                completion(.success(cardSets))
             case .failure(let error):
                 completion(.failure(error))
             }
