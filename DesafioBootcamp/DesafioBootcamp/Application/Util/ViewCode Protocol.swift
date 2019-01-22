@@ -15,8 +15,7 @@ protocol ViewCode{
     func setupView()
 }
 
-extension ViewCode{
-    
+extension ViewCode {
     func setupView(){
         setupViewHierarchy()
         setupConstraints()
