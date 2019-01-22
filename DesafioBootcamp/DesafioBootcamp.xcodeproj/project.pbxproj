@@ -98,6 +98,7 @@
 		A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */; };
 		A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */; };
 		A19CFD7821EF9A960060A691 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7721EF9A960060A691 /* CacheManager.swift */; };
+		A19D072521F7A83C00E99776 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D072421F7A83C00E99776 /* Image.swift */; };
 		A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */; };
 		A1DF494021EF64FA00E1DCF6 /* PlatformAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1DF494321EF64FA00E1DCF6 /* PlatformAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */; };
@@ -310,6 +311,7 @@
 		A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardSet.swift; sourceTree = "<group>"; };
 		A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardType.swift; sourceTree = "<group>"; };
 		A19CFD7721EF9A960060A691 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		A19D072421F7A83C00E99776 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCode Protocol.swift"; sourceTree = "<group>"; };
 		A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformAPI.h; sourceTree = "<group>"; };
@@ -759,6 +761,7 @@
 				A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */,
 				AC692B0A21F73BB7009734FE /* ScreenProportions.swift */,
 				AC692B0C21F7401C009734FE /* Card+size.swift */,
+				A19D072421F7A83C00E99776 /* Image.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1424,6 +1427,7 @@
 			files = (
 				ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */,
 				5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */,
+				A19D072521F7A83C00E99776 /* Image.swift in Sources */,
 				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
 				A13669D121F7808300CA705E /* LocalDatabaseGateway.swift in Sources */,
 				A13669BE21F74EA800CA705E /* CardSetListCollectionWrapperView.swift in Sources */,

@@ -25,6 +25,11 @@ final class CardSetListViewController: UIViewController {
        return CardSetListTableWrapperView(frame: self.view.frame)
     }()
     
+    lazy var errorImageView: UIImageView = {
+        let imageView = UIImageView(image: Image.error)
+        return imageView
+    }()
+    
     init() {
         super.init(nibName: nil, bundle: nil)
         setupView()
@@ -58,17 +63,25 @@ extension CardSetListViewController: CardSetListDisplayLogic {
 }
 
 extension CardSetListViewController: ViewCode {
-    func setupAdditionalConfiguration() {
-        
-    }
     
     func setupViewHierarchy() {
         self.view.addSubview(self.wrapperView)
+        self.view.addSubview(self.errorImageView)
     }
     
     func setupConstraints() {
         self.wrapperView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+        
+        self.errorImageView.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.height.equalTo(150)
+            make.width.equalTo(150)
+        }
+    }
+    
+    func setupAdditionalConfiguration() {
+        errorImageView.isHidden = true
     }
 }
