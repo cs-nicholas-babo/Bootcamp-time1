@@ -37,6 +37,7 @@ extension CardSetListViewController: CardSetListDisplayLogic {
     // TODO: Final implementation
     func display(viewModel: CardSetList.ViewModel) {
         _ = stateMachine.enter(CardSetListShowCardsState.self)
+        
     }
     
     func readyToDisplayCards() {

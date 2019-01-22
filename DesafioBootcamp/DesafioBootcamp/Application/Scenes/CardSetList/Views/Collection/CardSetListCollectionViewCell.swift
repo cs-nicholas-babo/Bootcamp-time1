@@ -14,7 +14,7 @@ class CardSetListCollectionViewCell: UICollectionViewCell {
     
     lazy var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        
+        imageView.backgroundColor = .white
         return imageView
     }()
     
@@ -45,7 +45,6 @@ extension CardSetListCollectionViewCell: ViewCode {
     }
     
     func setupAdditionalConfiguration() {
-        
     }
     
     

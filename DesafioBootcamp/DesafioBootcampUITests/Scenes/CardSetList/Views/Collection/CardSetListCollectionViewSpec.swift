@@ -18,15 +18,16 @@ class CardSetListCollectionViewSpec: QuickSpec {
         describe("CardSetList CollectionView") {
             context("when initialized") {
                 
-                var sut: CardSetListCollectionView!
+                var sut: UICollectionView!
                 
                 beforeEach {
-                    sut = CardSetListCollectionView(frame: UIScreen.main.bounds, collectionViewLayout: UICollectionViewFlowLayout())
+                    sut = CardSetListCollectionViewFactory.make(cards: MockValues.cardsMock)
+                    sut.frame = UIScreen.main.bounds
                     sut.backgroundColor = .green
                 }
                 
                 it("should look like this") {
-                    expect(sut) == snapshot()
+                    expect(sut) == recordSnapshot()
                 }
                 
             }

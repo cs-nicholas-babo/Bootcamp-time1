@@ -68,6 +68,9 @@
 		AC692B0721F6192C009734FE /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; };
 		AC692B0821F6192C009734FE /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
 		AC692B0921F6192C009734FE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
+		AC692B0B21F73BB7009734FE /* ScreenProportions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692B0A21F73BB7009734FE /* ScreenProportions.swift */; };
+		AC692B0D21F7401C009734FE /* Card+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692B0C21F7401C009734FE /* Card+size.swift */; };
+		AC692B0E21F7476E009734FE /* MockValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7891121F2408F00718E4E /* MockValues.swift */; };
 		ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */; };
 		ACA4FF9321F0BB4000E7BC96 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
 		ACA4FF9421F0BB4000E7BC96 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; };
@@ -243,6 +246,8 @@
 		AC692AF721F6187E009734FE /* DesafioBootcampUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioBootcampUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC692AFB21F6187E009734FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC692B0521F618F5009734FE /* CardSetListCollectionViewCellSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionViewCellSpec.swift; sourceTree = "<group>"; };
+		AC692B0A21F73BB7009734FE /* ScreenProportions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenProportions.swift; sourceTree = "<group>"; };
+		AC692B0C21F7401C009734FE /* Card+size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+size.swift"; sourceTree = "<group>"; };
 		ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListFactory.swift; sourceTree = "<group>"; };
 		ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGCardGateway.swift; sourceTree = "<group>"; };
 		ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListBusinessLogic.swift; sourceTree = "<group>"; };
@@ -532,6 +537,8 @@
 			isa = PBXGroup;
 			children = (
 				A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */,
+				AC692B0A21F73BB7009734FE /* ScreenProportions.swift */,
+				AC692B0C21F7401C009734FE /* Card+size.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1149,7 +1156,9 @@
 				5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */,
 				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
 				ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */,
+				AC692B0B21F73BB7009734FE /* ScreenProportions.swift in Sources */,
 				ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */,
+				AC692B0D21F7401C009734FE /* Card+size.swift in Sources */,
 				ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */,
 				5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
@@ -1201,6 +1210,7 @@
 			files = (
 				5D4629B821F61C9C00A21814 /* CardSetListCollectionViewSpec.swift in Sources */,
 				AC692B0621F618F5009734FE /* CardSetListCollectionViewCellSpec.swift in Sources */,
+				AC692B0E21F7476E009734FE /* MockValues.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
