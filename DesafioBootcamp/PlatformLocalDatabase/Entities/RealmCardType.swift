@@ -12,7 +12,7 @@ import RealmSwift
 
 final public class RealmCardType: RealmSwift.Object{
     
-    @objc dynamic var name: String = ""
+    @objc public dynamic var name: String = ""
     
     override public static func primaryKey() -> String {
         return "name"
@@ -23,7 +23,7 @@ final public class RealmCardType: RealmSwift.Object{
 extension RealmCardType: DomainRepresentableType {
     typealias MTG_Entity = CardType
     
-    func baseData() -> CardType {
+    public func baseData() -> CardType {
         return CardType(name: self.name)
     }
 }
@@ -31,7 +31,7 @@ extension RealmCardType: DomainRepresentableType {
 extension CardType: RealmRepresentable {
     typealias RealmType = RealmCardType
     
-    func realmData() -> RealmCardType {
+    public func realmData() -> RealmCardType {
         let realmObject = RealmCardType()
         realmObject.name = self.name
         

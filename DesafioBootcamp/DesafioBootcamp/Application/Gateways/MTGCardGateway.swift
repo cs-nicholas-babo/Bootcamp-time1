@@ -10,6 +10,7 @@ import Foundation
 import Domain
 
 protocol MTGCardGateway {
+
     func fetchSet(of: MetaCardSet, _ completion: @escaping (Result<CardSet>) -> Void)
     func fetchCards(named: String, _ completion: @escaping (Result<[Card]>) -> Void)
 }

@@ -12,7 +12,7 @@
  
     APPLICATION
         * STARTUP
-        - startupSets(handler: () -> ())
+        - startup(handler: () -> ())
  
         * GENERAL
         - fetchSets() -> [CardSet]

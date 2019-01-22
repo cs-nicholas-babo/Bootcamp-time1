@@ -17,7 +17,6 @@ final class CardSetListPresentationLogicMock: CardSetListPresentationLogic {
     var didPresentError = false
     
     func present(response: CardSetList.Response) {
-        
         switch response {
         case .success(let cardSet):
             self.willPresentCards = true

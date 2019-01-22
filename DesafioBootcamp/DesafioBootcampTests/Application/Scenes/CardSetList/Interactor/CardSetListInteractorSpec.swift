@@ -26,30 +26,6 @@ class CardSetListInteractorSpec: QuickSpec {
                     
                 }
                 
-                context("and succeed to fetch meta sets") {
-                    
-                    beforeEach {
-                        cardGateway.shouldFail = false
-                        sut = CardSetListInteractor(presenter: presenter, cardGateway: cardGateway)
-                    }
-                    
-                    it("should send ready response to presenter") {
-                        expect(presenter.isReadyToPresent).to(beTrue())
-                    }
-                }
-                
-                context("and fail to fetch meta sets") {
-                    
-                    beforeEach {
-                        cardGateway.shouldFail = true
-                        sut = CardSetListInteractor(presenter: presenter, cardGateway: cardGateway)
-                    }
-                    
-                    it("should present an error") {
-                        expect(presenter.didPresentError).to(beTrue())
-                    }
-                }
-                
                 context("fetch complete set of cards") {
                     
                     beforeEach {
