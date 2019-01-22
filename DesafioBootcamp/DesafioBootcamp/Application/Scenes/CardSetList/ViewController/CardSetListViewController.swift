@@ -30,6 +30,11 @@ final class CardSetListViewController: UIViewController {
         return imageView
     }()
     
+    lazy var activityIndicator: UIActivityIndicatorView = {
+        let activity = UIActivityIndicatorView(frame: CGRect(x: 0, y: 0, width: 0, height: 0))
+        return activity
+    }()
+    
     init() {
         super.init(nibName: nil, bundle: nil)
         setupView()
@@ -68,6 +73,7 @@ extension CardSetListViewController: ViewCode {
     func setupViewHierarchy() {
         self.view.addSubview(self.wrapperView)
         self.view.addSubview(self.errorImageView)
+        self.view.addSubview(self.activityIndicator)
     }
     
     func setupConstraints() {
@@ -80,9 +86,17 @@ extension CardSetListViewController: ViewCode {
             make.height.equalTo(150)
             make.width.equalTo(150)
         }
+        
+        self.activityIndicator.snp.makeConstraints { make in
+            make.center.equalToSuperview()
+            make.height.equalTo(70)
+            make.width.equalTo(70)
+        }
     }
     
     func setupAdditionalConfiguration() {
         errorImageView.isHidden = true
+        activityIndicator.isHidden = true
+        wrapperView.isHidden = true
     }
 }

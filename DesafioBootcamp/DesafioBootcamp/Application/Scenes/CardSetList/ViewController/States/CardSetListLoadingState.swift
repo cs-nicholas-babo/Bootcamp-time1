@@ -13,7 +13,9 @@ final class CardSetListLoadingState: CardSetListBaseState {
     override func didEnter(from previousState: GKState?) {
         print("LoadingState ⏲")
         self.viewController.errorImageView.isHidden = true
-        self.viewController.wrapperView.isHidden = false
+        self.viewController.wrapperView.isHidden = true
+        self.viewController.activityIndicator.isHidden = false
+        self.viewController.activityIndicator.startAnimating()
         guard let interactor = self.viewController.interactor else { fatalError() }
         interactor.fetchSet()
     }

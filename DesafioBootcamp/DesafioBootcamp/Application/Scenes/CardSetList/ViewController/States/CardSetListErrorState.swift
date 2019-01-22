@@ -14,6 +14,8 @@ final class CardSetListErrorState: CardSetListBaseState {
         print("ErrorState 😈")
         self.viewController.errorImageView.isHidden = false
         self.viewController.wrapperView.isHidden = true
+        self.viewController.activityIndicator.isHidden = true
+        self.viewController.activityIndicator.stopAnimating()
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {

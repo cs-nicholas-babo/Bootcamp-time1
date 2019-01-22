@@ -12,16 +12,16 @@ import Domain
 class CardSetListCollectionView: UICollectionView {
     private static var layout: UICollectionViewLayout {
         let layout = UICollectionViewFlowLayout()
-        
-        layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: Card.size.width.proportionalToWidth, height: Card.size.height.proportionalToHeight)
-        layout.minimumLineSpacing = 16.proportionalToWidth
-        
+        let spacing:CGFloat = 30.0
+        layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
+        layout.minimumLineSpacing = spacing
+        layout.minimumInteritemSpacing = spacing
         return layout
     }
     
     init(frame: CGRect) {
         super.init(frame: frame, collectionViewLayout: CardSetListCollectionView.layout)
+        self.collectionViewLayout = CardSetListCollectionView.layout
         setupView()
     }
     

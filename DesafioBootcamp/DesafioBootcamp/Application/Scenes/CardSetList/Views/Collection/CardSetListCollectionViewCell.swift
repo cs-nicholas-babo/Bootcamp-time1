@@ -31,6 +31,11 @@ class CardSetListCollectionViewCell: UICollectionViewCell {
     func loadImage(fromPath path: String) {
         self.imageView.kf.setImage(with: URL(string: path))
     }
+    
+    static func size(for width: CGFloat) -> CGSize{
+        let ratio:CGFloat = 118/85
+        return CGSize(width: width, height: width * ratio)
+    }
 }
 
 extension CardSetListCollectionViewCell: ViewCode {
