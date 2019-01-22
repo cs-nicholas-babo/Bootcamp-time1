@@ -27,12 +27,15 @@ final class CardSetListViewController: UIViewController {
     
     init() {
         super.init(nibName: nil, bundle: nil)
-        _ = stateMachine.enter(CardSetListLoadingState.self)
         setupView()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        _ = stateMachine.enter(CardSetListLoadingState.self)
     }
 }
 

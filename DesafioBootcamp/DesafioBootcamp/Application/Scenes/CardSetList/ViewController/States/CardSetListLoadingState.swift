@@ -13,7 +13,6 @@ final class CardSetListLoadingState: CardSetListBaseState {
     override func didEnter(from previousState: GKState?) {
         print("LoadingState ⏲")
         guard let interactor = self.viewController.interactor else { fatalError() }
-        
         interactor.fetchSet()
     }
     
