@@ -13,7 +13,7 @@ import UIKit
 class CardSetListTableWrapperView: UIView{
     
     lazy var tableView: CardSetListTableView = {
-        let tableView = CardSetListTableView(frame: .zero)
+        let tableView = CardSetListTableView(frame: self.frame)
         return tableView
     }()
     
@@ -41,7 +41,7 @@ extension CardSetListTableWrapperView: ViewCode{
     }
     
     func setupAdditionalConfiguration() {
-        
+        tableView.backgroundColor = UIColor.red
     }
     
 }

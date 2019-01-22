@@ -12,7 +12,7 @@ import Foundation
 final public class CacheService: Domain.ApplicationRunningUseCase {
     let cacheManager: CacheManager
     
-    init(cacheManager: CacheManager) {
+    public init(cacheManager: CacheManager) {
         self.cacheManager = cacheManager
     }
     
