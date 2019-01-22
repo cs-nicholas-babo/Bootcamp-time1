@@ -8,10 +8,9 @@
 
 import Foundation
 
-final class CardSetListFactoryImplementation: CardSetListFactory{
+final class FavoritesCardSetListFactory: CardSetListFactory{
     static func makeMTGCardGateway() -> MTGCardGateway {
         let localDatabaseGateway = LocalDatabaseGateway()
         return localDatabaseGateway
     }
-    
 }

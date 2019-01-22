@@ -20,6 +20,7 @@ class CardSetListCollectionWrapperView: UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.collectionView.dataSource = self.datasource
         setupView()
     }
     

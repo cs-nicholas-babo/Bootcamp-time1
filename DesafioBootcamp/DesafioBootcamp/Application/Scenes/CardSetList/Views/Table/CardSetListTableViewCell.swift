@@ -14,7 +14,6 @@ class CardSetListTableViewCell: UITableViewCell {
         let wrapper = CardSetListCollectionWrapperView(frame: self.frame)
         return wrapper
     }()
-    
 }
 
 extension CardSetListTableViewCell: ViewCode{
@@ -30,6 +29,6 @@ extension CardSetListTableViewCell: ViewCode{
     }
     
     func setupAdditionalConfiguration() {
-        
+        self.backgroundColor = UIColor.blue
     }
 }

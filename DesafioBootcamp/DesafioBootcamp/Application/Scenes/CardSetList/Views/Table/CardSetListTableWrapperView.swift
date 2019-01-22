@@ -18,9 +18,12 @@ class CardSetListTableWrapperView: UIView{
     }()
     
     let datasource = CardSetListTableViewDataSource()
+    let delegate = CardSetListTableViewDelegate()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        self.tableView.dataSource = self.datasource
+        self.tableView.delegate = self.delegate
         setupView()
     }
     

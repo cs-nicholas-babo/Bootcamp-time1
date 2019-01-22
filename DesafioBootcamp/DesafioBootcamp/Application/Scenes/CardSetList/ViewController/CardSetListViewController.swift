@@ -44,6 +44,7 @@ extension CardSetListViewController: CardSetListDisplayLogic {
     func display(viewModel: CardSetList.ViewModel) {
         _ = stateMachine.enter(CardSetListShowCardsState.self)
         self.wrapperView.datasource.sets.append(viewModel)
+        self.wrapperView.tableView.reloadData()
     }
     
     func readyToDisplayCards() {

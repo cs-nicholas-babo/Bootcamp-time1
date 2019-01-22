@@ -14,7 +14,7 @@ typealias TypedCards = (type: CardType, cards: [Card])
 enum CardSetList {
     
     enum Response {
-        case success(CardSet)
+        case success([CardSet])
         case readyToPresentSets
         case error
     }
