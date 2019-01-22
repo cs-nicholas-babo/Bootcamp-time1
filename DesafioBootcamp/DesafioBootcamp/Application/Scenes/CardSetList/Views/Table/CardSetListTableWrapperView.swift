@@ -10,7 +10,7 @@ import Foundation
 import Domain
 import UIKit
 
-class CardsSetListTableWrapperView: UIView{
+class CardSetListTableWrapperView: UIView{
     
     lazy var tableView: CardSetListTableView = {
         let tableView = CardSetListTableView(frame: .zero)
@@ -29,7 +29,7 @@ class CardsSetListTableWrapperView: UIView{
     }
 }
 
-extension CardsSetListTableWrapperView: ViewCode{
+extension CardSetListTableWrapperView: ViewCode{
     func setupViewHierarchy() {
         addSubview(tableView)
     }
@@ -46,7 +46,7 @@ extension CardsSetListTableWrapperView: ViewCode{
     
 }
 
-extension CardsSetListTableWrapperView: DataFeeder{
+extension CardSetListTableWrapperView: DataFeeder{
     typealias FeedData = [CardSet]
     
     func feed(data: [CardSet]) {

@@ -54,9 +54,10 @@
 		A13669BC21F74DCB00CA705E /* DataFeeder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669BB21F74DCB00CA705E /* DataFeeder.swift */; };
 		A13669BE21F74EA800CA705E /* CardSetListCollectionWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669BD21F74EA800CA705E /* CardSetListCollectionWrapperView.swift */; };
 		A13669C221F753A200CA705E /* CardSetListCollectionWrapperViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669C121F753A200CA705E /* CardSetListCollectionWrapperViewSpec.swift */; };
-		A13669C421F75B8400CA705E /* CardsSetListTableWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669C321F75B8400CA705E /* CardsSetListTableWrapperView.swift */; };
 		A13669C621F75C4600CA705E /* CardSetListTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669C521F75C4600CA705E /* CardSetListTableViewDataSource.swift */; };
 		A13669C921F7620600CA705E /* CardSetListTableViewDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669C821F7620600CA705E /* CardSetListTableViewDataSourceSpec.swift */; };
+		A13669CB21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669CA21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift */; };
+		A13669CD21F76AAA00CA705E /* CardSetListTableWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669CC21F76AAA00CA705E /* CardSetListTableWrapperView.swift */; };
 		A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */; };
 		A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */; };
 		A19CFD7821EF9A960060A691 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7721EF9A960060A691 /* CacheManager.swift */; };
@@ -236,9 +237,10 @@
 		A13669BB21F74DCB00CA705E /* DataFeeder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFeeder.swift; sourceTree = "<group>"; };
 		A13669BD21F74EA800CA705E /* CardSetListCollectionWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionWrapperView.swift; sourceTree = "<group>"; };
 		A13669C121F753A200CA705E /* CardSetListCollectionWrapperViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionWrapperViewSpec.swift; sourceTree = "<group>"; };
-		A13669C321F75B8400CA705E /* CardsSetListTableWrapperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsSetListTableWrapperView.swift; sourceTree = "<group>"; };
 		A13669C521F75C4600CA705E /* CardSetListTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListTableViewDataSource.swift; sourceTree = "<group>"; };
 		A13669C821F7620600CA705E /* CardSetListTableViewDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListTableViewDataSourceSpec.swift; sourceTree = "<group>"; };
+		A13669CA21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListTableWrapperViewFactory.swift; sourceTree = "<group>"; };
+		A13669CC21F76AAA00CA705E /* CardSetListTableWrapperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListTableWrapperView.swift; sourceTree = "<group>"; };
 		A13C654221EF6FA800689169 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Frameworks/RealmSwift.framework; sourceTree = "<group>"; };
 		A13C654321EF6FA800689169 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Frameworks/Quick.framework; sourceTree = "<group>"; };
 		A13C654421EF6FA800689169 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Frameworks/Nimble.framework; sourceTree = "<group>"; };
@@ -664,6 +666,7 @@
 			children = (
 				ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */,
 				5D4629B521F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift */,
+				A13669CA21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -898,7 +901,7 @@
 				ACE7894421F2667800718E4E /* CardSetListTableViewCell.swift */,
 				ACE7894621F2669C00718E4E /* CardSetListTableView.swift */,
 				A13669C521F75C4600CA705E /* CardSetListTableViewDataSource.swift */,
-				A13669C321F75B8400CA705E /* CardsSetListTableWrapperView.swift */,
+				A13669CC21F76AAA00CA705E /* CardSetListTableWrapperView.swift */,
 			);
 			path = Table;
 			sourceTree = "<group>";
@@ -1208,6 +1211,7 @@
 				A13669BE21F74EA800CA705E /* CardSetListCollectionWrapperView.swift in Sources */,
 				ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */,
 				AC692B0B21F73BB7009734FE /* ScreenProportions.swift in Sources */,
+				A13669CD21F76AAA00CA705E /* CardSetListTableWrapperView.swift in Sources */,
 				ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */,
 				AC692B0D21F7401C009734FE /* Card+size.swift in Sources */,
 				ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */,
@@ -1220,7 +1224,6 @@
 				ACE7894121F2638000718E4E /* CardSetListCollectionViewCell.swift in Sources */,
 				5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
-				A13669C421F75B8400CA705E /* CardsSetListTableWrapperView.swift in Sources */,
 				A13669C621F75C4600CA705E /* CardSetListTableViewDataSource.swift in Sources */,
 				5D4629B621F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift in Sources */,
 				A13669BC21F74DCB00CA705E /* DataFeeder.swift in Sources */,
@@ -1228,6 +1231,7 @@
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
 				5D4629B421F6018400A21814 /* CardSetListCollectionViewDataSource.swift in Sources */,
 				5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */,
+				A13669CB21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift in Sources */,
 				ACB44A0B21EF958200252958 /* CardSetListModel.swift in Sources */,
 				ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */,
 			);
