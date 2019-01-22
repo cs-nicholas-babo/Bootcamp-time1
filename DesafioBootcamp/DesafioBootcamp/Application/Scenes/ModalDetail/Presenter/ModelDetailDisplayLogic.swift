@@ -10,4 +10,5 @@ import Foundation
 
 protocol ModalDetailDisplayLogic: class {
     func display(viewModel: ModalDetail.ViewModel)
+    func displayButton(status: Bool)
 }

@@ -42,6 +42,7 @@
 		2FB954DC21EF9D1B00B09AFF /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954DB21EF9D1B00B09AFF /* UseCaseProviders.swift */; };
 		2FB954DE21EF9D4200B09AFF /* FavoriteCardsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954DD21EF9D4200B09AFF /* FavoriteCardsService.swift */; };
 		2FB954E021EF9F2000B09AFF /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954DF21EF9F2000B09AFF /* CacheService.swift */; };
+		2FC17E5321F795CD0093138A /* TogglableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC17E5221F795CD0093138A /* TogglableButton.swift */; };
 		2FEBC25121ED057800B10DED /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEBC24F21ED057800B10DED /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBC24D21ED057800B10DED /* Domain.framework */; };
 		2FEBC25521ED057800B10DED /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBC24D21ED057800B10DED /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -236,6 +237,7 @@
 		2FB954DB21EF9D1B00B09AFF /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
 		2FB954DD21EF9D4200B09AFF /* FavoriteCardsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsService.swift; sourceTree = "<group>"; };
 		2FB954DF21EF9F2000B09AFF /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		2FC17E5221F795CD0093138A /* TogglableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglableButton.swift; sourceTree = "<group>"; };
 		2FEBC24D21ED057800B10DED /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEBC24F21ED057800B10DED /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		2FEBC25021ED057800B10DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -533,9 +535,18 @@
 			path = "UseCase Assignment";
 			sourceTree = "<group>";
 		};
+		2FC17E5121F795AB0093138A /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				2FC17E5221F795CD0093138A /* TogglableButton.swift */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
 		2FEBC24721ED051200B10DED /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2FC17E5121F795AB0093138A /* Custom Components */,
 				2F5BE97E21F773630049A144 /* Extensions */,
 				ACB449FF21EF919E00252958 /* Scenes */,
 				A1DF493521EF547C00E1DCF6 /* AppDelegate */,
@@ -1317,6 +1328,7 @@
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
 				2F5BE97921F768760049A144 /* ModalDetailInteractor.swift in Sources */,
 				5D4C717121F73F4900DEA298 /* ScreenProportions.swift in Sources */,
+				2FC17E5321F795CD0093138A /* TogglableButton.swift in Sources */,
 				5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */,
 				2F5BE97B21F76A490049A144 /* ModalDetailPresenter.swift in Sources */,
 				2F5BE97621F74CDC0049A144 /* MagicCard.swift in Sources */,

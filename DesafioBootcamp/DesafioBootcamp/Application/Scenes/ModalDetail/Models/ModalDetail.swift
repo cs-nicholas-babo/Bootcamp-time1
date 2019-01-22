@@ -21,7 +21,9 @@ enum ModalDetail {
     
     struct LayoutGuide {
         static let dismissButtonSide: CGFloat = 44.proportionalToWidth
-        static let sideProportion: CGFloat = UIScreen.main.bounds.width*0.2
+        static let sideProportion: CGFloat = UIScreen.main.bounds.width*0.14
+        static let defaultFavoriteMargin: CGFloat = 16
+        static let favoriteButtonHeight: CGFloat = 48.proportionalToHeight
     }
     
     struct ViewModel {

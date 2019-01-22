@@ -10,7 +10,7 @@ import Foundation
 import Domain
 
 protocol ModalDetailBusinessLogic {
-    func toggleFavorite(card: Card)
+    func toggleFavorite()
     func show()
 }
 
@@ -36,21 +36,21 @@ final class ModalDetailInteractor {
 }
 
 extension ModalDetailInteractor: ModalDetailBusinessLogic {
-    func show() {
-        presenter.show(card: card, status: status)
-    }
-    
-    func toggleFavorite(card: Card) {
+    func toggleFavorite() {
         useCase.fetchFavoriteCards { (result) in
             switch result {
             case .success(let cardsets):
                 let allCards = cardsets.flatMap({ $0.cards })
-                let status = !allCards.contains(card)
-                self.useCase.favorite(card: card, status: status)
-                self.presenter.toggleButton(status: status)
+                self.status = !allCards.contains(self.card)
+                self.useCase.favorite(card: self.card, status: self.status)
+                self.presenter.toggleButton(status: self.status)
             default:
                 break
             }
         }
+    }
+    
+    func show() {
+        presenter.show(card: card, status: status)
     }
 }

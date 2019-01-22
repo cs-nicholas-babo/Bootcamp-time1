@@ -24,6 +24,7 @@ public class ModalDetailViewController: UIViewController {
     var backgroundImage: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.image = UIImage(named: "Background")
+        imageView.isUserInteractionEnabled = true
         return imageView
     }()
     
@@ -39,6 +40,32 @@ public class ModalDetailViewController: UIViewController {
         imageView.image = UIImage(named: "Card_Background")
         return imageView
     }()
+    
+    lazy var favoriteButton: TogglebleButton = {
+        let stateFalse : (UIButton) -> () = { btn in
+            btn.backgroundColor = .clear
+            btn.setTitleColor(.white, for: .normal)
+            btn.setTitle("Favoritar", for: .normal)
+        }
+        
+        let stateTrue : (UIButton) -> () = { btn in
+            btn.backgroundColor = .white
+            btn.setTitleColor(.black, for: .normal)
+            btn.setTitle("Defavoritar", for: .normal)
+        }
+        
+        let button = TogglebleButton(frame: .zero, realState: false, setupFalse: stateFalse, setupTrue: stateTrue)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.white.cgColor
+        button.layer.cornerRadius = 2
+        button.addTarget(self, action: #selector(tapFavoriteButton), for: UIControl.Event.touchUpInside)
+        return button
+    }()
+    
+    @objc func tapFavoriteButton() {
+        interactor?.toggleFavorite()
+    }
     
     public override func loadView() {
         super.loadView()
@@ -58,6 +85,7 @@ extension ModalDetailViewController: ViewCode {
         self.view.addSubview(backgroundImage)
         backgroundImage.addSubview(dismissButton)
         backgroundImage.addSubview(cardView)
+        backgroundImage.addSubview(favoriteButton)
     }
     
     func setupConstraints() {
@@ -77,6 +105,11 @@ extension ModalDetailViewController: ViewCode {
             make.left.right.equalToSuperview().inset(ModalDetail.LayoutGuide.sideProportion)
             make.height.equalTo(cardView.snp.width).multipliedBy(MagicCard.proportionYX)
         }
+        
+        favoriteButton.snp.makeConstraints { (make) in
+            make.bottom.left.right.equalToSuperview().inset(ModalDetail.LayoutGuide.defaultFavoriteMargin)
+            make.height.equalTo(ModalDetail.LayoutGuide.favoriteButtonHeight)
+        }
     }
     
     func setupAdditionalConfiguration() {
@@ -86,8 +119,13 @@ extension ModalDetailViewController: ViewCode {
 }
 
 extension ModalDetailViewController: ModalDetailDisplayLogic {
+    func displayButton(status: Bool) {
+        favoriteButton.setRealState(realState: status)
+    }
+    
     func display(viewModel: ModalDetail.ViewModel) {
         ImageDownloader.setMagicCard(with: viewModel.card.literalImageURL(), imageView: &cardView)
+        favoriteButton.setRealState(realState: viewModel.status)
     }
     
 }

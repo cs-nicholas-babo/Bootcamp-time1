@@ -14,4 +14,5 @@ public protocol ApplicationStartupUseCase {
 
 public protocol ApplicationRunningUseCase {
     func fetchSets(handler: @escaping (Result<[MetaCardSet]>) -> ())
+    func setupCache(sets: [MetaCardSet])
 }

@@ -9,6 +9,7 @@
 import UIKit
 import Domain
 import PlatformLocalDatabase
+import PlatformAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -22,15 +23,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let card = Card(id: "1", name: "o0i", setCode: "10E", types: Set<CardType>(), imageURL: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card")
         
-        let modalVC = ModalDetailViewController()
-        let presenter = ModalDetailPresenter(viewController: modalVC)
-        let interactor = ModalDetailInteractor(presenter: presenter, useCase: FavoriteCardsServiceProvider().useCase(), card: card, status: false)
-        modalVC.interactor = interactor
+        MTG_ProviderDefault().applicationStartupUseCase().startup {
+            let modalVC = ModalDetailViewController()
+            let presenter = ModalDetailPresenter(viewController: modalVC)
+            let interactor = ModalDetailInteractor(presenter: presenter, useCase: FavoriteCardsServiceProvider().useCase(), card: card, status: false)
+            modalVC.interactor = interactor
+            
+            window.rootViewController = modalVC
+            
+            self.window = window
+            self.window?.makeKeyAndVisible()
+            
+        }
         
-        window.rootViewController = modalVC
-        
-        self.window = window
-        self.window?.makeKeyAndVisible()
         
         return true
     }

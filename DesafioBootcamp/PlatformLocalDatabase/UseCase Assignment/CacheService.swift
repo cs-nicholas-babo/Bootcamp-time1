@@ -19,5 +19,11 @@ final public class CacheService: Domain.ApplicationRunningUseCase {
     public func fetchSets(handler: @escaping (Result<[MetaCardSet]>) -> ()) {
         handler(Result.success(cacheManager.cardSetRepository.get()))
     }
-
+    
+    public func setupCache(sets: [MetaCardSet]) {
+        sets.forEach { (set) in
+            cacheManager.cardSetRepository.upsert(object: set)
+        }
+    }
+    
 }

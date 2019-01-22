@@ -51,7 +51,7 @@ public final class FavoriteCardsRepository: RealmRepository {
         var allCards = self.get()
         
         if let query = query {
-            allCards = allCards.filter {$0.name.contains(query)}
+            allCards = allCards.filter{ $0.name.contains(query)}
         }
         
         var finalSets: [CardSet] = []

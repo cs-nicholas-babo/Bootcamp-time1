@@ -29,7 +29,7 @@ extension ModalDetailPresenter : ModalDetailPresentationLogic {
     }
     
     func toggleButton(status: Bool) {
-        // XD
+        viewController.displayButton(status: status)
     }
     
 }
