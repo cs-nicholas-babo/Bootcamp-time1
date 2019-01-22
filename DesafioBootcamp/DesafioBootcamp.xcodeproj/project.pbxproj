@@ -56,6 +56,8 @@
 		A13669C921F7620600CA705E /* CardSetListTableViewDataSourceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669C821F7620600CA705E /* CardSetListTableViewDataSourceSpec.swift */; };
 		A13669CB21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669CA21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift */; };
 		A13669CD21F76AAA00CA705E /* CardSetListTableWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669CC21F76AAA00CA705E /* CardSetListTableWrapperView.swift */; };
+		A13669CF21F7805700CA705E /* CardSetListFactoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669CE21F7805700CA705E /* CardSetListFactoryImplementation.swift */; };
+		A13669D121F7808300CA705E /* LocalDatabaseGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = A13669D021F7808300CA705E /* LocalDatabaseGateway.swift */; };
 		A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7321EF8DA90060A691 /* RealmCardSet.swift */; };
 		A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */; };
 		A19CFD7821EF9A960060A691 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7721EF9A960060A691 /* CacheManager.swift */; };
@@ -237,6 +239,8 @@
 		A13669C821F7620600CA705E /* CardSetListTableViewDataSourceSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListTableViewDataSourceSpec.swift; sourceTree = "<group>"; };
 		A13669CA21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListTableWrapperViewFactory.swift; sourceTree = "<group>"; };
 		A13669CC21F76AAA00CA705E /* CardSetListTableWrapperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListTableWrapperView.swift; sourceTree = "<group>"; };
+		A13669CE21F7805700CA705E /* CardSetListFactoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListFactoryImplementation.swift; sourceTree = "<group>"; };
+		A13669D021F7808300CA705E /* LocalDatabaseGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabaseGateway.swift; sourceTree = "<group>"; };
 		A13C654221EF6FA800689169 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Frameworks/RealmSwift.framework; sourceTree = "<group>"; };
 		A13C654321EF6FA800689169 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Frameworks/Quick.framework; sourceTree = "<group>"; };
 		A13C654421EF6FA800689169 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Frameworks/Nimble.framework; sourceTree = "<group>"; };
@@ -563,6 +567,7 @@
 			isa = PBXGroup;
 			children = (
 				ACB449FD21EF8D4800252958 /* MTGCardGateway.swift */,
+				A13669D021F7808300CA705E /* LocalDatabaseGateway.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -663,6 +668,7 @@
 				ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */,
 				5D4629B521F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift */,
 				A13669CA21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift */,
+				A13669CE21F7805700CA705E /* CardSetListFactoryImplementation.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -1202,6 +1208,7 @@
 				ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */,
 				5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */,
 				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
+				A13669D121F7808300CA705E /* LocalDatabaseGateway.swift in Sources */,
 				A13669BE21F74EA800CA705E /* CardSetListCollectionWrapperView.swift in Sources */,
 				ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */,
 				AC692B0B21F73BB7009734FE /* ScreenProportions.swift in Sources */,
@@ -1215,6 +1222,7 @@
 				ACE7895321F26ABE00718E4E /* CardSetListCollectionView.swift in Sources */,
 				ACE7894721F2669C00718E4E /* CardSetListTableView.swift in Sources */,
 				5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */,
+				A13669CF21F7805700CA705E /* CardSetListFactoryImplementation.swift in Sources */,
 				ACE7894121F2638000718E4E /* CardSetListCollectionViewCell.swift in Sources */,
 				5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,

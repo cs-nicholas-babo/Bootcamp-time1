@@ -11,13 +11,10 @@ import Foundation
 protocol ViewCode{
     func setupViewHierarchy()
     func setupConstraints()
+    func setupAdditionalConfiguration()
 }
 
 extension ViewCode{
-    
-    func setupAdditionalConfiguration() {
-        
-    }
     
     func setupView(){
         setupViewHierarchy()

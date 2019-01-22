@@ -17,24 +17,6 @@ final class CardSetListInteractor {
     init(presenter: CardSetListPresentationLogic, cardGateway: MTGCardGateway) {
         self.presenter = presenter
         self.cardGateway = cardGateway
-        
-        setMetaSets()
-    }
-    
-    private func setMetaSets() {
-        self.cardGateway.fetchMetaSets { [weak self] result in
-            guard let self = self else { fatalError() }
-            
-            switch result {
-            case .success(let metaSets):
-                self.metaSets = metaSets
-                self.presenter.present(response: .readyToPresentSets)
-                
-            case .failure(let error):
-                print("\(error.errorCode): \(error.error)")
-                self.presenter.present(response: .error)
-            }
-        }
     }
 }
 

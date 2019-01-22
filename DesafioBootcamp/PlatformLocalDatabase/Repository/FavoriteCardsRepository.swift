@@ -14,7 +14,7 @@ public final class FavoriteCardsRepository: RealmRepository {
     typealias T = Card
     let realm: Realm
     
-    init(realm: Realm){
+    public init(realm: Realm){
         self.realm = realm
     }
     

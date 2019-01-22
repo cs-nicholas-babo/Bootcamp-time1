@@ -22,12 +22,13 @@ final class CardSetListViewController: UIViewController {
     var interactor: CardSetListBusinessLogic?
     
     lazy var wrapperView: CardSetListTableWrapperView = {
-       return CardSetListTableWrapperView(frame: .zero)
+       return CardSetListTableWrapperView(frame: self.view.frame)
     }()
     
     init() {
         super.init(nibName: nil, bundle: nil)
         _ = stateMachine.enter(CardSetListLoadingState.self)
+        setupView()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -54,6 +55,10 @@ extension CardSetListViewController: CardSetListDisplayLogic {
 }
 
 extension CardSetListViewController: ViewCode {
+    func setupAdditionalConfiguration() {
+        
+    }
+    
     func setupViewHierarchy() {
         self.view.addSubview(self.wrapperView)
     }

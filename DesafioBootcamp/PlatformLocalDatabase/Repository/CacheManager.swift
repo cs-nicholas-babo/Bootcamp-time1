@@ -14,7 +14,7 @@ public final class CacheManager {
     
     let cardSetRepository: CardSetCacheRepository
     
-    init (realm:Realm){
+    public init (realm:Realm){
         self.cardSetRepository = CardSetCacheRepository(realm: realm)
     }
     

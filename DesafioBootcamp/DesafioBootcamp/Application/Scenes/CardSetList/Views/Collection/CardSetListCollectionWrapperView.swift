@@ -29,6 +29,7 @@ class CardSetListCollectionWrapperView: UIView {
 }
 
 extension CardSetListCollectionWrapperView: ViewCode {
+    
     func setupViewHierarchy() {
         addSubview(collectionView)
     }
@@ -37,5 +38,9 @@ extension CardSetListCollectionWrapperView: ViewCode {
         collectionView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
         }
+    }
+    
+    func setupAdditionalConfiguration() {
+        
     }
 }
