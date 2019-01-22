@@ -9,5 +9,23 @@
 import UIKit
 
 class CardSetListTableViewCell: UITableViewCell {
+    
+}
 
+extension CardSetListTableViewCell: ViewCode{
+    func setupViewHierarchy() {
+        
+    }
+    
+    func setupConstraints() {
+        
+    }
+    
+    func setupAdditionalConfiguration() {
+        
+    }
+    
+    
+    
+    
 }

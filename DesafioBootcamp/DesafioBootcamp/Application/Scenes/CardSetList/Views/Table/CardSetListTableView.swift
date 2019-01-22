@@ -12,3 +12,18 @@ class CardSetListTableView: UITableView {
 
 
 }
+
+extension CardSetListTableView: ViewCode{
+    func setupViewHierarchy() {
+        
+    }
+    
+    func setupConstraints() {
+        
+    }
+    
+    func setupAdditionalConfiguration() {
+        register(CardSetListTableViewCell.self, forCellReuseIdentifier: CardSetList.tableViewCellIdentifier)
+    }
+ 
+}

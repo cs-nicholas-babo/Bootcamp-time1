@@ -11,7 +11,7 @@ import Domain
 
 class CardSetListCollectionViewFactory {
     static func make(cards: [Card]) -> UICollectionView {
-        let dataSource = CardSetListCollectionViewDataSource(cards: cards)
+        let dataSource = CardSetListCollectionViewDataSource()
         let collectionView = CardSetListCollectionView(frame: .zero, collectionViewLayout: UICollectionViewFlowLayout())
         collectionView.dataSource = dataSource
         return collectionView

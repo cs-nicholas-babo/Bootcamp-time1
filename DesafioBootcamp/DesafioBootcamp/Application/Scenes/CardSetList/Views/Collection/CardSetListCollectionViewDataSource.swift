@@ -13,8 +13,8 @@ class CardSetListCollectionViewDataSource: NSObject, UICollectionViewDataSource 
 
     private var cards: [Card]
     
-    init(cards: [Card]) {
-        self.cards = cards
+    override init() {
+        self.cards = []
         super.init()
     }
     
@@ -31,6 +31,10 @@ class CardSetListCollectionViewDataSource: NSObject, UICollectionViewDataSource 
         }
         
         return cell
+    }
+    
+    func set(cards: [Card]){
+        self.cards = cards
     }
     
     
