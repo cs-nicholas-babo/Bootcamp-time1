@@ -11,7 +11,7 @@ import Domain
 
 class CardSetListCollectionViewDataSource: NSObject, UICollectionViewDataSource {
 
-    private var cards: [Card]
+    var cards: [Card]
     
     override init() {
         self.cards = []
@@ -33,9 +33,7 @@ class CardSetListCollectionViewDataSource: NSObject, UICollectionViewDataSource 
         return cell
     }
     
-    func set(cards: [Card]){
-        self.cards = cards
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return Set<CardType>(cards.flatMap({$0.types})).count
     }
-    
-    
 }

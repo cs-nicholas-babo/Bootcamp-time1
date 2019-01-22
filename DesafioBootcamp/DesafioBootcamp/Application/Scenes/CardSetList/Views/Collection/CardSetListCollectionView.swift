@@ -10,9 +10,18 @@ import UIKit
 import Domain
 
 class CardSetListCollectionView: UICollectionView {
+    private static var layout: UICollectionViewLayout {
+        let layout = UICollectionViewFlowLayout()
+        
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: Card.size.width.proportionalToWidth, height: Card.size.height.proportionalToHeight)
+        layout.minimumLineSpacing = 16.proportionalToWidth
+        
+        return layout
+    }
     
-    override init(frame: CGRect, collectionViewLayout layout: UICollectionViewLayout) {
-        super.init(frame: frame, collectionViewLayout: layout)
+    init(frame: CGRect) {
+        super.init(frame: frame, collectionViewLayout: CardSetListCollectionView.layout)
         setupView()
     }
     

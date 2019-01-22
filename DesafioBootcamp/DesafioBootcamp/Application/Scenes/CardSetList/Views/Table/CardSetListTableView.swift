@@ -9,18 +9,22 @@
 import UIKit
 
 class CardSetListTableView: UITableView {
-
-
+   
+    override init(frame: CGRect, style: UITableView.Style) {
+        super.init(frame: frame, style: style)
+        setupView()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
 }
 
 extension CardSetListTableView: ViewCode{
-    func setupViewHierarchy() {
-        
-    }
+    func setupViewHierarchy() { }
     
-    func setupConstraints() {
-        
-    }
+    func setupConstraints() { }
     
     func setupAdditionalConfiguration() {
         register(CardSetListTableViewCell.self, forCellReuseIdentifier: CardSetList.tableViewCellIdentifier)

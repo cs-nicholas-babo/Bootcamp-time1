@@ -10,22 +10,25 @@ import UIKit
 
 class CardSetListTableViewCell: UITableViewCell {
     
+    lazy var collectionWrapperView: CardSetListCollectionWrapperView = {
+        let wrapper = CardSetListCollectionWrapperView(frame: self.frame)
+        return wrapper
+    }()
+    
 }
 
 extension CardSetListTableViewCell: ViewCode{
     func setupViewHierarchy() {
-        
+        addSubview(collectionWrapperView)
     }
     
     func setupConstraints() {
-        
+        collectionWrapperView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
     }
     
     func setupAdditionalConfiguration() {
-        
     }
-    
-    
-    
     
 }

@@ -6,9 +6,9 @@
 //  Copyright © 2019 concrete.solutions. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-protocol DataFeeder {
+protocol DataFeeder where Self: UIView {
     associatedtype FeedData
     func feed(data: FeedData)
     

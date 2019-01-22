@@ -17,10 +17,18 @@ class CardSetListCollectionWrapperView: UIView {
     }()
     
     let datasource = CardSetListCollectionViewDataSource()
-
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupView()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
-extension CardSetListCollectionWrapperView: ViewCode{
+extension CardSetListCollectionWrapperView: ViewCode {
     func setupViewHierarchy() {
         addSubview(collectionView)
     }
@@ -34,14 +42,13 @@ extension CardSetListCollectionWrapperView: ViewCode{
     func setupAdditionalConfiguration() {
         
     }
-    
-    
 }
 
 extension CardSetListCollectionWrapperView: DataFeeder{
     typealias FeedData = [Card]
     
     func feed(data: [Card]) {
-        self.datasource.set(cards: data)
+        self.datasource.cards = data
+        self.collectionView.reloadData()
     }
 }
