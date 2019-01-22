@@ -12,7 +12,7 @@ import Domain
 
 class CardSetListTableViewDataSource: NSObject, UITableViewDataSource{
     
-    var sets:[CardSet]
+    var sets:[CardSetList.ViewModel]
     
     override init() {
         self.sets = []
@@ -28,14 +28,12 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource{
     }
     
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return sets.map({ (arg0) -> String in
-            let (set, _) = arg0
-            return set.name
-        })
+        return sets.map({$0.setName})
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CardSetList.tableViewCellIdentifier) as! CardSetListTableViewCell
+        cell.collectionWrapperView.datasource.cards = sets[indexPath.row].typedCards
         return cell
     }
     

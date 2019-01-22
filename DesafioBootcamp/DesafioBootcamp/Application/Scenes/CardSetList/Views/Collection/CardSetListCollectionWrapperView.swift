@@ -43,12 +43,3 @@ extension CardSetListCollectionWrapperView: ViewCode {
         
     }
 }
-
-extension CardSetListCollectionWrapperView: DataFeeder{
-    typealias FeedData = [Card]
-    
-    func feed(data: [Card]) {
-        self.datasource.cards = data
-        self.collectionView.reloadData()
-    }
-}

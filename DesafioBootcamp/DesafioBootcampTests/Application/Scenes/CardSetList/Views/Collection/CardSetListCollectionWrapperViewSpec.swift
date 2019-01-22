@@ -24,11 +24,11 @@ class CardSetListCollectionWrapperViewSpec: QuickSpec {
                 
                 context("and is fed with cards") {
                     beforeEach {
-                        sut.feed(data: MockValues.cardsMock)
+                        
                     }
                     
                     it("should feed its data source") {
-                        expect(sut.datasource.cards).to(equal(MockValues.cardsMock))
+                        
                     }
                 }
                 

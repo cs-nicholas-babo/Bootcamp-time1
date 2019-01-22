@@ -21,6 +21,10 @@ final class CardSetListViewController: UIViewController {
     
     var interactor: CardSetListBusinessLogic?
     
+    lazy var wrapperView: CardSetListTableWrapperView = {
+       return CardSetListTableWrapperView(frame: .zero)
+    }()
+    
     init() {
         super.init(nibName: nil, bundle: nil)
         _ = stateMachine.enter(CardSetListLoadingState.self)
@@ -29,15 +33,13 @@ final class CardSetListViewController: UIViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
-    
 }
 
 extension CardSetListViewController: CardSetListDisplayLogic {
     
-    // TODO: Final implementation
     func display(viewModel: CardSetList.ViewModel) {
         _ = stateMachine.enter(CardSetListShowCardsState.self)
-        
+        self.wrapperView.datasource.sets.append(viewModel)
     }
     
     func readyToDisplayCards() {
@@ -49,6 +51,16 @@ extension CardSetListViewController: CardSetListDisplayLogic {
     func displayError() {
         _ = stateMachine.enter(CardSetListErrorState.self)
     }
+}
+
+extension CardSetListViewController: ViewCode {
+    func setupViewHierarchy() {
+        self.view.addSubview(self.wrapperView)
+    }
     
-    
+    func setupConstraints() {
+        self.wrapperView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
 }

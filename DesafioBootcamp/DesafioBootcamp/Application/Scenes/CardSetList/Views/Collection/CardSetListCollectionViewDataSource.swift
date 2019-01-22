@@ -11,22 +11,21 @@ import Domain
 
 class CardSetListCollectionViewDataSource: NSObject, UICollectionViewDataSource {
 
-    var cards: [Card]
+    var cards: [TypedCards] = []
     
     override init() {
-        self.cards = []
         super.init()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return cards.count
+        return cards[section].cards.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CardSetList.collectionViewCellIdentifier,
                                                       for: indexPath) as! CardSetListCollectionViewCell
         
-        if let path = cards[indexPath.row].imageURL {
+        if let path = cards[indexPath.section].cards[indexPath.row].imageURL {
             cell.loadImage(fromPath: path)
         }
         
@@ -34,6 +33,6 @@ class CardSetListCollectionViewDataSource: NSObject, UICollectionViewDataSource 
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return Set<CardType>(cards.flatMap({$0.types})).count
+        return cards.count
     }
 }

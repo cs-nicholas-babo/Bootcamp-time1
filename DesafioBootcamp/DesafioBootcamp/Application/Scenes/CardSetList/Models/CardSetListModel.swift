@@ -9,7 +9,7 @@
 import Foundation
 import Domain
 
-typealias TypedCards = [CardType : [Card]]
+typealias TypedCards = (type: CardType, cards: [Card])
 
 enum CardSetList {
     
@@ -20,7 +20,8 @@ enum CardSetList {
     }
     
     struct ViewModel {
-        var typeSortedCards: TypedCards
+        let setName: String
+        let typedCards: [TypedCards]
         
         /**
          Initialize instance with CardSet passed.
@@ -29,13 +30,17 @@ enum CardSetList {
             - cardSet: Set with cards to be displayed.
          */
         init(cardSet: CardSet) {
-            typeSortedCards = [:]
+            self.setName = cardSet.set.name
+            
+            var typeSortedCards: [TypedCards] = []
             let types = cardSet.cards.flatMap { $0.types }
             let sortedTypes = Set<CardType>(types).sorted { $0.name < $1.name }
-            sortedTypes.forEach { (cardType) in
+            sortedTypes.forEach { cardType in
                 let cards = cardSet.cards.filter { $0.types.contains(cardType) }
-                typeSortedCards.updateValue(cards, forKey: cardType)
+                typeSortedCards.append(TypedCards(cardType, cards))
             }
+            
+            self.typedCards = typeSortedCards
         }
     }
     

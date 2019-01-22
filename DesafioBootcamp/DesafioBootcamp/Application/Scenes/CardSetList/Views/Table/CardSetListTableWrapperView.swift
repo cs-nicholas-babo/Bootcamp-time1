@@ -45,11 +45,3 @@ extension CardSetListTableWrapperView: ViewCode{
     }
     
 }
-
-extension CardSetListTableWrapperView: DataFeeder{
-    typealias FeedData = [CardSet]
-    
-    func feed(data: [CardSet]) {
-        datasource.sets = data
-    }
-}
