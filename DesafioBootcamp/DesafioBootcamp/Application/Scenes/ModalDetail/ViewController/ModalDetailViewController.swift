@@ -23,21 +23,20 @@ public class ModalDetailViewController: UIViewController {
     
     var backgroundImage: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.backgroundColor = UIColor.lightGray
-        
+        imageView.image = UIImage(named: "Background")
         return imageView
     }()
     
     lazy var dismissButton: UIButton = {
         let button = UIButton(frame: .zero)
-        button.backgroundColor = .red
-        
+        button.setImage(UIImage(named: "Close"), for: .normal)
         return button
     }()
     
     lazy var cardView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.backgroundColor = .clear
+        imageView.image = UIImage(named: "Card_Background")
         return imageView
     }()
     

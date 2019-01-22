@@ -12,9 +12,8 @@ import Kingfisher
 
 public class ImageDownloader {
     static func setMagicCard(with url: URL?, imageView: inout UIImageView){
-        
         imageView.kf.indicatorType = .activity
         (imageView.kf.indicator?.view as? UIActivityIndicatorView)?.color = .white
-        imageView.kf.setImage(with: url)
+        imageView.kf.setImage(with: url, placeholder: UIImage(named: "Card_Background"))
     }
 }
