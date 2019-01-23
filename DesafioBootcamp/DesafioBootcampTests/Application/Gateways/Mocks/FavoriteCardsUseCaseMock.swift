@@ -11,9 +11,10 @@ import Domain
 final class FavoriteCardsUseCaseMock: FavoriteCardsUseCase {
     
     var shouldFail = false
+    let sentCardSets = MockValues.cardSetMockArray
     
     var result: Result<[CardSet]> {
-        return self.shouldFail ?  Result.failure(DomainError(errorCode: "", error: ResultErrorMock.error)) : Result.success(MockValues.cardSetMockArray)
+        return self.shouldFail ?  Result.failure(DomainError(errorCode: "", error: ResultErrorMock.error)) : Result.success(sentCardSets)
     }
     
     func fetchFavoriteCards(query: String, handler: @escaping (Result<[CardSet]>) -> ()) {

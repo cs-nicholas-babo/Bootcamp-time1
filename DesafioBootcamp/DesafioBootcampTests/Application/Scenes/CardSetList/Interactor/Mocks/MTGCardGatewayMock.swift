@@ -10,7 +10,7 @@ import Foundation
 import Domain
 @testable import DesafioBootcamp
 
-final class MTGCardGatewayMock: MTGCardGateway {
+final class MTGCardGatewayMock: MTGSetFetcher {
     
     var shouldFail = false
     var didCallfetchSet = false

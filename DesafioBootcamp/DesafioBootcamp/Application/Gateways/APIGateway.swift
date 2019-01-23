@@ -10,7 +10,7 @@ import Foundation
 import PlatformAPI
 import Domain
 
-class APIGateway: MTGCardGateway {
+class APIGateway: MTGSetFetcher {
     
     let service = MTG_Service()
     var metaSets = [MetaCardSet]()
@@ -61,17 +61,4 @@ class APIGateway: MTGCardGateway {
             }
         }
     }
-    
-    func fetchCards(named: String, _ completion: @escaping (Result<[Card]>) -> Void) {
-        service.fetchCards(filter: named) { result in
-            switch result{
-            case .success(let cards):
-                completion(.success(cards))
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
-    
-    
 }

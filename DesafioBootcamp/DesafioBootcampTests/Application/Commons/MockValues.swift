@@ -22,7 +22,7 @@ struct MockValues {
     
     static let cardSetMock = (set: metaCardSetMock, cards: cardMockArray)
     
-    static let cardSetMockArray = [cardSetMock, cardSetMock, cardSetMock, cardSetMock, cardSetMock]
+    static let cardSetMockArray: [CardSet] = [cardSetMock, cardSetMock, cardSetMock, cardSetMock, cardSetMock]
     
     static let viewModelMock = CardSetList.ViewModel(cardSet: cardSetMock)
 }

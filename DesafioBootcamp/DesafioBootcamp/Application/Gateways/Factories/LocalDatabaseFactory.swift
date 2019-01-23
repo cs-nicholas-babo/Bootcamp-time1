@@ -11,8 +11,8 @@ import Domain
 import PlatformLocalDatabase
 
 final class LocalDatabaseFactory {
-    static func make() -> MTGCardGateway {
-        let localDatabase = LocalDatabaseGateway(favoritesService: FavoritesServiceFactory.make(), cacheService: CacheServiceFactory.make())
+    static func make() -> MTGSetFetcher {
+        let localDatabase = LocalDatabaseGateway(favoritesService: FavoritesServiceFactory.make())
         return localDatabase
     }
 }

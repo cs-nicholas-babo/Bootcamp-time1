@@ -11,9 +11,9 @@ import Domain
 
 final class CardSetListInteractor {
     private let presenter: CardSetListPresentationLogic
-    private let cardGateway: MTGCardGateway
+    private let cardGateway: MTGSetFetcher
     
-    init(presenter: CardSetListPresentationLogic, cardGateway: MTGCardGateway) {
+    init(presenter: CardSetListPresentationLogic, cardGateway: MTGSetFetcher) {
         self.presenter = presenter
         self.cardGateway = cardGateway
     }

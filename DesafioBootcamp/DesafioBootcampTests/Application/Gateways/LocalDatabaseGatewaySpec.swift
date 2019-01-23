@@ -6,9 +6,9 @@
 //  Copyright © 2019 concrete.solutions. All rights reserved.
 //
 
-import Foundation
 import Quick
 import Nimble
+import Domain
 
 @testable import DesafioBootcamp
 
@@ -19,13 +19,49 @@ final class LocalDatabaseGatewaySpec: QuickSpec {
             
             context("when initialized") {
                 var favoriteCardsService: FavoriteCardsUseCaseMock!
-                var cacheService: ApplicationRunningUseCaseMock!
                 
                 beforeEach {
                     favoriteCardsService = FavoriteCardsUseCaseMock()
-                    cacheService = ApplicationRunningUseCaseMock()
                     
-                    sut = LocalDatabaseGateway(favoritesService: favoriteCardsService, cacheService: cacheService)
+                    sut = LocalDatabaseGateway(favoritesService: favoriteCardsService)
+                }
+            
+                context("and succeed to fetch sets") {
+                    var receivedCardSets: [CardSet]!
+                    
+                    beforeEach {
+                        favoriteCardsService.shouldFail = false
+                        
+                        sut.fetchSets { result in
+                            switch result {
+                            case .success(let cardSets):
+                                receivedCardSets = cardSets
+                            case .failure:
+                                fail()
+                            }
+                        }
+                    }
+                    
+                    it("should get card serts correctly") {
+                        expect(receivedCardSets == favoriteCardsService.sentCardSets)
+                    }
+                }
+                
+                context("and fail to fetch sets") {
+                    beforeEach {
+                        favoriteCardsService.shouldFail = true
+                    }
+                    
+                    it("should result an error") {
+                        sut.fetchSets { result in
+                            switch result {
+                            case .success:
+                                fail()
+                            case .failure:
+                                expect({return .succeeded}).to(succeed())
+                            }
+                        }
+                    }
                 }
             }
         }
