@@ -26,8 +26,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         MTG_ProviderDefault().applicationStartupUseCase().startup {
             let modalVC = ModalDetailViewController()
             let presenter = ModalDetailPresenter(viewController: modalVC)
+            let router = ModalDetailRouter(viewController: modalVC)
             let interactor = ModalDetailInteractor(presenter: presenter, useCase: FavoriteCardsServiceProvider().useCase(), card: card, status: false)
             modalVC.interactor = interactor
+            modalVC.router = router
             
             window.rootViewController = modalVC
             

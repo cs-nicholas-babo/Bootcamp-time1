@@ -11,6 +11,7 @@ import UIKit
 import SnapKit
 
 public class ModalDetailViewController: UIViewController {
+    var router: ModalDetailRoutingLogic?
     var interactor: ModalDetailBusinessLogic?
     
     init() {
@@ -31,6 +32,7 @@ public class ModalDetailViewController: UIViewController {
     lazy var dismissButton: UIButton = {
         let button = UIButton(frame: .zero)
         button.setImage(UIImage(named: "Close"), for: .normal)
+        button.addTarget(self, action: #selector(tapDismissButton), for: UIControl.Event.touchUpInside)
         return button
     }()
     
@@ -65,6 +67,10 @@ public class ModalDetailViewController: UIViewController {
     
     @objc func tapFavoriteButton() {
         interactor?.toggleFavorite()
+    }
+    
+    @objc func tapDismissButton() {
+        router?.dismiss()
     }
     
     public override func loadView() {

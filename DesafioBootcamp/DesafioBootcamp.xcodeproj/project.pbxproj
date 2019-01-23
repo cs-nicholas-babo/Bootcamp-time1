@@ -55,6 +55,7 @@
 		2FEBC26A21EE04E700B10DED /* CardsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26921EE04E700B10DED /* CardsUseCase.swift */; };
 		2FEBC26C21EE055B00B10DED /* FavoriteCardsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26B21EE055B00B10DED /* FavoriteCardsUseCase.swift */; };
 		2FEBC26E21EE05B600B10DED /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */; };
+		2FF83CF221F8873F008B4604 /* ModalDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF83CF121F8873F008B4604 /* ModalDetailRouter.swift */; };
 		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
 		5D4C717121F73F4900DEA298 /* ScreenProportions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C717021F73F4900DEA298 /* ScreenProportions.swift */; };
 		5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */; };
@@ -250,6 +251,7 @@
 		2FEBC26921EE04E700B10DED /* CardsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26B21EE055B00B10DED /* FavoriteCardsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
+		2FF83CF121F8873F008B4604 /* ModalDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailRouter.swift; sourceTree = "<group>"; };
 		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
 		5D4C717021F73F4900DEA298 /* ScreenProportions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenProportions.swift; sourceTree = "<group>"; };
 		5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewController.swift; sourceTree = "<group>"; };
@@ -410,6 +412,7 @@
 		2F5BE96821F740DD0049A144 /* ModalDetail */ = {
 			isa = PBXGroup;
 			children = (
+				2FF83CF021F88724008B4604 /* Router */,
 				2F5BE96C21F743780049A144 /* Models */,
 				2F5BE96B21F743170049A144 /* ViewController */,
 				2F5BE96A21F742F00049A144 /* Presenter */,
@@ -601,6 +604,14 @@
 				2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		2FF83CF021F88724008B4604 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2FF83CF121F8873F008B4604 /* ModalDetailRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		5DA18EFF21F0AAC400A862F4 /* States */ = {
@@ -1325,6 +1336,7 @@
 				A131BB9D21F6618E000869E1 /* CardSetListModel.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				2F5BE97D21F770990049A144 /* ModelDetailDisplayLogic.swift in Sources */,
+				2FF83CF221F8873F008B4604 /* ModalDetailRouter.swift in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
 				2F5BE97921F768760049A144 /* ModalDetailInteractor.swift in Sources */,
 				5D4C717121F73F4900DEA298 /* ScreenProportions.swift in Sources */,

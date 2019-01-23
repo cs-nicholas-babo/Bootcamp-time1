@@ -53,4 +53,5 @@ extension ModalDetailInteractor: ModalDetailBusinessLogic {
     func show() {
         presenter.show(card: card, status: status)
     }
+    
 }
