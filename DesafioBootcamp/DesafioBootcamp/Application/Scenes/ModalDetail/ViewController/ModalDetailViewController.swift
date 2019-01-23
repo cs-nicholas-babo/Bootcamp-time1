@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 import SnapKit
 
+protocol ModalDetailDisplayLogic: class {
+    func display(viewModel: ModalDetail.ViewModel)
+    func displayButton(status: Bool)
+}
+
 public class ModalDetailViewController: UIViewController {
     var router: ModalDetailRoutingLogic?
     var interactor: ModalDetailBusinessLogic?
@@ -41,6 +46,11 @@ public class ModalDetailViewController: UIViewController {
         imageView.backgroundColor = .clear
         imageView.image = UIImage(named: "Card_Background")
         return imageView
+    }()
+    
+    lazy var searchBar: UISearchBar = {
+        let searchBar = MTGSearchBar(frame: .zero)
+        return searchBar
     }()
     
     lazy var favoriteButton: TogglebleButton = {
@@ -92,11 +102,18 @@ extension ModalDetailViewController: ViewCode {
         backgroundImage.addSubview(dismissButton)
         backgroundImage.addSubview(cardView)
         backgroundImage.addSubview(favoriteButton)
+        backgroundImage.addSubview(searchBar)
     }
     
     func setupConstraints() {
         backgroundImage.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
+        }
+        
+        searchBar.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.height.equalTo(45)
+            searchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
         }
         
         dismissButton.snp.makeConstraints { (make) in

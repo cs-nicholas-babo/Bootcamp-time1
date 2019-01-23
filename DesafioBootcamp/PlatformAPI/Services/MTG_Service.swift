@@ -158,7 +158,6 @@ extension MTG_Service: Domain.CardsUseCase {
             }
         }
     }
-    
 }
 
 extension MTG_Service: Domain.ApplicationRunningUseCase {
