@@ -18,20 +18,20 @@ final class ModalDetailInteractor {
     private let presenter: ModalDetailPresentationLogic
     private let useCase: FavoriteCardsUseCase
     
-    private var card: Card
-    private var status: Bool
+    private var typedCards: TypedCards
+    private var selectedIndex: Int
+    private var favoriteCardsIndexes: [Int]
     
-    init(presenter: ModalDetailPresentationLogic, useCase: FavoriteCardsUseCase) {
-        self.presenter = presenter
-        self.useCase = useCase
-        self.card = Card(id: "", name: "", setCode: "", types: Set<CardType>())
-        self.status = false
+    private func indexedCard() -> Card {
+        return self.typedCards.cards[self.selectedIndex]
     }
     
-    convenience init(presenter: ModalDetailPresentationLogic, useCase: FavoriteCardsUseCase, card: Card, status: Bool) {
-        self.init(presenter: presenter, useCase: useCase)
-        self.card = card
-        self.status = status
+    init(presenter: ModalDetailPresentationLogic, useCase: FavoriteCardsUseCase, subset: ModalDetail.ViewModel.Subset) {
+        self.presenter = presenter
+        self.useCase = useCase
+        self.typedCards = subset.typedCards
+        self.selectedIndex = subset.selectedIndex
+        self.favoriteCardsIndexes = subset.favoriteCardsIndexes
     }
 }
 
@@ -41,9 +41,9 @@ extension ModalDetailInteractor: ModalDetailBusinessLogic {
             switch result {
             case .success(let cardsets):
                 let allCards = cardsets.flatMap({ $0.cards })
-                self.status = !allCards.contains(self.card)
-                self.useCase.favorite(card: self.card, status: self.status)
-                self.presenter.toggleButton(status: self.status)
+                let favoriteFlag = !allCards.contains(self.indexedCard())
+                self.useCase.favorite(card: self.indexedCard(), status: favoriteFlag)
+                self.presenter.toggleButton(status: favoriteFlag)
             default:
                 break
             }
@@ -51,7 +51,7 @@ extension ModalDetailInteractor: ModalDetailBusinessLogic {
     }
     
     func show() {
-        presenter.show(card: card, status: status)
+        presenter.show(cards: typedCards.cards, selectedIndex: selectedIndex, favoriteCardsIndexes: favoriteCardsIndexes)
     }
     
 }

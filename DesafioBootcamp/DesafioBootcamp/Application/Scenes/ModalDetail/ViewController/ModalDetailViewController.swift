@@ -11,7 +11,8 @@ import UIKit
 import SnapKit
 
 protocol ModalDetailDisplayLogic: class {
-    func display(viewModel: ModalDetail.ViewModel)
+    func display(viewModel: ModalDetail.ViewModel.Single)
+    func display(viewModel: ModalDetail.ViewModel.Subset)
     func displayButton(status: Bool)
 }
 
@@ -100,7 +101,7 @@ extension ModalDetailViewController: ViewCode {
     func setupViewHierarchy() {
         self.view.addSubview(backgroundImage)
         backgroundImage.addSubview(dismissButton)
-        backgroundImage.addSubview(cardView)
+//        backgroundImage.addSubview(cardView)
         backgroundImage.addSubview(favoriteButton)
         backgroundImage.addSubview(searchBar)
     }
@@ -123,11 +124,11 @@ extension ModalDetailViewController: ViewCode {
             dismissButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
         }
         
-        cardView.snp.makeConstraints { (make) in
-            make.center.equalToSuperview()
-            make.left.right.equalToSuperview().inset(ModalDetail.LayoutGuide.sideProportion)
-            make.height.equalTo(cardView.snp.width).multipliedBy(MagicCard.proportionYX)
-        }
+//        cardView.snp.makeConstraints { (make) in
+//            make.center.equalToSuperview()
+//            make.left.right.equalToSuperview().inset(ModalDetail.LayoutGuide.sideProportion)
+//            make.height.equalTo(cardView.snp.width).multipliedBy(MagicCard.proportionYX)
+//        }
         
         favoriteButton.snp.makeConstraints { (make) in
             make.bottom.left.right.equalToSuperview().inset(ModalDetail.LayoutGuide.defaultFavoriteMargin)
@@ -142,11 +143,15 @@ extension ModalDetailViewController: ViewCode {
 }
 
 extension ModalDetailViewController: ModalDetailDisplayLogic {
+    func display(viewModel: ModalDetail.ViewModel.Subset) {
+        ImageDownloader.setMagicCard(with: viewModel.typedCards.cards[viewModel.selectedIndex].literalImageURL(), imageView: &cardView)
+    }
+    
     func displayButton(status: Bool) {
         favoriteButton.setRealState(realState: status)
     }
     
-    func display(viewModel: ModalDetail.ViewModel) {
+    func display(viewModel: ModalDetail.ViewModel.Single) {
         ImageDownloader.setMagicCard(with: viewModel.card.literalImageURL(), imageView: &cardView)
         favoriteButton.setRealState(realState: viewModel.status)
     }

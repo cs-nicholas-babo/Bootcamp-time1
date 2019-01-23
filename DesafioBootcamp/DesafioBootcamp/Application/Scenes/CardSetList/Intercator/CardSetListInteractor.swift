@@ -48,9 +48,9 @@ extension CardSetListInteractor: CardSetListBusinessLogic {
             guard let self = self else { fatalError() }
             switch result {
             case .success(let cardSet):
-                self.presenter.present(response: .success(cardSet))
-                _ = self.metaSets.dropFirst()
-
+//                self.presenter.present(response: .success(cardSet))
+//                _ = self.metaSets.dropFirst()
+                break
             case .failure(let error):
                 print("\(error.errorCode): \(error.error)")
                 self.presenter.present(response: .error)
