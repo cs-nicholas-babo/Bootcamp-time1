@@ -15,7 +15,8 @@ final class CardSetListViewController: UIViewController {
         let showCardsState = CardSetListShowCardsState(viewController: self)
         let loadingState = CardSetListLoadingState(viewController: self)
         let errorState = CardSetListErrorState(viewController: self)
-        let stateMachine = GKStateMachine(states: [showCardsState, loadingState, errorState])
+        let noResultsState = CardSetListNoResultsState(viewController: self)
+        let stateMachine = GKStateMachine(states: [showCardsState, loadingState, errorState, noResultsState])
         return stateMachine
     }()
     
@@ -27,7 +28,7 @@ final class CardSetListViewController: UIViewController {
     }()
     
     lazy var errorImageView: UIImageView = {
-        let imageView = UIImageView(image: Image.error)
+        let imageView = UIImageView()
         return imageView
     }()
     
@@ -63,6 +64,10 @@ extension CardSetListViewController: CardSetListDisplayLogic {
         _ = stateMachine.enter(CardSetListShowCardsState.self)
         self.wrapperView.datasource.sets.append(viewModel)
         self.wrapperView.tableView.reloadData()
+    }
+    
+    func displayNoResults(){
+        _ = stateMachine.enter(CardSetListNoResultsState.self)
     }
     
     func readyToDisplayCards() {

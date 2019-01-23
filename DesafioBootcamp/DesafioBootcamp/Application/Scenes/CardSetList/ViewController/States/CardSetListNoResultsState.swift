@@ -1,30 +1,26 @@
 //
-//  CardSetListErrorState.swift
+//  CardSetListNoResultsState.swift
 //  DesafioBootcamp
 //
-//  Created by ricardo.s.rachaus on 17/01/19.
+//  Created by nicholas.r.babo on 23/01/19.
 //  Copyright © 2019 concrete.solutions. All rights reserved.
 //
 
 import GameplayKit
 
-final class CardSetListErrorState: CardSetListBaseState {
+final class CardSetListNoResultsState: CardSetListBaseState{
     
     override func didEnter(from previousState: GKState?) {
-        print("ErrorState 😈")
+        print("No results found ?.?")
         self.viewController.errorImageView.isHidden = false
-        self.viewController.errorImageView.image = Image.error
-        self.viewController.wrapperView.isHidden = false
+        self.viewController.errorImageView.image = Image.noResults
         self.viewController.activityIndicator.isHidden = true
         self.viewController.activityIndicator.stopAnimating()
+        self.viewController.wrapperView.isHidden = false
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {
-        if stateClass == CardSetListLoadingState.self {
-            return true
-        } else {
-            return false
-        }
+        return true
     }
     
 }

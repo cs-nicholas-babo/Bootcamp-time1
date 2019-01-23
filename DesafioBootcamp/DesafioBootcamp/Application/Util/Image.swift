@@ -16,6 +16,14 @@ struct Image{
     }
     
     static var placeholder: UIImage{
-        return UIImage(named: "placeholder") ?? UIImage()
+        return UIImage(named: "Card_Background") ?? UIImage()
+    }
+    
+    static var background: UIImage{
+        return UIImage(named: "Background") ?? UIImage()
+    }
+    
+    static var noResults: UIImage{
+        return UIImage(named: "noResults") ?? UIImage()
     }
 }

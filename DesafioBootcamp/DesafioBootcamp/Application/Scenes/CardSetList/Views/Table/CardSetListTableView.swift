@@ -29,10 +29,12 @@ extension CardSetListTableView: ViewCode{
         register(CardSetListTableViewCell.self, forCellReuseIdentifier: CardSetList.tableViewCellIdentifier)
         self.bounces = false
         self.backgroundColor = UIColor.clear
+        self.insetsContentViewsToSafeArea = true
         let backgroundImageView = UIImageView(frame: self.frame)
-        backgroundImageView.image = UIImage(named: "placeholder")
+        backgroundImageView.image = Image.background
         backgroundImageView.contentMode = .scaleAspectFill
         self.backgroundView = backgroundImageView
+        self.tableFooterView = UIView()
     }
  
 }
