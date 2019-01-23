@@ -19,5 +19,9 @@ final public class CacheService: Domain.ApplicationRunningUseCase {
     public func fetchSets(handler: @escaping (Result<[MetaCardSet]>) -> ()) {
         handler(Result.success(cacheManager.cardSetRepository.get()))
     }
+    
+    public func favorite(set: MetaCardSet){
+        self.cacheManager.cardSetRepository.upsert(object: set)
+    }
 
 }

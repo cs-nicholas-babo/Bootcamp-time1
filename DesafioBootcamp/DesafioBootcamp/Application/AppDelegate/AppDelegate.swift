@@ -8,6 +8,10 @@
 
 import UIKit
 import CoreData
+import Domain
+import PlatformLocalDatabase
+import Realm
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,8 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let cardSetListVC = FeedCardSetListFactory.make()
+        mockupFavorites()
+        let cardSetListVC = FavoritesCardSetListFactory.make()
+//        let cardSetListVC = FeedCardSetListFactory.make()
         
         window.rootViewController = cardSetListVC
         
@@ -27,6 +32,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = window
         
         return true
+    }
+    
+    func mockupFavorites(){
+        let type1 = CardType(name: "Criatura")
+        let type2 = CardType(name: "Terreno")
+        let card1 = Card(id: "1", name: "card1", setCode: "111", types: [type1])
+        let card11 = Card(id: "11", name: "card11", setCode: "111", types: [type1])
+        let card111 = Card(id: "111", name: "card111", setCode: "111", types: [type1])
+        let card1111 = Card(id: "1111", name: "card1111", setCode: "111", types: [type1])
+        let card2 = Card(id: "2", name: "card2", setCode: "111", types: [type2])
+        let card22 = Card(id: "22", name: "card22", setCode: "111", types: [type2])
+        let card3 = Card(id: "3", name: "card3", setCode: "222", types: [type2])
+        let card4 = Card(id: "4", name: "card4", setCode: "222", types: [type2])
+        let card5 = Card(id: "5", name: "card5", setCode: "222", types: [type1, type2])
+        
+        let set1 = MetaCardSet(code: "111", name: "Set 1", releaseDate: Date())
+        let set2 = MetaCardSet(code: "222", name: "Set 2", releaseDate: Date())
+        
+        let realm = try! Realm()
+        let repo = FavoriteCardsRepository(realm: realm)
+        let manager = CacheManager(realm: realm)
+        let favoriteService = FavoriteCardsService(repository: repo, manager: manager)
+        let service = CacheService(cacheManager: manager)
+        
+        service.favorite(set: set1)
+        service.favorite(set: set2)
+        
+        favoriteService.favorite(card: card1, status: true)
+        favoriteService.favorite(card: card11, status: true)
+        favoriteService.favorite(card: card111, status: true)
+        favoriteService.favorite(card: card1111, status: true)
+        favoriteService.favorite(card: card2, status: true)
+        favoriteService.favorite(card: card22, status: true)
+        favoriteService.favorite(card: card3, status: true)
+        favoriteService.favorite(card: card4, status: true)
+        favoriteService.favorite(card: card5, status: true)
+        
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

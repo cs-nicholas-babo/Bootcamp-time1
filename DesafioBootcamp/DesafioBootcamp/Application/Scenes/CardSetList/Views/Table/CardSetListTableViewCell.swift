@@ -14,12 +14,19 @@ class CardSetListTableViewCell: UITableViewCell {
         let wrapper = CardSetListCollectionWrapperView(frame: self.frame)
         return wrapper
     }()
+    
+    override func systemLayoutSizeFitting(_ targetSize: CGSize, withHorizontalFittingPriority horizontalFittingPriority: UILayoutPriority, verticalFittingPriority: UILayoutPriority) -> CGSize {
+        self.collectionWrapperView.frame = CGRect(x: 0, y: 0, width: targetSize.width, height: CGFloat(MAXFLOAT))
+        self.collectionWrapperView.collectionView.layoutIfNeeded()
+        
+        return collectionWrapperView.collectionView.contentSize
+    }
 }
 
 extension CardSetListTableViewCell: ViewCode{
     
     func setupViewHierarchy() {
-        addSubview(collectionWrapperView)
+        self.contentView.addSubview(collectionWrapperView)
     }
     
     func setupConstraints() {
@@ -30,5 +37,6 @@ extension CardSetListTableViewCell: ViewCode{
     
     func setupAdditionalConfiguration() {
         self.backgroundColor = UIColor.clear
+//        layoutIfNeeded()
     }
 }
