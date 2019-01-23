@@ -19,13 +19,11 @@ final class LocalDatabaseGatewaySpec: QuickSpec {
             
             context("when initialized") {
                 var favoriteCardsService: FavoriteCardsUseCaseMock!
-                var cacheService: ApplicationRunningUseCaseMock!
                 
                 beforeEach {
                     favoriteCardsService = FavoriteCardsUseCaseMock()
-                    cacheService = ApplicationRunningUseCaseMock()
                     
-                    sut = LocalDatabaseGateway(favoritesService: favoriteCardsService, cacheService: cacheService)
+                    sut = LocalDatabaseGateway(favoritesService: favoriteCardsService)
                 }
             
                 context("and succeed to fetch sets") {

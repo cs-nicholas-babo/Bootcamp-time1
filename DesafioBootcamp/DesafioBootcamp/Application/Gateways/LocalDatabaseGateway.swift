@@ -11,11 +11,9 @@ import Domain
 final class LocalDatabaseGateway: MTGSetFetcher{
     
     let favoritesService: FavoriteCardsUseCase
-    let cacheService: ApplicationRunningUseCase
     
-    init(favoritesService: FavoriteCardsUseCase, cacheService: ApplicationRunningUseCase) {
+    init(favoritesService: FavoriteCardsUseCase) {
         self.favoritesService = favoritesService
-        self.cacheService = cacheService
     }
     
     func fetchSets(_ completion: @escaping (Result<[CardSet]>) -> Void) {
