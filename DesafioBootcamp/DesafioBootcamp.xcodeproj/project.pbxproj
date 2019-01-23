@@ -60,6 +60,14 @@
 		2FF9F3D421F8C355002FE583 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F3D321F8C355002FE583 /* EntityManager.swift */; };
 		2FF9F3D721F8C619002FE583 /* MTGSearchBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F3D621F8C619002FE583 /* MTGSearchBarPresenter.swift */; };
 		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
+		5D230C7221F8D56F0062B0AF /* MTGSearchBarSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7121F8D56F0062B0AF /* MTGSearchBarSpec.swift */; };
+		5D230C7721F8D6060062B0AF /* MTGSearchBarObserverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7621F8D6060062B0AF /* MTGSearchBarObserverMock.swift */; };
+		5D230C7921F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7821F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift */; };
+		5D230C7B21F8DB160062B0AF /* MTGSearchBarInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7A21F8DB160062B0AF /* MTGSearchBarInteractorSpec.swift */; };
+		5D230C7E21F8DC1B0062B0AF /* MTGSearchBarPresernterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7D21F8DC1B0062B0AF /* MTGSearchBarPresernterMock.swift */; };
+		5D230C8021F8E0040062B0AF /* CardUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7F21F8E0040062B0AF /* CardUseCaseMock.swift */; };
+		5D230C8221F8E2D90062B0AF /* MTGSearchBarPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C8121F8E2D90062B0AF /* MTGSearchBarPresenterSpec.swift */; };
+		5D230C8921F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C8821F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift */; };
 		5D4C717121F73F4900DEA298 /* ScreenProportions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C717021F73F4900DEA298 /* ScreenProportions.swift */; };
 		5D54973421F88C1900711080 /* ModalDetailInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973321F88C1900711080 /* ModalDetailInteractorSpec.swift */; };
 		5D54973721F88C8E00711080 /* ModalDetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973621F88C8E00711080 /* ModalDetailPresenterMock.swift */; };
@@ -77,7 +85,6 @@
 		A10C946521EFB5FE0061632A /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1145E0B21ECF18900A1A665 /* AppDelegate.swift */; };
 		A1145E1121ECF18900A1A665 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E0F21ECF18900A1A665 /* Main.storyboard */; };
-		A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */; };
 		A1145E1621ECF18B00A1A665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1521ECF18B00A1A665 /* Assets.xcassets */; };
 		A1145E1921ECF18B00A1A665 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1145E1721ECF18B00A1A665 /* LaunchScreen.storyboard */; };
 		A12280BC21F0F1E0009FFE9E /* MTG_Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12280BB21F0F1E0009FFE9E /* MTG_Service.swift */; };
@@ -266,6 +273,14 @@
 		2FF9F3D321F8C355002FE583 /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
 		2FF9F3D621F8C619002FE583 /* MTGSearchBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarPresenter.swift; sourceTree = "<group>"; };
 		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
+		5D230C7121F8D56F0062B0AF /* MTGSearchBarSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarSpec.swift; sourceTree = "<group>"; };
+		5D230C7621F8D6060062B0AF /* MTGSearchBarObserverMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarObserverMock.swift; sourceTree = "<group>"; };
+		5D230C7821F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarInteractorMock.swift; sourceTree = "<group>"; };
+		5D230C7A21F8DB160062B0AF /* MTGSearchBarInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarInteractorSpec.swift; sourceTree = "<group>"; };
+		5D230C7D21F8DC1B0062B0AF /* MTGSearchBarPresernterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarPresernterMock.swift; sourceTree = "<group>"; };
+		5D230C7F21F8E0040062B0AF /* CardUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUseCaseMock.swift; sourceTree = "<group>"; };
+		5D230C8121F8E2D90062B0AF /* MTGSearchBarPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarPresenterSpec.swift; sourceTree = "<group>"; };
+		5D230C8821F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarDisplayLogicMock.swift; sourceTree = "<group>"; };
 		5D4C717021F73F4900DEA298 /* ScreenProportions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenProportions.swift; sourceTree = "<group>"; };
 		5D54973321F88C1900711080 /* ModalDetailInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailInteractorSpec.swift; sourceTree = "<group>"; };
 		5D54973621F88C8E00711080 /* ModalDetailPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailPresenterMock.swift; sourceTree = "<group>"; };
@@ -282,7 +297,6 @@
 		A1145E0821ECF18900A1A665 /* DesafioBootcamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesafioBootcamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1145E0B21ECF18900A1A665 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1145E1021ECF18900A1A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A1145E1321ECF18900A1A665 /* DesafioBootcamp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DesafioBootcamp.xcdatamodel; sourceTree = "<group>"; };
 		A1145E1521ECF18B00A1A665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1145E1821ECF18B00A1A665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1145E1A21ECF18B00A1A665 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -677,6 +691,69 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		5D230C6D21F8D5270062B0AF /* MTGSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				5D230C7021F8D5600062B0AF /* ViewController */,
+				5D230C6F21F8D5580062B0AF /* Interactor */,
+				5D230C6E21F8D5510062B0AF /* Presenter */,
+			);
+			path = MTGSearchBar;
+			sourceTree = "<group>";
+		};
+		5D230C6E21F8D5510062B0AF /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5D230C8321F8E9DE0062B0AF /* Mocks */,
+				5D230C8121F8E2D90062B0AF /* MTGSearchBarPresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5D230C6F21F8D5580062B0AF /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5D230C7C21F8DC110062B0AF /* Mocks */,
+				5D230C7A21F8DB160062B0AF /* MTGSearchBarInteractorSpec.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5D230C7021F8D5600062B0AF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D230C7321F8D5830062B0AF /* Mocks */,
+				5D230C7121F8D56F0062B0AF /* MTGSearchBarSpec.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5D230C7321F8D5830062B0AF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D230C7621F8D6060062B0AF /* MTGSearchBarObserverMock.swift */,
+				5D230C7821F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift */,
+				5D230C7F21F8E0040062B0AF /* CardUseCaseMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D230C7C21F8DC110062B0AF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D230C7D21F8DC1B0062B0AF /* MTGSearchBarPresernterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D230C8321F8E9DE0062B0AF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D230C8821F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		5D54972E21F88BD000711080 /* ModalDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -785,7 +862,6 @@
 			children = (
 				2FEBC24721ED051200B10DED /* Application */,
 				A1145E1A21ECF18B00A1A665 /* Info.plist */,
-				A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */,
 			);
 			path = DesafioBootcamp;
 			sourceTree = "<group>";
@@ -1012,6 +1088,7 @@
 		ACE788FD21F2408F00718E4E /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				5D230C6D21F8D5270062B0AF /* MTGSearchBar */,
 				ACE788FE21F2408F00718E4E /* Scenes */,
 				ACE7890F21F2408F00718E4E /* Commons */,
 			);
@@ -1462,7 +1539,6 @@
 				2F5BE96E21F743920049A144 /* ModalDetail.swift in Sources */,
 				5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */,
 				A131BB9D21F6618E000869E1 /* CardSetListModel.swift in Sources */,
-				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				2FF83CF221F8873F008B4604 /* ModalDetailRouter.swift in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
 				2FF9F3CF21F8BC77002FE583 /* MTGSearchBarInteractor.swift in Sources */,
@@ -1543,19 +1619,27 @@
 			files = (
 				ACE7891221F2408F00718E4E /* CardSetListViewModelSpec.swift in Sources */,
 				ACE7891721F2408F00718E4E /* MTGCardGatewayMock.swift in Sources */,
+				5D230C7E21F8DC1B0062B0AF /* MTGSearchBarPresernterMock.swift in Sources */,
 				5D54973721F88C8E00711080 /* ModalDetailPresenterMock.swift in Sources */,
+				5D230C7921F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift in Sources */,
 				ACE7891321F2408F00718E4E /* CardSetListDisplayLogicMock.swift in Sources */,
 				5D54973921F8922100711080 /* ModalDetailPresenterSpec.swift in Sources */,
 				ACE7891621F2408F00718E4E /* CardSetListViewControllerSpec.swift in Sources */,
+				5D230C8921F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift in Sources */,
 				5D54974121F896FB00711080 /* ModalDetailInteractorMock.swift in Sources */,
 				5D54974321F8985F00711080 /* ModalDetailRouterMock.swift in Sources */,
 				ACE7891421F2408F00718E4E /* CardSetListPresenterSpec.swift in Sources */,
 				5D54973C21F8939400711080 /* ModalDetailViewControllerMock.swift in Sources */,
+				5D230C7721F8D6060062B0AF /* MTGSearchBarObserverMock.swift in Sources */,
+				5D230C8021F8E0040062B0AF /* CardUseCaseMock.swift in Sources */,
 				5D54973E21F896A300711080 /* ModalDetailViewControllerSpec.swift in Sources */,
 				ACE7891A21F2408F00718E4E /* ResultErrorMock.swift in Sources */,
+				5D230C8221F8E2D90062B0AF /* MTGSearchBarPresenterSpec.swift in Sources */,
+				5D230C7B21F8DB160062B0AF /* MTGSearchBarInteractorSpec.swift in Sources */,
 				ACE7891521F2408F00718E4E /* CardSetListInteractorMock.swift in Sources */,
 				ACE788F621F2408400718E4E /* DesafioBootcampTests.swift in Sources */,
 				5D54973421F88C1900711080 /* ModalDetailInteractorSpec.swift in Sources */,
+				5D230C7221F8D56F0062B0AF /* MTGSearchBarSpec.swift in Sources */,
 				ACE7891821F2408F00718E4E /* CardSetListPresentationLogicMock.swift in Sources */,
 				ACE7891B21F2408F00718E4E /* MockValues.swift in Sources */,
 				ACE7891921F2408F00718E4E /* CardSetListInteractorSpec.swift in Sources */,
@@ -2184,19 +2268,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		A1145E1221ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				A1145E1321ECF18900A1A665 /* DesafioBootcamp.xcdatamodel */,
-			);
-			currentVersion = A1145E1321ECF18900A1A665 /* DesafioBootcamp.xcdatamodel */;
-			path = DesafioBootcamp.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = A1145E0021ECF18900A1A665 /* Project object */;
 }
