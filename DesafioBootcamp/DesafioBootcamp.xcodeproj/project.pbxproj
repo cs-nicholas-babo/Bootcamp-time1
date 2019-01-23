@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2F0A2F9621F8F863009853CB /* MTGCardPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0A2F9521F8F863009853CB /* MTGCardPicker.swift */; };
 		2F4A8A8621F5F027007012FB /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A8A8521F5F027007012FB /* UseCaseProviders.swift */; };
+		2F50BCB521F8FD0600B1FB0A /* MTGCardViewPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F50BCB421F8FD0600B1FB0A /* MTGCardViewPicker.swift */; };
 		2F554E5921F7795400545C8C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F554E5821F7795300545C8C /* Kingfisher.framework */; };
 		2F554E5A21F779A500545C8C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F554E5821F7795300545C8C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2F554E5C21F77B7600545C8C /* Card+ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F554E5B21F77B7600545C8C /* Card+ImageURL.swift */; };
@@ -227,6 +228,7 @@
 /* Begin PBXFileReference section */
 		2F0A2F9521F8F863009853CB /* MTGCardPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCardPicker.swift; sourceTree = "<group>"; };
 		2F4A8A8521F5F027007012FB /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
+		2F50BCB421F8FD0600B1FB0A /* MTGCardViewPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCardViewPicker.swift; sourceTree = "<group>"; };
 		2F554E5821F7795300545C8C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Frameworks/Kingfisher.framework; sourceTree = "<group>"; };
 		2F554E5B21F77B7600545C8C /* Card+ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+ImageURL.swift"; sourceTree = "<group>"; };
 		2F5BE96D21F743910049A144 /* ModalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetail.swift; sourceTree = "<group>"; };
@@ -464,6 +466,7 @@
 		2F0A2F9421F8F84A009853CB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F50BCB321F8FCE600B1FB0A /* CellView */,
 				2F0A2F9521F8F863009853CB /* MTGCardPicker.swift */,
 			);
 			path = View;
@@ -475,6 +478,14 @@
 				A12280BB21F0F1E0009FFE9E /* MTG_Service.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2F50BCB321F8FCE600B1FB0A /* CellView */ = {
+			isa = PBXGroup;
+			children = (
+				2F50BCB421F8FD0600B1FB0A /* MTGCardViewPicker.swift */,
+			);
+			path = CellView;
 			sourceTree = "<group>";
 		};
 		2F5BE96821F740DD0049A144 /* ModalDetail */ = {
@@ -1583,6 +1594,7 @@
 				5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */,
 				2F0A2F9621F8F863009853CB /* MTGCardPicker.swift in Sources */,
 				2F5BE97B21F76A490049A144 /* ModalDetailPresenter.swift in Sources */,
+				2F50BCB521F8FD0600B1FB0A /* MTGCardViewPicker.swift in Sources */,
 				2FF9F3CB21F89F28002FE583 /* MTGSearchBar.swift in Sources */,
 				2F5BE97621F74CDC0049A144 /* MagicCard.swift in Sources */,
 				ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */,

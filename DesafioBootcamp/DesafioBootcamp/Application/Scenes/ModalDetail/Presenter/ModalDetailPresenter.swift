@@ -27,7 +27,7 @@ extension ModalDetailPresenter : ModalDetailPresentationLogic {
         let card = cards[selectedIndex]
         let status = favoriteCardsIndexes.contains(selectedIndex)
         
-        let viewModel = ModalDetail.ViewModel.Single(card: card, status: status)
+        let viewModel = ModalDetail.ViewModel.Subset(cards: cards, selectedIndex: selectedIndex, favoriteCardsIndexes: favoriteCardsIndexes)
         
         self.viewController.display(viewModel: viewModel)
     }

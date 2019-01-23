@@ -49,6 +49,12 @@ public class ModalDetailViewController: UIViewController {
         return imageView
     }()
     
+    lazy var cardPicker: MTGCardPicker = {
+        let cardPicker = MTGCardPicker(frame: .zero)
+        
+        return cardPicker
+    }()
+    
     lazy var searchBar: UISearchBar = {
         let searchBar = MTGSearchBar(frame: .zero)
         return searchBar
@@ -102,6 +108,7 @@ extension ModalDetailViewController: ViewCode {
         self.view.addSubview(backgroundImage)
         backgroundImage.addSubview(dismissButton)
 //        backgroundImage.addSubview(cardView)
+        backgroundImage.addSubview(cardPicker)
         backgroundImage.addSubview(favoriteButton)
         backgroundImage.addSubview(searchBar)
     }
@@ -130,6 +137,12 @@ extension ModalDetailViewController: ViewCode {
 //            make.height.equalTo(cardView.snp.width).multipliedBy(MagicCard.proportionYX)
 //        }
         
+        cardPicker.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.height.equalToSuperview().multipliedBy(0.7)
+        }
+        
         favoriteButton.snp.makeConstraints { (make) in
             make.bottom.left.right.equalToSuperview().inset(ModalDetail.LayoutGuide.defaultFavoriteMargin)
             make.height.equalTo(ModalDetail.LayoutGuide.favoriteButtonHeight)
@@ -137,14 +150,17 @@ extension ModalDetailViewController: ViewCode {
     }
     
     func setupAdditionalConfiguration() {
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .clear
+        
     }
 
 }
 
 extension ModalDetailViewController: ModalDetailDisplayLogic {
     func display(viewModel: ModalDetail.ViewModel.Subset) {
-        ImageDownloader.setMagicCard(with: viewModel.typedCards.cards[viewModel.selectedIndex].literalImageURL(), imageView: &cardView)
+        cardPicker.cards = viewModel.cards
+        cardPicker.reloadAllComponents()
+//        ImageDownloader.setMagicCard(with: viewModel.typedCards.cards[viewModel.selectedIndex].literalImageURL(), imageView: &cardView)
     }
     
     func displayButton(status: Bool) {

@@ -27,9 +27,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let modalVC = ModalDetailViewController()
             let presenter = ModalDetailPresenter(viewController: modalVC)
             let router = ModalDetailRouter(viewController: modalVC)
-            let typedCards = TypedCards(type: CardType(name: "Criatura"), cards: [card])
             
-            let viewModel = ModalDetail.ViewModel.Subset(typedCards: typedCards, selectedIndex: 0, favoriteCardsIndexes: [])
+            let viewModel = ModalDetail.ViewModel.Subset(cards: [card, card, card], selectedIndex: 0, favoriteCardsIndexes: [])
             let interactor = ModalDetailInteractor(presenter: presenter, useCase: FavoriteCardsServiceProvider().useCase(), subset: viewModel)
             modalVC.interactor = interactor
             modalVC.router = router
