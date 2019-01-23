@@ -58,6 +58,13 @@
 		2FF83CF221F8873F008B4604 /* ModalDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF83CF121F8873F008B4604 /* ModalDetailRouter.swift */; };
 		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
 		5D4C717121F73F4900DEA298 /* ScreenProportions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C717021F73F4900DEA298 /* ScreenProportions.swift */; };
+		5D54973421F88C1900711080 /* ModalDetailInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973321F88C1900711080 /* ModalDetailInteractorSpec.swift */; };
+		5D54973721F88C8E00711080 /* ModalDetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973621F88C8E00711080 /* ModalDetailPresenterMock.swift */; };
+		5D54973921F8922100711080 /* ModalDetailPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973821F8922100711080 /* ModalDetailPresenterSpec.swift */; };
+		5D54973C21F8939400711080 /* ModalDetailViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973B21F8939400711080 /* ModalDetailViewControllerMock.swift */; };
+		5D54973E21F896A300711080 /* ModalDetailViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973D21F896A300711080 /* ModalDetailViewControllerSpec.swift */; };
+		5D54974121F896FB00711080 /* ModalDetailInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54974021F896FB00711080 /* ModalDetailInteractorMock.swift */; };
+		5D54974321F8985F00711080 /* ModalDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */; };
 		5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */; };
 		5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */; };
 		5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */; };
@@ -254,6 +261,13 @@
 		2FF83CF121F8873F008B4604 /* ModalDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailRouter.swift; sourceTree = "<group>"; };
 		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
 		5D4C717021F73F4900DEA298 /* ScreenProportions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenProportions.swift; sourceTree = "<group>"; };
+		5D54973321F88C1900711080 /* ModalDetailInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailInteractorSpec.swift; sourceTree = "<group>"; };
+		5D54973621F88C8E00711080 /* ModalDetailPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailPresenterMock.swift; sourceTree = "<group>"; };
+		5D54973821F8922100711080 /* ModalDetailPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailPresenterSpec.swift; sourceTree = "<group>"; };
+		5D54973B21F8939400711080 /* ModalDetailViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailViewControllerMock.swift; sourceTree = "<group>"; };
+		5D54973D21F896A300711080 /* ModalDetailViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailViewControllerSpec.swift; sourceTree = "<group>"; };
+		5D54974021F896FB00711080 /* ModalDetailInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailInteractorMock.swift; sourceTree = "<group>"; };
+		5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailRouterMock.swift; sourceTree = "<group>"; };
 		5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewController.swift; sourceTree = "<group>"; };
 		5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListLoadingState.swift; sourceTree = "<group>"; };
 		5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListShowCardsState.swift; sourceTree = "<group>"; };
@@ -614,6 +628,68 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		5D54972E21F88BD000711080 /* ModalDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973121F88BF100711080 /* ViewController */,
+				5D54973021F88BEB00711080 /* Presenter */,
+				5D54972F21F88BE100711080 /* Interactor */,
+			);
+			path = ModalDetail;
+			sourceTree = "<group>";
+		};
+		5D54972F21F88BE100711080 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973521F88C7D00711080 /* Mocks */,
+				5D54973321F88C1900711080 /* ModalDetailInteractorSpec.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5D54973021F88BEB00711080 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973A21F8937F00711080 /* Mocks */,
+				5D54973821F8922100711080 /* ModalDetailPresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5D54973121F88BF100711080 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973F21F896D700711080 /* Mocks */,
+				5D54973D21F896A300711080 /* ModalDetailViewControllerSpec.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5D54973521F88C7D00711080 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973621F88C8E00711080 /* ModalDetailPresenterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D54973A21F8937F00711080 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973B21F8939400711080 /* ModalDetailViewControllerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D54973F21F896D700711080 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D54974021F896FB00711080 /* ModalDetailInteractorMock.swift */,
+				5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		5DA18EFF21F0AAC400A862F4 /* States */ = {
 			isa = PBXGroup;
 			children = (
@@ -896,6 +972,7 @@
 		ACE788FE21F2408F00718E4E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5D54972E21F88BD000711080 /* ModalDetail */,
 				ACE788FF21F2408F00718E4E /* CardSetList */,
 			);
 			path = Scenes;
@@ -1414,12 +1491,19 @@
 			files = (
 				ACE7891221F2408F00718E4E /* CardSetListViewModelSpec.swift in Sources */,
 				ACE7891721F2408F00718E4E /* MTGCardGatewayMock.swift in Sources */,
+				5D54973721F88C8E00711080 /* ModalDetailPresenterMock.swift in Sources */,
 				ACE7891321F2408F00718E4E /* CardSetListDisplayLogicMock.swift in Sources */,
+				5D54973921F8922100711080 /* ModalDetailPresenterSpec.swift in Sources */,
 				ACE7891621F2408F00718E4E /* CardSetListViewControllerSpec.swift in Sources */,
+				5D54974121F896FB00711080 /* ModalDetailInteractorMock.swift in Sources */,
+				5D54974321F8985F00711080 /* ModalDetailRouterMock.swift in Sources */,
 				ACE7891421F2408F00718E4E /* CardSetListPresenterSpec.swift in Sources */,
+				5D54973C21F8939400711080 /* ModalDetailViewControllerMock.swift in Sources */,
+				5D54973E21F896A300711080 /* ModalDetailViewControllerSpec.swift in Sources */,
 				ACE7891A21F2408F00718E4E /* ResultErrorMock.swift in Sources */,
 				ACE7891521F2408F00718E4E /* CardSetListInteractorMock.swift in Sources */,
 				ACE788F621F2408400718E4E /* DesafioBootcampTests.swift in Sources */,
+				5D54973421F88C1900711080 /* ModalDetailInteractorSpec.swift in Sources */,
 				ACE7891821F2408F00718E4E /* CardSetListPresentationLogicMock.swift in Sources */,
 				ACE7891B21F2408F00718E4E /* MockValues.swift in Sources */,
 				ACE7891921F2408F00718E4E /* CardSetListInteractorSpec.swift in Sources */,
