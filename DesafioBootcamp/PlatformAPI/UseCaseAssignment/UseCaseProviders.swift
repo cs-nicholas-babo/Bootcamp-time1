@@ -20,7 +20,7 @@ public final class MTG_ProviderDefault : PlatformAPI.MTG_ServiceProvider {
     
     let service: MTG_Service
     
-    init() {
+    public init() {
         self.service = MTG_Service()
     }
     

@@ -21,7 +21,21 @@ public final class FavoriteCardsServiceProvider: Domain.FavoriteCardsUseCaseProv
         let manager = CacheManager(realm: realm)
         return FavoriteCardsService(repository: repository, manager: manager)
     }
+    
+}
 
+public final class TestFavoriteCardsServiceProvider: Domain.FavoriteCardsUseCaseProvider {
+    
+    let realm = RealmConfig.test
+    
+    public init() { }
+    
+    public func useCase() -> FavoriteCardsUseCase {
+        let repository = FavoriteCardsRepository(realm: realm)
+        let manager = CacheManager(realm: realm)
+        return FavoriteCardsService(repository: repository, manager: manager)
+    }
+    
 }
 
 public final class CacheServiceProvider: Domain.ApplicationRunningUseCaseProvider {

@@ -24,4 +24,10 @@ final public class CacheService: Domain.ApplicationRunningUseCase {
         self.cacheManager.cardSetRepository.upsert(object: set)
     }
 
+    public func setupCache(sets: [MetaCardSet]) {
+        sets.forEach { (set) in
+            cacheManager.cardSetRepository.upsert(object: set)
+        }
+    }
+    
 }

@@ -8,17 +8,16 @@
 
 import Foundation
 
-struct LocalData {
-    
-    static var emptyCards: Data {
+public struct LocalData {
+    public static var emptyCards: Data {
         return "{\"cards\":[]}".utf8Encoded
     }
     
-    static var emptySets: Data {
+    public static var emptySets: Data {
         return "{\"sets\":[]}".utf8Encoded
     }
     
-    static func localDataWith(_ urlPath: String) -> Data? {
+    public static func localDataWith(_ urlPath: String) -> Data? {
         let url = Bundle(for: MTG_Service.self).url(forResource: urlPath, withExtension: "json") ?? URL(fileURLWithPath: "")
         return try? Data(contentsOf: url)
     }
