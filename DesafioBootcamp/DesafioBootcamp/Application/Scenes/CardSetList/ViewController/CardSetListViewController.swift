@@ -47,6 +47,10 @@ final class CardSetListViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         _ = stateMachine.enter(CardSetListLoadingState.self)
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return UIStatusBarStyle.lightContent
+    }
 }
 
 extension CardSetListViewController: CardSetListDisplayLogic {
