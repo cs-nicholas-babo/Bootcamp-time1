@@ -28,6 +28,11 @@ extension CardSetListTableView: ViewCode{
     func setupAdditionalConfiguration() {
         register(CardSetListTableViewCell.self, forCellReuseIdentifier: CardSetList.tableViewCellIdentifier)
         self.bounces = false
+        self.backgroundColor = UIColor.clear
+        let backgroundImageView = UIImageView(frame: self.frame)
+        backgroundImageView.image = Image.placeholder
+        backgroundImageView.contentMode = .scaleAspectFill
+        self.backgroundView = backgroundImageView
     }
  
 }

@@ -99,6 +99,7 @@
 		A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */; };
 		A19CFD7821EF9A960060A691 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7721EF9A960060A691 /* CacheManager.swift */; };
 		A19D072521F7A83C00E99776 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D072421F7A83C00E99776 /* Image.swift */; };
+		A1C31BAA21F89AFE004D765C /* CardTypeCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C31BA921F89AFE004D765C /* CardTypeCollectionReusableView.swift */; };
 		A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */; };
 		A1DF494021EF64FA00E1DCF6 /* PlatformAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1DF494321EF64FA00E1DCF6 /* PlatformAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */; };
@@ -320,6 +321,7 @@
 		A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardType.swift; sourceTree = "<group>"; };
 		A19CFD7721EF9A960060A691 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		A19D072421F7A83C00E99776 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		A1C31BA921F89AFE004D765C /* CardTypeCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeCollectionReusableView.swift; sourceTree = "<group>"; };
 		A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCode Protocol.swift"; sourceTree = "<group>"; };
 		A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformAPI.h; sourceTree = "<group>"; };
@@ -1125,6 +1127,7 @@
 				5D4629B321F6018400A21814 /* CardSetListCollectionViewDataSource.swift */,
 				A13669BD21F74EA800CA705E /* CardSetListCollectionWrapperView.swift */,
 				AC23260921F7B23800AAB36D /* CardSetListCollectionViewDelegate.swift */,
+				A1C31BA921F89AFE004D765C /* CardTypeCollectionReusableView.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -1503,6 +1506,7 @@
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				A13669C621F75C4600CA705E /* CardSetListTableViewDataSource.swift in Sources */,
 				5D4629B621F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift in Sources */,
+				A1C31BAA21F89AFE004D765C /* CardTypeCollectionReusableView.swift in Sources */,
 				ACE7894521F2667800718E4E /* CardSetListTableViewCell.swift in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
 				5D4629B421F6018400A21814 /* CardSetListCollectionViewDataSource.swift in Sources */,

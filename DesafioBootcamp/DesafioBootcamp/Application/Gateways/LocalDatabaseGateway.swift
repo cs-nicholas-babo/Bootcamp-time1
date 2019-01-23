@@ -17,14 +17,24 @@ final class LocalDatabaseGateway: MTGCardGateway{
     let service: FavoriteCardsUseCase
     let cacheService: ApplicationRunningUseCase
     
-    init(favoritesService: FavoriteCardsUseCase, cacheService: ApplicationRunningUseCase) {
+    init() {
         let realm = try! Realm()
         let repo = FavoriteCardsRepository(realm: realm)
         let manager = CacheManager(realm: realm)
         service = FavoriteCardsService(repository: repo, manager: manager)
         
-        cacheService = CacheService(cacheManager: manager)
+        self.cacheService = CacheService(cacheManager: manager)
+
     }
+    
+//    init(favoritesService: FavoriteCardsUseCase, cacheService: ApplicationRunningUseCase) {
+//        let realm = try! Realm()
+//        let repo = FavoriteCardsRepository(realm: realm)
+//        let manager = CacheManager(realm: realm)
+//        service = FavoriteCardsService(repository: repo, manager: manager)
+//        
+//        self.cacheService = CacheService(cacheManager: manager)
+//    }
     
     func fetchMetaSets(_ completion: @escaping (Result<[MetaCardSet]>) -> Void) {
         cacheService.fetchSets { result in
