@@ -116,6 +116,9 @@
 		AC23261021F8A5A700AAB36D /* FavoriteCardsUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23260F21F8A5A700AAB36D /* FavoriteCardsUseCaseMock.swift */; };
 		AC23261221F8A70200AAB36D /* ApplicationRunningUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261121F8A70200AAB36D /* ApplicationRunningUseCaseMock.swift */; };
 		AC23261521F8BB5200AAB36D /* LocalDatabaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261421F8BB5200AAB36D /* LocalDatabaseFactory.swift */; };
+		AC23261821F8C0AE00AAB36D /* RealmFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261721F8C0AE00AAB36D /* RealmFactory.swift */; };
+		AC23261A21F8C15A00AAB36D /* FavoritesServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261921F8C15A00AAB36D /* FavoritesServiceFactory.swift */; };
+		AC23261C21F8C2C200AAB36D /* CacheServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261B21F8C2C200AAB36D /* CacheServiceFactory.swift */; };
 		AC692AED21F6065A009734FE /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; };
 		AC692AEE21F60665009734FE /* Nimble_Snapshots.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC692AF121F616EA009734FE /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */; };
@@ -339,6 +342,9 @@
 		AC23260F21F8A5A700AAB36D /* FavoriteCardsUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsUseCaseMock.swift; sourceTree = "<group>"; };
 		AC23261121F8A70200AAB36D /* ApplicationRunningUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRunningUseCaseMock.swift; sourceTree = "<group>"; };
 		AC23261421F8BB5200AAB36D /* LocalDatabaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabaseFactory.swift; sourceTree = "<group>"; };
+		AC23261721F8C0AE00AAB36D /* RealmFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFactory.swift; sourceTree = "<group>"; };
+		AC23261921F8C15A00AAB36D /* FavoritesServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesServiceFactory.swift; sourceTree = "<group>"; };
+		AC23261B21F8C2C200AAB36D /* CacheServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceFactory.swift; sourceTree = "<group>"; };
 		AC4689C021F781F600263580 /* CardSetListViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewControllerSpec.swift; sourceTree = "<group>"; };
 		AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
 		AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
@@ -811,6 +817,7 @@
 		A1DF494E21EF651900E1DCF6 /* PlatformLocalDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				AC23261621F8C07C00AAB36D /* Factories */,
 				A130C2BE21F5F89500A1B78A /* Config */,
 				2FB954DA21EF9CF100B09AFF /* UseCase Assignment */,
 				2FB954D521EF948500B09AFF /* Repository */,
@@ -867,6 +874,16 @@
 			isa = PBXGroup;
 			children = (
 				AC23261421F8BB5200AAB36D /* LocalDatabaseFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		AC23261621F8C07C00AAB36D /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				AC23261721F8C0AE00AAB36D /* RealmFactory.swift */,
+				AC23261921F8C15A00AAB36D /* FavoritesServiceFactory.swift */,
+				AC23261B21F8C2C200AAB36D /* CacheServiceFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -1563,12 +1580,15 @@
 			files = (
 				2FB954DC21EF9D1B00B09AFF /* UseCaseProviders.swift in Sources */,
 				A19CFD7421EF8DA90060A691 /* RealmCardSet.swift in Sources */,
+				AC23261C21F8C2C200AAB36D /* CacheServiceFactory.swift in Sources */,
 				A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */,
 				2FB954D721EF961800B09AFF /* RepositoryAbstract.swift in Sources */,
 				2FB954DE21EF9D4200B09AFF /* FavoriteCardsService.swift in Sources */,
 				A19CFD7821EF9A960060A691 /* CacheManager.swift in Sources */,
+				AC23261A21F8C15A00AAB36D /* FavoritesServiceFactory.swift in Sources */,
 				2FB954D021EF8C3900B09AFF /* RealmRepresentable.swift in Sources */,
 				2FB954D221EF8C6900B09AFF /* RealmCard.swift in Sources */,
+				AC23261821F8C0AE00AAB36D /* RealmFactory.swift in Sources */,
 				2FB954D921EF964700B09AFF /* FavoriteCardsRepository.swift in Sources */,
 				2FB954CF21EF8C3900B09AFF /* DomainRepresentable.swift in Sources */,
 				2FB954E021EF9F2000B09AFF /* CacheService.swift in Sources */,

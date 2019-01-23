@@ -7,12 +7,12 @@
 //
 
 import Foundation
+import Domain
+import PlatformLocalDatabase
 
 final class LocalDatabaseFactory {
-//    static func make() -> MTGCardGateway {
-//        let localDatabase = LocalDatabaseGateway(favoritesService: <#T##FavoriteCardsUseCase#>, cacheService: <#T##ApplicationRunningUseCase#>)
-//        return localDatabase
-//    }
-    
-//    private static var favoritesSerive:
+    static func make() -> MTGCardGateway {
+        let localDatabase = LocalDatabaseGateway(favoritesService: FavoritesServiceFactory.make(), cacheService: CacheServiceFactory.make())
+        return localDatabase
+    }
 }

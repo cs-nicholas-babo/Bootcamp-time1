@@ -24,9 +24,8 @@ final class LocalDatabaseGatewaySpec: QuickSpec {
                 beforeEach {
                     favoriteCardsService = FavoriteCardsUseCaseMock()
                     cacheService = ApplicationRunningUseCaseMock()
-                    sut = LocalDatabaseGateway()
-                    sut.service = favoriteCardsService
-                    sut.cacheService = cacheService
+                    
+                    sut = LocalDatabaseGateway(favoritesService: favoriteCardsService, cacheService: cacheService)
                 }
             }
         }
