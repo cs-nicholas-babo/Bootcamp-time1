@@ -50,6 +50,9 @@ final class CardSetListViewController: UIViewController {
         if !hasLoaded{
             _ = stateMachine.enter(CardSetListLoadingState.self)
             hasLoaded = true
+        } else {
+            guard let interactor = self.interactor else { fatalError() }
+            interactor.fetchSet()
         }
     }
     
