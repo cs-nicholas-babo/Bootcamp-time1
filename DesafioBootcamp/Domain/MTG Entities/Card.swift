@@ -40,7 +40,7 @@ extension Card: Codable {
         case name = "name"
         case types = "types"
         case setCode = "set"
-        case imageURL = "imageURL"
+        case imageURL = "imageUrl"
     }
     
     public init(from decoder: Decoder) throws {
