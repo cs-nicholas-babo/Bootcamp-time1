@@ -36,8 +36,10 @@ extension CardSetListCollectionView: ViewCode {
     func setupConstraints() {}
     
     func setupAdditionalConfiguration() {
+        self.backgroundColor = UIColor.clear
         register(CardSetListCollectionViewCell.self,
                  forCellWithReuseIdentifier: CardSetList.collectionViewCellIdentifier)
+        register(CardTypeCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerView")
     }
     
     

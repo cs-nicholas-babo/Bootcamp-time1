@@ -26,14 +26,15 @@ final class CardSetListTableViewDelegate: NSObject, UITableViewDelegate{
         
         let headerLabel = UILabel(frame: CGRect(x: 30, y: 0, width:
             tableView.bounds.size.width, height: tableView.bounds.size.height))
-        headerLabel.font = UIFont(name: "SFProDisplay-Bold", size: 80.0)
-        headerLabel.textColor = UIColor.black
+        headerLabel.font = UIFont.systemFont(ofSize: 36.0, weight: UIFont.Weight.bold)
+        headerLabel.textColor = UIColor.white
         headerLabel.text = tableView.dataSource?.tableView!(tableView, titleForHeaderInSection: section)
         headerLabel.sizeToFit()
 
         headerView.addSubview(headerLabel)
         headerLabel.snp.makeConstraints { make in
-            make.center.equalToSuperview()
+            make.centerY.equalToSuperview()
+            make.leading.equalToSuperview().inset(16)
         }
         
         

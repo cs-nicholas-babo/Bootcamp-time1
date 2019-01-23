@@ -36,4 +36,16 @@ class CardSetListCollectionViewDataSource: NSObject, UICollectionViewDataSource 
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return cards.count
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionHeader{
+            let view = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerView", for: indexPath) as! CardTypeCollectionReusableView
+            view.backgroundColor = UIColor.clear
+            view.title.text = cards[indexPath.section].type.name
+            
+            return view
+        }else{
+            return UICollectionReusableView()
+        }
+    }
 }
