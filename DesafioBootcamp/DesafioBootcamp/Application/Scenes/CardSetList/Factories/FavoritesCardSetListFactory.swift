@@ -10,7 +10,7 @@ import Foundation
 
 final class FavoritesCardSetListFactory: CardSetListFactory{
     static func makeMTGCardGateway() -> MTGSetFetcher {
-        let localDatabaseGateway = LocalDatabaseFactory.make()
+        let localDatabaseGateway = LocalDatabaseGatewayFactory.make()
         return localDatabaseGateway
     }
 }

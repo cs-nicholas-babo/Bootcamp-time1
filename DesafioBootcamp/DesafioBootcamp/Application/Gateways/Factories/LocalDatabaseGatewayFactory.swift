@@ -10,9 +10,9 @@ import Foundation
 import Domain
 import PlatformLocalDatabase
 
-final class LocalDatabaseFactory {
+final class LocalDatabaseGatewayFactory {
     static func make() -> MTGSetFetcher {
-        let localDatabase = LocalDatabaseGateway(favoritesService: FavoritesServiceFactory.make())
-        return localDatabase
+        let localDatabaseGateway = LocalDatabaseGateway(favoritesService: FavoritesServiceFactory.make())
+        return localDatabaseGateway
     }
 }
