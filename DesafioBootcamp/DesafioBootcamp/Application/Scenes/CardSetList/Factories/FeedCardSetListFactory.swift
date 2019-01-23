@@ -9,7 +9,7 @@
 import Foundation
 
 final class FeedCardSetListFactory: CardSetListFactory{
-    static func makeMTGCardGateway() -> MTGCardGateway {
+    static func makeMTGCardGateway() -> MTGSetFetcher {
         let localDatabaseGateway = APIGateway()
         return localDatabaseGateway
     }

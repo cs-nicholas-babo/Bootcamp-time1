@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CardSetListFactory {
-    static func makeMTGCardGateway() -> MTGCardGateway
+    static func makeMTGCardGateway() -> MTGSetFetcher
 }
 
 extension CardSetListFactory {

@@ -8,7 +8,7 @@
 
 import Domain
 
-final class LocalDatabaseGateway: MTGCardGateway{
+final class LocalDatabaseGateway: MTGSetFetcher{
     
     let favoritesService: FavoriteCardsUseCase
     let cacheService: ApplicationRunningUseCase
@@ -18,33 +18,11 @@ final class LocalDatabaseGateway: MTGCardGateway{
         self.cacheService = cacheService
     }
     
-    func fetchMetaSets(_ completion: @escaping (Result<[MetaCardSet]>) -> Void) {
-        cacheService.fetchSets { result in
-            switch result{
-            case .success(let cards):
-                completion(.success(cards))
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
-    
     func fetchSets(_ completion: @escaping (Result<[CardSet]>) -> Void) {
         favoritesService.fetchFavoriteCards { result in
             switch result{
             case .success(let cardSets):
                 completion(.success(cardSets))
-            case .failure(let error):
-                completion(.failure(error))
-            }
-        }
-    }
-    
-    func fetchCards(named: String, _ completion: @escaping (Result<[Card]>) -> Void) {
-        favoritesService.fetchFavoriteCards(query: named) { result in
-            switch result{
-            case .success(let cards):
-                completion(.success(cards.first!.cards))
             case .failure(let error):
                 completion(.failure(error))
             }
