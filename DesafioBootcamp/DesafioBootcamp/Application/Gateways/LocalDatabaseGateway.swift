@@ -14,10 +14,10 @@ import RealmSwift
 
 final class LocalDatabaseGateway: MTGCardGateway{
     
-    let service: FavoriteCardsService
-    let cacheService: CacheService
+    let service: FavoriteCardsUseCase
+    let cacheService: ApplicationRunningUseCase
     
-    init() {
+    init(favoritesService: FavoriteCardsUseCase, cacheService: ApplicationRunningUseCase) {
         let realm = try! Realm()
         let repo = FavoriteCardsRepository(realm: realm)
         let manager = CacheManager(realm: realm)

@@ -6,8 +6,9 @@
 //  Copyright © 2019 concrete.solutions. All rights reserved.
 //
 
-import Foundation
+import Domain
 
 enum ResultErrorMock: Error {
+    
     case error
 }

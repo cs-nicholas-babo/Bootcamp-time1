@@ -13,23 +13,20 @@ import Domain
 final class MTGCardGatewayMock: MTGCardGateway {
     
     var shouldFail = false
-
-    var didCallFetchMetaSets = false
     var didCallfetchSet = false
     var didCallfetchCards = false
     
-    func fetchMetaSets(_ completion: @escaping (Result<[MetaCardSet]>) -> Void) {
-        prepareFetch(result: MockValues.metaCardSetsMock, completion: completion)
-        self.didCallFetchMetaSets = true
-    }
+    var sentCardSets = [CardSet]()
     
-    func fetchSet(of: MetaCardSet, _ completion: @escaping (Result<CardSet>) -> Void) {
-        prepareFetch(result: MockValues.cardSetMock, completion: completion)
+    func fetchSets(_ completion: @escaping (Result<[CardSet]>) -> Void) {
+        let cardSets = MockValues.cardSetMockArray
+        prepareFetch(result: cardSets, completion: completion)
         self.didCallfetchSet = true
+        self.sentCardSets = cardSets
     }
     
     func fetchCards(named: String, _ completion: @escaping (Result<[Card]>) -> Void) {
-        prepareFetch(result: MockValues.cardsMock, completion: completion)
+        prepareFetch(result: MockValues.cardMockArray, completion: completion)
         self.didCallfetchCards = true
     }
     

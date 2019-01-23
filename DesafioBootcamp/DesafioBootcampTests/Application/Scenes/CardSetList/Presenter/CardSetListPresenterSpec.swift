@@ -30,7 +30,7 @@ class CardSetListPresenterSpec: QuickSpec {
                 context("when presenting success") {
                     
                     beforeEach {
-                        sut.present(response: .success(MockValues.cardSetMock))
+                        sut.present(response: .success(MockValues.cardSetMockArray))
                     }
                     
                     it("should display viewModel") {

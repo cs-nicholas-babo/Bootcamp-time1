@@ -9,3 +9,8 @@
 import Foundation
 
 public typealias CardSet = (set: MetaCardSet, cards: [Card])
+
+func ==(lhs: CardSet, rhs: CardSet) -> Bool {
+    return lhs.set.code == rhs.set.code
+        && lhs.cards.count == rhs.cards.count
+}

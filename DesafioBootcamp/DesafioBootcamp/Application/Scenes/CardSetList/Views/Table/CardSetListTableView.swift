@@ -18,7 +18,6 @@ class CardSetListTableView: UITableView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
 }
 
 extension CardSetListTableView: ViewCode{
@@ -28,7 +27,7 @@ extension CardSetListTableView: ViewCode{
     
     func setupAdditionalConfiguration() {
         register(CardSetListTableViewCell.self, forCellReuseIdentifier: CardSetList.tableViewCellIdentifier)
-        
+        self.bounces = false
     }
  
 }

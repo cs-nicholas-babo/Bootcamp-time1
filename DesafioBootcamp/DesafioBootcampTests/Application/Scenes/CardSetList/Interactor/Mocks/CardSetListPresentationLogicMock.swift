@@ -7,19 +7,23 @@
 //
 
 import Foundation
+import Domain
 
 @testable import DesafioBootcamp
 
 final class CardSetListPresentationLogicMock: CardSetListPresentationLogic {
     
-    var willPresentCards = false
+    var didPresentCards = false
     var isReadyToPresent = false
     var didPresentError = false
+    
+    var receivedCardSets = [CardSet]()
     
     func present(response: CardSetList.Response) {
         switch response {
         case .success(let cardSet):
-            self.willPresentCards = true
+            self.didPresentCards = true
+            self.receivedCardSets = cardSet
         case .readyToPresentSets:
             self.isReadyToPresent = true
         case .error:
