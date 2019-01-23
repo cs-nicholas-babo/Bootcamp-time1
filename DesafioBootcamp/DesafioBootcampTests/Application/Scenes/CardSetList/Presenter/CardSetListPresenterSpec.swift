@@ -18,7 +18,7 @@ class CardSetListPresenterSpec: QuickSpec {
             
             var sut: CardSetListPresenter!
             
-            context("initializing with view controller") {
+            context("when initialized") {
                 
                 var vc: CardSetListDisplayLogicMock!
                 
@@ -27,7 +27,7 @@ class CardSetListPresenterSpec: QuickSpec {
                     sut = CardSetListPresenter(viewController: vc)
                 }
                 
-                context("when presenting success") {
+                context("and present cards") {
                     
                     beforeEach {
                         sut.present(response: .success(MockValues.cardSetMockArray))
@@ -40,7 +40,7 @@ class CardSetListPresenterSpec: QuickSpec {
                     
                 }
                 
-                context("when readyToDisplayCards") {
+                context("and ready to display cards") {
                     
                     beforeEach {
                         sut.present(response: .readyToPresentSets)
@@ -52,7 +52,7 @@ class CardSetListPresenterSpec: QuickSpec {
                     
                 }
                 
-                context("when displaying error") {
+                context("and present error") {
                     
                     beforeEach {
                         sut.present(response: .error)
@@ -60,6 +60,16 @@ class CardSetListPresenterSpec: QuickSpec {
                     
                     it("should display error") {
                         expect(vc.didDisplayError).to(beTrue())
+                    }
+                }
+                
+                context("and present no results") {
+                    beforeEach {
+                        sut.present(response: .success([]))
+                    }
+                    
+                    it ("should display no results") {
+                        expect(vc.didDisplayNoResults).to(beTrue())
                     }
                 }
                 
