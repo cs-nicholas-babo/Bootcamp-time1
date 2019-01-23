@@ -22,12 +22,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
-        mockupFavorites()
-        let cardSetListVC = FavoritesCardSetListFactory.make()
-//        let cardSetListVC = FeedCardSetListFactory.make()
+//        mockupFavorites()
+        let tabBarController = UITabBarController()
+        let favoriteCardsVC = FavoritesCardSetListFactory.make()
+        favoriteCardsVC.title = "Favorites"
+        let apiCardsVC = FeedCardSetListFactory.make()
+        apiCardsVC.title = "Cards"
         
-        window.rootViewController = cardSetListVC
+        tabBarController.viewControllers = [apiCardsVC, favoriteCardsVC]
         
+        window.rootViewController = tabBarController
         window.makeKeyAndVisible()
         self.window = window
         

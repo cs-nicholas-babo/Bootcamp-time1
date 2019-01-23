@@ -12,6 +12,8 @@ import SnapKit
 
 final class CardSetListTableViewDelegate: NSObject, UITableViewDelegate{
     
+    var table: UITableView?
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
     }
@@ -44,6 +46,4 @@ final class CardSetListTableViewDelegate: NSObject, UITableViewDelegate{
         
         return headerView
     }
-
-    
 }

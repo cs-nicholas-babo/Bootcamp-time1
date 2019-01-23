@@ -20,6 +20,7 @@ final class CardSetListViewController: UIViewController {
     }()
     
     var interactor: CardSetListBusinessLogic?
+    var hasLoaded = false
     
     lazy var wrapperView: CardSetListTableWrapperView = {
        return CardSetListTableWrapperView(frame: self.view.frame)
@@ -45,7 +46,10 @@ final class CardSetListViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        _ = stateMachine.enter(CardSetListLoadingState.self)
+        if !hasLoaded{
+            _ = stateMachine.enter(CardSetListLoadingState.self)
+            hasLoaded = true
+        }
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle{

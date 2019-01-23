@@ -30,7 +30,7 @@ extension CardSetListTableView: ViewCode{
         self.bounces = false
         self.backgroundColor = UIColor.clear
         let backgroundImageView = UIImageView(frame: self.frame)
-        backgroundImageView.image = UIImage(named: "fundo")
+        backgroundImageView.image = UIImage(named: "placeholder")
         backgroundImageView.contentMode = .scaleAspectFill
         self.backgroundView = backgroundImageView
     }
