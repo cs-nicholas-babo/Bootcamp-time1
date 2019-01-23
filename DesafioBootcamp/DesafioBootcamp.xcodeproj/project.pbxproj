@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		2F4A8A8621F5F027007012FB /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4A8A8521F5F027007012FB /* UseCaseProviders.swift */; };
+		2F554E5921F7795400545C8C /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F554E5821F7795300545C8C /* Kingfisher.framework */; };
+		2F554E5A21F779A500545C8C /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F554E5821F7795300545C8C /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F554E5C21F77B7600545C8C /* Card+ImageURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F554E5B21F77B7600545C8C /* Card+ImageURL.swift */; };
+		2F5BE96E21F743920049A144 /* ModalDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE96D21F743910049A144 /* ModalDetail.swift */; };
+		2F5BE97021F746320049A144 /* ModalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE96F21F746320049A144 /* ModalDetailViewController.swift */; };
+		2F5BE97421F7493E0049A144 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5BE97321F7493D0049A144 /* SnapKit.framework */; };
+		2F5BE97621F74CDC0049A144 /* MagicCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE97521F74CDC0049A144 /* MagicCard.swift */; };
+		2F5BE97721F751130049A144 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F5BE97321F7493D0049A144 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2F5BE97921F768760049A144 /* ModalDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE97821F768760049A144 /* ModalDetailInteractor.swift */; };
+		2F5BE97B21F76A490049A144 /* ModalDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE97A21F76A490049A144 /* ModalDetailPresenter.swift */; };
+		2F5BE97D21F770990049A144 /* ModelDetailDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE97C21F770990049A144 /* ModelDetailDisplayLogic.swift */; };
+		2F5BE98021F773790049A144 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5BE97F21F773790049A144 /* ImageDownloader.swift */; };
 		2F8E05E021F21C0900688BC1 /* empty_cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8E05DE21F21C0900688BC1 /* empty_cards.json */; };
 		2F8E05E121F21C0900688BC1 /* empty_sets.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F8E05DF21F21C0900688BC1 /* empty_sets.json */; };
 		2F8E05E321F21D3B00688BC1 /* LocalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8E05E221F21D3B00688BC1 /* LocalData.swift */; };
@@ -30,6 +42,7 @@
 		2FB954DC21EF9D1B00B09AFF /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954DB21EF9D1B00B09AFF /* UseCaseProviders.swift */; };
 		2FB954DE21EF9D4200B09AFF /* FavoriteCardsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954DD21EF9D4200B09AFF /* FavoriteCardsService.swift */; };
 		2FB954E021EF9F2000B09AFF /* CacheService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB954DF21EF9F2000B09AFF /* CacheService.swift */; };
+		2FC17E5321F795CD0093138A /* TogglableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC17E5221F795CD0093138A /* TogglableButton.swift */; };
 		2FEBC25121ED057800B10DED /* Domain.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEBC24F21ED057800B10DED /* Domain.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBC24D21ED057800B10DED /* Domain.framework */; };
 		2FEBC25521ED057800B10DED /* Domain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2FEBC24D21ED057800B10DED /* Domain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -42,7 +55,16 @@
 		2FEBC26A21EE04E700B10DED /* CardsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26921EE04E700B10DED /* CardsUseCase.swift */; };
 		2FEBC26C21EE055B00B10DED /* FavoriteCardsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26B21EE055B00B10DED /* FavoriteCardsUseCase.swift */; };
 		2FEBC26E21EE05B600B10DED /* UseCaseProviders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */; };
+		2FF83CF221F8873F008B4604 /* ModalDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF83CF121F8873F008B4604 /* ModalDetailRouter.swift */; };
 		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
+		5D4C717121F73F4900DEA298 /* ScreenProportions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C717021F73F4900DEA298 /* ScreenProportions.swift */; };
+		5D54973421F88C1900711080 /* ModalDetailInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973321F88C1900711080 /* ModalDetailInteractorSpec.swift */; };
+		5D54973721F88C8E00711080 /* ModalDetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973621F88C8E00711080 /* ModalDetailPresenterMock.swift */; };
+		5D54973921F8922100711080 /* ModalDetailPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973821F8922100711080 /* ModalDetailPresenterSpec.swift */; };
+		5D54973C21F8939400711080 /* ModalDetailViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973B21F8939400711080 /* ModalDetailViewControllerMock.swift */; };
+		5D54973E21F896A300711080 /* ModalDetailViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973D21F896A300711080 /* ModalDetailViewControllerSpec.swift */; };
+		5D54974121F896FB00711080 /* ModalDetailInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54974021F896FB00711080 /* ModalDetailInteractorMock.swift */; };
+		5D54974321F8985F00711080 /* ModalDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */; };
 		5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */; };
 		5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */; };
 		5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */; };
@@ -173,6 +195,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				2F554E5A21F779A500545C8C /* Kingfisher.framework in Embed Frameworks */,
+				2F5BE97721F751130049A144 /* SnapKit.framework in Embed Frameworks */,
 				A13645AD21EFB9A2007D81EB /* Nimble.framework in Embed Frameworks */,
 				A16AFE3621F0E3D20055A9BA /* Alamofire.framework in Embed Frameworks */,
 				A13645AE21EFB9A2007D81EB /* Quick.framework in Embed Frameworks */,
@@ -191,6 +215,16 @@
 
 /* Begin PBXFileReference section */
 		2F4A8A8521F5F027007012FB /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
+		2F554E5821F7795300545C8C /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Frameworks/Kingfisher.framework; sourceTree = "<group>"; };
+		2F554E5B21F77B7600545C8C /* Card+ImageURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+ImageURL.swift"; sourceTree = "<group>"; };
+		2F5BE96D21F743910049A144 /* ModalDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetail.swift; sourceTree = "<group>"; };
+		2F5BE96F21F746320049A144 /* ModalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailViewController.swift; sourceTree = "<group>"; };
+		2F5BE97321F7493D0049A144 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Frameworks/SnapKit.framework; sourceTree = "<group>"; };
+		2F5BE97521F74CDC0049A144 /* MagicCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCard.swift; sourceTree = "<group>"; };
+		2F5BE97821F768760049A144 /* ModalDetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailInteractor.swift; sourceTree = "<group>"; };
+		2F5BE97A21F76A490049A144 /* ModalDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailPresenter.swift; sourceTree = "<group>"; };
+		2F5BE97C21F770990049A144 /* ModelDetailDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDetailDisplayLogic.swift; sourceTree = "<group>"; };
+		2F5BE97F21F773790049A144 /* ImageDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
 		2F8E05DE21F21C0900688BC1 /* empty_cards.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_cards.json; sourceTree = "<group>"; };
 		2F8E05DF21F21C0900688BC1 /* empty_sets.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = empty_sets.json; sourceTree = "<group>"; };
 		2F8E05E221F21D3B00688BC1 /* LocalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalData.swift; sourceTree = "<group>"; };
@@ -211,6 +245,7 @@
 		2FB954DB21EF9D1B00B09AFF /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
 		2FB954DD21EF9D4200B09AFF /* FavoriteCardsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsService.swift; sourceTree = "<group>"; };
 		2FB954DF21EF9F2000B09AFF /* CacheService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheService.swift; sourceTree = "<group>"; };
+		2FC17E5221F795CD0093138A /* TogglableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TogglableButton.swift; sourceTree = "<group>"; };
 		2FEBC24D21ED057800B10DED /* Domain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Domain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEBC24F21ED057800B10DED /* Domain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Domain.h; sourceTree = "<group>"; };
 		2FEBC25021ED057800B10DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -223,7 +258,16 @@
 		2FEBC26921EE04E700B10DED /* CardsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26B21EE055B00B10DED /* FavoriteCardsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsUseCase.swift; sourceTree = "<group>"; };
 		2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseProviders.swift; sourceTree = "<group>"; };
+		2FF83CF121F8873F008B4604 /* ModalDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailRouter.swift; sourceTree = "<group>"; };
 		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
+		5D4C717021F73F4900DEA298 /* ScreenProportions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenProportions.swift; sourceTree = "<group>"; };
+		5D54973321F88C1900711080 /* ModalDetailInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailInteractorSpec.swift; sourceTree = "<group>"; };
+		5D54973621F88C8E00711080 /* ModalDetailPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailPresenterMock.swift; sourceTree = "<group>"; };
+		5D54973821F8922100711080 /* ModalDetailPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailPresenterSpec.swift; sourceTree = "<group>"; };
+		5D54973B21F8939400711080 /* ModalDetailViewControllerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailViewControllerMock.swift; sourceTree = "<group>"; };
+		5D54973D21F896A300711080 /* ModalDetailViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailViewControllerSpec.swift; sourceTree = "<group>"; };
+		5D54974021F896FB00711080 /* ModalDetailInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailInteractorMock.swift; sourceTree = "<group>"; };
+		5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailRouterMock.swift; sourceTree = "<group>"; };
 		5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewController.swift; sourceTree = "<group>"; };
 		5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListLoadingState.swift; sourceTree = "<group>"; };
 		5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListShowCardsState.swift; sourceTree = "<group>"; };
@@ -313,8 +357,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1DF494321EF64FA00E1DCF6 /* PlatformAPI.framework in Frameworks */,
+				2F554E5921F7795400545C8C /* Kingfisher.framework in Frameworks */,
 				2FB865B221F0D1F7001FB4FE /* Result.framework in Frameworks */,
 				2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */,
+				2F5BE97421F7493E0049A144 /* SnapKit.framework in Frameworks */,
 				2FB865AE21F0D1F7001FB4FE /* Alamofire.framework in Frameworks */,
 				ACA4FF9321F0BB4000E7BC96 /* Realm.framework in Frameworks */,
 			);
@@ -375,6 +421,60 @@
 				A12280BB21F0F1E0009FFE9E /* MTG_Service.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		2F5BE96821F740DD0049A144 /* ModalDetail */ = {
+			isa = PBXGroup;
+			children = (
+				2FF83CF021F88724008B4604 /* Router */,
+				2F5BE96C21F743780049A144 /* Models */,
+				2F5BE96B21F743170049A144 /* ViewController */,
+				2F5BE96A21F742F00049A144 /* Presenter */,
+				2F5BE96921F742D10049A144 /* Interactor */,
+			);
+			path = ModalDetail;
+			sourceTree = "<group>";
+		};
+		2F5BE96921F742D10049A144 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE97821F768760049A144 /* ModalDetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2F5BE96A21F742F00049A144 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE97A21F76A490049A144 /* ModalDetailPresenter.swift */,
+				2F5BE97C21F770990049A144 /* ModelDetailDisplayLogic.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2F5BE96B21F743170049A144 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE96F21F746320049A144 /* ModalDetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		2F5BE96C21F743780049A144 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE96D21F743910049A144 /* ModalDetail.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2F5BE97E21F773630049A144 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2F5BE97F21F773790049A144 /* ImageDownloader.swift */,
+				2F554E5B21F77B7600545C8C /* Card+ImageURL.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		2F8E05E421F2214D00688BC1 /* Files */ = {
@@ -452,9 +552,19 @@
 			path = "UseCase Assignment";
 			sourceTree = "<group>";
 		};
+		2FC17E5121F795AB0093138A /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				2FC17E5221F795CD0093138A /* TogglableButton.swift */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
 		2FEBC24721ED051200B10DED /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				2FC17E5121F795AB0093138A /* Custom Components */,
+				2F5BE97E21F773630049A144 /* Extensions */,
 				ACB449FF21EF919E00252958 /* Scenes */,
 				A1DF493521EF547C00E1DCF6 /* AppDelegate */,
 				A1DF493221EF542400E1DCF6 /* Util */,
@@ -508,6 +618,76 @@
 				2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */,
 			);
 			path = Providers;
+			sourceTree = "<group>";
+		};
+		2FF83CF021F88724008B4604 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2FF83CF121F8873F008B4604 /* ModalDetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5D54972E21F88BD000711080 /* ModalDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973121F88BF100711080 /* ViewController */,
+				5D54973021F88BEB00711080 /* Presenter */,
+				5D54972F21F88BE100711080 /* Interactor */,
+			);
+			path = ModalDetail;
+			sourceTree = "<group>";
+		};
+		5D54972F21F88BE100711080 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973521F88C7D00711080 /* Mocks */,
+				5D54973321F88C1900711080 /* ModalDetailInteractorSpec.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5D54973021F88BEB00711080 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973A21F8937F00711080 /* Mocks */,
+				5D54973821F8922100711080 /* ModalDetailPresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5D54973121F88BF100711080 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973F21F896D700711080 /* Mocks */,
+				5D54973D21F896A300711080 /* ModalDetailViewControllerSpec.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5D54973521F88C7D00711080 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973621F88C8E00711080 /* ModalDetailPresenterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D54973A21F8937F00711080 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D54973B21F8939400711080 /* ModalDetailViewControllerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D54973F21F896D700711080 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D54974021F896FB00711080 /* ModalDetailInteractorMock.swift */,
+				5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		5DA18EFF21F0AAC400A862F4 /* States */ = {
@@ -630,6 +810,8 @@
 		A13C654121EF6FA700689169 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2F554E5821F7795300545C8C /* Kingfisher.framework */,
+				2F5BE97321F7493D0049A144 /* SnapKit.framework */,
 				2FB865A821F0D1CB001FB4FE /* Alamofire.framework */,
 				2FB865A921F0D1CB001FB4FE /* Moya.framework */,
 				2FB865AA21F0D1CB001FB4FE /* Result.framework */,
@@ -652,7 +834,9 @@
 		A1DF493221EF542400E1DCF6 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				5D4C717021F73F4900DEA298 /* ScreenProportions.swift */,
 				A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */,
+				2F5BE97521F74CDC0049A144 /* MagicCard.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -719,6 +903,7 @@
 		ACB449FF21EF919E00252958 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2F5BE96821F740DD0049A144 /* ModalDetail */,
 				ACA4FF8E21F0B4EA00E7BC96 /* Commons */,
 				ACB44A0821EF940D00252958 /* CardSetList */,
 			);
@@ -787,6 +972,7 @@
 		ACE788FE21F2408F00718E4E /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5D54972E21F88BD000711080 /* ModalDetail */,
 				ACE788FF21F2408F00718E4E /* CardSetList */,
 			);
 			path = Scenes;
@@ -1209,6 +1395,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */,
+				2F5BE97021F746320049A144 /* ModalDetailViewController.swift in Sources */,
 				ACA4FF9021F0B50000E7BC96 /* Factory.swift in Sources */,
 				5DA18F0721F0ABDE00A862F4 /* CardSetListErrorState.swift in Sources */,
 				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
@@ -1216,14 +1403,24 @@
 				ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */,
 				ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */,
 				5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */,
+				2F554E5C21F77B7600545C8C /* Card+ImageURL.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
 				5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */,
+				2F5BE98021F773790049A144 /* ImageDownloader.swift in Sources */,
 				5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */,
+				2F5BE96E21F743920049A144 /* ModalDetail.swift in Sources */,
 				5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */,
 				A131BB9D21F6618E000869E1 /* CardSetListModel.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
+				2F5BE97D21F770990049A144 /* ModelDetailDisplayLogic.swift in Sources */,
+				2FF83CF221F8873F008B4604 /* ModalDetailRouter.swift in Sources */,
 				A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */,
+				2F5BE97921F768760049A144 /* ModalDetailInteractor.swift in Sources */,
+				5D4C717121F73F4900DEA298 /* ScreenProportions.swift in Sources */,
+				2FC17E5321F795CD0093138A /* TogglableButton.swift in Sources */,
 				5DA18F0921F0AC2900A862F4 /* CardSetListBaseState.swift in Sources */,
+				2F5BE97B21F76A490049A144 /* ModalDetailPresenter.swift in Sources */,
+				2F5BE97621F74CDC0049A144 /* MagicCard.swift in Sources */,
 				ACB449FE21EF8D4800252958 /* MTGCardGateway.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1294,12 +1491,19 @@
 			files = (
 				ACE7891221F2408F00718E4E /* CardSetListViewModelSpec.swift in Sources */,
 				ACE7891721F2408F00718E4E /* MTGCardGatewayMock.swift in Sources */,
+				5D54973721F88C8E00711080 /* ModalDetailPresenterMock.swift in Sources */,
 				ACE7891321F2408F00718E4E /* CardSetListDisplayLogicMock.swift in Sources */,
+				5D54973921F8922100711080 /* ModalDetailPresenterSpec.swift in Sources */,
 				ACE7891621F2408F00718E4E /* CardSetListViewControllerSpec.swift in Sources */,
+				5D54974121F896FB00711080 /* ModalDetailInteractorMock.swift in Sources */,
+				5D54974321F8985F00711080 /* ModalDetailRouterMock.swift in Sources */,
 				ACE7891421F2408F00718E4E /* CardSetListPresenterSpec.swift in Sources */,
+				5D54973C21F8939400711080 /* ModalDetailViewControllerMock.swift in Sources */,
+				5D54973E21F896A300711080 /* ModalDetailViewControllerSpec.swift in Sources */,
 				ACE7891A21F2408F00718E4E /* ResultErrorMock.swift in Sources */,
 				ACE7891521F2408F00718E4E /* CardSetListInteractorMock.swift in Sources */,
 				ACE788F621F2408400718E4E /* DesafioBootcampTests.swift in Sources */,
+				5D54973421F88C1900711080 /* ModalDetailInteractorSpec.swift in Sources */,
 				ACE7891821F2408F00718E4E /* CardSetListPresentationLogicMock.swift in Sources */,
 				ACE7891B21F2408F00718E4E /* MockValues.swift in Sources */,
 				ACE7891921F2408F00718E4E /* CardSetListInteractorSpec.swift in Sources */,
@@ -1546,6 +1750,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DesafioBootcamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1569,6 +1774,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = DesafioBootcamp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

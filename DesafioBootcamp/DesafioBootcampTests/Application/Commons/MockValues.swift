@@ -23,4 +23,6 @@ struct MockValues {
     static let cardSetMock = (set: metaCardSetMock, cards: cardsMock)
     
     static let viewModelMock = CardSetList.ViewModel(cardSet: cardSetMock)
+    
+    static let favoriteStatusMock = true
 }

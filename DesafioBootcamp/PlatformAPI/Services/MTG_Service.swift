@@ -180,13 +180,24 @@ extension MTG_Service: Domain.ApplicationRunningUseCase {
             }
         }
     }
+    
+    public func setupCache(sets: [MetaCardSet]) {
+        let cacheService = self.databaseUseCase
+        cacheService.setupCache(sets: sets)
+    }
+    
 }
 
 extension MTG_Service: Domain.ApplicationStartupUseCase {
-    
     public func startup(handler: @escaping () -> ()) {
         self.fetchSets { (result) in
-            handler()
+            switch result {
+            case .success(let sets):
+                self.setupCache(sets: sets)
+                handler()
+            default:
+                break
+            }
         }
     }
 }
