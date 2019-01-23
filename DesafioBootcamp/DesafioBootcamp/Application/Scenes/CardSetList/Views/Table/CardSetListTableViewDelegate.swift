@@ -15,4 +15,23 @@ final class CardSetListTableViewDelegate: NSObject, UITableViewDelegate{
         return 1000
     }
     
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
+//    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+//        let headerView = UIView()
+//        headerView.backgroundColor = UIColor.red
+//        
+//        let headerLabel = UILabel(frame: CGRect(x: 30, y: 0, width:
+//            tableView.bounds.size.width, height: tableView.bounds.size.height))
+//        headerLabel.font = UIFont(name: "Verdana", size: 20)
+//        headerLabel.textColor = UIColor.white
+//        headerLabel.sizeToFit()
+//        headerView.addSubview(headerLabel)
+//        
+//        return headerView
+//    }
+
+    
 }

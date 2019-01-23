@@ -26,6 +26,8 @@ class CardSetListCollectionViewDataSource: NSObject, UICollectionViewDataSource 
                                                       for: indexPath) as! CardSetListCollectionViewCell
         if let path = cards[indexPath.section].cards[indexPath.row].imageURL {
             cell.loadImage(fromPath: path)
+        }else{
+            cell.imageView.image = Image.placeholder
         }
         
         return cell

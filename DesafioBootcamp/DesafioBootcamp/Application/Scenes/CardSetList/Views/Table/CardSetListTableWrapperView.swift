@@ -44,6 +44,6 @@ extension CardSetListTableWrapperView: ViewCode{
     }
     
     func setupAdditionalConfiguration() {
-        tableView.backgroundColor = UIColor.red
+        
     }
 }

@@ -15,4 +15,7 @@ struct Image{
         return UIImage(named: "Group") ?? UIImage()
     }
     
+    static var placeholder: UIImage{
+        return UIImage(named: "placeholder") ?? UIImage()
+    }
 }

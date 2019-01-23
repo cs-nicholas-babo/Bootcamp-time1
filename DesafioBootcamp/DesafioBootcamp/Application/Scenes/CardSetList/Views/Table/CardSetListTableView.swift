@@ -28,6 +28,7 @@ extension CardSetListTableView: ViewCode{
     
     func setupAdditionalConfiguration() {
         register(CardSetListTableViewCell.self, forCellReuseIdentifier: CardSetList.tableViewCellIdentifier)
+        
     }
  
 }

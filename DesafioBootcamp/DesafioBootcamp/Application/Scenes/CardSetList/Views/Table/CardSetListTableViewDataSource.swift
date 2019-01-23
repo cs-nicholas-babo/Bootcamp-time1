@@ -26,12 +26,8 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
         return sets.count
     }
     
-//    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-//        return sets.map{ $0.setName }
-//    }
-    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.sets[section].setName
+        return sets[section].setName
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

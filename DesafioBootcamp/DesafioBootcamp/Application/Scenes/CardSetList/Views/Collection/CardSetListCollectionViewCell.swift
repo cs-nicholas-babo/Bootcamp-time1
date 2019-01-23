@@ -18,6 +18,10 @@ class CardSetListCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
+    override func prepareForReuse() {
+        self.imageView.image = nil
+    }
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupView()
@@ -28,7 +32,7 @@ class CardSetListCollectionViewCell: UICollectionViewCell {
     }
     
     func loadImage(fromPath path: String) {
-        self.imageView.kf.setImage(with: URL(string: path))
+        self.imageView.kf.setImage(with: URL(string: path), placeholder: Image.placeholder)
     }
     
     static func size(for width: CGFloat) -> CGSize{

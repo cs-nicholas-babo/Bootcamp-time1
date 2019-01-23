@@ -12,7 +12,7 @@ import Domain
 class CardSetListCollectionView: UICollectionView {
     private static var layout: UICollectionViewLayout {
         let layout = UICollectionViewFlowLayout()
-        let spacing:CGFloat = 30.0
+        let spacing:CGFloat = 16.0
         layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
         layout.minimumLineSpacing = spacing
         layout.minimumInteritemSpacing = spacing
