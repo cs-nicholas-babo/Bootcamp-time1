@@ -10,7 +10,10 @@ import Domain
 
 
 final class CardFetchUseCaseMock: ApplicationRunningUseCase, CardsUseCase {
-    
+    func setupCache(sets: [MetaCardSet]) {
+        
+    }
+
     var shouldFail =  false
     var sentCards = MockValues.cardMockArray
     
