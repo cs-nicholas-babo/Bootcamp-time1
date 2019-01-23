@@ -106,6 +106,7 @@
 		A1DF494421EF64FA00E1DCF6 /* PlatformAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1DF495121EF651900E1DCF6 /* PlatformLocalDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1DF495521EF651900E1DCF6 /* PlatformLocalDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1E29FA521F8C2D500BE1D23 /* Nimble_Snapshots.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1F9E5B321F0DB9100A84182 /* MTG_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9E5B221F0DB9100A84182 /* MTG_Model.swift */; };
 		AC23260121F798C200AAB36D /* CardSetListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23260021F798C200AAB36D /* CardSetListViewControllerSpec.swift */; };
 		AC23260321F79FF000AAB36D /* APIGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23260221F79FF000AAB36D /* APIGateway.swift */; };
@@ -116,9 +117,6 @@
 		AC23261021F8A5A700AAB36D /* FavoriteCardsUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23260F21F8A5A700AAB36D /* FavoriteCardsUseCaseMock.swift */; };
 		AC23261221F8A70200AAB36D /* ApplicationRunningUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261121F8A70200AAB36D /* ApplicationRunningUseCaseMock.swift */; };
 		AC23261521F8BB5200AAB36D /* LocalDatabaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261421F8BB5200AAB36D /* LocalDatabaseFactory.swift */; };
-		AC692AED21F6065A009734FE /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; };
-		AC692AEE21F60665009734FE /* Nimble_Snapshots.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AC692AF121F616EA009734FE /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */; };
 		AC692AF221F616F5009734FE /* FBSnapshotTestCase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC692B0621F618F5009734FE /* CardSetListCollectionViewCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692B0521F618F5009734FE /* CardSetListCollectionViewCellSpec.swift */; };
 		AC692B0721F6192C009734FE /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; };
@@ -226,11 +224,11 @@
 				A1DF494421EF64FA00E1DCF6 /* PlatformAPI.framework in Embed Frameworks */,
 				A16AFE3821F0E3D20055A9BA /* Moya.framework in Embed Frameworks */,
 				2FEBC25521ED057800B10DED /* Domain.framework in Embed Frameworks */,
+				A1E29FA521F8C2D500BE1D23 /* Nimble_Snapshots.framework in Embed Frameworks */,
 				A1DF495521EF651900E1DCF6 /* PlatformLocalDatabase.framework in Embed Frameworks */,
 				2FB865B321F0D1F7001FB4FE /* Result.framework in Embed Frameworks */,
 				ACE7895721F26CD900718E4E /* Kingfisher.framework in Embed Frameworks */,
 				ACE7895121F2688C00718E4E /* SnapKit.framework in Embed Frameworks */,
-				AC692AEE21F60665009734FE /* Nimble_Snapshots.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,6 +327,7 @@
 		A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformLocalDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1DF494F21EF651900E1DCF6 /* PlatformLocalDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlatformLocalDatabase.h; sourceTree = "<group>"; };
 		A1DF495021EF651900E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1E29FA621F8C34B00BE1D23 /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Frameworks/Nimble_Snapshots.framework; sourceTree = "<group>"; };
 		A1F9E5B221F0DB9100A84182 /* MTG_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTG_Model.swift; sourceTree = "<group>"; };
 		AC23260021F798C200AAB36D /* CardSetListViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListViewControllerSpec.swift; sourceTree = "<group>"; };
 		AC23260221F79FF000AAB36D /* APIGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGateway.swift; sourceTree = "<group>"; };
@@ -397,8 +396,6 @@
 				2FEBC25421ED057800B10DED /* Domain.framework in Frameworks */,
 				2FB865AE21F0D1F7001FB4FE /* Alamofire.framework in Frameworks */,
 				ACA4FF9321F0BB4000E7BC96 /* Realm.framework in Frameworks */,
-				AC692AED21F6065A009734FE /* Nimble_Snapshots.framework in Frameworks */,
-				AC692AF121F616EA009734FE /* FBSnapshotTestCase.framework in Frameworks */,
 				ACE7895521F26CB600718E4E /* Kingfisher.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -726,16 +723,8 @@
 			isa = PBXGroup;
 			children = (
 				A13669C721F761EA00CA705E /* Table */,
-				A13669C021F7538400CA705E /* Collection */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		A13669C021F7538400CA705E /* Collection */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Collection;
 			sourceTree = "<group>";
 		};
 		A13669C721F761EA00CA705E /* Table */ = {
@@ -749,6 +738,7 @@
 		A13C654121EF6FA700689169 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A1E29FA621F8C34B00BE1D23 /* Nimble_Snapshots.framework */,
 				AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */,
 				AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */,
 				ACE7895421F26CB600718E4E /* Kingfisher.framework */,
