@@ -21,14 +21,15 @@ final class CardSetListCollectionViewDelegate: NSObject, UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let spacing:CGFloat = 16.0 
         let numberOfItemsPerRow:CGFloat = 3
-        let totalSpacing:CGFloat = (numberOfItemsPerRow + 1) * spacing
-        let cellWidth = (collectionView.frame.width - totalSpacing)/numberOfItemsPerRow
+        let totalSpacing:CGFloat = (numberOfItemsPerRow + 1) * spacing + 2.0 //magia
+        let cellWidth = (UIScreen.main.bounds.width - totalSpacing)/numberOfItemsPerRow
         
         return CardSetListCollectionViewCell.size(for: cellWidth)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(datasource.cards[indexPath.section].cards[indexPath.item].name)
+        //Segue to Detail View Controller
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {

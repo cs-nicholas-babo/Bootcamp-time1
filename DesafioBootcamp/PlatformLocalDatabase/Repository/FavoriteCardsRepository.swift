@@ -22,7 +22,7 @@ public final class FavoriteCardsRepository: RealmRepository {
         return realm.objects(RealmCard.self).map({ $0.baseData() })
     }
     
-    func upsert(object: Card) {
+    public func upsert(object: Card) {
         let realmObject = object.realmData()
         
         try! realm.write {

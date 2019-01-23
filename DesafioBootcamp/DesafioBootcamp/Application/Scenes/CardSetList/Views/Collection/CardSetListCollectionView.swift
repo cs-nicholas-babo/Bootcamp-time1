@@ -16,6 +16,8 @@ class CardSetListCollectionView: UICollectionView {
         layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
         layout.minimumLineSpacing = spacing
         layout.minimumInteritemSpacing = spacing
+//        layout.estimatedItemSize = CGSize(width: 1, height: 1)
+        layout.scrollDirection = .vertical
         return layout
     }
     
@@ -23,6 +25,7 @@ class CardSetListCollectionView: UICollectionView {
         super.init(frame: frame, collectionViewLayout: CardSetListCollectionView.layout)
         self.collectionViewLayout = CardSetListCollectionView.layout
         setupView()
+        self.isScrollEnabled = false
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -40,6 +43,7 @@ extension CardSetListCollectionView: ViewCode {
         register(CardSetListCollectionViewCell.self,
                  forCellWithReuseIdentifier: CardSetList.collectionViewCellIdentifier)
         register(CardTypeCollectionReusableView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "headerView")
+//        layoutIfNeeded()
     }
     
     

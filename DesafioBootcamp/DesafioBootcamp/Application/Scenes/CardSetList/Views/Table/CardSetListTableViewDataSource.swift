@@ -33,7 +33,7 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: CardSetList.tableViewCellIdentifier) as! CardSetListTableViewCell
         cell.setupView()
-        cell.collectionWrapperView.datasource.cards = sets[indexPath.row].typedCards
+        cell.collectionWrapperView.datasource.cards = sets[indexPath.section].typedCards
         return cell
     }
     

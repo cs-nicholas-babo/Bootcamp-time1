@@ -39,11 +39,13 @@ class CardSetListCollectionViewCell: UICollectionViewCell {
         let ratio:CGFloat = 118/85
         return CGSize(width: width, height: width * ratio)
     }
+    
+    
 }
 
 extension CardSetListCollectionViewCell: ViewCode {
     func setupViewHierarchy() {
-        addSubview(self.imageView)
+        self.contentView.addSubview(imageView)
     }
     
     func setupConstraints() {
@@ -52,8 +54,7 @@ extension CardSetListCollectionViewCell: ViewCode {
         }
     }
     
-    func setupAdditionalConfiguration() {
-    }
+    func setupAdditionalConfiguration() { }
     
     
 }
