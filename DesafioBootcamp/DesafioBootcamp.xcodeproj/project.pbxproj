@@ -116,10 +116,12 @@
 		AC23260D21F8A51800AAB36D /* LocalDatabaseGatewaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23260C21F8A51800AAB36D /* LocalDatabaseGatewaySpec.swift */; };
 		AC23261021F8A5A700AAB36D /* FavoriteCardsUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23260F21F8A5A700AAB36D /* FavoriteCardsUseCaseMock.swift */; };
 		AC23261221F8A70200AAB36D /* ApplicationRunningUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261121F8A70200AAB36D /* ApplicationRunningUseCaseMock.swift */; };
-		AC23261521F8BB5200AAB36D /* LocalDatabaseFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261421F8BB5200AAB36D /* LocalDatabaseFactory.swift */; };
 		AC23261821F8C0AE00AAB36D /* RealmFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261721F8C0AE00AAB36D /* RealmFactory.swift */; };
 		AC23261A21F8C15A00AAB36D /* FavoritesServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261921F8C15A00AAB36D /* FavoritesServiceFactory.swift */; };
 		AC23261C21F8C2C200AAB36D /* CacheServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261B21F8C2C200AAB36D /* CacheServiceFactory.swift */; };
+		AC23261E21F8DD5F00AAB36D /* APIGatewayFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261D21F8DD5F00AAB36D /* APIGatewayFactory.swift */; };
+		AC23262021F8DD7B00AAB36D /* LocalDatabaseGatewayFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23261F21F8DD7B00AAB36D /* LocalDatabaseGatewayFactory.swift */; };
+		AC23262221F8DEF100AAB36D /* APIGatewaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23262121F8DEF100AAB36D /* APIGatewaySpec.swift */; };
 		AC692AF221F616F5009734FE /* FBSnapshotTestCase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AC692B0621F618F5009734FE /* CardSetListCollectionViewCellSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692B0521F618F5009734FE /* CardSetListCollectionViewCellSpec.swift */; };
 		AC692B0721F6192C009734FE /* Nimble_Snapshots.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; };
@@ -340,10 +342,12 @@
 		AC23260C21F8A51800AAB36D /* LocalDatabaseGatewaySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabaseGatewaySpec.swift; sourceTree = "<group>"; };
 		AC23260F21F8A5A700AAB36D /* FavoriteCardsUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCardsUseCaseMock.swift; sourceTree = "<group>"; };
 		AC23261121F8A70200AAB36D /* ApplicationRunningUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationRunningUseCaseMock.swift; sourceTree = "<group>"; };
-		AC23261421F8BB5200AAB36D /* LocalDatabaseFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabaseFactory.swift; sourceTree = "<group>"; };
 		AC23261721F8C0AE00AAB36D /* RealmFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmFactory.swift; sourceTree = "<group>"; };
 		AC23261921F8C15A00AAB36D /* FavoritesServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesServiceFactory.swift; sourceTree = "<group>"; };
 		AC23261B21F8C2C200AAB36D /* CacheServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheServiceFactory.swift; sourceTree = "<group>"; };
+		AC23261D21F8DD5F00AAB36D /* APIGatewayFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGatewayFactory.swift; sourceTree = "<group>"; };
+		AC23261F21F8DD7B00AAB36D /* LocalDatabaseGatewayFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDatabaseGatewayFactory.swift; sourceTree = "<group>"; };
+		AC23262121F8DEF100AAB36D /* APIGatewaySpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGatewaySpec.swift; sourceTree = "<group>"; };
 		AC4689C021F781F600263580 /* CardSetListViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewControllerSpec.swift; sourceTree = "<group>"; };
 		AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Carthage/Build/iOS/Nimble_Snapshots.framework; sourceTree = "<group>"; };
 		AC692AF021F616EA009734FE /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
@@ -847,6 +851,7 @@
 			children = (
 				AC23260E21F8A53E00AAB36D /* Mocks */,
 				AC23260C21F8A51800AAB36D /* LocalDatabaseGatewaySpec.swift */,
+				AC23262121F8DEF100AAB36D /* APIGatewaySpec.swift */,
 			);
 			path = Gateways;
 			sourceTree = "<group>";
@@ -863,7 +868,8 @@
 		AC23261321F8BB0700AAB36D /* Factories */ = {
 			isa = PBXGroup;
 			children = (
-				AC23261421F8BB5200AAB36D /* LocalDatabaseFactory.swift */,
+				AC23261F21F8DD7B00AAB36D /* LocalDatabaseGatewayFactory.swift */,
+				AC23261D21F8DD5F00AAB36D /* APIGatewayFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -1488,9 +1494,9 @@
 				A19D072521F7A83C00E99776 /* Image.swift in Sources */,
 				ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */,
 				A13669D121F7808300CA705E /* LocalDatabaseGateway.swift in Sources */,
-				AC23261521F8BB5200AAB36D /* LocalDatabaseFactory.swift in Sources */,
 				A13669BE21F74EA800CA705E /* CardSetListCollectionWrapperView.swift in Sources */,
 				AC23260621F7AEC000AAB36D /* FeedCardSetListFactory.swift in Sources */,
+				AC23261E21F8DD5F00AAB36D /* APIGatewayFactory.swift in Sources */,
 				AC23260A21F7B23800AAB36D /* CardSetListCollectionViewDelegate.swift in Sources */,
 				AC23260821F7B1CA00AAB36D /* CardSetListTableViewDelegate.swift in Sources */,
 				ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */,
@@ -1512,6 +1518,7 @@
 				AC23260321F79FF000AAB36D /* APIGateway.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				A13669C621F75C4600CA705E /* CardSetListTableViewDataSource.swift in Sources */,
+				AC23262021F8DD7B00AAB36D /* LocalDatabaseGatewayFactory.swift in Sources */,
 				5D4629B621F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift in Sources */,
 				A1C31BAA21F89AFE004D765C /* CardTypeCollectionReusableView.swift in Sources */,
 				ACE7894521F2667800718E4E /* CardSetListTableViewCell.swift in Sources */,
@@ -1611,6 +1618,7 @@
 				ACE7891421F2408F00718E4E /* CardSetListPresenterSpec.swift in Sources */,
 				ACE7891A21F2408F00718E4E /* ResultErrorMock.swift in Sources */,
 				ACE7891521F2408F00718E4E /* CardSetListInteractorMock.swift in Sources */,
+				AC23262221F8DEF100AAB36D /* APIGatewaySpec.swift in Sources */,
 				ACE7891821F2408F00718E4E /* CardSetListPresentationLogicMock.swift in Sources */,
 				ACE7891B21F2408F00718E4E /* MockValues.swift in Sources */,
 				AC23260D21F8A51800AAB36D /* LocalDatabaseGatewaySpec.swift in Sources */,

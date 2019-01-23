@@ -12,10 +12,14 @@ import Domain
 
 class APIGateway: MTGSetFetcher {
     
-    let service = MTG_Service()
+    let service: ApplicationRunningUseCase & CardsUseCase
     var metaSets = [MetaCardSet]()
     
     private var didFetchMetaSets = false
+    
+    init(service: ApplicationRunningUseCase & CardsUseCase) {
+        self.service = service
+    }
     
     private func fetchMetaSets(_ completion: @escaping (Result<[MetaCardSet]>) ->Void) {
         self.service.fetchSets { [weak self] result in
