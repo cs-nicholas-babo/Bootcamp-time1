@@ -10,11 +10,12 @@ import UIKit
 
 protocol CardSetListFactory {
     static func makeMTGCardGateway() -> MTGSetFetcher
+    static func getType() -> ControllerType
 }
 
 extension CardSetListFactory {
-    static func make() -> UIViewController {
-        let vc = CardSetListViewController()
+    static func make() -> CardSetListViewController {
+        let vc = CardSetListViewController(type: getType())
         let presenter = CardSetListPresenter(viewController: vc)
         let interactor = CardSetListInteractor(presenter: presenter, cardGateway: makeMTGCardGateway())
         vc.interactor = interactor

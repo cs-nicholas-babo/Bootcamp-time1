@@ -9,6 +9,10 @@
 import Foundation
 
 final class FeedCardSetListFactory: CardSetListFactory{
+    static func getType() -> ControllerType {
+        return .api
+    }
+    
     static func makeMTGCardGateway() -> MTGSetFetcher {
         let localDatabaseGateway = APIGatewayFactory.make()
         return localDatabaseGateway

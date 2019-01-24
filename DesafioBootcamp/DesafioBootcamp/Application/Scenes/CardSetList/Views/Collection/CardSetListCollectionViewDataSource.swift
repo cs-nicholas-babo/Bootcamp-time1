@@ -11,7 +11,13 @@ import Domain
 
 class CardSetListCollectionViewDataSource: NSObject, UICollectionViewDataSource {
 
-    var cards: [TypedCards] = []
+    var cards: [TypedCards] = []{
+        didSet{
+            collection?.reloadData()
+        }
+    }
+    
+    var collection: UICollectionView?
     
     override init() {
         super.init()

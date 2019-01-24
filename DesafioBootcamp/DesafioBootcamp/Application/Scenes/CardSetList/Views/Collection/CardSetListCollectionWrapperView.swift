@@ -25,6 +25,7 @@ class CardSetListCollectionWrapperView: UIView {
         super.init(frame: frame)
         self.collectionView.dataSource = self.datasource
         self.collectionView.delegate = delegate
+        datasource.collection = collectionView
         setupView()
     }
     

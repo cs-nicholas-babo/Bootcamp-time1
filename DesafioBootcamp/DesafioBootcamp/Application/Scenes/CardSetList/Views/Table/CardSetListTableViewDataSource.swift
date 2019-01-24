@@ -12,8 +12,15 @@ import Domain
 
 class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
     
-    var sets = [CardSetList.ViewModel]()
+    var sets = [CardSetList.ViewModel](){
+        didSet{
+            if oldValue.count != sets.count{
+                table?.reloadData()
+            }
+        }
+    }
     var navigationDelegate: NavigationDelegate?
+    var table: CardSetListTableView?
     
     override init() {
         super.init()
@@ -36,6 +43,7 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
         cell.setupView()
         cell.collectionWrapperView.datasource.cards = sets[indexPath.section].typedCards
         cell.collectionWrapperView.setupNavigationDelegate(delegate: self.navigationDelegate)
+        cell.collectionWrapperView.collectionView.reloadData()
         return cell
     }
     
@@ -49,16 +57,26 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
             return
         }
         var newModels:[CardSetList.ViewModel] = []
-        for var currentModel in sets{
+//        for var currentModel in sets{
+//            if currentModel.setName == model.setName{
+//                newModels.append(model)
+//            }else{
+//                newModels.append(currentModel)
+//            }
+//
+//        }
+        var updatedSection = 0
+        for i in 0...sets.count-1{
+            let currentModel = sets[i]
             if currentModel.setName == model.setName{
-//                currentModel.update(cards: model.typedCards)
                 newModels.append(model)
+                updatedSection = i
             }else{
                 newModels.append(currentModel)
             }
-            
         }
         sets = newModels
+        table?.reloadSections(IndexSet(integer: updatedSection), with: .none)
     }
     
 }

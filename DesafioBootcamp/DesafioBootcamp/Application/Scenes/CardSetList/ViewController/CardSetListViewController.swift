@@ -9,6 +9,11 @@
 import UIKit
 import GameplayKit
 
+enum ControllerType{
+    case api
+    case favorites
+}
+
 final class CardSetListViewController: UIViewController {
     
     lazy var stateMachine: GKStateMachine = {
@@ -22,6 +27,7 @@ final class CardSetListViewController: UIViewController {
     
     var interactor: CardSetListBusinessLogic?
     var hasLoaded = false
+    var controllerType:ControllerType
     
     lazy var wrapperView: CardSetListTableWrapperView = {
         let wrapper = CardSetListTableWrapperView(frame: self.view.frame)
@@ -39,12 +45,14 @@ final class CardSetListViewController: UIViewController {
         return activity
     }()
     
-    init() {
+    init(type: ControllerType) {
+        self.controllerType = type
         super.init(nibName: nil, bundle: nil)
         setupView()
     }
     
     required init?(coder aDecoder: NSCoder) {
+        self.controllerType = .favorites
         super.init(coder: aDecoder)
     }
     
@@ -53,8 +61,10 @@ final class CardSetListViewController: UIViewController {
             _ = stateMachine.enter(CardSetListLoadingState.self)
             hasLoaded = true
         } else {
-            guard let interactor = self.interactor else { fatalError() }
-            interactor.fetchSet()
+            if self.controllerType == .favorites{
+                guard let interactor = self.interactor else { fatalError() }
+                interactor.fetchSet()
+            }
         }
     }
     
@@ -68,7 +78,7 @@ extension CardSetListViewController: CardSetListDisplayLogic {
     func display(viewModel: CardSetList.ViewModel) {
         _ = stateMachine.enter(CardSetListShowCardsState.self)
         self.wrapperView.datasource.smartAppend(model: viewModel)
-        self.wrapperView.tableView.reloadData()
+//        self.wrapperView.tableView.reloadData()
     }
     
     func displayNoResults(){
