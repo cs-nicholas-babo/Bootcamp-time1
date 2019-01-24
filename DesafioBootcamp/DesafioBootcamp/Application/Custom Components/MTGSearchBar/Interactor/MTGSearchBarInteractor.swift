@@ -9,10 +9,6 @@
 import Foundation
 import Domain
 
-protocol MTGSearchBarBusinessLogic {
-    func search(query: String)
-}
-
 final class MTGSearchBarInteractor {
     private let applicationUseCase: ApplicationRunningUseCase
     private let cardsUseCase: CardsUseCase

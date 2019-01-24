@@ -10,14 +10,6 @@ import Foundation
 import Domain
 import UIKit
 
-protocol MTGSearchBarDisplayLogic : class {
-    func display(sets: [CardSet])
-}
-
-protocol MTGSearchBarObserver : class {
-    func send(sets: [CardSet])
-}
-
 final class MTGSearchBar: UISearchBar {
     var interactor: MTGSearchBarBusinessLogic?
     weak var observer: MTGSearchBarObserver?

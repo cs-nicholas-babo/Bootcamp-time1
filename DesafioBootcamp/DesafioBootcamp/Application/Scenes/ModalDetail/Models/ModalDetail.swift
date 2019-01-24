@@ -16,9 +16,7 @@ enum ModalDetail {
         var indexPath: IndexPath
     }
     
-    struct Response {
-        
-    }
+    struct Response {}
     
     struct LayoutGuide {
         static let dismissButtonSide: CGFloat = 44.proportionalToWidth
