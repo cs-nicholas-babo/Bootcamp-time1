@@ -12,6 +12,7 @@ import Domain
 import PlatformLocalDatabase
 import Realm
 import RealmSwift
+import PlatformAPI
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        mockupFavorites()
         let tabBarController = UITabBarController()
         
+        let service = MTG_ProviderDefault().applicationStartupUseCase()
+        service.startup {
+            print("Aí começou")
+        }
         
         let favoriteCardsVC = FavoritesCardSetListFactory.make()
         favoriteCardsVC.title = "Favorites"

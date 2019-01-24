@@ -20,8 +20,8 @@ enum CardSetList {
     }
     
     struct ViewModel {
-        let setName: String
-        let typedCards: [TypedCards]
+        var setName: String
+        private(set) var typedCards: [TypedCards]
         
         /**
          Initialize instance with CardSet passed.
@@ -41,6 +41,10 @@ enum CardSetList {
             }
             
             self.typedCards = typeSortedCards
+        }
+        
+        mutating func update(cards: [TypedCards]){
+            self.typedCards = cards
         }
     }
     

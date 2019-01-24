@@ -39,4 +39,26 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
         return cell
     }
     
+    
+    /// Smart Append
+    ///
+    /// - Parameter model: Takes a CardSetList.ViewModel as Parameter
+    func smartAppend(model: CardSetList.ViewModel){
+        guard sets.count > 0 else {
+            sets.append(model)
+            return
+        }
+        var newModels:[CardSetList.ViewModel] = []
+        for var currentModel in sets{
+            if currentModel.setName == model.setName{
+//                currentModel.update(cards: model.typedCards)
+                newModels.append(model)
+            }else{
+                newModels.append(currentModel)
+            }
+            
+        }
+        sets = newModels
+    }
+    
 }
