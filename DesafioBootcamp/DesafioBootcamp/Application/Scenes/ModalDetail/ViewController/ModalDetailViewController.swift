@@ -11,7 +11,6 @@ import UIKit
 import SnapKit
 
 protocol ModalDetailDisplayLogic: class {
-    func display(viewModel: ModalDetail.ViewModel.Single)
     func display(viewModel: ModalDetail.ViewModel.Subset)
     func displayButton(status: Bool)
 }
@@ -40,13 +39,6 @@ public class ModalDetailViewController: UIViewController {
         button.setImage(UIImage(named: "Close"), for: .normal)
         button.addTarget(self, action: #selector(tapDismissButton), for: UIControl.Event.touchUpInside)
         return button
-    }()
-    
-    lazy var cardView: UIImageView = {
-        let imageView = UIImageView(frame: .zero)
-        imageView.backgroundColor = .clear
-        imageView.image = UIImage(named: "Card_Background")
-        return imageView
     }()
     
     lazy var cardPicker: MTGCardPicker = {
@@ -145,11 +137,6 @@ extension ModalDetailViewController: ModalDetailDisplayLogic {
     
     func displayButton(status: Bool) {
         favoriteButton.setRealState(realState: status)
-    }
-    
-    func display(viewModel: ModalDetail.ViewModel.Single) {
-        ImageDownloader.setMagicCard(with: viewModel.card.literalImageURL(), imageView: &cardView)
-        favoriteButton.setRealState(realState: viewModel.status)
     }
     
 }

@@ -33,9 +33,9 @@ class MTGSearchBarInteractorSpec: QuickSpec {
                     sut = MTGSearchBarInteractor(applicationUseCase: applicationProvider.useCase(), cardsUseCase: cardsUseCase, presenter: presenter)
                 }
                 
-                it("should not query because database is empty") {
+                it("should query but don't have items because database is empty") {
                     sut.search(query: MockValues.searchBarTextMock)
-                    expect(presenter.isSending).to(beFalse())
+                    expect(presenter.isSending).to(beTrue())
                     expect(presenter.sets.count).to(equal(0))
                 }
                 

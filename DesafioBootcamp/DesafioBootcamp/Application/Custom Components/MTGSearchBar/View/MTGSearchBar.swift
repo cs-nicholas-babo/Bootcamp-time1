@@ -37,7 +37,6 @@ final class MTGSearchBar: UISearchBar {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         setupView()
     }
     

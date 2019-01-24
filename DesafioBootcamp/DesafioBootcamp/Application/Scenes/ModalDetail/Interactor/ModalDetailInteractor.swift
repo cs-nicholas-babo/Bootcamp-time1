@@ -22,11 +22,7 @@ final class ModalDetailInteractor {
     private var cards: [Card]
     private var selectedIndex: Int
     private var favoriteCardsUID: Set<String>
-    
-    private func indexedCard() -> Card {
-        return self.cards[self.selectedIndex]
-    }
-    
+        
     init(presenter: ModalDetailPresentationLogic, useCase: FavoriteCardsUseCase, subset: ModalDetail.ViewModel.Subset) {
         self.presenter = presenter
         self.useCase = useCase

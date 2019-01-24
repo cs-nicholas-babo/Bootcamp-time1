@@ -8,6 +8,7 @@
 
 import Quick
 import Nimble
+import UIKit
 
 @testable import DesafioBootcamp
 
@@ -35,6 +36,16 @@ class MTGSearchBarSpec: QuickSpec {
                     expect(sut.delegate).toNot(beNil())
                 }
                 
+                it("should throw exception") {
+                    let archiver = NSKeyedArchiver(requiringSecureCoding: false)
+                    expect(MTGSearchBar(coder: archiver)).to(raiseException())
+                }
+                
+                it("should setup the view") {
+                    sut.layoutSubviews()
+                    expect(sut.searchBarStyle).to(equal(UISearchBar.Style.minimal))
+                }
+                
                 context("when searching") {
                     
                     it("should search and have the same query") {
@@ -53,6 +64,15 @@ class MTGSearchBarSpec: QuickSpec {
                         sut.display(sets: [MockValues.cardSetMock])
                         expect(observer.toSendCards).to(beTrue())
                         expect(observer.sets.count).to(equal([MockValues.cardSetMock].count))
+                    }
+                    
+                }
+                
+                context("when canceling search") {
+                    
+                    it("should no be first responder") {
+                        sut.delegate?.searchBarCancelButtonClicked!(sut)
+                        expect(sut.isFirstResponder).to(beFalse())
                     }
                     
                 }

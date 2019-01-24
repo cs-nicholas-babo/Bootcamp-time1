@@ -15,10 +15,12 @@ class CardUseCaseMock: CardsUseCase {
     
     func fetchCards(from set: MetaCardSet, handler: @escaping (Result<[Card]>) -> ()) {
         isFetchingCardsFromSet = true
+        handler(Result.success([MockValues.cardMock]))
     }
     
     func fetchCards(filter name: String, handler: @escaping (Result<[Card]>) -> ()) {
         isFetchingCardsFromFilter = true
+        handler(Result.success([MockValues.cardMock]))
     }
     
     
