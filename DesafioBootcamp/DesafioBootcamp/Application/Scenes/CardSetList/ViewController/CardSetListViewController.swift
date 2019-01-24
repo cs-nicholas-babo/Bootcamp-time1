@@ -9,12 +9,7 @@
 import UIKit
 import GameplayKit
 
-enum ControllerType{
-    case api
-    case favorites
-}
-
-final class CardSetListViewController: UIViewController {
+class CardSetListViewController: UIViewController {
     
     lazy var stateMachine: GKStateMachine = {
         let showCardsState = CardSetListShowCardsState(viewController: self)
@@ -27,7 +22,6 @@ final class CardSetListViewController: UIViewController {
     
     var interactor: CardSetListBusinessLogic?
     var hasLoaded = false
-    var controllerType:ControllerType
     
     lazy var wrapperView: CardSetListTableWrapperView = {
         let wrapper = CardSetListTableWrapperView(frame: self.view.frame)
@@ -45,32 +39,28 @@ final class CardSetListViewController: UIViewController {
         return activity
     }()
     
-    init(type: ControllerType) {
-        self.controllerType = type
+    init() {
         super.init(nibName: nil, bundle: nil)
         setupView()
     }
     
     required init?(coder aDecoder: NSCoder) {
-        self.controllerType = .favorites
         super.init(coder: aDecoder)
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        if !hasLoaded{
-            _ = stateMachine.enter(CardSetListLoadingState.self)
-            hasLoaded = true
-        } else {
-            if self.controllerType == .favorites{
-                guard let interactor = self.interactor else { fatalError() }
-                interactor.fetchSet()
-            }
-        }
-        
+        if !hasLoaded {
+            initialSetup()
+        } else {/*donot*/}
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return UIStatusBarStyle.lightContent
+    }
+    
+    func initialSetup() {
+        _ = stateMachine.enter(CardSetListLoadingState.self)
+        self.hasLoaded = true
     }
 }
 
