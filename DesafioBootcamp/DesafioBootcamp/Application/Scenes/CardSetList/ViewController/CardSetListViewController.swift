@@ -66,6 +66,7 @@ final class CardSetListViewController: UIViewController {
                 interactor.fetchSet()
             }
         }
+        
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
@@ -78,6 +79,12 @@ extension CardSetListViewController: CardSetListDisplayLogic {
     func display(viewModel: CardSetList.ViewModel) {
         _ = stateMachine.enter(CardSetListShowCardsState.self)
         self.wrapperView.datasource.smartAppend(model: viewModel)
+        var count = 0
+//        self.wrapperView.datasource.sets.forEach { (model) in
+//            model.typedCards.forEach({ (type, cards) in
+//                count = count + cards.count
+//            })
+//        }
 //        self.wrapperView.tableView.reloadData()
     }
     

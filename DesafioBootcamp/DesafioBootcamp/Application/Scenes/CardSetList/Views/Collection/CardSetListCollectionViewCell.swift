@@ -49,8 +49,16 @@ extension CardSetListCollectionViewCell: ViewCode {
     }
     
     func setupConstraints() {
+        let spacing:CGFloat = 16.0
+        let numberOfItemsPerRow:CGFloat = 3
+        let totalSpacing:CGFloat = (numberOfItemsPerRow + 1) * spacing + 2.0 //magia
+        let cellWidth = (UIScreen.main.bounds.width - totalSpacing)/numberOfItemsPerRow
+        
+        
         self.imageView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.width.equalTo(cellWidth)
+            make.height.equalTo(CardSetListCollectionViewCell.size(for: cellWidth))
+            make.center.equalToSuperview()
         }
     }
     

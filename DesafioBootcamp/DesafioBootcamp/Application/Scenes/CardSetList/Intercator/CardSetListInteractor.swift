@@ -26,7 +26,6 @@ extension CardSetListInteractor: CardSetListBusinessLogic {
             switch result {
             case .success(let cardSet):
                 self.presenter.present(response: .success(cardSet))
-                print("recebi \(cardSet.first?.cards.count) cards")
 
             case .failure(let error):
                 print("\(error.errorCode): \(error.error)")

@@ -133,17 +133,16 @@ public final class MTG_Service {
     
     
 }
-
 extension MTG_Service: Domain.CardsUseCase {
     public func fetchCards(from set: MetaCardSet, handler: @escaping (Domain.Result<[Card]>) -> ()) {
         performFetchCards(from: set, page: 1) { (result) in
             switch result {
             case .success(let cards):
-                print(cards.count)
+                handler(.success(cards))
             case .failure(let error):
-                print(error.errorCode)
+                handler(.failure(error))
             }
-            handler(result)
+//            handler(result)
             
         }
     }

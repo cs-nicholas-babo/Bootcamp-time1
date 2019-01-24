@@ -16,7 +16,7 @@ class CardSetListCollectionView: UICollectionView {
         layout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: spacing, right: spacing)
         layout.minimumLineSpacing = spacing
         layout.minimumInteritemSpacing = spacing
-//        layout.estimatedItemSize = CGSize(width: 1, height: 1)
+        layout.estimatedItemSize = CGSize(width: 1, height: 1)
         layout.scrollDirection = .vertical
         return layout
     }

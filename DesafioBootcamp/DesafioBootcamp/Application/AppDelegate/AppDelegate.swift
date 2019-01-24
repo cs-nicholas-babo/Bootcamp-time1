@@ -21,14 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        setupInitialState()
+        
+        return true
+    }
+    
+    func setupInitialState(){
         let window = UIWindow(frame: UIScreen.main.bounds)
-//        mockupFavorites()
         let tabBarController = UITabBarController()
         
         let service = MTG_ProviderDefault().applicationStartupUseCase()
-        service.startup {
-            print("Aí começou")
-        }
+        service.startup {}
         
         let favoriteCardsVC = FavoritesCardSetListFactory.make()
         favoriteCardsVC.title = "Favorites"
@@ -40,8 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
         self.window = window
-        
-        return true
     }
     
     func mockupFavorites(){
