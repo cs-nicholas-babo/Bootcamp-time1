@@ -9,10 +9,6 @@
 import Foundation
 import Domain
 
-protocol MTGSearchBarPresentationLogic {
-    func send(sets: [CardSet])
-}
-
 final class MTGSearchBarPresenter {
     unowned var viewController: MTGSearchBarDisplayLogic
     

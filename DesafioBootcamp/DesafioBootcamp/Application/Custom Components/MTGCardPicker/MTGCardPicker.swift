@@ -10,10 +10,6 @@ import Foundation
 import UIKit
 import Domain
 
-protocol MTGCardPickerObserver : class {
-    func didChangeTo(row: Int)
-}
-
 final class MTGCardPicker: UIPickerView {
     weak var observer: MTGCardPickerObserver?
     var cards: [Card] = []

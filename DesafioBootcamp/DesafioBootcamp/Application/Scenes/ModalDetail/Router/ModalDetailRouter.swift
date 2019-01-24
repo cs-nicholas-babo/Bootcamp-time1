@@ -9,10 +9,6 @@
 import Foundation
 import UIKit
 
-protocol ModalDetailRoutingLogic {
-    func dismiss()
-}
-
 final class ModalDetailRouter {
     weak var viewController: UIViewController?
     

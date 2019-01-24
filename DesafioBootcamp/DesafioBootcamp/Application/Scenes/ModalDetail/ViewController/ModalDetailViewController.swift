@@ -10,11 +10,6 @@ import Foundation
 import UIKit
 import SnapKit
 
-protocol ModalDetailDisplayLogic: class {
-    func display(viewModel: ModalDetail.ViewModel.Subset)
-    func displayButton(status: Bool)
-}
-
 public class ModalDetailViewController: UIViewController {
     var router: ModalDetailRoutingLogic?
     var interactor: ModalDetailBusinessLogic?

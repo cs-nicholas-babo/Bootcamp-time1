@@ -9,11 +9,6 @@
 import Foundation
 import Domain
 
-protocol ModalDetailPresentationLogic {
-    func show(cards: [Card], selectedIndex: Int)
-    func refreshButton(status: Bool)
-}
-
 final class ModalDetailPresenter {
     unowned var viewController: ModalDetailDisplayLogic
     

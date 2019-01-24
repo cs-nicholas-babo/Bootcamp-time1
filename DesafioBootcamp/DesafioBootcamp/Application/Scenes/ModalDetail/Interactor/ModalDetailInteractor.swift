@@ -9,12 +9,6 @@
 import Foundation
 import Domain
 
-protocol ModalDetailBusinessLogic {
-    func toggleFavorite()
-    func changeIndex(row: Int)
-    func show()
-}
-
 final class ModalDetailInteractor {
     private let presenter: ModalDetailPresentationLogic
     private let useCase: FavoriteCardsUseCase
