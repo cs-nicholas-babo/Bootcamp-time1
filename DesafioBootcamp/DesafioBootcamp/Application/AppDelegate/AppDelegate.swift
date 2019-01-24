@@ -37,7 +37,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             modalVC.interactor = interactor
             modalVC.router = router
             
-            window.rootViewController = modalVC
+            let modalVC2 = ModalDetailViewController()
+            modalVC2.interactor = interactor
+            modalVC2.router = router
+
+            
+            let customTVC = CustomTabViewController()
+            customTVC.viewControllers = [modalVC, modalVC2]
+            
+            window.rootViewController = customTVC
             
             self.window = window
             self.window?.makeKeyAndVisible()
