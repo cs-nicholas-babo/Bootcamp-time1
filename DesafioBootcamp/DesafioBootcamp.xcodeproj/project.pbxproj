@@ -153,13 +153,14 @@
 		AC692B0B21F73BB7009734FE /* ScreenProportions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692B0A21F73BB7009734FE /* ScreenProportions.swift */; };
 		AC692B0D21F7401C009734FE /* Card+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692B0C21F7401C009734FE /* Card+size.swift */; };
 		AC692B0E21F7476E009734FE /* MockValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7891121F2408F00718E4E /* MockValues.swift */; };
-		ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */; };
 		ACA4FF9321F0BB4000E7BC96 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
 		ACB449FE21EF8D4800252958 /* MTGSetFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB449FD21EF8D4800252958 /* MTGSetFetcher.swift */; };
 		ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */; };
 		ACB44A0721EF939F00252958 /* CardSetListPresentationLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0621EF939F00252958 /* CardSetListPresentationLogic.swift */; };
 		ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0C21EF978200252958 /* CardSetListDisplayLogic.swift */; };
 		ACB44A1121EFA40600252958 /* CardSetListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A1021EFA40600252958 /* CardSetListInteractor.swift */; };
+		ACC11C8721FA189C008DD623 /* FavoritesCardSetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC11C8621FA189C008DD623 /* FavoritesCardSetListViewController.swift */; };
+		ACC11C8C21FA1C4E008DD623 /* FeedCardSetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC11C8B21FA1C4E008DD623 /* FeedCardSetListViewController.swift */; };
 		ACE788D121F23F1100718E4E /* CardSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE788D021F23F1100718E4E /* CardSet.swift */; };
 		ACE788D221F23F4100718E4E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
 		ACE788D321F23F4100718E4E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654221EF6FA800689169 /* RealmSwift.framework */; };
@@ -402,12 +403,13 @@
 		AC692B0521F618F5009734FE /* CardSetListCollectionViewCellSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionViewCellSpec.swift; sourceTree = "<group>"; };
 		AC692B0A21F73BB7009734FE /* ScreenProportions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenProportions.swift; sourceTree = "<group>"; };
 		AC692B0C21F7401C009734FE /* Card+size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Card+size.swift"; sourceTree = "<group>"; };
-		ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListFactory.swift; sourceTree = "<group>"; };
 		ACB449FD21EF8D4800252958 /* MTGSetFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSetFetcher.swift; sourceTree = "<group>"; };
 		ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListBusinessLogic.swift; sourceTree = "<group>"; };
 		ACB44A0621EF939F00252958 /* CardSetListPresentationLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresentationLogic.swift; sourceTree = "<group>"; };
 		ACB44A0C21EF978200252958 /* CardSetListDisplayLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListDisplayLogic.swift; sourceTree = "<group>"; };
 		ACB44A1021EFA40600252958 /* CardSetListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListInteractor.swift; sourceTree = "<group>"; };
+		ACC11C8621FA189C008DD623 /* FavoritesCardSetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCardSetListViewController.swift; sourceTree = "<group>"; };
+		ACC11C8B21FA1C4E008DD623 /* FeedCardSetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCardSetListViewController.swift; sourceTree = "<group>"; };
 		ACE788D021F23F1100718E4E /* CardSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSet.swift; sourceTree = "<group>"; };
 		ACE788F321F2408400718E4E /* DesafioBootcampTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesafioBootcampTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE788F721F2408400718E4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -557,6 +559,7 @@
 		2F5BE96B21F743170049A144 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ACC11C8921FA1954008DD623 /* Factories */,
 				2F5BE96F21F746320049A144 /* ModalDetailViewController.swift */,
 			);
 			path = ViewController;
@@ -1115,19 +1118,6 @@
 			path = Collection;
 			sourceTree = "<group>";
 		};
-		ACA4FF8B21F0B4BE00E7BC96 /* Factories */ = {
-			isa = PBXGroup;
-			children = (
-				ACA4FF8C21F0B4D100E7BC96 /* CardSetListFactory.swift */,
-				5D4629B521F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift */,
-				A13669CA21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift */,
-				A13669CE21F7805700CA705E /* FavoritesCardSetListFactory.swift */,
-				AC23260521F7AEC000AAB36D /* FeedCardSetListFactory.swift */,
-				A1A5108521F9DB8F00460BAF /* ModalViewControllerFactory.swift */,
-			);
-			path = Factories;
-			sourceTree = "<group>";
-		};
 		ACB449FF21EF919E00252958 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
@@ -1158,9 +1148,12 @@
 		ACB44A0221EF924F00252958 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				ACC11C8821FA190E008DD623 /* Factories */,
 				5DA18EFF21F0AAC400A862F4 /* States */,
 				ACB44A0C21EF978200252958 /* CardSetListDisplayLogic.swift */,
 				5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */,
+				ACC11C8621FA189C008DD623 /* FavoritesCardSetListViewController.swift */,
+				ACC11C8B21FA1C4E008DD623 /* FeedCardSetListViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1170,12 +1163,37 @@
 			children = (
 				ACE7893F21F24ACA00718E4E /* Views */,
 				A131BB9B21F6618D000869E1 /* Models */,
-				ACA4FF8B21F0B4BE00E7BC96 /* Factories */,
 				ACB44A0021EF91AC00252958 /* Intercator */,
 				ACB44A0121EF91B300252958 /* Presenter */,
 				ACB44A0221EF924F00252958 /* ViewController */,
 			);
 			path = CardSetList;
+			sourceTree = "<group>";
+		};
+		ACC11C8821FA190E008DD623 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				AC23260521F7AEC000AAB36D /* FeedCardSetListFactory.swift */,
+				A13669CE21F7805700CA705E /* FavoritesCardSetListFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		ACC11C8921FA1954008DD623 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				A1A5108521F9DB8F00460BAF /* ModalViewControllerFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		ACC11C8A21FA1984008DD623 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				5D4629B521F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift */,
+				A13669CA21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift */,
+			);
+			path = Factories;
 			sourceTree = "<group>";
 		};
 		ACE788F421F2408400718E4E /* DesafioBootcampTests */ = {
@@ -1317,6 +1335,7 @@
 		ACE7893F21F24ACA00718E4E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ACC11C8A21FA1984008DD623 /* Factories */,
 				ACE7894321F2665600718E4E /* Table */,
 				ACE7894221F2664D00718E4E /* Collection */,
 			);
@@ -1688,13 +1707,13 @@
 				A13669D121F7808300CA705E /* LocalDatabaseGateway.swift in Sources */,
 				A13669BE21F74EA800CA705E /* CardSetListCollectionWrapperView.swift in Sources */,
 				AC23260621F7AEC000AAB36D /* FeedCardSetListFactory.swift in Sources */,
+				ACC11C8C21FA1C4E008DD623 /* FeedCardSetListViewController.swift in Sources */,
 				AC23261E21F8DD5F00AAB36D /* APIGatewayFactory.swift in Sources */,
 				AC23260A21F7B23800AAB36D /* CardSetListCollectionViewDelegate.swift in Sources */,
 				AC23260821F7B1CA00AAB36D /* CardSetListTableViewDelegate.swift in Sources */,
 				ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */,
 				AC692B0B21F73BB7009734FE /* ScreenProportions.swift in Sources */,
 				A13669CD21F76AAA00CA705E /* CardSetListTableWrapperView.swift in Sources */,
-				ACA4FF8D21F0B4D100E7BC96 /* CardSetListFactory.swift in Sources */,
 				AC692B0D21F7401C009734FE /* Card+size.swift in Sources */,
 				ACB44A0D21EF978200252958 /* CardSetListDisplayLogic.swift in Sources */,
 				5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */,
@@ -1716,6 +1735,7 @@
 				AC23260321F79FF000AAB36D /* APIGateway.swift in Sources */,
 				A1145E1421ECF18900A1A665 /* DesafioBootcamp.xcdatamodeld in Sources */,
 				A13669C621F75C4600CA705E /* CardSetListTableViewDataSource.swift in Sources */,
+				ACC11C8721FA189C008DD623 /* FavoritesCardSetListViewController.swift in Sources */,
 				A1E29FA921F8F98900BE1D23 /* CardSetListNoResultsState.swift in Sources */,
 				AC23262021F8DD7B00AAB36D /* LocalDatabaseGatewayFactory.swift in Sources */,
 				5D4629B621F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift in Sources */,
