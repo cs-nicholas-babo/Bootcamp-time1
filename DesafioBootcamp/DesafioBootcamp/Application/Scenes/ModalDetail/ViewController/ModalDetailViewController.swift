@@ -102,7 +102,6 @@ extension ModalDetailViewController: ViewCode {
     func setupViewHierarchy() {
         self.view.addSubview(backgroundImage)
         backgroundImage.addSubview(dismissButton)
-//        backgroundImage.addSubview(cardView)
         backgroundImage.addSubview(cardPicker)
         backgroundImage.addSubview(favoriteButton)
     }
@@ -118,12 +117,6 @@ extension ModalDetailViewController: ViewCode {
             make.height.equalTo(dismissButton.snp.width)
             dismissButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
         }
-        
-//        cardView.snp.makeConstraints { (make) in
-//            make.center.equalToSuperview()
-//            make.left.right.equalToSuperview().inset(ModalDetail.LayoutGuide.sideProportion)
-//            make.height.equalTo(cardView.snp.width).multipliedBy(MagicCard.proportionYX)
-//        }
         
         cardPicker.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview()
@@ -148,7 +141,6 @@ extension ModalDetailViewController: ModalDetailDisplayLogic {
     func display(viewModel: ModalDetail.ViewModel.Subset) {
         cardPicker.cards = viewModel.cards
         cardPicker.reloadAllComponents()
-//        ImageDownloader.setMagicCard(with: viewModel.typedCards.cards[viewModel.selectedIndex].literalImageURL(), imageView: &cardView)
     }
     
     func displayButton(status: Bool) {
