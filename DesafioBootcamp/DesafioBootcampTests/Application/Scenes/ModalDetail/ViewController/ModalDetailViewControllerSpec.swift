@@ -31,6 +31,15 @@ class ModalDetailViewControllerSpec: QuickSpec {
                     sut.router = router
                 }
                 
+                context("when view is loaded") {
+                    
+                    it("should have clear background") {
+                        sut.loadView()
+                        expect(sut.view.backgroundColor).to(equal(UIColor.clear))
+                    }
+                    
+                }
+                
                 context("when tapping favorite button") {
                     
                     it("should favorite card") {

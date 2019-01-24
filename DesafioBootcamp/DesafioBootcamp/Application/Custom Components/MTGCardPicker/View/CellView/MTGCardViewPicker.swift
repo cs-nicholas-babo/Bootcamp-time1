@@ -18,7 +18,6 @@ final class MTGCardViewPicker: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
         setupView()
     }
 }
