@@ -17,6 +17,7 @@ enum ModalDetail {
     }
     
     struct Response {
+        
     }
     
     struct LayoutGuide {
@@ -27,8 +28,16 @@ enum ModalDetail {
     }
     
     struct ViewModel {
-        let card: Card
-        let status: Bool
+        struct Single {
+            let card: Card
+            let status: Bool
+        }
+        
+        struct Subset {
+            let cards: [Card]
+            let selectedIndex: Int
+        }
     }
+    
 }
 

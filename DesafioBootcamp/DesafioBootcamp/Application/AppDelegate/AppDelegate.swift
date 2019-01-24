@@ -21,13 +21,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
         
-        let card = Card(id: "1", name: "o0i", setCode: "10E", types: Set<CardType>(), imageURL: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card")
+        let card1 = Card(id: "1", name: "o0i", setCode: "10E", types: Set<CardType>(), imageURL: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card")
+        let card2 = Card(id: "2", name: "o0i", setCode: "10E", types: Set<CardType>(), imageURL: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card")
+        let card3 = Card(id: "3", name: "o0i", setCode: "10E", types: Set<CardType>(), imageURL: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card")
         
         MTG_ProviderDefault().applicationStartupUseCase().startup {
             let modalVC = ModalDetailViewController()
             let presenter = ModalDetailPresenter(viewController: modalVC)
             let router = ModalDetailRouter(viewController: modalVC)
-            let interactor = ModalDetailInteractor(presenter: presenter, useCase: FavoriteCardsServiceProvider().useCase(), card: card, status: false)
+            
+            let viewModel = ModalDetail.ViewModel.Subset(cards: [card1, card2, card3], selectedIndex: 0)
+            let interactor = ModalDetailInteractor(presenter: presenter, useCase: FavoriteCardsServiceProvider().useCase(), subset: viewModel)
             modalVC.interactor = interactor
             modalVC.router = router
             

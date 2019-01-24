@@ -10,6 +10,11 @@ import Foundation
 import UIKit
 import SnapKit
 
+protocol ModalDetailDisplayLogic: class {
+    func display(viewModel: ModalDetail.ViewModel.Subset)
+    func displayButton(status: Bool)
+}
+
 public class ModalDetailViewController: UIViewController {
     var router: ModalDetailRoutingLogic?
     var interactor: ModalDetailBusinessLogic?
@@ -36,11 +41,10 @@ public class ModalDetailViewController: UIViewController {
         return button
     }()
     
-    lazy var cardView: UIImageView = {
-        let imageView = UIImageView(frame: .zero)
-        imageView.backgroundColor = .clear
-        imageView.image = UIImage(named: "Card_Background")
-        return imageView
+    lazy var cardPicker: MTGCardPicker = {
+        let cardPicker = MTGCardPicker(frame: .zero, observer: self)
+        
+        return cardPicker
     }()
     
     lazy var favoriteButton: TogglebleButton = {
@@ -90,7 +94,7 @@ extension ModalDetailViewController: ViewCode {
     func setupViewHierarchy() {
         self.view.addSubview(backgroundImage)
         backgroundImage.addSubview(dismissButton)
-        backgroundImage.addSubview(cardView)
+        backgroundImage.addSubview(cardPicker)
         backgroundImage.addSubview(favoriteButton)
     }
     
@@ -106,10 +110,10 @@ extension ModalDetailViewController: ViewCode {
             dismissButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
         }
         
-        cardView.snp.makeConstraints { (make) in
+        cardPicker.snp.makeConstraints { (make) in
+            make.left.right.equalToSuperview()
             make.center.equalToSuperview()
-            make.left.right.equalToSuperview().inset(ModalDetail.LayoutGuide.sideProportion)
-            make.height.equalTo(cardView.snp.width).multipliedBy(MagicCard.proportionYX)
+            make.height.equalToSuperview()
         }
         
         favoriteButton.snp.makeConstraints { (make) in
@@ -119,19 +123,27 @@ extension ModalDetailViewController: ViewCode {
     }
     
     func setupAdditionalConfiguration() {
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .clear
+        
     }
 
 }
 
 extension ModalDetailViewController: ModalDetailDisplayLogic {
+    func display(viewModel: ModalDetail.ViewModel.Subset) {
+        cardPicker.cards = viewModel.cards
+        cardPicker.reloadAllComponents()
+    }
+    
     func displayButton(status: Bool) {
         favoriteButton.setRealState(realState: status)
     }
     
-    func display(viewModel: ModalDetail.ViewModel) {
-        ImageDownloader.setMagicCard(with: viewModel.card.literalImageURL(), imageView: &cardView)
-        favoriteButton.setRealState(realState: viewModel.status)
+}
+
+extension ModalDetailViewController: MTGCardPickerObserver {
+    func didChangeTo(row: Int) {
+        interactor?.changeIndex(row: row)
     }
     
 }
