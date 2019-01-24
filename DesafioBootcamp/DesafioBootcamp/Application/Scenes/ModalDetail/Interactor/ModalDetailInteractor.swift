@@ -11,6 +11,7 @@ import Domain
 
 protocol ModalDetailBusinessLogic {
     func toggleFavorite()
+    func changeIndex(row: Int)
     func show()
 }
 
@@ -18,40 +19,52 @@ final class ModalDetailInteractor {
     private let presenter: ModalDetailPresentationLogic
     private let useCase: FavoriteCardsUseCase
     
-    private var card: Card
-    private var status: Bool
-    
-    init(presenter: ModalDetailPresentationLogic, useCase: FavoriteCardsUseCase) {
+    private var cards: [Card]
+    private var selectedIndex: Int
+    private var favoriteCardsUID: Set<String>
+        
+    init(presenter: ModalDetailPresentationLogic, useCase: FavoriteCardsUseCase, subset: ModalDetail.ViewModel.Subset) {
         self.presenter = presenter
         self.useCase = useCase
-        self.card = Card(id: "", name: "", setCode: "", types: Set<CardType>())
-        self.status = false
-    }
-    
-    convenience init(presenter: ModalDetailPresentationLogic, useCase: FavoriteCardsUseCase, card: Card, status: Bool) {
-        self.init(presenter: presenter, useCase: useCase)
-        self.card = card
-        self.status = status
-    }
-}
-
-extension ModalDetailInteractor: ModalDetailBusinessLogic {
-    func toggleFavorite() {
-        useCase.fetchFavoriteCards { (result) in
+        self.cards = subset.cards
+        self.selectedIndex = subset.selectedIndex
+        self.favoriteCardsUID = []
+        
+        self.useCase.fetchFavoriteCards { (result) in
             switch result {
-            case .success(let cardsets):
-                let allCards = cardsets.flatMap({ $0.cards })
-                self.status = !allCards.contains(self.card)
-                self.useCase.favorite(card: self.card, status: self.status)
-                self.presenter.toggleButton(status: self.status)
+            case .success(let favorites):
+                self.favoriteCardsUID = Set(favorites.flatMap({ $0.cards }).compactMap({ $0.id }))
+                self.presenter.refreshButton(status: self.isFavorite())
             default:
                 break
             }
         }
     }
     
+    func isFavorite() -> Bool {
+        return favoriteCardsUID.contains(cards[selectedIndex].id)
+    }
+}
+
+extension ModalDetailInteractor: ModalDetailBusinessLogic {
+    func changeIndex(row: Int) {
+        selectedIndex = row
+        presenter.refreshButton(status: isFavorite())
+    }
+    
+    func toggleFavorite() {
+        let toggle = !isFavorite()
+        useCase.favorite(card: cards[selectedIndex], status: toggle)
+        if toggle {
+            favoriteCardsUID.insert(cards[selectedIndex].id)
+        } else {
+            favoriteCardsUID.remove(cards[selectedIndex].id)
+        }
+        presenter.refreshButton(status: toggle)
+    }
+    
     func show() {
-        presenter.show(card: card, status: status)
+        presenter.show(cards: cards, selectedIndex: selectedIndex)
     }
     
 }

@@ -27,7 +27,7 @@ class ModalDetailInteractorSpec: QuickSpec {
                 beforeEach {
                     presenter = ModalDetailPresenterMock()
                     provider = TestFavoriteCardsServiceProvider()
-                    sut = ModalDetailInteractor(presenter: presenter, useCase: provider.useCase())
+                    sut = ModalDetailInteractor(presenter: presenter, useCase: provider.useCase(), subset: MockValues.subsetMock)
                 }
                 
                 context("show card") {
@@ -43,8 +43,25 @@ class ModalDetailInteractorSpec: QuickSpec {
                     
                     it("should toggle favorite card") {
                         sut.toggleFavorite()
-                        expect(presenter.toToggleButton).to(beTrue())
+                        expect(presenter.toRefreshButton).to(beTrue())
                         expect(presenter.status).to(beTrue())
+                    }
+                    
+                    it("should untoggle favorite card") {
+                        sut.toggleFavorite()
+                        sut.toggleFavorite()
+                        expect(presenter.toRefreshButton).to(beTrue())
+                        expect(presenter.status).to(beFalse())
+                    }
+                    
+                }
+                
+                context("change current card index") {
+                    
+                    it("should have changed index and refresh button") {
+                        sut.changeIndex(row: MockValues.selectedIndexMock)
+                        expect(presenter.toRefreshButton).to(beTrue())
+                        expect(presenter.selectedIndex).to(equal(MockValues.selectedIndexMock))
                     }
                     
                 }

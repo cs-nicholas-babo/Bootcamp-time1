@@ -13,6 +13,8 @@ import Foundation
 class ModalDetailInteractorMock: ModalDetailBusinessLogic {
     var toToggleFavorite: Bool = false
     var toShow: Bool = false
+    var toChangeIndex: Bool = false
+    var newIndex: Int = 0
     
     func toggleFavorite() {
         toToggleFavorite = true
@@ -22,6 +24,9 @@ class ModalDetailInteractorMock: ModalDetailBusinessLogic {
         toShow = true
     }
     
-    
+    func changeIndex(row: Int) {
+        toChangeIndex = true
+        newIndex = row
+    }
     
 }

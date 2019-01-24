@@ -20,16 +20,10 @@ class TogglebleButton: UIButton {
         self.setupTrue = setupTrue
         super.init(frame: frame)
         render()
-//        addTarget(self, action: #selector(changeState), for: .touchDown)
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-    
-    @objc func changeState(){
-        realState.toggle()
-        render()
     }
     
     func render(){

@@ -27,4 +27,10 @@ struct MockValues {
     static let viewModelMock = CardSetList.ViewModel(cardSet: cardSetMock)
     
     static let favoriteStatusMock = true
+    
+    static let searchBarTextMock = "Search"
+    
+    static let selectedIndexMock = 0
+    
+    static let subsetMock = ModalDetail.ViewModel.Subset(cards: [cardMock], selectedIndex: selectedIndexMock)
 }

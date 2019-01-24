@@ -14,17 +14,17 @@ import Domain
 class ModalDetailPresenterMock: ModalDetailPresentationLogic {
     var status: Bool = false
     var toShowCard: Bool = false
-    var toToggleButton: Bool = false
+    var toRefreshButton: Bool = false
+    var selectedIndex: Int = 0
     
-    func show(card: Card, status: Bool) {
+    func show(cards: [Card], selectedIndex: Int) {
         self.toShowCard = true
-        self.status = status
+        self.selectedIndex = selectedIndex
     }
     
-    func toggleButton(status: Bool) {
-        self.toToggleButton = true
+    func refreshButton(status: Bool) {
+        self.toRefreshButton = true
         self.status = status
     }
-    
     
 }

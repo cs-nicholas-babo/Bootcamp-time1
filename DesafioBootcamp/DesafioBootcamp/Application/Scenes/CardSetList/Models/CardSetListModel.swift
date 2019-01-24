@@ -5,7 +5,6 @@
 //  Created by miguel.horta.nery on 16/01/19.
 //  Copyright © 2019 concrete.solutions. All rights reserved.
 //
-
 import Foundation
 import Domain
 
@@ -27,7 +26,7 @@ enum CardSetList {
          Initialize instance with CardSet passed.
          
          - parameters:
-            - cardSet: Set with cards to be displayed.
+         - cardSet: Set with cards to be displayed.
          */
         init(cardSet: CardSet) {
             self.setName = cardSet.set.name
@@ -46,6 +45,16 @@ enum CardSetList {
         mutating func update(cards: [TypedCards]){
             self.typedCards = cards
         }
+    }
+    
+    static let collectionViewCellIdentifier = "CollectionViewCellIdentifier"
+    static let tableViewCellIdentifier = "TableViewCellIdentifier"
+}
+
+
+extension CardSetList.ViewModel: Equatable {
+    static func == (lhs: CardSetList.ViewModel, rhs: CardSetList.ViewModel) -> Bool {
+        return lhs.setName == rhs.setName
     }
     
     static let collectionViewCellIdentifier = "CollectionViewCellIdentifier"

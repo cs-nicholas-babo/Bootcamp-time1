@@ -12,12 +12,19 @@ import Foundation
 
 class ModalDetailViewControllerMock: ModalDetailDisplayLogic {
     var status: Bool = false
-    var toDisplayViewModel: Bool = false
+    var selectedIndex: Int = 0
+    var toDisplayViewModelSingle: Bool = false
+    var toDisplayViewModelSubset: Bool = false
     var toDisplayButton: Bool = false
     
-    func display(viewModel: ModalDetail.ViewModel) {
-        self.toDisplayViewModel = true
-        self.status = viewModel.status
+    func display(viewModel: ModalDetail.ViewModel.Single) {
+        toDisplayViewModelSingle = true
+        status = viewModel.status
+    }
+    
+    func display(viewModel: ModalDetail.ViewModel.Subset) {
+        toDisplayViewModelSubset = true
+        selectedIndex = viewModel.selectedIndex
     }
     
     func displayButton(status: Bool) {

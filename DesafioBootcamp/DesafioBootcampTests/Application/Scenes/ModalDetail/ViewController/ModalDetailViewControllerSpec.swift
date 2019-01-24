@@ -58,6 +58,16 @@ class ModalDetailViewControllerSpec: QuickSpec {
                     
                 }
                 
+                context("when changing current displayed card") {
+                    
+                    it("should change index") {
+                        sut.didChangeTo(row: MockValues.selectedIndexMock)
+                        expect(interactor.toChangeIndex).to(beTrue())
+                        expect(interactor.newIndex).to(equal(MockValues.selectedIndexMock))
+                    }
+                    
+                }
+                
             }
             
         }

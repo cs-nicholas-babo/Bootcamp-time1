@@ -26,13 +26,13 @@ class CardSetListViewModelSpec: QuickSpec {
                 }
                 
                 it("should have non-empty card set") {
-                    
+                    expect(sut.typedCards.isEmpty).to(beFalse())
                 }
                 
                 it("should match key type and Card Type") {
                     let types = MockValues.cardSetMock.cards.flatMap { $0.types }
                     let typesSet = Set<CardType>(types)
-                    
+                    expect(sut.typedCards.count).to(equal(typesSet.count))
                 }
                 
             }

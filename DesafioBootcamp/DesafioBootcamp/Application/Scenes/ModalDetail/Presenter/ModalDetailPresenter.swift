@@ -10,9 +10,8 @@ import Foundation
 import Domain
 
 protocol ModalDetailPresentationLogic {
-    func show(card: Card, status: Bool)
-//  func show(cards: [Card], indexPath: IndexPath, favoritePathes: [indexPath])
-    func toggleButton(status: Bool)
+    func show(cards: [Card], selectedIndex: Int)
+    func refreshButton(status: Bool)
 }
 
 final class ModalDetailPresenter {
@@ -24,11 +23,13 @@ final class ModalDetailPresenter {
 }
 
 extension ModalDetailPresenter : ModalDetailPresentationLogic {
-    func show(card: Card, status: Bool) {
-        viewController.display(viewModel: ModalDetail.ViewModel(card: card, status: status))
+    func show(cards: [Card], selectedIndex: Int) {
+        let viewModel = ModalDetail.ViewModel.Subset(cards: cards, selectedIndex: selectedIndex)
+        
+        self.viewController.display(viewModel: viewModel)
     }
     
-    func toggleButton(status: Bool) {
+    func refreshButton(status: Bool) {
         viewController.displayButton(status: status)
     }
     
