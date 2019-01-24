@@ -19,6 +19,7 @@ class CardSetListTableWrapperView: UIView{
     
     let datasource = CardSetListTableViewDataSource()
     let delegate = CardSetListTableViewDelegate()
+    var navigationDelegate: NavigationDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,6 +30,11 @@ class CardSetListTableWrapperView: UIView{
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setupNavigationDelegate(delegate: NavigationDelegate){
+        self.navigationDelegate = delegate
+        datasource.navigationDelegate = delegate
     }
 }
 

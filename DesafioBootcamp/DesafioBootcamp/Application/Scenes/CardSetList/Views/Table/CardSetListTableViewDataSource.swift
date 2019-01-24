@@ -13,6 +13,7 @@ import Domain
 class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
     
     var sets = [CardSetList.ViewModel]()
+    var navigationDelegate: NavigationDelegate?
     
     override init() {
         super.init()
@@ -34,6 +35,7 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: CardSetList.tableViewCellIdentifier) as! CardSetListTableViewCell
         cell.setupView()
         cell.collectionWrapperView.datasource.cards = sets[indexPath.section].typedCards
+        cell.collectionWrapperView.setupNavigationDelegate(delegate: self.navigationDelegate)
         return cell
     }
     

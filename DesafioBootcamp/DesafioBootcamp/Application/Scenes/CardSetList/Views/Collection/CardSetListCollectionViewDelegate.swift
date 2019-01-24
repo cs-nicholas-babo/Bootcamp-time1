@@ -12,6 +12,7 @@ import UIKit
 final class CardSetListCollectionViewDelegate: NSObject, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
     let datasource: CardSetListCollectionViewDataSource
+    var navigationDelegate: NavigationDelegate?
     
     init(datasource: CardSetListCollectionViewDataSource){
         self.datasource = datasource
@@ -28,8 +29,8 @@ final class CardSetListCollectionViewDelegate: NSObject, UICollectionViewDelegat
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(datasource.cards[indexPath.section].cards[indexPath.item].name)
-        //Segue to Detail View Controller
+        let card = datasource.cards[indexPath.section].cards[indexPath.item]
+        navigationDelegate?.push(controller: ModalViewControllerFactory.make(card: card))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {

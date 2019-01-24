@@ -23,6 +23,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
 //        mockupFavorites()
         let tabBarController = UITabBarController()
+        
+        
         let favoriteCardsVC = FavoritesCardSetListFactory.make()
         favoriteCardsVC.title = "Favorites"
         let apiCardsVC = FeedCardSetListFactory.make()

@@ -24,7 +24,9 @@ final class CardSetListViewController: UIViewController {
     var hasLoaded = false
     
     lazy var wrapperView: CardSetListTableWrapperView = {
-       return CardSetListTableWrapperView(frame: self.view.frame)
+        let wrapper = CardSetListTableWrapperView(frame: self.view.frame)
+        wrapper.setupNavigationDelegate(delegate: self)
+       return wrapper
     }()
     
     lazy var errorImageView: UIImageView = {
@@ -114,5 +116,13 @@ extension CardSetListViewController: ViewCode {
         errorImageView.isHidden = true
         activityIndicator.isHidden = true
         wrapperView.isHidden = true
+        wrapperView.navigationDelegate = self
+    }
+}
+
+extension CardSetListViewController: NavigationDelegate{
+    func push(controller: UIViewController) {
+//        self.navigationController?.pushViewController(controller, animated: true)
+        self.present(controller, animated: true, completion: nil)
     }
 }

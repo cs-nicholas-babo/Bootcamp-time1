@@ -119,6 +119,7 @@
 		A19CFD7621EF8E8A0060A691 /* RealmCardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */; };
 		A19CFD7821EF9A960060A691 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19CFD7721EF9A960060A691 /* CacheManager.swift */; };
 		A19D072521F7A83C00E99776 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19D072421F7A83C00E99776 /* Image.swift */; };
+		A1A5108621F9DB8F00460BAF /* ModalViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A5108521F9DB8F00460BAF /* ModalViewControllerFactory.swift */; };
 		A1C31BAA21F89AFE004D765C /* CardTypeCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C31BA921F89AFE004D765C /* CardTypeCollectionReusableView.swift */; };
 		A1DF493421EF543400E1DCF6 /* ViewCode Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */; };
 		A1DF494021EF64FA00E1DCF6 /* PlatformAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = A1DF493E21EF64FA00E1DCF6 /* PlatformAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -128,6 +129,7 @@
 		A1DF495521EF651900E1DCF6 /* PlatformLocalDatabase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1DF494D21EF651900E1DCF6 /* PlatformLocalDatabase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1E29FA521F8C2D500BE1D23 /* Nimble_Snapshots.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC692AEC21F6065A009734FE /* Nimble_Snapshots.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1E29FA921F8F98900BE1D23 /* CardSetListNoResultsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E29FA821F8F98900BE1D23 /* CardSetListNoResultsState.swift */; };
+		A1E29FAB21F8FFA800BE1D23 /* NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E29FAA21F8FFA800BE1D23 /* NavigationDelegate.swift */; };
 		A1F9E5B321F0DB9100A84182 /* MTG_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F9E5B221F0DB9100A84182 /* MTG_Model.swift */; };
 		AC23260121F798C200AAB36D /* CardSetListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23260021F798C200AAB36D /* CardSetListViewControllerSpec.swift */; };
 		AC23260321F79FF000AAB36D /* APIGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC23260221F79FF000AAB36D /* APIGateway.swift */; };
@@ -365,6 +367,7 @@
 		A19CFD7521EF8E8A0060A691 /* RealmCardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCardType.swift; sourceTree = "<group>"; };
 		A19CFD7721EF9A960060A691 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
 		A19D072421F7A83C00E99776 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		A1A5108521F9DB8F00460BAF /* ModalViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewControllerFactory.swift; sourceTree = "<group>"; };
 		A1C31BA921F89AFE004D765C /* CardTypeCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTypeCollectionReusableView.swift; sourceTree = "<group>"; };
 		A1DF493321EF543400E1DCF6 /* ViewCode Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewCode Protocol.swift"; sourceTree = "<group>"; };
 		A1DF493C21EF64FA00E1DCF6 /* PlatformAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PlatformAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -375,6 +378,7 @@
 		A1DF495021EF651900E1DCF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1E29FA621F8C34B00BE1D23 /* Nimble_Snapshots.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble_Snapshots.framework; path = Frameworks/Nimble_Snapshots.framework; sourceTree = "<group>"; };
 		A1E29FA821F8F98900BE1D23 /* CardSetListNoResultsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListNoResultsState.swift; sourceTree = "<group>"; };
+		A1E29FAA21F8FFA800BE1D23 /* NavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDelegate.swift; sourceTree = "<group>"; };
 		A1F9E5B221F0DB9100A84182 /* MTG_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTG_Model.swift; sourceTree = "<group>"; };
 		AC23260021F798C200AAB36D /* CardSetListViewControllerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListViewControllerSpec.swift; sourceTree = "<group>"; };
 		AC23260221F79FF000AAB36D /* APIGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIGateway.swift; sourceTree = "<group>"; };
@@ -963,6 +967,7 @@
 				AC692B0C21F7401C009734FE /* Card+size.swift */,
 				A19D072421F7A83C00E99776 /* Image.swift */,
 				2F5BE97521F74CDC0049A144 /* MagicCard.swift */,
+				A1E29FAA21F8FFA800BE1D23 /* NavigationDelegate.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1118,6 +1123,7 @@
 				A13669CA21F76A5B00CA705E /* CardSetListTableWrapperViewFactory.swift */,
 				A13669CE21F7805700CA705E /* FavoritesCardSetListFactory.swift */,
 				AC23260521F7AEC000AAB36D /* FeedCardSetListFactory.swift */,
+				A1A5108521F9DB8F00460BAF /* ModalViewControllerFactory.swift */,
 			);
 			path = Factories;
 			sourceTree = "<group>";
@@ -1700,9 +1706,11 @@
 				5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */,
 				A13669CF21F7805700CA705E /* FavoritesCardSetListFactory.swift in Sources */,
 				ACE7894121F2638000718E4E /* CardSetListCollectionViewCell.swift in Sources */,
+				A1E29FAB21F8FFA800BE1D23 /* NavigationDelegate.swift in Sources */,
 				2F5BE98021F773790049A144 /* ImageDownloader.swift in Sources */,
 				5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */,
 				2F5BE96E21F743920049A144 /* ModalDetail.swift in Sources */,
+				A1A5108621F9DB8F00460BAF /* ModalViewControllerFactory.swift in Sources */,
 				5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */,
 				A131BB9D21F6618E000869E1 /* CardSetListModel.swift in Sources */,
 				AC23260321F79FF000AAB36D /* APIGateway.swift in Sources */,

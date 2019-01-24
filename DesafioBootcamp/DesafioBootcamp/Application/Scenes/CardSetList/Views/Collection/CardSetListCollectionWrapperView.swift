@@ -31,6 +31,10 @@ class CardSetListCollectionWrapperView: UIView {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    func setupNavigationDelegate(delegate: NavigationDelegate?){
+        self.delegate.navigationDelegate = delegate
+    }
 }
 
 extension CardSetListCollectionWrapperView: ViewCode {
