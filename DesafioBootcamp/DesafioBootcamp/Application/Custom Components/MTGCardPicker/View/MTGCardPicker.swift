@@ -60,13 +60,17 @@ extension MTGCardPicker: UIPickerViewDataSource {
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-        return 100
+        return 180.proportionalToWidth * MagicCard.proportionYX
     }
+
+//    func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
+//        return 400.proportionalToHeight * MagicCard.proportionXY
+//    }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
         let view = MTGCardViewPicker()
         view.backgroundColor = .white
-        
+        view.transform = CGAffineTransform(rotationAngle: -rotationAngle)
         ImageDownloader.setMagicCard(with: cards[row].literalImageURL(), imageView: &view.imageView)
         
         return view
@@ -77,7 +81,8 @@ extension MTGCardPicker: UIPickerViewDataSource {
 extension MTGCardPicker: ViewCode {
     func setupViewHierarchy() { }
     
-    func setupConstraints() { }
+    func setupConstraints() {
+    }
     
     func setupAdditionalConfiguration() {
         

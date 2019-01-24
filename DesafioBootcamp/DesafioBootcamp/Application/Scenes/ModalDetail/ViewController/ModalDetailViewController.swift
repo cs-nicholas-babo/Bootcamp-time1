@@ -55,11 +55,6 @@ public class ModalDetailViewController: UIViewController {
         return cardPicker
     }()
     
-    lazy var searchBar: UISearchBar = {
-        let searchBar = MTGSearchBar(frame: .zero)
-        return searchBar
-    }()
-    
     lazy var favoriteButton: TogglebleButton = {
         let stateFalse : (UIButton) -> () = { btn in
             btn.backgroundColor = .clear
@@ -110,18 +105,11 @@ extension ModalDetailViewController: ViewCode {
 //        backgroundImage.addSubview(cardView)
         backgroundImage.addSubview(cardPicker)
         backgroundImage.addSubview(favoriteButton)
-        backgroundImage.addSubview(searchBar)
     }
     
     func setupConstraints() {
         backgroundImage.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
-        }
-        
-        searchBar.snp.makeConstraints { (make) in
-            make.left.right.equalToSuperview()
-            make.height.equalTo(45)
-            searchBar.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 0).isActive = true
         }
         
         dismissButton.snp.makeConstraints { (make) in

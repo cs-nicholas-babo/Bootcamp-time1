@@ -30,7 +30,9 @@ extension MTGCardViewPicker: ViewCode {
     
     func setupConstraints() {
         imageView.snp.makeConstraints { (make) in
-            make.edges.equalToSuperview().inset(20)
+            make.center.equalToSuperview()
+            make.left.right.equalToSuperview().inset(ModalDetail.LayoutGuide.sideProportion)
+            make.width.equalTo(self.snp.height).multipliedBy(MagicCard.proportionXY)
         }
     }
     
