@@ -11,14 +11,14 @@ import Domain
 import PlatformLocalDatabase
 import PlatformAPI
 
+
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        
         let window = UIWindow(frame: UIScreen.main.bounds)
         
         let card1 = Card(id: "1", name: "o0i", setCode: "10E", types: Set<CardType>(), imageURL: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card")
@@ -26,17 +26,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let card3 = Card(id: "3", name: "o0i", setCode: "10E", types: Set<CardType>(), imageURL: "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card")
         
         MTG_ProviderDefault().applicationStartupUseCase().startup {
+            let tabBarController = MTGTabBarController()
             let modalVC = ModalDetailViewController()
             let presenter = ModalDetailPresenter(viewController: modalVC)
             let router = ModalDetailRouter(viewController: modalVC)
-            
-            let viewModel = ModalDetail.ViewModel.Subset(cards: [card1, card2, card3], selectedIndex: 0)
-            let interactor = ModalDetailInteractor(presenter: presenter, useCase: FavoriteCardsServiceProvider().useCase(), subset: viewModel)
+            let viewModel = ModalDetail.ViewModel.Subset(cards: [card1, card2, card3], selectedIndex: 1)
+            let interactor = ModalDetailInteractor(presenter: presenter,
+                                                   useCase: FavoriteCardsServiceProvider().useCase(),
+                                                   subset: viewModel)
             modalVC.interactor = interactor
             modalVC.router = router
             
-            window.rootViewController = modalVC
-            
+            tabBarController.viewControllers = [modalVC]
+            window.rootViewController = tabBarController
             self.window = window
             self.window?.makeKeyAndVisible()
             

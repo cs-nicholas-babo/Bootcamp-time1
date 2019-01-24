@@ -51,13 +51,13 @@ public class ModalDetailViewController: UIViewController {
         let stateFalse : (UIButton) -> () = { btn in
             btn.backgroundColor = .clear
             btn.setTitleColor(.white, for: .normal)
-            btn.setTitle("Favoritar", for: .normal)
+            btn.setTitle("Favorite", for: .normal)
         }
         
         let stateTrue : (UIButton) -> () = { btn in
             btn.backgroundColor = .white
             btn.setTitleColor(.black, for: .normal)
-            btn.setTitle("Defavoritar", for: .normal)
+            btn.setTitle("Unfavorite", for: .normal)
         }
         
         let button = TogglebleButton(frame: .zero, realState: false, setupFalse: stateFalse, setupTrue: stateTrue)
@@ -79,7 +79,6 @@ public class ModalDetailViewController: UIViewController {
     
     public override func loadView() {
         super.loadView()
-        
         setupView()
     }
     
@@ -124,7 +123,6 @@ extension ModalDetailViewController: ViewCode {
     
     func setupAdditionalConfiguration() {
         self.view.backgroundColor = .clear
-        
     }
 
 }
@@ -133,6 +131,7 @@ extension ModalDetailViewController: ModalDetailDisplayLogic {
     func display(viewModel: ModalDetail.ViewModel.Subset) {
         cardPicker.cards = viewModel.cards
         cardPicker.reloadAllComponents()
+        cardPicker.selectRow(viewModel.selectedIndex, inComponent: 0, animated: false)
     }
     
     func displayButton(status: Bool) {

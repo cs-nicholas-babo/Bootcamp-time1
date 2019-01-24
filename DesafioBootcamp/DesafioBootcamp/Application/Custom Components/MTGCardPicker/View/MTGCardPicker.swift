@@ -77,14 +77,10 @@ extension MTGCardPicker: UIPickerViewDataSource {
 extension MTGCardPicker: ViewCode {
     func setupViewHierarchy() { }
     
-    func setupConstraints() {
-    }
+    func setupConstraints() {}
     
     func setupAdditionalConfiguration() {
-        
         transform = CGAffineTransform(rotationAngle: rotationAngle)
-        
-
     }
     
 }
