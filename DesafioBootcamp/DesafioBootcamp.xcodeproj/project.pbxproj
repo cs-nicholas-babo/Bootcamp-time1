@@ -59,7 +59,7 @@
 		2FF83CF221F8873F008B4604 /* ModalDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF83CF121F8873F008B4604 /* ModalDetailRouter.swift */; };
 		2FF9F3CB21F89F28002FE583 /* MTGSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F3CA21F89F28002FE583 /* MTGSearchBar.swift */; };
 		2FF9F3CF21F8BC77002FE583 /* MTGSearchBarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F3CE21F8BC77002FE583 /* MTGSearchBarInteractor.swift */; };
-		2FF9F3D421F8C355002FE583 /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F3D321F8C355002FE583 /* EntityManager.swift */; };
+		2FF9F3D421F8C355002FE583 /* CardManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F3D321F8C355002FE583 /* CardManipulator.swift */; };
 		2FF9F3D721F8C619002FE583 /* MTGSearchBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F3D621F8C619002FE583 /* MTGSearchBarPresenter.swift */; };
 		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
 		5D230C7221F8D56F0062B0AF /* MTGSearchBarSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7121F8D56F0062B0AF /* MTGSearchBarSpec.swift */; };
@@ -274,7 +274,7 @@
 		2FF83CF121F8873F008B4604 /* ModalDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailRouter.swift; sourceTree = "<group>"; };
 		2FF9F3CA21F89F28002FE583 /* MTGSearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBar.swift; sourceTree = "<group>"; };
 		2FF9F3CE21F8BC77002FE583 /* MTGSearchBarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarInteractor.swift; sourceTree = "<group>"; };
-		2FF9F3D321F8C355002FE583 /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
+		2FF9F3D321F8C355002FE583 /* CardManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManipulator.swift; sourceTree = "<group>"; };
 		2FF9F3D621F8C619002FE583 /* MTGSearchBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarPresenter.swift; sourceTree = "<group>"; };
 		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
 		5D230C7121F8D56F0062B0AF /* MTGSearchBarSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarSpec.swift; sourceTree = "<group>"; };
@@ -724,7 +724,7 @@
 		2FF9F3D221F8C33D002FE583 /* Util */ = {
 			isa = PBXGroup;
 			children = (
-				2FF9F3D321F8C355002FE583 /* EntityManager.swift */,
+				2FF9F3D321F8C355002FE583 /* CardManipulator.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -1550,7 +1550,7 @@
 			files = (
 				2FEBC26E21EE05B600B10DED /* UseCaseProviders.swift in Sources */,
 				2FEBC26821EE042800B10DED /* Result.swift in Sources */,
-				2FF9F3D421F8C355002FE583 /* EntityManager.swift in Sources */,
+				2FF9F3D421F8C355002FE583 /* CardManipulator.swift in Sources */,
 				2FEBC26621EE02D800B10DED /* ApplicationUseCase.swift in Sources */,
 				2FEBC26421ED186E00B10DED /* ArgumentFile.swift in Sources */,
 				2FEBC25F21ED05C300B10DED /* MetaCardSet.swift in Sources */,

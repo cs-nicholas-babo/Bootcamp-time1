@@ -15,12 +15,14 @@ protocol MTGCardPickerObserver : class {
 }
 
 final class MTGCardPicker: UIPickerView {
+    weak var observer: MTGCardPickerObserver?
     var cards: [Card] = []
     
     var rotationAngle: CGFloat = -90 * (.pi / 180)
     
-    override init(frame: CGRect = .zero) {
+    init(frame: CGRect = .zero, observer: MTGCardPickerObserver? = nil) {
         super.init(frame: frame)
+        self.observer = observer
         
         delegationAssignment()
     }
@@ -42,7 +44,10 @@ final class MTGCardPicker: UIPickerView {
 }
 
 extension MTGCardPicker: UIPickerViewDelegate {
-    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        observer?.didChangeTo(row: row)
+    }
+
 }
 
 extension MTGCardPicker: UIPickerViewDataSource {
@@ -78,6 +83,7 @@ extension MTGCardPicker: ViewCode {
         
         transform = CGAffineTransform(rotationAngle: rotationAngle)
         
+
     }
     
 }

@@ -36,7 +36,6 @@ enum ModalDetail {
         struct Subset {
             let cards: [Card]
             let selectedIndex: Int
-            let favoriteCardsIndexes: [Int]
         }
     }
     

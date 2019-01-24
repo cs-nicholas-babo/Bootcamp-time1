@@ -11,6 +11,7 @@ import Domain
 
 protocol ModalDetailBusinessLogic {
     func toggleFavorite()
+    func changeIndex(row: Int)
     func show()
 }
 
@@ -20,7 +21,7 @@ final class ModalDetailInteractor {
     
     private var cards: [Card]
     private var selectedIndex: Int
-    private var favoriteCardsIndexes: [Int]
+    private var favoriteCardsUID: Set<String>
     
     private func indexedCard() -> Card {
         return self.cards[self.selectedIndex]
@@ -31,27 +32,43 @@ final class ModalDetailInteractor {
         self.useCase = useCase
         self.cards = subset.cards
         self.selectedIndex = subset.selectedIndex
-        self.favoriteCardsIndexes = subset.favoriteCardsIndexes
-    }
-}
-
-extension ModalDetailInteractor: ModalDetailBusinessLogic {
-    func toggleFavorite() {
-        useCase.fetchFavoriteCards { (result) in
+        self.favoriteCardsUID = []
+        
+        self.useCase.fetchFavoriteCards { (result) in
             switch result {
-            case .success(let cardsets):
-                let allCards = cardsets.flatMap({ $0.cards })
-                let favoriteFlag = !allCards.contains(self.indexedCard())
-                self.useCase.favorite(card: self.indexedCard(), status: favoriteFlag)
-                self.presenter.toggleButton(status: favoriteFlag)
+            case .success(let favorites):
+                self.favoriteCardsUID = Set(favorites.flatMap({ $0.cards }).compactMap({ $0.id }))
+                self.presenter.refreshButton(status: self.isFavorite())
             default:
                 break
             }
         }
     }
     
+    func isFavorite() -> Bool {
+        return favoriteCardsUID.contains(cards[selectedIndex].id)
+    }
+}
+
+extension ModalDetailInteractor: ModalDetailBusinessLogic {
+    func changeIndex(row: Int) {
+        selectedIndex = row
+        presenter.refreshButton(status: isFavorite())
+    }
+    
+    func toggleFavorite() {
+        let toggle = !isFavorite()
+        useCase.favorite(card: cards[selectedIndex], status: toggle)
+        if toggle {
+            favoriteCardsUID.insert(cards[selectedIndex].id)
+        } else {
+            favoriteCardsUID.remove(cards[selectedIndex].id)
+        }
+        presenter.refreshButton(status: toggle)
+    }
+    
     func show() {
-        presenter.show(cards: cards, selectedIndex: selectedIndex, favoriteCardsIndexes: favoriteCardsIndexes)
+        presenter.show(cards: cards, selectedIndex: selectedIndex)
     }
     
 }

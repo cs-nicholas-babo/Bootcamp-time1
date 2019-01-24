@@ -21,6 +21,10 @@ public class CardManipulator {
         return metaCardSets.map({ mountCardSet(from: $0, using: cards) })
     }
     
+    public static func cards(from cardSets: [CardSet]) -> [Card] {
+        return cardSets.flatMap({ $0.cards })
+    }
+    
     public init(){
         
     }

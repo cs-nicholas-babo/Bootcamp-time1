@@ -50,7 +50,7 @@ public class ModalDetailViewController: UIViewController {
     }()
     
     lazy var cardPicker: MTGCardPicker = {
-        let cardPicker = MTGCardPicker(frame: .zero)
+        let cardPicker = MTGCardPicker(frame: .zero, observer: self)
         
         return cardPicker
     }()
@@ -170,6 +170,13 @@ extension ModalDetailViewController: ModalDetailDisplayLogic {
     func display(viewModel: ModalDetail.ViewModel.Single) {
         ImageDownloader.setMagicCard(with: viewModel.card.literalImageURL(), imageView: &cardView)
         favoriteButton.setRealState(realState: viewModel.status)
+    }
+    
+}
+
+extension ModalDetailViewController: MTGCardPickerObserver {
+    func didChangeTo(row: Int) {
+        interactor?.changeIndex(row: row)
     }
     
 }
