@@ -20,6 +20,7 @@ final class CustomTabViewController: UIViewController {
         let button = UIButton(frame: .zero)
         button.setTitle("Main", for: .normal)
         button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.addTarget(self, action: #selector(switchToMain), for: .touchDown)
         return button
     }()
@@ -28,6 +29,7 @@ final class CustomTabViewController: UIViewController {
         let button = UIButton(frame: .zero)
         button.setTitle("Favorites", for: .normal)
         button.setTitleColor(.white, for: .normal)
+        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
         button.addTarget(self, action: #selector(switchtoFavorites), for: .touchDown)
         return button
     }()
@@ -93,7 +95,7 @@ extension CustomTabViewController: ViewCode {
         
         middleStroke.snp.makeConstraints { (make) in
             make.width.equalTo(3)
-            make.height.equalTo(tabBarHeight - 4)
+            make.height.equalTo(tabBarHeight - 8)
             make.bottom.equalToSuperview().inset(2)
             make.centerX.equalToSuperview()
         }
