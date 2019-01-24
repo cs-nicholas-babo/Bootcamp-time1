@@ -131,6 +131,7 @@ extension ModalDetailViewController: ModalDetailDisplayLogic {
     func display(viewModel: ModalDetail.ViewModel.Subset) {
         cardPicker.cards = viewModel.cards
         cardPicker.reloadAllComponents()
+        cardPicker.selectRow(viewModel.selectedIndex, inComponent: 0, animated: false)
     }
     
     func displayButton(status: Bool) {

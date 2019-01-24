@@ -30,14 +30,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let modalVC = ModalDetailViewController()
             let presenter = ModalDetailPresenter(viewController: modalVC)
             let router = ModalDetailRouter(viewController: modalVC)
-            let viewModel = ModalDetail.ViewModel.Subset(cards: [card1, card2, card3], selectedIndex: 0)
+            let viewModel = ModalDetail.ViewModel.Subset(cards: [card1, card2, card3], selectedIndex: 1)
             let interactor = ModalDetailInteractor(presenter: presenter,
                                                    useCase: FavoriteCardsServiceProvider().useCase(),
                                                    subset: viewModel)
             modalVC.interactor = interactor
             modalVC.router = router
             
-//            tabBarController.viewControllers = List VCs
+            tabBarController.viewControllers = [modalVC]
             window.rootViewController = tabBarController
             self.window = window
             self.window?.makeKeyAndVisible()
