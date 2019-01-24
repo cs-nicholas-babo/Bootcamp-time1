@@ -120,7 +120,7 @@ extension ModalDetailViewController: ViewCode {
         
         cardPicker.snp.makeConstraints { (make) in
             make.left.right.equalToSuperview()
-            make.centerX.equalToSuperview()
+            make.center.equalToSuperview()
             make.height.equalToSuperview()
         }
         
