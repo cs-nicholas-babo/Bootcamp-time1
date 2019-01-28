@@ -79,6 +79,10 @@
 		5D54973E21F896A300711080 /* ModalDetailViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973D21F896A300711080 /* ModalDetailViewControllerSpec.swift */; };
 		5D54974121F896FB00711080 /* ModalDetailInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54974021F896FB00711080 /* ModalDetailInteractorMock.swift */; };
 		5D54974321F8985F00711080 /* ModalDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */; };
+		5D6AD64821FA24DF00A9299E /* MTGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6AD64721FA24DF00A9299E /* MTGTabBarController.swift */; };
+		5D778A4B21FA45C1000866F8 /* MTGCardPickerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A4A21FA45C1000866F8 /* MTGCardPickerSpec.swift */; };
+		5D778A4F21FA46AF000866F8 /* MTGCardViewPickerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A4E21FA46AF000866F8 /* MTGCardViewPickerSpec.swift */; };
+		5D778A5221FA479C000866F8 /* MTGTabBarControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A5121FA479C000866F8 /* MTGTabBarControllerSpec.swift */; };
 		5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */; };
 		5DA18F0321F0AB4200A862F4 /* CardSetListLoadingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */; };
 		5DA18F0521F0ABA000A862F4 /* CardSetListShowCardsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */; };
@@ -347,6 +351,10 @@
 		5D54973D21F896A300711080 /* ModalDetailViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailViewControllerSpec.swift; sourceTree = "<group>"; };
 		5D54974021F896FB00711080 /* ModalDetailInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailInteractorMock.swift; sourceTree = "<group>"; };
 		5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailRouterMock.swift; sourceTree = "<group>"; };
+		5D6AD64721FA24DF00A9299E /* MTGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGTabBarController.swift; sourceTree = "<group>"; };
+		5D778A4A21FA45C1000866F8 /* MTGCardPickerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCardPickerSpec.swift; sourceTree = "<group>"; };
+		5D778A4E21FA46AF000866F8 /* MTGCardViewPickerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCardViewPickerSpec.swift; sourceTree = "<group>"; };
+		5D778A5121FA479C000866F8 /* MTGTabBarControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGTabBarControllerSpec.swift; sourceTree = "<group>"; };
 		5DA18EFD21F0AA0F00A862F4 /* CardSetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListViewController.swift; sourceTree = "<group>"; };
 		5DA18F0221F0AB4200A862F4 /* CardSetListLoadingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListLoadingState.swift; sourceTree = "<group>"; };
 		5DA18F0421F0ABA000A862F4 /* CardSetListShowCardsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListShowCardsState.swift; sourceTree = "<group>"; };
@@ -549,24 +557,8 @@
 			isa = PBXGroup;
 			children = (
 				2F0A2F9421F8F84A009853CB /* View */,
-				2F0A2F9321F8F83E009853CB /* Interactor */,
-				2F0A2F9221F8F838009853CB /* Presenter */,
 			);
 			path = MTGCardPicker;
-			sourceTree = "<group>";
-		};
-		2F0A2F9221F8F838009853CB /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		2F0A2F9321F8F83E009853CB /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Interactor;
 			sourceTree = "<group>";
 		};
 		2F0A2F9421F8F84A009853CB /* View */ = {
@@ -726,9 +718,10 @@
 		2FC17E5121F795AB0093138A /* Custom Components */ = {
 			isa = PBXGroup;
 			children = (
+				5D6AD64921FA24E100A9299E /* ToggleableButton */,
+				5D6AD64621FA24D200A9299E /* MTGTabBarController */,
 				2F0A2F9121F8F807009853CB /* MTGCardPicker */,
 				2FF9F3C921F89F0F002FE583 /* MTGSearchBar */,
-				2FC17E5221F795CD0093138A /* TogglableButton.swift */,
 			);
 			path = "Custom Components";
 			sourceTree = "<group>";
@@ -753,7 +746,6 @@
 			isa = PBXGroup;
 			children = (
 				2FEBC25B21ED058D00B10DED /* UseCases */,
-				2FEBC25A21ED058300B10DED /* MTG Entities */,
 				2FEBC24F21ED057800B10DED /* Domain.h */,
 				2FEBC25021ED057800B10DED /* Info.plist */,
 			);
@@ -780,8 +772,10 @@
 				2FEBC26221ED13D000B10DED /* Providers */,
 				2FEBC26321ED186E00B10DED /* ArgumentFile.swift */,
 				2FEBC26521EE02D800B10DED /* ApplicationUseCase.swift */,
+				2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */,
 				2FEBC26921EE04E700B10DED /* CardsUseCase.swift */,
 				2FEBC26B21EE055B00B10DED /* FavoriteCardsUseCase.swift */,
+				2FEBC25A21ED058300B10DED /* MTG Entities */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -789,7 +783,6 @@
 		2FEBC26221ED13D000B10DED /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
@@ -968,6 +961,57 @@
 				5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D6AD64621FA24D200A9299E /* MTGTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				5D6AD64721FA24DF00A9299E /* MTGTabBarController.swift */,
+			);
+			path = MTGTabBarController;
+			sourceTree = "<group>";
+		};
+		5D6AD64921FA24E100A9299E /* ToggleableButton */ = {
+			isa = PBXGroup;
+			children = (
+				2FC17E5221F795CD0093138A /* TogglableButton.swift */,
+			);
+			path = ToggleableButton;
+			sourceTree = "<group>";
+		};
+		5D778A4921FA45AD000866F8 /* MTGPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				5D778A4A21FA45C1000866F8 /* MTGCardPickerSpec.swift */,
+			);
+			path = MTGPickerView;
+			sourceTree = "<group>";
+		};
+		5D778A4C21FA469C000866F8 /* Custom Components */ = {
+			isa = PBXGroup;
+			children = (
+				5D778A5021FA478E000866F8 /* MTGTabBarController */,
+				5D778A4D21FA46A9000866F8 /* MTGCardViewPicker */,
+				5D778A4921FA45AD000866F8 /* MTGPickerView */,
+				5D230C6D21F8D5270062B0AF /* MTGSearchBar */,
+			);
+			path = "Custom Components";
+			sourceTree = "<group>";
+		};
+		5D778A4D21FA46A9000866F8 /* MTGCardViewPicker */ = {
+			isa = PBXGroup;
+			children = (
+				5D778A4E21FA46AF000866F8 /* MTGCardViewPickerSpec.swift */,
+			);
+			path = MTGCardViewPicker;
+			sourceTree = "<group>";
+		};
+		5D778A5021FA478E000866F8 /* MTGTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				5D778A5121FA479C000866F8 /* MTGTabBarControllerSpec.swift */,
+			);
+			path = MTGTabBarController;
 			sourceTree = "<group>";
 		};
 		5DA18EFF21F0AAC400A862F4 /* States */ = {
@@ -1392,6 +1436,7 @@
 			children = (
 				AC23260B21F8A4F500AAB36D /* Gateways */,
 				5D230C6D21F8D5270062B0AF /* MTGSearchBar */,
+				5D778A4C21FA469C000866F8 /* Custom Components */,
 				ACE788FE21F2408F00718E4E /* Scenes */,
 				ACE7890F21F2408F00718E4E /* Commons */,
 			);
@@ -1905,6 +1950,7 @@
 				2FF9F3D721F8C619002FE583 /* MTGSearchBarPresenter.swift in Sources */,
 				2F554E5C21F77B7600545C8C /* Card+ImageURL.swift in Sources */,
 				A1145E0C21ECF18900A1A665 /* AppDelegate.swift in Sources */,
+				5D6AD64821FA24DF00A9299E /* MTGTabBarController.swift in Sources */,
 				5DA18EFE21F0AA0F00A862F4 /* CardSetListViewController.swift in Sources */,
 				ACE7895321F26ABE00718E4E /* CardSetListCollectionView.swift in Sources */,
 				ACE7894721F2669C00718E4E /* CardSetListTableView.swift in Sources */,
@@ -2035,11 +2081,13 @@
 				5D230C7921F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift in Sources */,
 				ACE7891321F2408F00718E4E /* CardSetListDisplayLogicMock.swift in Sources */,
 				5D54973921F8922100711080 /* ModalDetailPresenterSpec.swift in Sources */,
+				5D778A4F21FA46AF000866F8 /* MTGCardViewPickerSpec.swift in Sources */,
 				ACE7891621F2408F00718E4E /* CardSetListViewControllerSpec.swift in Sources */,
 				5D230C8921F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift in Sources */,
 				5D54974121F896FB00711080 /* ModalDetailInteractorMock.swift in Sources */,
 				5D54974321F8985F00711080 /* ModalDetailRouterMock.swift in Sources */,
 				ACE7891421F2408F00718E4E /* CardSetListPresenterSpec.swift in Sources */,
+				5D778A4B21FA45C1000866F8 /* MTGCardPickerSpec.swift in Sources */,
 				5D54973C21F8939400711080 /* ModalDetailViewControllerMock.swift in Sources */,
 				5D230C7721F8D6060062B0AF /* MTGSearchBarObserverMock.swift in Sources */,
 				5D230C8021F8E0040062B0AF /* CardUseCaseMock.swift in Sources */,
@@ -2055,6 +2103,7 @@
 				ACE7891B21F2408F00718E4E /* MockValues.swift in Sources */,
 				AC23260D21F8A51800AAB36D /* LocalDatabaseGatewaySpec.swift in Sources */,
 				ACE7891921F2408F00718E4E /* CardSetListInteractorSpec.swift in Sources */,
+				5D778A5221FA479C000866F8 /* MTGTabBarControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
