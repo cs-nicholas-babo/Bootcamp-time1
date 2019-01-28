@@ -27,7 +27,7 @@ class ModalDetailInteractorSpec: QuickSpec {
                 beforeEach {
                     presenter = ModalDetailPresenterMock()
                     provider = TestFavoriteCardsServiceProvider()
-                    sut = ModalDetailInteractor(presenter: presenter, useCase: provider.useCase(), subset: MockValues.subsetMock)
+                    sut = ModalDetailInteractor(presenter: presenter, useCase: provider.useCase(), subset: MockValues.subset)
                 }
                 
                 context("show card") {
@@ -59,9 +59,9 @@ class ModalDetailInteractorSpec: QuickSpec {
                 context("change current card index") {
                     
                     it("should have changed index and refresh button") {
-                        sut.changeIndex(row: MockValues.selectedIndexMock)
+                        sut.changeIndex(row: MockValues.selectedIndex)
                         expect(presenter.toRefreshButton).to(beTrue())
-                        expect(presenter.selectedIndex).to(equal(MockValues.selectedIndexMock))
+                        expect(presenter.selectedIndex).to(equal(MockValues.selectedIndex))
                     }
                     
                 }

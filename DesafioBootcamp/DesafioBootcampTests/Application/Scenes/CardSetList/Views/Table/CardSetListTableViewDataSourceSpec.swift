@@ -16,8 +16,8 @@ final class CardSetListTableViewDataSourceSpec: QuickSpec{
     
     override func spec() {
         
-        let sets = [MockValues.cardSetMock, MockValues.cardSetMock, MockValues.cardSetMock, MockValues.cardSetMock]
-        let cards = MockValues.cardMockArray
+        let sets = [MockValues.cardSet, MockValues.cardSet, MockValues.cardSet, MockValues.cardSet]
+        let cards = MockValues.cardArray
         
         let titles = sets.map({ (arg0) -> String in
             let (set, _) = arg0

@@ -36,9 +36,9 @@ class ModalDetailPresenterSpec: QuickSpec {
 //                    }
                     
                     it("should display subset") {
-                        sut.show(cards: [MockValues.cardMock], selectedIndex: MockValues.selectedIndexMock)
+                        sut.show(cards: [MockValues.card], selectedIndex: MockValues.selectedIndex)
                         expect(viewController.toDisplayViewModelSubset).to(beTrue())
-                        expect(viewController.selectedIndex).to(equal(MockValues.selectedIndexMock))
+                        expect(viewController.selectedIndex).to(equal(MockValues.selectedIndex))
                     }
                     
                 }
@@ -46,7 +46,7 @@ class ModalDetailPresenterSpec: QuickSpec {
                 context("when toggle favorite") {
                     
                     it("should favorite card") {
-                        sut.refreshButton(status: MockValues.favoriteStatusMock)
+                        sut.refreshButton(status: MockValues.favoriteStatus)
                         expect(viewController.toDisplayButton).to(beTrue())
                         expect(viewController.status).to(beTrue())
                     }

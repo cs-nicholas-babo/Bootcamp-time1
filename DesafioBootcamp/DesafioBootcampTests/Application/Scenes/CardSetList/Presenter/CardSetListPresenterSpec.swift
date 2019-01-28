@@ -30,14 +30,14 @@ class CardSetListPresenterSpec: QuickSpec {
                 context("and present cards") {
                     
                     beforeEach {
-                        sut.present(response: .success(MockValues.cardSetMockArray))
+                        sut.present(response: .success(MockValues.cardSetArray))
                     }
                     
-                    // TODO: Fix test
-//                    it("should display viewModel") {
-//                        expect(vc.didDisplayViewModel).to(beTrue())
-//                        expect(vc.viewModel).toNot(beNil())
-//                    }
+//                     TODO: Fix test
+                    it("should display viewModel") {
+                        expect(vc.didDisplayViewModel).to(beTrue())
+                        expect(vc.receivedViewModels).toNot(beNil())
+                    }
                     
                 }
                 
@@ -71,6 +71,16 @@ class CardSetListPresenterSpec: QuickSpec {
                     
                     it ("should display no results") {
                         expect(vc.didDisplayNoResults).to(beTrue())
+                    }
+                }
+                
+                context("and present search results") {
+                    beforeEach {
+                        sut.present(response: CardSetList.Response.searchResults(MockValues.cardSetArray))
+                    }
+                    
+                    it("should display search results") {
+                        expect(vc.didDisplaySearchResults).to(beTrue())
                     }
                 }
                 

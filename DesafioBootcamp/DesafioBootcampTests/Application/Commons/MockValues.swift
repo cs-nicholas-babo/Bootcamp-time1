@@ -12,25 +12,25 @@ import Domain
 @testable import DesafioBootcamp
 
 struct MockValues {
-    static let metaCardSetMock = MetaCardSet(code: "setCode", name: "setName", releaseDate: Date())
+    static let metaCardSet = MetaCardSet(code: "setCode", name: "setName", releaseDate: Date())
     
-    static let metaCardSetMockArray = [metaCardSetMock, metaCardSetMock, metaCardSetMock, metaCardSetMock, metaCardSetMock]
+    static let metaCardSetArray = [metaCardSet, metaCardSet, metaCardSet, metaCardSet, metaCardSet]
     
-    static let cardMock = Card(id: "id", name: "name", setCode: "setCode", types: [CardType(name: "type1"), CardType(name: "type2")])
+    static let card = Card(id: "id", name: "name", setCode: "setCode", types: [CardType(name: "type1"), CardType(name: "type2")])
     
-    static let cardMockArray = [cardMock, cardMock, cardMock, cardMock, cardMock]
+    static let cardArray = [card, card, card, card, card]
     
-    static let cardSetMock = (set: metaCardSetMock, cards: cardMockArray)
+    static let cardSet = (set: metaCardSet, cards: cardArray)
     
-    static let cardSetMockArray: [CardSet] = [cardSetMock, cardSetMock, cardSetMock, cardSetMock, cardSetMock]
+    static let cardSetArray: [CardSet] = [cardSet, cardSet, cardSet, cardSet, cardSet]
     
-    static let viewModelMock = CardSetList.ViewModel(cardSet: cardSetMock)
+    static let viewModel = CardSetList.ViewModel(cardSet: cardSet)
     
-    static let favoriteStatusMock = true
+    static let favoriteStatus = true
     
-    static let searchBarTextMock = "Search"
+    static let searchBarText = "Search"
     
-    static let selectedIndexMock = 0
+    static let selectedIndex = 0
     
-    static let subsetMock = ModalDetail.ViewModel.Subset(cards: [cardMock], selectedIndex: selectedIndexMock)
+    static let subset = ModalDetail.ViewModel.Subset(cards: [card], selectedIndex: selectedIndex)
 }

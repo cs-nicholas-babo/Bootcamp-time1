@@ -19,14 +19,14 @@ final class MTGCardGatewayMock: MTGSetFetcher {
     var sentCardSets = [CardSet]()
     
     func fetchSets(_ completion: @escaping (Result<[CardSet]>) -> Void) {
-        let cardSets = MockValues.cardSetMockArray
+        let cardSets = MockValues.cardSetArray
         prepareFetch(result: cardSets, completion: completion)
         self.didCallfetchSet = true
         self.sentCardSets = cardSets
     }
     
     func fetchCards(named: String, _ completion: @escaping (Result<[Card]>) -> Void) {
-        prepareFetch(result: MockValues.cardMockArray, completion: completion)
+        prepareFetch(result: MockValues.cardArray, completion: completion)
         self.didCallfetchCards = true
     }
     

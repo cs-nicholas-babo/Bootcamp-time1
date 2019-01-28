@@ -28,6 +28,8 @@ final class CardSetListPresentationLogicMock: CardSetListPresentationLogic {
             self.isReadyToPresent = true
         case .error:
             self.didPresentError = true
+        case .searchResults(_):
+            break
         }
     }
 }

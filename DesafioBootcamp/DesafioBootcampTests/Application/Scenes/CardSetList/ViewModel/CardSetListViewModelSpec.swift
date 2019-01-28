@@ -22,7 +22,7 @@ class CardSetListViewModelSpec: QuickSpec {
             context("creating View Model with CardSet") {
                 
                 beforeEach {
-                    sut = CardSetList.ViewModel(cardSet: MockValues.cardSetMock)
+                    sut = CardSetList.ViewModel(cardSet: MockValues.cardSet)
                 }
                 
                 it("should have non-empty card set") {
@@ -30,7 +30,7 @@ class CardSetListViewModelSpec: QuickSpec {
                 }
                 
                 it("should match key type and Card Type") {
-                    let types = MockValues.cardSetMock.cards.flatMap { $0.types }
+                    let types = MockValues.cardSet.cards.flatMap { $0.types }
                     let typesSet = Set<CardType>(types)
                     expect(sut.typedCards.count).to(equal(typesSet.count))
                 }

@@ -31,7 +31,7 @@ class CardSetListViewControllerSpec: QuickSpec {
                 context("and display view model") {
                     
                     beforeEach {
-                        sut.display(viewModel: MockValues.viewModelMock)
+                        sut.display(viewModel: MockValues.viewModel)
                     }
                     
                     it("should enter show cards state") {
@@ -39,7 +39,7 @@ class CardSetListViewControllerSpec: QuickSpec {
                     }
                     
                     it("should feed data source") {
-                        expect(sut.wrapperView.datasource.sets).to(contain(MockValues.viewModelMock))
+                        expect(sut.wrapperView.datasource.sets).to(contain(MockValues.viewModel))
                     }
                     
                 }

@@ -15,10 +15,10 @@ final class CardFetchUseCaseMock: ApplicationRunningUseCase, CardsUseCase {
     }
 
     var shouldFail =  false
-    var sentCards = MockValues.cardMockArray
+    var sentCards = MockValues.cardArray
     
     func fetchSets(handler: @escaping (Result<[MetaCardSet]>) -> ()) {
-        let result = self.shouldFail ? Result<[MetaCardSet]>.failure(DomainError(errorCode: "", error: ResultErrorMock.error)) : Result<[MetaCardSet]>.success(MockValues.metaCardSetMockArray)
+        let result = self.shouldFail ? Result<[MetaCardSet]>.failure(DomainError(errorCode: "", error: ResultErrorMock.error)) : Result<[MetaCardSet]>.success(MockValues.metaCardSetArray)
         handler(result)
     }
     

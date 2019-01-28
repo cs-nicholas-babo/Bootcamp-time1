@@ -11,7 +11,7 @@ import Domain
 final class FavoriteCardsUseCaseMock: FavoriteCardsUseCase {
     
     var shouldFail = false
-    let sentCardSets = MockValues.cardSetMockArray
+    let sentCardSets = MockValues.cardSetArray
     
     var result: Result<[CardSet]> {
         return self.shouldFail ?  Result.failure(DomainError(errorCode: "", error: ResultErrorMock.error)) : Result.success(sentCardSets)
