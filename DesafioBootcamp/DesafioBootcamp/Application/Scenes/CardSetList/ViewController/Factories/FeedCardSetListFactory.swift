@@ -15,6 +15,7 @@ final class FeedCardSetListFactory {
         let presenter = CardSetListPresenter(viewController: viewController)
         let interactor = CardSetListInteractor(presenter: presenter, cardGateway: makeMTGCardGateway())
         viewController.interactor = interactor
+        viewController.searchBar.observer = interactor
         
         return viewController
     }
