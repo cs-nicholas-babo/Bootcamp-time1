@@ -637,7 +637,6 @@
 			isa = PBXGroup;
 			children = (
 				2FEBC25B21ED058D00B10DED /* UseCases */,
-				2FEBC25A21ED058300B10DED /* MTG Entities */,
 				2FEBC24F21ED057800B10DED /* Domain.h */,
 				2FEBC25021ED057800B10DED /* Info.plist */,
 			);
@@ -664,8 +663,10 @@
 				2FEBC26221ED13D000B10DED /* Providers */,
 				2FEBC26321ED186E00B10DED /* ArgumentFile.swift */,
 				2FEBC26521EE02D800B10DED /* ApplicationUseCase.swift */,
+				2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */,
 				2FEBC26921EE04E700B10DED /* CardsUseCase.swift */,
 				2FEBC26B21EE055B00B10DED /* FavoriteCardsUseCase.swift */,
+				2FEBC25A21ED058300B10DED /* MTG Entities */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -673,7 +674,6 @@
 		2FEBC26221ED13D000B10DED /* Providers */ = {
 			isa = PBXGroup;
 			children = (
-				2FEBC26D21EE05B600B10DED /* UseCaseProviders.swift */,
 			);
 			path = Providers;
 			sourceTree = "<group>";
