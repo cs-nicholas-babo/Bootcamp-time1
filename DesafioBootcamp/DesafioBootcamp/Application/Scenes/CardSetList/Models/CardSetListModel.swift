@@ -14,6 +14,7 @@ enum CardSetList {
     
     enum Response {
         case success([CardSet])
+        case searchResults([CardSet])
         case readyToPresentSets
         case error
     }
@@ -59,11 +60,4 @@ extension CardSetList.ViewModel: Equatable {
     
     static let collectionViewCellIdentifier = "CollectionViewCellIdentifier"
     static let tableViewCellIdentifier = "TableViewCellIdentifier"
-}
-
-
-extension CardSetList.ViewModel: Equatable {
-    static func == (lhs: CardSetList.ViewModel, rhs: CardSetList.ViewModel) -> Bool {
-        return lhs.setName == rhs.setName
-    }
 }

@@ -28,9 +28,10 @@ final class CardSetListCollectionViewDelegate: NSObject, UICollectionViewDelegat
         return CardSetListCollectionViewCell.size(for: cellWidth)
     }
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let card = datasource.cards[indexPath.section].cards[indexPath.item]
-        navigationDelegate?.push(controller: ModalViewControllerFactory.make(card: card))
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {        
+        let subset = ModalDetail.ViewModel.Subset(cards: datasource.cards[indexPath.section].cards, selectedIndex: indexPath.item)
+        
+        navigationDelegate?.push(controller: ModalViewControllerFactory.make(subset: subset))
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {

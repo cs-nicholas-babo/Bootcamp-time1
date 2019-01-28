@@ -12,11 +12,11 @@ import PlatformLocalDatabase
 
 final class ModalViewControllerFactory{
     
-    static func make(card: Card) -> ModalDetailViewController{
+    static func make(subset: ModalDetail.ViewModel.Subset) -> ModalDetailViewController{
         let modalVC = ModalDetailViewController()
         let presenter = ModalDetailPresenter(viewController: modalVC)
         let router = ModalDetailRouter(viewController: modalVC)
-        let interactor = ModalDetailInteractor(presenter: presenter, useCase: FavoriteCardsServiceProvider().useCase(), card: card, status: false)
+        let interactor = ModalDetailInteractor(presenter: presenter, useCase: FavoriteCardsServiceProvider().useCase(), subset: subset)
         modalVC.interactor = interactor
         modalVC.router = router
         return modalVC

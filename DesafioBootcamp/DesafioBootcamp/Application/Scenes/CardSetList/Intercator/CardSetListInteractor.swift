@@ -25,13 +25,18 @@ extension CardSetListInteractor: CardSetListBusinessLogic {
             guard let self = self else { fatalError() }
             switch result {
             case .success(let cardSet):
-//                self.presenter.present(response: .success(cardSet))
-//                _ = self.metaSets.dropFirst()
-                break
+                self.presenter.present(response: .success(cardSet))
             case .failure(let error):
                 print("\(error.errorCode): \(error.error)")
                 self.presenter.present(response: .error)
             }
         }
     }
+}
+
+extension CardSetListInteractor: MTGSearchBarObserver{
+    func send(sets: [CardSet]) {
+        self.presenter.present(response: .searchResults(sets))
+    }
+    
 }

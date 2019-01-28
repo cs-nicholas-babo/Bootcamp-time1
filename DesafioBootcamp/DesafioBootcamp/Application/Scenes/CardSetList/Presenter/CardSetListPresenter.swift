@@ -21,9 +21,13 @@ extension CardSetListPresenter: CardSetListPresentationLogic {
     func present(response: CardSetList.Response) {
         switch response {
         case .success(let cardSet):
-//            let viewModel = CardSetList.ViewModel(cardSet: cardSet)
-//            viewController.display(viewModel: viewModel)
-            break
+            self.onSuccess(cardSets: cardSet)
+        case .searchResults(let results):
+            var sets:[CardSetList.ViewModel] = []
+            results.forEach { (set) in
+                sets.append(CardSetList.ViewModel(cardSet: set))
+            }
+            viewController.displaySearchResults(viewModel: sets)
         case .readyToPresentSets:
             viewController.readyToDisplayCards()
         case .error:

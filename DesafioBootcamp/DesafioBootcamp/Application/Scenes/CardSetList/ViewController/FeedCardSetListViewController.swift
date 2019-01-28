@@ -12,7 +12,6 @@ final class FeedCardSetListViewController: CardSetListViewController {
     
     override func initialSetup() {
         super.initialSetup()
-        guard let interactor = self.interactor else { fatalError() }
     }
     
 }

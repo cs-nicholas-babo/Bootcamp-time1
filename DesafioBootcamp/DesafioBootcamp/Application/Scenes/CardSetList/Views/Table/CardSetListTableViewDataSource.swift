@@ -23,24 +23,24 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
     }
     var navigationDelegate: NavigationDelegate?
     var table: CardSetListTableView?
-    var metaSets:[MetaCardSet] = []{
-        didSet{
-            table?.reloadData()
-        }
-    }
+//    var metaSets:[MetaCardSet] = []{
+//        didSet{
+//            table?.reloadData()
+//        }
+//    }
     var setNumber = 0
     
     override init() {
         super.init()
-        let service = CacheServiceProvider().useCase()
-        service.fetchSets { (result) in
-            switch result{
-            case .success(let sets):
-                    self.metaSets = sets
-            case .failure(let error):
-                    print(error)
-            }
-        }
+//        let service = CacheServiceProvider().useCase()
+//        service.fetchSets { (result) in
+//            switch result{
+//            case .success(let sets):
+//                    self.metaSets = sets
+//            case .failure(let error):
+//                    print(error)
+//            }
+//        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -48,11 +48,11 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return metaSets.count
+        return sets.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return metaSets[section].name
+        return sets[section].setName
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -100,25 +100,25 @@ extension CardSetListTableViewDataSource: UITableViewDataSourcePrefetching{
     }
     
     func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-        if indexPaths.contains(where: isLoadingCell) {
-            if let section = indexPaths.first?.section{
-                if section >= self.setNumber{
-                    let apiService = MTG_ProviderDefault().cardsUseCase()
-                    apiService.fetchCards(from: self.metaSets[self.setNumber]) { (result) in
-                        switch result{
-                        case .success(let cards):
-                            let finalSet = CardSet(self.metaSets[self.setNumber], cards)
-                            self.smartAppend(model: CardSetList.ViewModel(cardSet: finalSet))
-                            self.setNumber += 1
-                        case .failure(let error):
-                            print(error)
-                        }
-                    }
-                }
-            }
-            
-           
-        }
+//        if indexPaths.contains(where: isLoadingCell) {
+//            if let section = indexPaths.first?.section{
+//                if section >= self.setNumber{
+//                    let apiService = MTG_ProviderDefault().cardsUseCase()
+//                    apiService.fetchCards(from: self.metaSets[self.setNumber]) { (result) in
+//                        switch result{
+//                        case .success(let cards):
+//                            let finalSet = CardSet(self.metaSets[self.setNumber], cards)
+//                            self.smartAppend(model: CardSetList.ViewModel(cardSet: finalSet))
+//                            self.setNumber += 1
+//                        case .failure(let error):
+//                            print(error)
+//                        }
+//                    }
+//                }
+//            }
+//
+//
+//        }
     }
     
 }

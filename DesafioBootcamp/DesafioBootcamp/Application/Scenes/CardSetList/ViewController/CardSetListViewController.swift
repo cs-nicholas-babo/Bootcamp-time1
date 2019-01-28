@@ -39,6 +39,11 @@ class CardSetListViewController: UIViewController {
         return activity
     }()
     
+    lazy var searchBar: MTGSearchBar = {
+        let searchBar = MTGSearchBarFactory.feed(vc: self)
+        return searchBar
+    }()
+    
     init() {
         super.init(nibName: nil, bundle: nil)
         setupView()
@@ -69,13 +74,19 @@ extension CardSetListViewController: CardSetListDisplayLogic {
     func display(viewModel: CardSetList.ViewModel) {
         _ = stateMachine.enter(CardSetListShowCardsState.self)
         self.wrapperView.datasource.smartAppend(model: viewModel)
-        var count = 0
+//        var count = 0
 //        self.wrapperView.datasource.sets.forEach { (model) in
 //            model.typedCards.forEach({ (type, cards) in
 //                count = count + cards.count
 //            })
 //        }
 //        self.wrapperView.tableView.reloadData()
+    }
+    
+    func displaySearchResults(viewModel: [CardSetList.ViewModel]){
+        _ = stateMachine.enter(CardSetListShowCardsState.self)
+        self.wrapperView.datasource.sets = viewModel
+        self.wrapperView.tableView.reloadData()
     }
     
     func displayNoResults(){
@@ -99,6 +110,7 @@ extension CardSetListViewController: ViewCode {
         self.view.addSubview(self.wrapperView)
         self.view.addSubview(self.errorImageView)
         self.view.addSubview(self.activityIndicator)
+        self.view.addSubview(self.searchBar)
     }
     
     func setupConstraints() {
@@ -116,6 +128,13 @@ extension CardSetListViewController: ViewCode {
             make.center.equalToSuperview()
             make.height.equalTo(70)
             make.width.equalTo(70)
+        }
+        
+        self.searchBar.snp.makeConstraints { make in
+            make.top.equalToSuperview()
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.height.equalTo(44)
         }
     }
     
