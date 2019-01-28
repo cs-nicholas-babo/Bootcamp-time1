@@ -120,20 +120,20 @@ extension CardSetListViewController: ViewCode {
         
         self.errorImageView.snp.makeConstraints { make in
             make.center.equalToSuperview()
-            make.height.equalTo(150)
-            make.width.equalTo(150)
+            make.height.equalTo(150.proportionalToHeight)
+            make.width.equalTo(150.proportionalToWidth)
         }
         
         self.activityIndicator.snp.makeConstraints { make in
             make.center.equalToSuperview()
-            make.height.equalTo(70)
-            make.width.equalTo(70)
+            make.height.equalTo(70.proportionalToHeight)
+            make.width.equalTo(70.proportionalToWidth)
         }
         
         self.searchBar.snp.makeConstraints { make in
-            make.top.equalToSuperview()
-            make.left.equalToSuperview()
-            make.right.equalToSuperview()
+            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+            make.width.equalToSuperview()
+            make.centerX.equalToSuperview()
             make.height.equalTo(44)
         }
     }
