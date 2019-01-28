@@ -31,7 +31,7 @@ class CardSetListCollectionViewCellSpec: QuickSpec {
                 
                 it("should look like this") {
                     expect(sut) == snapshot()
-                }       
+                }
             }
         }
     }

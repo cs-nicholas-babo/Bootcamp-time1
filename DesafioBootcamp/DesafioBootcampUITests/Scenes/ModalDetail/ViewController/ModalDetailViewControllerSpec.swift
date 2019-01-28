@@ -1,8 +1,8 @@
 //
-//  CardSetListViewControllerSpec.swift
+//  ModalDetailViewControllerSpec.swift
 //  DesafioBootcampUITests
 //
-//  Created by miguel.horta.nery on 22/01/19.
+//  Created by ricardo.s.rachaus on 28/01/19.
 //  Copyright © 2019 concrete.solutions. All rights reserved.
 //
 
@@ -12,24 +12,27 @@ import Nimble_Snapshots
 
 @testable import DesafioBootcamp
 
-class CardSetListViewControllerSpec: QuickSpec {
+class ModalDetailViewControllerSpec: QuickSpec {
+    
     override func spec() {
-        describe("CardSetListViewControllerSpec") {
+        describe("Modal Detail ViewController Spec") {
             
-            var sut: UIViewController!
+            var sut: ModalDetailViewController!
             
             context("when initialized") {
                 
                 beforeEach {
-                    sut = FeedCardSetListFactory.make()
+                    sut = ModalViewControllerFactory.make(subset: MockValue.subsetMock)
                 }
                 
-                // TODO: Update test
-                it("should be on loading state") {
+                it("should have mock card") {
                     expect(sut) == snapshot()
                 }
                 
             }
+            
         }
     }
+    
 }
+

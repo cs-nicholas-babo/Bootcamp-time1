@@ -52,6 +52,17 @@ class CardSetListInteractorSpec: QuickSpec {
                     
                 }
                 
+                context("and search cards") {
+                    
+                    beforeEach {
+                        sut.send(sets: MockValues.cardSetMockArray)
+                    }
+                    
+                    it("should send cards sets") {
+                        expect(presenter.didSearchResults).to(beTrue())
+                    }
+                }
+                
             }
         }
     }
