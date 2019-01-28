@@ -42,16 +42,18 @@ class CardSetListTableWrapperView: UIView{
 
 extension CardSetListTableWrapperView: ViewCode{
     func setupViewHierarchy() {
-        addSubview(tableView)
+        addSubview(self.tableView)
     }
     
     func setupConstraints() {
         self.tableView.snp.makeConstraints { make in
-            make.edges.equalToSuperview()
+            make.width.equalToSuperview()
+            make.top.equalTo(self.safeAreaLayoutGuide.snp.top).offset(8.proportionalToHeight)
+            make.bottom.equalToSuperview()
+            make.centerX.equalToSuperview()
         }
     }
     
     func setupAdditionalConfiguration() {
-        
     }
 }

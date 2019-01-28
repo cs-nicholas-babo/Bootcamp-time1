@@ -12,6 +12,7 @@ final class CardSetListLoadingState: CardSetListBaseState {
     
     override func didEnter(from previousState: GKState?) {
         print("LoadingState ⏲")
+        self.viewController.searchBar.isHidden = true
         self.viewController.errorImageView.isHidden = true
         self.viewController.wrapperView.isHidden = true
         self.viewController.activityIndicator.isHidden = false

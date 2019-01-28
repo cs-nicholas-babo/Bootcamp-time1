@@ -12,6 +12,7 @@ final class CardSetListShowCardsState: CardSetListBaseState {
     
     override func didEnter(from previousState: GKState?) {
         print("ShowsCardsState 🃏")
+        self.viewController.searchBar.isHidden = false
         self.viewController.activityIndicator.isHidden = true
         self.viewController.activityIndicator.stopAnimating()
         self.viewController.wrapperView.isHidden = false

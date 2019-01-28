@@ -12,6 +12,7 @@ final class CardSetListNoResultsState: CardSetListBaseState{
     
     override func didEnter(from previousState: GKState?) {
         print("No results found ?.?")
+        self.viewController.searchBar.isHidden = true
         self.viewController.errorImageView.isHidden = false
         self.viewController.errorImageView.image = Image.noResults
         self.viewController.activityIndicator.isHidden = true

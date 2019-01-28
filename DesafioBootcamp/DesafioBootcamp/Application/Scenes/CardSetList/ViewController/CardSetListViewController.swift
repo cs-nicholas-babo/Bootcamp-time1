@@ -29,6 +29,10 @@ class CardSetListViewController: UIViewController {
        return wrapper
     }()
     
+    lazy var backgroundImage: UIImageView = {
+       return UIImageView(image: Image.background)
+    }()
+    
     lazy var errorImageView: UIImageView = {
         let imageView = UIImageView()
         return imageView
@@ -107,6 +111,7 @@ extension CardSetListViewController: CardSetListDisplayLogic {
 extension CardSetListViewController: ViewCode {
     
     func setupViewHierarchy() {
+        self.view.addSubview(self.backgroundImage)
         self.view.addSubview(self.wrapperView)
         self.view.addSubview(self.errorImageView)
         self.view.addSubview(self.activityIndicator)
@@ -114,8 +119,15 @@ extension CardSetListViewController: ViewCode {
     }
     
     func setupConstraints() {
-        self.wrapperView.snp.makeConstraints { make in
+        self.backgroundImage.snp.makeConstraints { make in
             make.edges.equalToSuperview()
+        }
+        
+        self.wrapperView.snp.makeConstraints { make in
+            make.width.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview()
+            make.top.equalTo(self.searchBar.snp.bottom)
         }
         
         self.errorImageView.snp.makeConstraints { make in
@@ -148,7 +160,6 @@ extension CardSetListViewController: ViewCode {
 
 extension CardSetListViewController: NavigationDelegate{
     func push(controller: UIViewController) {
-//        self.navigationController?.pushViewController(controller, animated: true)
         self.present(controller, animated: true, completion: nil)
     }
 }
