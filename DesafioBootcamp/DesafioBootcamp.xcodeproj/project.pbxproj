@@ -62,7 +62,6 @@
 		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
 		5D4629B421F6018400A21814 /* CardSetListCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4629B321F6018400A21814 /* CardSetListCollectionViewDataSource.swift */; };
 		5D4629B621F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4629B521F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift */; };
-		5D4629B821F61C9C00A21814 /* CardSetListCollectionViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4629B721F61C9C00A21814 /* CardSetListCollectionViewSpec.swift */; };
 		5D4C717121F73F4900DEA298 /* ScreenProportions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4C717021F73F4900DEA298 /* ScreenProportions.swift */; };
 		5D54973421F88C1900711080 /* ModalDetailInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973321F88C1900711080 /* ModalDetailInteractorSpec.swift */; };
 		5D54973721F88C8E00711080 /* ModalDetailPresenterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973621F88C8E00711080 /* ModalDetailPresenterMock.swift */; };
@@ -81,6 +80,9 @@
 		5D6894F721FF543C00BE0A05 /* MTGSearchBarSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894ED21FF543C00BE0A05 /* MTGSearchBarSpec.swift */; };
 		5D6894F821FF543C00BE0A05 /* MTGSearchBarPresernterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894F021FF543C00BE0A05 /* MTGSearchBarPresernterMock.swift */; };
 		5D6894F921FF543C00BE0A05 /* MTGSearchBarInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894F121FF543C00BE0A05 /* MTGSearchBarInteractorSpec.swift */; };
+		5D6894FC21FF56D600BE0A05 /* MockValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894FB21FF56D600BE0A05 /* MockValue.swift */; };
+		5D6894FE21FF59D400BE0A05 /* CardSetListCollectionWrapperViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894FD21FF59D400BE0A05 /* CardSetListCollectionWrapperViewSpec.swift */; };
+		5D68950121FF5DB100BE0A05 /* CardSetListTableWrapperViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D68950021FF5DB100BE0A05 /* CardSetListTableWrapperViewSpec.swift */; };
 		5D6AD64821FA24DF00A9299E /* MTGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6AD64721FA24DF00A9299E /* MTGTabBarController.swift */; };
 		5D778A4B21FA45C1000866F8 /* MTGCardPickerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A4A21FA45C1000866F8 /* MTGCardPickerSpec.swift */; };
 		5D778A4F21FA46AF000866F8 /* MTGCardViewPickerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A4E21FA46AF000866F8 /* MTGCardViewPickerSpec.swift */; };
@@ -334,7 +336,6 @@
 		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
 		5D4629B321F6018400A21814 /* CardSetListCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		5D4629B521F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionWrapperViewFactory.swift; sourceTree = "<group>"; };
-		5D4629B721F61C9C00A21814 /* CardSetListCollectionViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionViewSpec.swift; sourceTree = "<group>"; };
 		5D4C717021F73F4900DEA298 /* ScreenProportions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenProportions.swift; sourceTree = "<group>"; };
 		5D54973321F88C1900711080 /* ModalDetailInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailInteractorSpec.swift; sourceTree = "<group>"; };
 		5D54973621F88C8E00711080 /* ModalDetailPresenterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailPresenterMock.swift; sourceTree = "<group>"; };
@@ -353,6 +354,9 @@
 		5D6894ED21FF543C00BE0A05 /* MTGSearchBarSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSearchBarSpec.swift; sourceTree = "<group>"; };
 		5D6894F021FF543C00BE0A05 /* MTGSearchBarPresernterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSearchBarPresernterMock.swift; sourceTree = "<group>"; };
 		5D6894F121FF543C00BE0A05 /* MTGSearchBarInteractorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSearchBarInteractorSpec.swift; sourceTree = "<group>"; };
+		5D6894FB21FF56D600BE0A05 /* MockValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockValue.swift; sourceTree = "<group>"; };
+		5D6894FD21FF59D400BE0A05 /* CardSetListCollectionWrapperViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionWrapperViewSpec.swift; sourceTree = "<group>"; };
+		5D68950021FF5DB100BE0A05 /* CardSetListTableWrapperViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListTableWrapperViewSpec.swift; sourceTree = "<group>"; };
 		5D6AD64721FA24DF00A9299E /* MTGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGTabBarController.swift; sourceTree = "<group>"; };
 		5D778A4A21FA45C1000866F8 /* MTGCardPickerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCardPickerSpec.swift; sourceTree = "<group>"; };
 		5D778A4E21FA46AF000866F8 /* MTGCardViewPickerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCardViewPickerSpec.swift; sourceTree = "<group>"; };
@@ -980,6 +984,22 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		5D6894FA21FF56C000BE0A05 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				5D6894FB21FF56D600BE0A05 /* MockValue.swift */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		5D6894FF21FF5D9000BE0A05 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				5D68950021FF5DB100BE0A05 /* CardSetListTableWrapperViewSpec.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
 		5D6AD64621FA24D200A9299E /* MTGTabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1330,6 +1350,7 @@
 		AC692B0121F618A3009734FE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5D6894FA21FF56C000BE0A05 /* Commons */,
 				5D6894D921FF520100BE0A05 /* ModalDetail */,
 				AC692B0221F618BB009734FE /* CardSetList */,
 			);
@@ -1348,6 +1369,7 @@
 		AC692B0321F618C8009734FE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5D6894FF21FF5D9000BE0A05 /* Table */,
 				AC692B0421F618CC009734FE /* Collection */,
 			);
 			path = Views;
@@ -1357,7 +1379,7 @@
 			isa = PBXGroup;
 			children = (
 				AC692B0521F618F5009734FE /* CardSetListCollectionViewCellSpec.swift */,
-				5D4629B721F61C9C00A21814 /* CardSetListCollectionViewSpec.swift */,
+				5D6894FD21FF59D400BE0A05 /* CardSetListCollectionWrapperViewSpec.swift */,
 			);
 			path = Collection;
 			sourceTree = "<group>";
@@ -2077,9 +2099,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D4629B821F61C9C00A21814 /* CardSetListCollectionViewSpec.swift in Sources */,
+				5D6894FC21FF56D600BE0A05 /* MockValue.swift in Sources */,
+				5D68950121FF5DB100BE0A05 /* CardSetListTableWrapperViewSpec.swift in Sources */,
 				AC692B0621F618F5009734FE /* CardSetListCollectionViewCellSpec.swift in Sources */,
 				5D6894DD21FF525500BE0A05 /* ModalDetailViewControllerSpec.swift in Sources */,
+				5D6894FE21FF59D400BE0A05 /* CardSetListCollectionWrapperViewSpec.swift in Sources */,
 				AC23260121F798C200AAB36D /* CardSetListViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

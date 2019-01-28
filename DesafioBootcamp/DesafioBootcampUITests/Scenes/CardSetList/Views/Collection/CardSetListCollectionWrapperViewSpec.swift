@@ -1,5 +1,5 @@
 //
-//  ModalDetailViewControllerSpec.swift
+//  CardSetListCollectionWrapperViewSpec.swift
 //  DesafioBootcampUITests
 //
 //  Created by ricardo.s.rachaus on 28/01/19.
@@ -12,20 +12,21 @@ import Nimble_Snapshots
 
 @testable import DesafioBootcamp
 
-class ModalDetailViewControllerSpec: QuickSpec {
+class CardSetListCollectionWrapperViewSpec: QuickSpec {
     
     override func spec() {
-        describe("Modal Detail ViewController Spec") {
+        describe("CardSetList WrapperView Spec") {
             
-            var sut: ModalDetailViewController!
+            var sut: CardSetListCollectionWrapperView!
             
             context("when initialized") {
                 
                 beforeEach {
-                    sut = ModalViewControllerFactory.make(subset: MockValue.subsetMock)
+                    sut = CardSetListCollectionWrapperView(frame: UIScreen.main.bounds)
+                    sut.datasource.cards = [MockValue.typedCards]
                 }
                 
-                it("should have mock card") {
+                it("should look like this") {
                     expect(sut) == snapshot()
                 }
                 

@@ -15,10 +15,18 @@ import Nimble_Snapshots
 class CardSetListViewControllerSpec: QuickSpec {
     override func spec() {
         describe("CardSetListViewControllerSpec") {
-            var sut: CardSetListViewController!
+            
+            var sut: UIViewController!
+            
             context("when initialized") {
+                
                 beforeEach {
-                    sut = CardSetListViewController()
+                    sut = FeedCardSetListFactory.make()
+                }
+                
+                // TODO: Update test
+                it("should be on loading state") {
+                    expect(sut) == snapshot()
                 }
                 
             }
