@@ -28,7 +28,7 @@ class CardSetListTableWrapperViewSpec: QuickSpec {
                 }
                 
                 it("should look like this") {
-                    expect(sut) == recordSnapshot()
+                    expect(sut) == snapshot()
                 }
                 
             }
