@@ -142,8 +142,6 @@ extension MTG_Service: Domain.CardsUseCase {
             case .failure(let error):
                 handler(.failure(error))
             }
-//            handler(result)
-            
         }
     }
     

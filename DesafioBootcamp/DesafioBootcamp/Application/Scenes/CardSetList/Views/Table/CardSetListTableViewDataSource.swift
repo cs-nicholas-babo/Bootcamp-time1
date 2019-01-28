@@ -25,24 +25,10 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
     var validSets = [CardSetList.ViewModel]()
     var navigationDelegate: NavigationDelegate?
     var table: CardSetListTableView?
-//    var metaSets:[MetaCardSet] = []{
-//        didSet{
-//            table?.reloadData()
-//        }
-//    }
     var setNumber = 0
     
     override init() {
         super.init()
-//        let service = CacheServiceProvider().useCase()
-//        service.fetchSets { (result) in
-//            switch result{
-//            case .success(let sets):
-//                    self.metaSets = sets
-//            case .failure(let error):
-//                    print(error)
-//            }
-//        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -101,26 +87,6 @@ extension CardSetListTableViewDataSource: UITableViewDataSourcePrefetching{
         return indexPath.section >= self.sets.count
     }
     
-    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {
-//        if indexPaths.contains(where: isLoadingCell) {
-//            if let section = indexPaths.first?.section{
-//                if section >= self.setNumber{
-//                    let apiService = MTG_ProviderDefault().cardsUseCase()
-//                    apiService.fetchCards(from: self.metaSets[self.setNumber]) { (result) in
-//                        switch result{
-//                        case .success(let cards):
-//                            let finalSet = CardSet(self.metaSets[self.setNumber], cards)
-//                            self.smartAppend(model: CardSetList.ViewModel(cardSet: finalSet))
-//                            self.setNumber += 1
-//                        case .failure(let error):
-//                            print(error)
-//                        }
-//                    }
-//                }
-//            }
-//
-//
-//        }
-    }
+    func tableView(_ tableView: UITableView, prefetchRowsAt indexPaths: [IndexPath]) {}
     
 }

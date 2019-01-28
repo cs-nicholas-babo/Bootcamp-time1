@@ -25,7 +25,6 @@ class CardSetListTableWrapperView: UIView{
         super.init(frame: frame)
         datasource.table = tableView
         self.tableView.dataSource = self.datasource
-//        self.tableView.prefetchDataSource = self.datasource
         self.tableView.delegate = self.delegate
         setupView()
     }

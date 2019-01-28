@@ -20,14 +20,6 @@ final class MTGSearchBarFactory {
         return view
     }
     
-//    static func favorites() -> MTGSearchBar {
-//        let view = MTGSearchBar(frame: .zero)
-//        let presenter = MTGSearchBarPresenter(viewController: view)
-//        let interactor = MTGSearchBarInteractor(applicationUseCase: applicationFavorites(), cardsUseCase: cardsUseFavorites(), presenter: presenter)
-//
-//        view.interactor = interactor
-//    }
-    
     
     private static func applicationServiceAPI() -> ApplicationRunningUseCase {
         return MTG_ProviderDefault().applicationRunningUseCase()
@@ -36,14 +28,5 @@ final class MTGSearchBarFactory {
     private static func cardsUseServiceAPI() -> CardsUseCase {
         return MTG_ProviderDefault().cardsUseCase()
     }
-    
-//    private static func applicationFavorites() -> ApplicationRunningUseCase {
-//        return CacheServiceProvider().useCase()
-//    }
-//
-//    private static func cardsUseFavorites() -> CardsUseCase {
-//        return FavoriteCardsServiceProvider().useCase()
-//    }
-    
     
 }
