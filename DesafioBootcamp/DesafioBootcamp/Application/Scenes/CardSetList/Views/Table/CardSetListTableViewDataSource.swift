@@ -16,11 +16,13 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
     
     var sets = [CardSetList.ViewModel](){
         didSet{
+            validSets = sets.filter({$0.typedCards.count > 0})
             if oldValue.count != sets.count{
                 table?.reloadData()
             }
         }
     }
+    var validSets = [CardSetList.ViewModel]()
     var navigationDelegate: NavigationDelegate?
     var table: CardSetListTableView?
 //    var metaSets:[MetaCardSet] = []{
@@ -48,11 +50,11 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return sets.count
+        return validSets.count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return sets[section].setName
+        return validSets[section].setName
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -60,7 +62,7 @@ class CardSetListTableViewDataSource: NSObject, UITableViewDataSource {
         
         if !isLoadingCell(for: indexPath){
             cell.setupView()
-            cell.collectionWrapperView.datasource.cards = sets[indexPath.section].typedCards
+            cell.collectionWrapperView.datasource.cards = validSets[indexPath.section].typedCards
             cell.collectionWrapperView.setupNavigationDelegate(delegate: self.navigationDelegate)
             cell.collectionWrapperView.collectionView.reloadData()
         }
