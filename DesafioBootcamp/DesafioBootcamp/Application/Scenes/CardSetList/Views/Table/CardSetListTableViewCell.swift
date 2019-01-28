@@ -37,6 +37,5 @@ extension CardSetListTableViewCell: ViewCode{
     
     func setupAdditionalConfiguration() {
         self.backgroundColor = UIColor.clear
-//        layoutIfNeeded()
     }
 }

@@ -74,13 +74,6 @@ extension CardSetListViewController: CardSetListDisplayLogic {
     func display(viewModel: CardSetList.ViewModel) {
         _ = stateMachine.enter(CardSetListShowCardsState.self)
         self.wrapperView.datasource.smartAppend(model: viewModel)
-//        var count = 0
-//        self.wrapperView.datasource.sets.forEach { (model) in
-//            model.typedCards.forEach({ (type, cards) in
-//                count = count + cards.count
-//            })
-//        }
-//        self.wrapperView.tableView.reloadData()
     }
     
     func displaySearchResults(viewModel: [CardSetList.ViewModel]){
@@ -148,7 +141,6 @@ extension CardSetListViewController: ViewCode {
 
 extension CardSetListViewController: NavigationDelegate{
     func push(controller: UIViewController) {
-//        self.navigationController?.pushViewController(controller, animated: true)
         self.present(controller, animated: true, completion: nil)
     }
 }

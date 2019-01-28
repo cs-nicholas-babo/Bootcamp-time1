@@ -51,7 +51,7 @@ extension CardSetListCollectionViewCell: ViewCode {
     func setupConstraints() {
         let spacing:CGFloat = 16.0
         let numberOfItemsPerRow:CGFloat = 3
-        let totalSpacing:CGFloat = (numberOfItemsPerRow + 1) * spacing + 2.0 //magia
+        let totalSpacing:CGFloat = (numberOfItemsPerRow + 1) * spacing + 2.0
         let cellWidth = (UIScreen.main.bounds.width - totalSpacing)/numberOfItemsPerRow
         
         

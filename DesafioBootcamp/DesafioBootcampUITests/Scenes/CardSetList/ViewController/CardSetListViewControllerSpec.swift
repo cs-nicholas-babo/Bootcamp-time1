@@ -18,10 +18,9 @@ class CardSetListViewControllerSpec: QuickSpec {
             var sut: CardSetListViewController!
             context("when initialized") {
                 beforeEach {
-//                    sut = 
+                    sut = CardSetListViewController()
                 }
                 
-              
             }
         }
     }

@@ -22,7 +22,7 @@ final class CardSetListCollectionViewDelegate: NSObject, UICollectionViewDelegat
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let spacing:CGFloat = 16.0 
         let numberOfItemsPerRow:CGFloat = 3
-        let totalSpacing:CGFloat = (numberOfItemsPerRow + 1) * spacing + 2.0 //magia
+        let totalSpacing:CGFloat = (numberOfItemsPerRow + 1) * spacing + 2.0
         let cellWidth = (UIScreen.main.bounds.width - totalSpacing)/numberOfItemsPerRow
         
         return CardSetListCollectionViewCell.size(for: cellWidth)
