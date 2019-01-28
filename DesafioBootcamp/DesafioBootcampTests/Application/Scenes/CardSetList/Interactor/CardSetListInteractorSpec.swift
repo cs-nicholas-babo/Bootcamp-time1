@@ -8,6 +8,7 @@
 
 import Quick
 import Nimble
+import Domain
 
 @testable import DesafioBootcamp
 
@@ -23,50 +24,29 @@ class CardSetListInteractorSpec: QuickSpec {
                 beforeEach {
                     presenter = CardSetListPresentationLogicMock()
                     cardGateway = MTGCardGatewayMock()
-                    
+                    sut = CardSetListInteractor(presenter: presenter, cardGateway: cardGateway)
                 }
                 
-                context("and succeed to fetch meta sets") {
-                    
+                context("and succeed to fetch cards") {
                     beforeEach {
                         cardGateway.shouldFail = false
-                        sut = CardSetListInteractor(presenter: presenter, cardGateway: cardGateway)
+                        sut.fetchSet()
                     }
                     
-                    it("should send ready response to presenter") {
-                        expect(presenter.isReadyToPresent).to(beTrue())
+                    it("should present cards") {
+                        expect(presenter.didPresentCards).to(beTrue())
                     }
+                    
                 }
                 
-                context("and fail to fetch meta sets") {
+                context("and fail to fetch cards") {
                     
                     beforeEach {
                         cardGateway.shouldFail = true
-                        sut = CardSetListInteractor(presenter: presenter, cardGateway: cardGateway)
+                        sut.fetchSet()
                     }
                     
                     it("should present an error") {
-                        expect(presenter.didPresentError).to(beTrue())
-                    }
-                }
-                
-                context("fetch complete set of cards") {
-                    
-                    beforeEach {
-                        sut = CardSetListInteractor(presenter: presenter, cardGateway: cardGateway)
-                    }
-                    
-                    // TODO: Fix test
-                    it("should succeed to fetch cards") {
-                        cardGateway.shouldFail = false
-                        sut.fetchSet()
-                        expect(cardGateway.didCallfetchSet).to(beTrue())
-//                        expect(presenter.willPresentCards).to(beTrue())
-                    }
-                    
-                    it("should fail to fetch cards") {
-                        cardGateway.shouldFail = true
-                        sut.fetchSet()
                         expect(presenter.didPresentError).to(beTrue())
                     }
                     

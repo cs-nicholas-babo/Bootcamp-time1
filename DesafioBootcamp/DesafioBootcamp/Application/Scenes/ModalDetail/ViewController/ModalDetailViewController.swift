@@ -29,8 +29,9 @@ public class ModalDetailViewController: UIViewController {
     
     var backgroundImage: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.image = UIImage(named: "Background")
+        imageView.image = Image.background
         imageView.isUserInteractionEnabled = true
+        imageView.contentMode = .scaleAspectFill
         return imageView
     }()
     

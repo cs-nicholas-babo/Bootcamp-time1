@@ -14,13 +14,15 @@ import Domain
 struct MockValues {
     static let metaCardSetMock = MetaCardSet(code: "setCode", name: "setName", releaseDate: Date())
     
-    static let metaCardSetsMock = [metaCardSetMock, metaCardSetMock, metaCardSetMock, metaCardSetMock, metaCardSetMock]
+    static let metaCardSetMockArray = [metaCardSetMock, metaCardSetMock, metaCardSetMock, metaCardSetMock, metaCardSetMock]
     
     static let cardMock = Card(id: "id", name: "name", setCode: "setCode", types: [CardType(name: "type1"), CardType(name: "type2")])
     
-    static let cardsMock = [cardMock, cardMock, cardMock, cardMock, cardMock]
+    static let cardMockArray = [cardMock, cardMock, cardMock, cardMock, cardMock]
     
-    static let cardSetMock = (set: metaCardSetMock, cards: cardsMock)
+    static let cardSetMock = (set: metaCardSetMock, cards: cardMockArray)
+    
+    static let cardSetMockArray: [CardSet] = [cardSetMock, cardSetMock, cardSetMock, cardSetMock, cardSetMock]
     
     static let viewModelMock = CardSetList.ViewModel(cardSet: cardSetMock)
     

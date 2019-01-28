@@ -20,7 +20,7 @@ protocol MTGSearchBarObserver : class {
 
 final class MTGSearchBar: UISearchBar {
     var interactor: MTGSearchBarBusinessLogic?
-    weak var observer: MTGSearchBarObserver?
+    var observer: MTGSearchBarObserver?
     
     override init(frame: CGRect = .zero) {
         super.init(frame: frame)
@@ -43,7 +43,6 @@ final class MTGSearchBar: UISearchBar {
     func delegationAssignment() {
         delegate = self
     }
-    
 }
 
 extension MTGSearchBar: ViewCode {

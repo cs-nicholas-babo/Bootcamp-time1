@@ -28,10 +28,6 @@ class CardSetListViewControllerSpec: QuickSpec {
                     sut.interactor = interactor
                 }
                 
-                it("should be in loading state") {
-                    expect(sut.stateMachine.currentState).to(beAKindOf(CardSetListLoadingState.self))
-                }
-                
                 context("and display view model") {
                     
                     beforeEach {
@@ -40,6 +36,10 @@ class CardSetListViewControllerSpec: QuickSpec {
                     
                     it("should enter show cards state") {
                         expect(sut.stateMachine.currentState).to(beAKindOf(CardSetListShowCardsState.self))
+                    }
+                    
+                    it("should feed data source") {
+                        expect(sut.wrapperView.datasource.sets).to(contain(MockValues.viewModelMock))
                     }
                     
                 }
@@ -66,6 +66,16 @@ class CardSetListViewControllerSpec: QuickSpec {
                         expect(sut.stateMachine.currentState).to(beAKindOf(CardSetListErrorState.self))
                     }
                     
+                }
+                
+                context("and display no rsults") {
+                    beforeEach {
+                        sut.displayNoResults()
+                    }
+                    
+                    it("should enter no results state") {
+                        expect(sut.stateMachine.currentState).to(beAKindOf(CardSetListNoResultsState.self))
+                    }
                 }
                 
             }

@@ -40,7 +40,7 @@ extension Card: Codable {
         case name = "name"
         case types = "types"
         case setCode = "set"
-        case imageURL = "imageURL"
+        case imageURL = "imageUrl"
     }
     
     public init(from decoder: Decoder) throws {
@@ -49,7 +49,7 @@ extension Card: Codable {
         self.name = try container.decode(String.self, forKey: .name)
         self.setCode = try container.decode(String.self, forKey: .setCode)
         if let decodedSet = try container.decodeIfPresent([String].self, forKey: .types){
-           self.types = Set(decodedSet.map({ CardType(name: $0) }))
+            self.types = Set(decodedSet.map({ CardType(name: $0) }))
         } else {
             self.types = Set<CardType>()
         }

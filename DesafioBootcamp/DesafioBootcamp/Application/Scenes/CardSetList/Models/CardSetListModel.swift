@@ -14,13 +14,14 @@ enum CardSetList {
     
     enum Response {
         case success([CardSet])
+        case searchResults([CardSet])
         case readyToPresentSets
         case error
     }
     
     struct ViewModel {
-        let setName: String
-        let typedCards: [TypedCards]
+        var setName: String
+        private(set) var typedCards: [TypedCards]
         
         /**
          Initialize instance with CardSet passed.
@@ -41,6 +42,10 @@ enum CardSetList {
             
             self.typedCards = typeSortedCards
         }
+        
+        mutating func update(cards: [TypedCards]){
+            self.typedCards = cards
+        }
     }
     
     static let collectionViewCellIdentifier = "CollectionViewCellIdentifier"
@@ -52,4 +57,7 @@ extension CardSetList.ViewModel: Equatable {
     static func == (lhs: CardSetList.ViewModel, rhs: CardSetList.ViewModel) -> Bool {
         return lhs.setName == rhs.setName
     }
+    
+    static let collectionViewCellIdentifier = "CollectionViewCellIdentifier"
+    static let tableViewCellIdentifier = "TableViewCellIdentifier"
 }

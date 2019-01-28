@@ -48,7 +48,6 @@ public final class CacheServiceProvider: Domain.ApplicationRunningUseCaseProvide
         return CacheService(cacheManager: manager)
     }
     
-    
 }
 
 public final class TestCacheServiceProvider: Domain.ApplicationRunningUseCaseProvider{

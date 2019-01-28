@@ -12,7 +12,7 @@ import Foundation
 final public class CacheService: Domain.ApplicationRunningUseCase {
     let cacheManager: CacheManager
     
-    init(cacheManager: CacheManager) {
+    public init(cacheManager: CacheManager) {
         self.cacheManager = cacheManager
     }
     
@@ -20,6 +20,10 @@ final public class CacheService: Domain.ApplicationRunningUseCase {
         handler(Result.success(cacheManager.cardSetRepository.get()))
     }
     
+    public func favorite(set: MetaCardSet){
+        self.cacheManager.cardSetRepository.upsert(object: set)
+    }
+
     public func setupCache(sets: [MetaCardSet]) {
         sets.forEach { (set) in
             cacheManager.cardSetRepository.upsert(object: set)

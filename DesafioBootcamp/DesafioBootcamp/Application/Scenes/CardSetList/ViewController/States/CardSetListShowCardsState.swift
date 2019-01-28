@@ -12,6 +12,10 @@ final class CardSetListShowCardsState: CardSetListBaseState {
     
     override func didEnter(from previousState: GKState?) {
         print("ShowsCardsState 🃏")
+        self.viewController.activityIndicator.isHidden = true
+        self.viewController.activityIndicator.stopAnimating()
+        self.viewController.wrapperView.isHidden = false
+        self.viewController.errorImageView.isHidden = true
     }
     
     override func isValidNextState(_ stateClass: AnyClass) -> Bool {

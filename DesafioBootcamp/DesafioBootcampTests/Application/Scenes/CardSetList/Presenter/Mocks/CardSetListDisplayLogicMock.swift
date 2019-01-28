@@ -12,14 +12,21 @@ import Foundation
 
 class CardSetListDisplayLogicMock: CardSetListDisplayLogic {
     
+    
+    
     var viewModel: CardSetList.ViewModel?
     var didDisplayViewModel = false
     var isReadyToDisplayCards = false
     var didDisplayError = false
+    var didDisplayNoResults = false
     
     func display(viewModel: CardSetList.ViewModel) {
         self.viewModel = viewModel
         self.didDisplayViewModel = true
+    }
+    
+    func displayNoResults() {
+        self.didDisplayNoResults = true
     }
     
     func readyToDisplayCards() {

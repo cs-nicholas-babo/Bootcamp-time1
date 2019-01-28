@@ -2,5 +2,7 @@ github "Moya/Moya"
 github "realm/realm-cocoa"
 github "Quick/Quick"
 github "Quick/Nimble"
-github "Snapkit/Snapkit" ~> 4.0.0
+github "SnapKit/SnapKit" ~> 4.0.0
 github "onevcat/Kingfisher" ~> 5.0
+github "uber/ios-snapshot-test-case" "4.0.0"
+github "ashfurrow/Nimble-Snapshots"
