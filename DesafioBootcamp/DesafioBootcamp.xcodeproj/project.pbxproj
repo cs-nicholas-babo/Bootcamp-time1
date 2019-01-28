@@ -60,14 +60,6 @@
 		2FF9F3D421F8C355002FE583 /* CardManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F3D321F8C355002FE583 /* CardManipulator.swift */; };
 		2FF9F3D721F8C619002FE583 /* MTGSearchBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9F3D621F8C619002FE583 /* MTGSearchBarPresenter.swift */; };
 		5D1CBAE921EFB8720093CFD5 /* CardSetListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */; };
-		5D230C7221F8D56F0062B0AF /* MTGSearchBarSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7121F8D56F0062B0AF /* MTGSearchBarSpec.swift */; };
-		5D230C7721F8D6060062B0AF /* MTGSearchBarObserverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7621F8D6060062B0AF /* MTGSearchBarObserverMock.swift */; };
-		5D230C7921F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7821F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift */; };
-		5D230C7B21F8DB160062B0AF /* MTGSearchBarInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7A21F8DB160062B0AF /* MTGSearchBarInteractorSpec.swift */; };
-		5D230C7E21F8DC1B0062B0AF /* MTGSearchBarPresernterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7D21F8DC1B0062B0AF /* MTGSearchBarPresernterMock.swift */; };
-		5D230C8021F8E0040062B0AF /* CardUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C7F21F8E0040062B0AF /* CardUseCaseMock.swift */; };
-		5D230C8221F8E2D90062B0AF /* MTGSearchBarPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C8121F8E2D90062B0AF /* MTGSearchBarPresenterSpec.swift */; };
-		5D230C8921F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D230C8821F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift */; };
 		5D4629B421F6018400A21814 /* CardSetListCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4629B321F6018400A21814 /* CardSetListCollectionViewDataSource.swift */; };
 		5D4629B621F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4629B521F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift */; };
 		5D4629B821F61C9C00A21814 /* CardSetListCollectionViewSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D4629B721F61C9C00A21814 /* CardSetListCollectionViewSpec.swift */; };
@@ -79,6 +71,16 @@
 		5D54973E21F896A300711080 /* ModalDetailViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54973D21F896A300711080 /* ModalDetailViewControllerSpec.swift */; };
 		5D54974121F896FB00711080 /* ModalDetailInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54974021F896FB00711080 /* ModalDetailInteractorMock.swift */; };
 		5D54974321F8985F00711080 /* ModalDetailRouterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */; };
+		5D6894DD21FF525500BE0A05 /* ModalDetailViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894DC21FF525500BE0A05 /* ModalDetailViewControllerSpec.swift */; };
+		5D6894E221FF540C00BE0A05 /* MockValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894E021FF53D700BE0A05 /* MockValues.swift */; };
+		5D6894F221FF543C00BE0A05 /* MTGSearchBarDisplayLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894E621FF543C00BE0A05 /* MTGSearchBarDisplayLogicMock.swift */; };
+		5D6894F321FF543C00BE0A05 /* MTGSearchBarPresenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894E721FF543C00BE0A05 /* MTGSearchBarPresenterSpec.swift */; };
+		5D6894F421FF543C00BE0A05 /* MTGSearchBarObserverMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894EA21FF543C00BE0A05 /* MTGSearchBarObserverMock.swift */; };
+		5D6894F521FF543C00BE0A05 /* CardUseCaseMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894EB21FF543C00BE0A05 /* CardUseCaseMock.swift */; };
+		5D6894F621FF543C00BE0A05 /* MTGSearchBarInteractorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894EC21FF543C00BE0A05 /* MTGSearchBarInteractorMock.swift */; };
+		5D6894F721FF543C00BE0A05 /* MTGSearchBarSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894ED21FF543C00BE0A05 /* MTGSearchBarSpec.swift */; };
+		5D6894F821FF543C00BE0A05 /* MTGSearchBarPresernterMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894F021FF543C00BE0A05 /* MTGSearchBarPresernterMock.swift */; };
+		5D6894F921FF543C00BE0A05 /* MTGSearchBarInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6894F121FF543C00BE0A05 /* MTGSearchBarInteractorSpec.swift */; };
 		5D6AD64821FA24DF00A9299E /* MTGTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D6AD64721FA24DF00A9299E /* MTGTabBarController.swift */; };
 		5D778A4B21FA45C1000866F8 /* MTGCardPickerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A4A21FA45C1000866F8 /* MTGCardPickerSpec.swift */; };
 		5D778A4F21FA46AF000866F8 /* MTGCardViewPickerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D778A4E21FA46AF000866F8 /* MTGCardViewPickerSpec.swift */; };
@@ -169,7 +171,6 @@
 		AC692B0921F6192C009734FE /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
 		AC692B0B21F73BB7009734FE /* ScreenProportions.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692B0A21F73BB7009734FE /* ScreenProportions.swift */; };
 		AC692B0D21F7401C009734FE /* Card+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC692B0C21F7401C009734FE /* Card+size.swift */; };
-		AC692B0E21F7476E009734FE /* MockValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7891121F2408F00718E4E /* MockValues.swift */; };
 		ACA4FF9321F0BB4000E7BC96 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654521EF6FA800689169 /* Realm.framework */; };
 		ACB449FE21EF8D4800252958 /* MTGSetFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB449FD21EF8D4800252958 /* MTGSetFetcher.swift */; };
 		ACB44A0521EF92C600252958 /* CardSetListBusinessLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB44A0421EF92C600252958 /* CardSetListBusinessLogic.swift */; };
@@ -190,7 +191,6 @@
 		ACE7891821F2408F00718E4E /* CardSetListPresentationLogicMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7890D21F2408F00718E4E /* CardSetListPresentationLogicMock.swift */; };
 		ACE7891921F2408F00718E4E /* CardSetListInteractorSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7890E21F2408F00718E4E /* CardSetListInteractorSpec.swift */; };
 		ACE7891A21F2408F00718E4E /* ResultErrorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7891021F2408F00718E4E /* ResultErrorMock.swift */; };
-		ACE7891B21F2408F00718E4E /* MockValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7891121F2408F00718E4E /* MockValues.swift */; };
 		ACE7893B21F2414400718E4E /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654421EF6FA800689169 /* Nimble.framework */; };
 		ACE7893C21F2414400718E4E /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A13C654321EF6FA800689169 /* Quick.framework */; };
 		ACE7894121F2638000718E4E /* CardSetListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACE7894021F2638000718E4E /* CardSetListCollectionViewCell.swift */; };
@@ -332,14 +332,6 @@
 		2FF9F3D321F8C355002FE583 /* CardManipulator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardManipulator.swift; sourceTree = "<group>"; };
 		2FF9F3D621F8C619002FE583 /* MTGSearchBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarPresenter.swift; sourceTree = "<group>"; };
 		5D1CBAE821EFB8720093CFD5 /* CardSetListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListPresenter.swift; sourceTree = "<group>"; };
-		5D230C7121F8D56F0062B0AF /* MTGSearchBarSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarSpec.swift; sourceTree = "<group>"; };
-		5D230C7621F8D6060062B0AF /* MTGSearchBarObserverMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarObserverMock.swift; sourceTree = "<group>"; };
-		5D230C7821F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarInteractorMock.swift; sourceTree = "<group>"; };
-		5D230C7A21F8DB160062B0AF /* MTGSearchBarInteractorSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarInteractorSpec.swift; sourceTree = "<group>"; };
-		5D230C7D21F8DC1B0062B0AF /* MTGSearchBarPresernterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarPresernterMock.swift; sourceTree = "<group>"; };
-		5D230C7F21F8E0040062B0AF /* CardUseCaseMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardUseCaseMock.swift; sourceTree = "<group>"; };
-		5D230C8121F8E2D90062B0AF /* MTGSearchBarPresenterSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarPresenterSpec.swift; sourceTree = "<group>"; };
-		5D230C8821F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGSearchBarDisplayLogicMock.swift; sourceTree = "<group>"; };
 		5D4629B321F6018400A21814 /* CardSetListCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		5D4629B521F6162F00A21814 /* CardSetListCollectionWrapperViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionWrapperViewFactory.swift; sourceTree = "<group>"; };
 		5D4629B721F61C9C00A21814 /* CardSetListCollectionViewSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSetListCollectionViewSpec.swift; sourceTree = "<group>"; };
@@ -351,6 +343,16 @@
 		5D54973D21F896A300711080 /* ModalDetailViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailViewControllerSpec.swift; sourceTree = "<group>"; };
 		5D54974021F896FB00711080 /* ModalDetailInteractorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailInteractorMock.swift; sourceTree = "<group>"; };
 		5D54974221F8985F00711080 /* ModalDetailRouterMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailRouterMock.swift; sourceTree = "<group>"; };
+		5D6894DC21FF525500BE0A05 /* ModalDetailViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalDetailViewControllerSpec.swift; sourceTree = "<group>"; };
+		5D6894E021FF53D700BE0A05 /* MockValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockValues.swift; sourceTree = "<group>"; };
+		5D6894E621FF543C00BE0A05 /* MTGSearchBarDisplayLogicMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSearchBarDisplayLogicMock.swift; sourceTree = "<group>"; };
+		5D6894E721FF543C00BE0A05 /* MTGSearchBarPresenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSearchBarPresenterSpec.swift; sourceTree = "<group>"; };
+		5D6894EA21FF543C00BE0A05 /* MTGSearchBarObserverMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSearchBarObserverMock.swift; sourceTree = "<group>"; };
+		5D6894EB21FF543C00BE0A05 /* CardUseCaseMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardUseCaseMock.swift; sourceTree = "<group>"; };
+		5D6894EC21FF543C00BE0A05 /* MTGSearchBarInteractorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSearchBarInteractorMock.swift; sourceTree = "<group>"; };
+		5D6894ED21FF543C00BE0A05 /* MTGSearchBarSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSearchBarSpec.swift; sourceTree = "<group>"; };
+		5D6894F021FF543C00BE0A05 /* MTGSearchBarPresernterMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSearchBarPresernterMock.swift; sourceTree = "<group>"; };
+		5D6894F121FF543C00BE0A05 /* MTGSearchBarInteractorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MTGSearchBarInteractorSpec.swift; sourceTree = "<group>"; };
 		5D6AD64721FA24DF00A9299E /* MTGTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGTabBarController.swift; sourceTree = "<group>"; };
 		5D778A4A21FA45C1000866F8 /* MTGCardPickerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCardPickerSpec.swift; sourceTree = "<group>"; };
 		5D778A4E21FA46AF000866F8 /* MTGCardViewPickerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTGCardViewPickerSpec.swift; sourceTree = "<group>"; };
@@ -456,7 +458,6 @@
 		ACE7890D21F2408F00718E4E /* CardSetListPresentationLogicMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListPresentationLogicMock.swift; sourceTree = "<group>"; };
 		ACE7890E21F2408F00718E4E /* CardSetListInteractorSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardSetListInteractorSpec.swift; sourceTree = "<group>"; };
 		ACE7891021F2408F00718E4E /* ResultErrorMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultErrorMock.swift; sourceTree = "<group>"; };
-		ACE7891121F2408F00718E4E /* MockValues.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockValues.swift; sourceTree = "<group>"; };
 		ACE7892D21F2411B00718E4E /* CacheManagerSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CacheManagerSpec.swift; sourceTree = "<group>"; };
 		ACE7892E21F2411B00718E4E /* FavoriteCardsRepositorySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteCardsRepositorySpec.swift; sourceTree = "<group>"; };
 		ACE7893021F2411B00718E4E /* RealmCardSetSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmCardSetSpec.swift; sourceTree = "<group>"; };
@@ -838,69 +839,6 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		5D230C6D21F8D5270062B0AF /* MTGSearchBar */ = {
-			isa = PBXGroup;
-			children = (
-				5D230C7021F8D5600062B0AF /* ViewController */,
-				5D230C6F21F8D5580062B0AF /* Interactor */,
-				5D230C6E21F8D5510062B0AF /* Presenter */,
-			);
-			path = MTGSearchBar;
-			sourceTree = "<group>";
-		};
-		5D230C6E21F8D5510062B0AF /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				5D230C8321F8E9DE0062B0AF /* Mocks */,
-				5D230C8121F8E2D90062B0AF /* MTGSearchBarPresenterSpec.swift */,
-			);
-			path = Presenter;
-			sourceTree = "<group>";
-		};
-		5D230C6F21F8D5580062B0AF /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				5D230C7C21F8DC110062B0AF /* Mocks */,
-				5D230C7A21F8DB160062B0AF /* MTGSearchBarInteractorSpec.swift */,
-			);
-			path = Interactor;
-			sourceTree = "<group>";
-		};
-		5D230C7021F8D5600062B0AF /* ViewController */ = {
-			isa = PBXGroup;
-			children = (
-				5D230C7321F8D5830062B0AF /* Mocks */,
-				5D230C7121F8D56F0062B0AF /* MTGSearchBarSpec.swift */,
-			);
-			path = ViewController;
-			sourceTree = "<group>";
-		};
-		5D230C7321F8D5830062B0AF /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				5D230C7621F8D6060062B0AF /* MTGSearchBarObserverMock.swift */,
-				5D230C7821F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift */,
-				5D230C7F21F8E0040062B0AF /* CardUseCaseMock.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		5D230C7C21F8DC110062B0AF /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				5D230C7D21F8DC1B0062B0AF /* MTGSearchBarPresernterMock.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
-		5D230C8321F8E9DE0062B0AF /* Mocks */ = {
-			isa = PBXGroup;
-			children = (
-				5D230C8821F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift */,
-			);
-			path = Mocks;
-			sourceTree = "<group>";
-		};
 		5D54972E21F88BD000711080 /* ModalDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -963,6 +901,85 @@
 			path = Mocks;
 			sourceTree = "<group>";
 		};
+		5D6894D921FF520100BE0A05 /* ModalDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5D6894DA21FF521600BE0A05 /* ViewController */,
+			);
+			path = ModalDetail;
+			sourceTree = "<group>";
+		};
+		5D6894DA21FF521600BE0A05 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D6894DC21FF525500BE0A05 /* ModalDetailViewControllerSpec.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5D6894E321FF543C00BE0A05 /* MTGSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				5D6894E421FF543C00BE0A05 /* Presenter */,
+				5D6894E821FF543C00BE0A05 /* ViewController */,
+				5D6894EE21FF543C00BE0A05 /* Interactor */,
+			);
+			path = MTGSearchBar;
+			sourceTree = "<group>";
+		};
+		5D6894E421FF543C00BE0A05 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5D6894E521FF543C00BE0A05 /* Mocks */,
+				5D6894E721FF543C00BE0A05 /* MTGSearchBarPresenterSpec.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5D6894E521FF543C00BE0A05 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D6894E621FF543C00BE0A05 /* MTGSearchBarDisplayLogicMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D6894E821FF543C00BE0A05 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5D6894E921FF543C00BE0A05 /* Mocks */,
+				5D6894ED21FF543C00BE0A05 /* MTGSearchBarSpec.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5D6894E921FF543C00BE0A05 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D6894EA21FF543C00BE0A05 /* MTGSearchBarObserverMock.swift */,
+				5D6894EB21FF543C00BE0A05 /* CardUseCaseMock.swift */,
+				5D6894EC21FF543C00BE0A05 /* MTGSearchBarInteractorMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		5D6894EE21FF543C00BE0A05 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5D6894EF21FF543C00BE0A05 /* Mocks */,
+				5D6894F121FF543C00BE0A05 /* MTGSearchBarInteractorSpec.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5D6894EF21FF543C00BE0A05 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				5D6894F021FF543C00BE0A05 /* MTGSearchBarPresernterMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		5D6AD64621FA24D200A9299E /* MTGTabBarController */ = {
 			isa = PBXGroup;
 			children = (
@@ -990,10 +1007,10 @@
 		5D778A4C21FA469C000866F8 /* Custom Components */ = {
 			isa = PBXGroup;
 			children = (
+				5D6894E321FF543C00BE0A05 /* MTGSearchBar */,
 				5D778A5021FA478E000866F8 /* MTGTabBarController */,
 				5D778A4D21FA46A9000866F8 /* MTGCardViewPicker */,
 				5D778A4921FA45AD000866F8 /* MTGPickerView */,
-				5D230C6D21F8D5270062B0AF /* MTGSearchBar */,
 			);
 			path = "Custom Components";
 			sourceTree = "<group>";
@@ -1313,6 +1330,7 @@
 		AC692B0121F618A3009734FE /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				5D6894D921FF520100BE0A05 /* ModalDetail */,
 				AC692B0221F618BB009734FE /* CardSetList */,
 			);
 			path = Scenes;
@@ -1435,7 +1453,6 @@
 			isa = PBXGroup;
 			children = (
 				AC23260B21F8A4F500AAB36D /* Gateways */,
-				5D230C6D21F8D5270062B0AF /* MTGSearchBar */,
 				5D778A4C21FA469C000866F8 /* Custom Components */,
 				ACE788FE21F2408F00718E4E /* Scenes */,
 				ACE7890F21F2408F00718E4E /* Commons */,
@@ -1528,7 +1545,7 @@
 			isa = PBXGroup;
 			children = (
 				ACE7891021F2408F00718E4E /* ResultErrorMock.swift */,
-				ACE7891121F2408F00718E4E /* MockValues.swift */,
+				5D6894E021FF53D700BE0A05 /* MockValues.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -2062,7 +2079,7 @@
 			files = (
 				5D4629B821F61C9C00A21814 /* CardSetListCollectionViewSpec.swift in Sources */,
 				AC692B0621F618F5009734FE /* CardSetListCollectionViewCellSpec.swift in Sources */,
-				AC692B0E21F7476E009734FE /* MockValues.swift in Sources */,
+				5D6894DD21FF525500BE0A05 /* ModalDetailViewControllerSpec.swift in Sources */,
 				AC23260121F798C200AAB36D /* CardSetListViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2074,33 +2091,33 @@
 				A13669C921F7620600CA705E /* CardSetListTableViewDataSourceSpec.swift in Sources */,
 				AC23261221F8A70200AAB36D /* ApplicationRunningUseCaseMock.swift in Sources */,
 				AC23261021F8A5A700AAB36D /* FavoriteCardsUseCaseMock.swift in Sources */,
+				5D6894F921FF543C00BE0A05 /* MTGSearchBarInteractorSpec.swift in Sources */,
 				ACE7891221F2408F00718E4E /* CardSetListViewModelSpec.swift in Sources */,
+				5D6894F821FF543C00BE0A05 /* MTGSearchBarPresernterMock.swift in Sources */,
+				5D6894F721FF543C00BE0A05 /* MTGSearchBarSpec.swift in Sources */,
 				ACE7891721F2408F00718E4E /* MTGCardGatewayMock.swift in Sources */,
-				5D230C7E21F8DC1B0062B0AF /* MTGSearchBarPresernterMock.swift in Sources */,
 				5D54973721F88C8E00711080 /* ModalDetailPresenterMock.swift in Sources */,
-				5D230C7921F8D87C0062B0AF /* MTGSearchBarInteractorMock.swift in Sources */,
 				ACE7891321F2408F00718E4E /* CardSetListDisplayLogicMock.swift in Sources */,
 				5D54973921F8922100711080 /* ModalDetailPresenterSpec.swift in Sources */,
+				5D6894F221FF543C00BE0A05 /* MTGSearchBarDisplayLogicMock.swift in Sources */,
 				5D778A4F21FA46AF000866F8 /* MTGCardViewPickerSpec.swift in Sources */,
+				5D6894F421FF543C00BE0A05 /* MTGSearchBarObserverMock.swift in Sources */,
 				ACE7891621F2408F00718E4E /* CardSetListViewControllerSpec.swift in Sources */,
-				5D230C8921F8EA580062B0AF /* MTGSearchBarDisplayLogicMock.swift in Sources */,
+				5D6894F621FF543C00BE0A05 /* MTGSearchBarInteractorMock.swift in Sources */,
 				5D54974121F896FB00711080 /* ModalDetailInteractorMock.swift in Sources */,
 				5D54974321F8985F00711080 /* ModalDetailRouterMock.swift in Sources */,
 				ACE7891421F2408F00718E4E /* CardSetListPresenterSpec.swift in Sources */,
 				5D778A4B21FA45C1000866F8 /* MTGCardPickerSpec.swift in Sources */,
 				5D54973C21F8939400711080 /* ModalDetailViewControllerMock.swift in Sources */,
-				5D230C7721F8D6060062B0AF /* MTGSearchBarObserverMock.swift in Sources */,
-				5D230C8021F8E0040062B0AF /* CardUseCaseMock.swift in Sources */,
 				5D54973E21F896A300711080 /* ModalDetailViewControllerSpec.swift in Sources */,
 				ACE7891A21F2408F00718E4E /* ResultErrorMock.swift in Sources */,
-				5D230C8221F8E2D90062B0AF /* MTGSearchBarPresenterSpec.swift in Sources */,
-				5D230C7B21F8DB160062B0AF /* MTGSearchBarInteractorSpec.swift in Sources */,
+				5D6894E221FF540C00BE0A05 /* MockValues.swift in Sources */,
+				5D6894F521FF543C00BE0A05 /* CardUseCaseMock.swift in Sources */,
 				ACE7891521F2408F00718E4E /* CardSetListInteractorMock.swift in Sources */,
+				5D6894F321FF543C00BE0A05 /* MTGSearchBarPresenterSpec.swift in Sources */,
 				AC23262221F8DEF100AAB36D /* APIGatewaySpec.swift in Sources */,
 				5D54973421F88C1900711080 /* ModalDetailInteractorSpec.swift in Sources */,
-				5D230C7221F8D56F0062B0AF /* MTGSearchBarSpec.swift in Sources */,
 				ACE7891821F2408F00718E4E /* CardSetListPresentationLogicMock.swift in Sources */,
-				ACE7891B21F2408F00718E4E /* MockValues.swift in Sources */,
 				AC23260D21F8A51800AAB36D /* LocalDatabaseGatewaySpec.swift in Sources */,
 				ACE7891921F2408F00718E4E /* CardSetListInteractorSpec.swift in Sources */,
 				5D778A5221FA479C000866F8 /* MTGTabBarControllerSpec.swift in Sources */,

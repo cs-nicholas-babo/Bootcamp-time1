@@ -74,6 +74,18 @@ class CardSetListPresenterSpec: QuickSpec {
                     }
                 }
                 
+                context("when searched results") {
+                    
+                    beforeEach {
+                        sut.present(response: .searchResults(MockValues.cardSetMockArray))
+                    }
+                    
+                    it("should display results") {
+                        expect(vc.didSearchResults).to(beTrue())
+                    }
+                    
+                }
+                
             }
             
         }

@@ -16,6 +16,7 @@ final class CardSetListPresentationLogicMock: CardSetListPresentationLogic {
     var didPresentCards = false
     var isReadyToPresent = false
     var didPresentError = false
+    var didSearchResults = false
     
     var receivedCardSets = [CardSet]()
     
@@ -28,6 +29,8 @@ final class CardSetListPresentationLogicMock: CardSetListPresentationLogic {
             self.isReadyToPresent = true
         case .error:
             self.didPresentError = true
+        case .searchResults(_):
+            self.didSearchResults = true
         }
     }
 }
